@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
 {
     public partial class New_Map : Form
     {
-
+        MapLogger logger = new MapLogger();
         public New_Map()
         {
             Debug.WriteLine("Initialize New_Map");
@@ -77,83 +77,83 @@ namespace WindowsFormsApp2
         public void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox6_CheckedChanged");
-            if (checkBox6.Checked == true)
+            if (DefaultPlayerDamage.Checked == true)
             {
-                textBox4.Enabled = false;
-                textBox4.Invalidate();
-                textBox4.Refresh();
+                textBoxCustomDamage.Enabled = false;
+                textBoxCustomDamage.Invalidate();
+                textBoxCustomDamage.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox4.Enabled = true;
+                textBoxCustomDamage.Enabled = true;
             }
         }
         public void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox7_CheckedChanged");
-            if (checkBox7.Checked == true)
+            if (DefaultDamageFromPlayer.Checked == true)
             {
-                textBox5.Enabled = false;
-                textBox5.Invalidate();
-                textBox5.Refresh();
+                textBoxCustomPlayerDamage.Enabled = false;
+                textBoxCustomPlayerDamage.Invalidate();
+                textBoxCustomPlayerDamage.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox5.Enabled = true;
+                textBoxCustomPlayerDamage.Enabled = true;
             }
         }
         public void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox7_CheckedChanged");
-            if (checkBox9.Checked == true)
+            if (DefaultSpeed.Checked == true)
             {
-                textBox6.Enabled = false;
-                textBox7.Enabled = false;
+                textBoxCustomSpeed.Enabled = false;
+                textBoxDebrisMultiplyer.Enabled = false;
 
-                textBox6.Invalidate();
-                textBox7.Invalidate();
+                textBoxCustomSpeed.Invalidate();
+                textBoxDebrisMultiplyer.Invalidate();
 
-                textBox6.Refresh();
-                textBox7.Refresh();
+                textBoxCustomSpeed.Refresh();
+                textBoxDebrisMultiplyer.Refresh();
 
                 Application.DoEvents();
             }
             else
             {
-                textBox6.Enabled = true;
-                textBox7.Enabled = true;
+                textBoxCustomSpeed.Enabled = true;
+                textBoxDebrisMultiplyer.Enabled = true;
             }
         }
         public void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox10_CheckedChanged");
-            if (checkBox10.Checked == true)
+            if (DefaultHunger.Checked == true)
             {
-                textBox9.Enabled = false;
-                textBox9.Invalidate();
-                textBox9.Refresh();
+                textBoxCustomHunger.Enabled = false;
+                textBoxCustomHunger.Invalidate();
+                textBoxCustomHunger.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox9.Enabled = true;
+                textBoxCustomHunger.Enabled = true;
             }
         }
         public void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox11_CheckedChanged");
-            if (checkBox11.Checked == true)
+            if (SpawnChance.Checked == true)
             {
-                textBox8.Enabled = false;
-                textBox8.Invalidate();
-                textBox8.Refresh();
+                textBoxCustomSpawnChance.Enabled = false;
+                textBoxCustomSpawnChance.Invalidate();
+                textBoxCustomSpawnChance.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox8.Enabled = true;
+                textBoxCustomSpawnChance.Enabled = true;
             }
         }
 
@@ -161,31 +161,31 @@ namespace WindowsFormsApp2
         public void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox8_CheckedChanged");
-            if (checkBox8.Checked == true)
+            if (DefaultErosionSpeed.Checked == true)
             {
-                textBox10.Enabled = false;
-                textBox10.Invalidate();
-                textBox10.Refresh();
+                textBoxCustomErosionSpeed.Enabled = false;
+                textBoxCustomErosionSpeed.Invalidate();
+                textBoxCustomErosionSpeed.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox10.Enabled = true;
+                textBoxCustomErosionSpeed.Enabled = true;
             }
         }
         public void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox8_CheckedChanged");
-            if (checkBox14.Checked == true)
+            if (DefaultRepairCost.Checked == true)
             {
-                textBox13.Enabled = false;
-                textBox13.Invalidate();
-                textBox13.Refresh();
+                textBoxRepairCost.Enabled = false;
+                textBoxRepairCost.Invalidate();
+                textBoxRepairCost.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox13.Enabled = true;
+                textBoxRepairCost.Enabled = true;
             }
         }
 
@@ -193,31 +193,31 @@ namespace WindowsFormsApp2
         public void checkBox12_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox8_CheckedChanged");
-            if (checkBox12.Checked == true)
+            if (defaultAvalancheDamageToPlayers.Checked == true)
             {
-                textBox11.Enabled = false;
-                textBox11.Invalidate();
-                textBox11.Refresh();
+                textBoxCustomAvalanchDamage.Enabled = false;
+                textBoxCustomAvalanchDamage.Invalidate();
+                textBoxCustomAvalanchDamage.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox11.Enabled = true;
+                textBoxCustomAvalanchDamage.Enabled = true;
             }
         }
         public void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox8_CheckedChanged");
-            if (checkBox13.Checked == true)
+            if (DefaultAvalancheFrequency.Checked == true)
             {
-                textBox12.Enabled = false;
-                textBox12.Invalidate();
-                textBox12.Refresh();
+                textBoxCustomAvalanchFrequncy.Enabled = false;
+                textBoxCustomAvalanchFrequncy.Invalidate();
+                textBoxCustomAvalanchFrequncy.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox12.Enabled = true;
+                textBoxCustomAvalanchFrequncy.Enabled = true;
             }
         }
 
@@ -225,31 +225,31 @@ namespace WindowsFormsApp2
         public void checkBox16_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox8_CheckedChanged");
-            if (checkBox16.Checked == true)
+            if (DefaultRateOfConsumption.Checked == true)
             {
-                textBox15.Enabled = false;
-                textBox15.Invalidate();
-                textBox15.Refresh();
+                textBoxRateOfConsumption.Enabled = false;
+                textBoxRateOfConsumption.Invalidate();
+                textBoxRateOfConsumption.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox15.Enabled = true;
+                textBoxRateOfConsumption.Enabled = true;
             }
         }
         public void checkBox15_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox8_CheckedChanged");
-            if (checkBox15.Checked == true)
+            if (DefaultAirQuantity.Checked == true)
             {
-                textBox14.Enabled = false;
-                textBox14.Invalidate();
-                textBox14.Refresh();
+                textBoxAirQuantity.Enabled = false;
+                textBoxAirQuantity.Invalidate();
+                textBoxAirQuantity.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox14.Enabled = true;
+                textBoxAirQuantity.Enabled = true;
             }
         }
 
@@ -257,16 +257,16 @@ namespace WindowsFormsApp2
         public void checkBox18_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox18_CheckedChanged");
-            if (checkBox18.Checked == true)
+            if (DefaultPowerDrain.Checked == true)
             {
-                textBox17.Enabled = false;
-                textBox17.Invalidate();
-                textBox17.Refresh();
+                textBoxPowerDrain.Enabled = false;
+                textBoxPowerDrain.Invalidate();
+                textBoxPowerDrain.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox17.Enabled = true;
+                textBoxPowerDrain.Enabled = true;
             }
         }
 
@@ -274,16 +274,16 @@ namespace WindowsFormsApp2
         public void checkBox19_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox19_CheckedChanged");
-            if (checkBox19.Checked == true)
+            if (ActiveCrystalCollection.Checked == true)
             {
-                textBox18.Enabled = true;
-                textBox18.Invalidate();
-                textBox18.Refresh();
+                textBoxCrystalCollection.Enabled = true;
+                textBoxCrystalCollection.Invalidate();
+                textBoxCrystalCollection.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox18.Enabled = false;
+                textBoxCrystalCollection.Enabled = false;
             }
         }
         public void checkBox17_CheckedChanged(object sender, EventArgs e)
@@ -293,31 +293,31 @@ namespace WindowsFormsApp2
         public void checkBox20_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox20_CheckedChanged");
-            if (checkBox17.Checked == true)
+            if (ActiveSpecificBuilding.Checked == true)
             {
-                comboBox2.Enabled = true;
-                comboBox2.Invalidate();
-                comboBox2.Refresh();
+                comboBoxSpecificUnit.Enabled = true;
+                comboBoxSpecificUnit.Invalidate();
+                comboBoxSpecificUnit.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                comboBox2.Enabled = false;
+                comboBoxSpecificUnit.Enabled = false;
             }
         }
         public void checkBox21_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox21_CheckedChanged");
-            if (checkBox21.Checked == true)
+            if (ActiveRescue.Checked == true)
             {
-                comboBox4.Enabled = true;
-                comboBox4.Invalidate();
-                comboBox4.Refresh();
+                comboBoxRescueUnit.Enabled = true;
+                comboBoxRescueUnit.Invalidate();
+                comboBoxRescueUnit.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                comboBox4.Enabled = false;
+                comboBoxRescueUnit.Enabled = false;
             }
         }
         private void groupBox3_Enter_1(object sender, EventArgs e)

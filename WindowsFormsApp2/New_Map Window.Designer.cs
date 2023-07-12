@@ -26,128 +26,128 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.labelPowerDrain = new System.Windows.Forms.Label();
+            this.PowerDrain = new System.Windows.Forms.CheckBox();
+            this.labelAvalanches = new System.Windows.Forms.Label();
+            this.Avalanche = new System.Windows.Forms.CheckBox();
+            this.labelHostileAI = new System.Windows.Forms.Label();
+            this.MapName = new System.Windows.Forms.TextBox();
+            this.Height = new System.Windows.Forms.TextBox();
+            this.labelMapName = new System.Windows.Forms.Label();
+            this.labelWidth = new System.Windows.Forms.Label();
+            this.labelHeight = new System.Windows.Forms.Label();
+            this.Width = new System.Windows.Forms.TextBox();
+            this.TerrainType = new System.Windows.Forms.ComboBox();
+            this.labelTerrainType = new System.Windows.Forms.Label();
+            this.labelErosion = new System.Windows.Forms.Label();
+            this.Erosion = new System.Windows.Forms.CheckBox();
+            this.labelAirThreat = new System.Windows.Forms.Label();
+            this.HostileAI = new System.Windows.Forms.CheckBox();
+            this.AirThreat = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Tabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.LabelDamageToPlayer = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.DefaultPlayerDamage = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomDamage = new System.Windows.Forms.TextBox();
+            this.labelCustomDamage = new System.Windows.Forms.Label();
+            this.LabelDamageFromPlayer = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.DefaultDamageFromPlayer = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomPlayerDamage = new System.Windows.Forms.TextBox();
+            this.labelPlayerCustomDamage = new System.Windows.Forms.Label();
+            this.LabelSpawnChance = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.SpawnChance = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomSpawnChance = new System.Windows.Forms.TextBox();
+            this.labelCustomSpawnChance = new System.Windows.Forms.Label();
+            this.LabelHunger = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.DefaultHunger = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomHunger = new System.Windows.Forms.TextBox();
+            this.labelCustomHunger = new System.Windows.Forms.Label();
+            this.LabelSpeed = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.DefaultSpeed = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomSpeed = new System.Windows.Forms.TextBox();
+            this.labelCustomSpeed = new System.Windows.Forms.Label();
+            this.labelDebrisMultiplyer = new System.Windows.Forms.Label();
+            this.textBoxDebrisMultiplyer = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.DefaultRepairCost = new System.Windows.Forms.CheckBox();
+            this.textBoxRepairCost = new System.Windows.Forms.TextBox();
+            this.labelRepairCost = new System.Windows.Forms.Label();
+            this.LabelErosionSpeed = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.DefaultErosionSpeed = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomErosionSpeed = new System.Windows.Forms.TextBox();
+            this.labelCustomErosionSpeed = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.DefaultAvalancheFrequency = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomAvalanchFrequncy = new System.Windows.Forms.TextBox();
+            this.labelCustomAvalancheFrequency = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.defaultAvalancheDamageToPlayers = new System.Windows.Forms.CheckBox();
+            this.textBoxCustomAvalanchDamage = new System.Windows.Forms.TextBox();
+            this.labelCustomAvalancheDamage = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.DefaultAirQuantity = new System.Windows.Forms.CheckBox();
+            this.textBoxAirQuantity = new System.Windows.Forms.TextBox();
+            this.labelAirQuantity = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.DefaultRateOfConsumption = new System.Windows.Forms.CheckBox();
+            this.textBoxRateOfConsumption = new System.Windows.Forms.TextBox();
+            this.labelRateOfConsumption = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
+            this.DefaultPowerDrain = new System.Windows.Forms.CheckBox();
+            this.textBoxPowerDrain = new System.Windows.Forms.TextBox();
+            this.label21PowerDrain = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.ActiveReachTheTile = new System.Windows.Forms.CheckBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.ActiveRescue = new System.Windows.Forms.CheckBox();
+            this.labelRescueUnit = new System.Windows.Forms.Label();
+            this.comboBoxRescueUnit = new System.Windows.Forms.ComboBox();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ActiveSpecificUnit = new System.Windows.Forms.CheckBox();
+            this.labelSpecificUnit = new System.Windows.Forms.Label();
+            this.comboBoxSpecificUnit = new System.Windows.Forms.ComboBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.ActiveSpecificBuilding = new System.Windows.Forms.CheckBox();
+            this.labelSpecificBuilding = new System.Windows.Forms.Label();
+            this.comboBoxSpecificBuilding = new System.Windows.Forms.ComboBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.ActiveCrystalCollection = new System.Windows.Forms.CheckBox();
+            this.textBoxCrystalCollection = new System.Windows.Forms.TextBox();
+            this.labelCrystalCollection = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -156,24 +156,24 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.Tabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.groupBox11.SuspendLayout();
+            this.LabelDamageToPlayer.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.groupBox12.SuspendLayout();
+            this.LabelDamageFromPlayer.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.groupBox9.SuspendLayout();
+            this.LabelSpawnChance.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.groupBox14.SuspendLayout();
+            this.LabelHunger.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
+            this.LabelSpeed.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.LabelErosionSpeed.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
@@ -212,24 +212,24 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox5, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.labelPowerDrain, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.PowerDrain, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.labelAvalanches, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.Avalanche, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.labelHostileAI, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.MapName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Height, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelMapName, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelWidth, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelHeight, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Width, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.TerrainType, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelTerrainType, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelErosion, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.Erosion, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.labelAirThreat, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.HostileAI, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.AirThreat, 1, 7);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
@@ -245,171 +245,171 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(233, 221);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label9
+            // labelPowerDrain
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 185);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 13);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Power Drain";
+            this.labelPowerDrain.AutoSize = true;
+            this.labelPowerDrain.Location = new System.Drawing.Point(3, 185);
+            this.labelPowerDrain.Name = "labelPowerDrain";
+            this.labelPowerDrain.Size = new System.Drawing.Size(65, 13);
+            this.labelPowerDrain.TabIndex = 16;
+            this.labelPowerDrain.Text = "Power Drain";
             // 
-            // checkBox4
+            // PowerDrain
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(79, 168);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.PowerDrain.AutoSize = true;
+            this.PowerDrain.Location = new System.Drawing.Point(79, 188);
+            this.PowerDrain.Name = "PowerDrain";
+            this.PowerDrain.Size = new System.Drawing.Size(15, 14);
+            this.PowerDrain.TabIndex = 18;
+            this.PowerDrain.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // labelAvalanches
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 145);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Avalanches";
+            this.labelAvalanches.AutoSize = true;
+            this.labelAvalanches.Location = new System.Drawing.Point(3, 145);
+            this.labelAvalanches.Name = "labelAvalanches";
+            this.labelAvalanches.Size = new System.Drawing.Size(63, 13);
+            this.labelAvalanches.TabIndex = 13;
+            this.labelAvalanches.Text = "Avalanches";
             // 
-            // checkBox5
+            // Avalanche
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(79, 188);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 18;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.Avalanche.AutoSize = true;
+            this.Avalanche.Location = new System.Drawing.Point(79, 148);
+            this.Avalanche.Name = "Avalanche";
+            this.Avalanche.Size = new System.Drawing.Size(15, 14);
+            this.Avalanche.TabIndex = 14;
+            this.Avalanche.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // labelHostileAI
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(79, 148);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 14;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.labelHostileAI.AutoSize = true;
+            this.labelHostileAI.Location = new System.Drawing.Point(3, 105);
+            this.labelHostileAI.Name = "labelHostileAI";
+            this.labelHostileAI.Size = new System.Drawing.Size(55, 13);
+            this.labelHostileAI.TabIndex = 9;
+            this.labelHostileAI.Text = "Hostile AI:";
+            this.labelHostileAI.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label5
+            // MapName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Hostile AI:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.MapName.AcceptsReturn = true;
+            this.MapName.Location = new System.Drawing.Point(79, 3);
+            this.MapName.Name = "MapName";
+            this.MapName.Size = new System.Drawing.Size(138, 20);
+            this.MapName.TabIndex = 0;
             // 
-            // textBox1
+            // Height
             // 
-            this.textBox1.AcceptsReturn = true;
-            this.textBox1.Location = new System.Drawing.Point(79, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 20);
-            this.textBox1.TabIndex = 0;
+            this.Height.Location = new System.Drawing.Point(79, 55);
+            this.Height.Name = "Height";
+            this.Height.Size = new System.Drawing.Size(138, 20);
+            this.Height.TabIndex = 2;
             // 
-            // textBox3
+            // labelMapName
             // 
-            this.textBox3.Location = new System.Drawing.Point(79, 55);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 20);
-            this.textBox3.TabIndex = 2;
+            this.labelMapName.AutoSize = true;
+            this.labelMapName.Location = new System.Drawing.Point(3, 0);
+            this.labelMapName.Name = "labelMapName";
+            this.labelMapName.Size = new System.Drawing.Size(59, 13);
+            this.labelMapName.TabIndex = 4;
+            this.labelMapName.Text = "Map Name";
+            this.labelMapName.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // label1
+            // labelWidth
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Map Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.labelWidth.AutoSize = true;
+            this.labelWidth.Location = new System.Drawing.Point(3, 26);
+            this.labelWidth.Name = "labelWidth";
+            this.labelWidth.Size = new System.Drawing.Size(48, 13);
+            this.labelWidth.TabIndex = 5;
+            this.labelWidth.Text = "Width(X)";
             // 
-            // label2
+            // labelHeight
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Width(X)";
+            this.labelHeight.AutoSize = true;
+            this.labelHeight.Location = new System.Drawing.Point(3, 52);
+            this.labelHeight.Name = "labelHeight";
+            this.labelHeight.Size = new System.Drawing.Size(51, 13);
+            this.labelHeight.TabIndex = 6;
+            this.labelHeight.Text = "Height(Y)";
             // 
-            // label3
+            // Width
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Height(Y)";
+            this.Width.Location = new System.Drawing.Point(79, 29);
+            this.Width.Name = "Width";
+            this.Width.Size = new System.Drawing.Size(138, 20);
+            this.Width.TabIndex = 3;
             // 
-            // textBox2
+            // TerrainType
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.TerrainType.FormattingEnabled = true;
+            this.TerrainType.Items.AddRange(new object[] {
             "Rock",
             "Lava",
             "Ice"});
-            this.comboBox1.Location = new System.Drawing.Point(79, 81);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 21);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.TerrainType.Location = new System.Drawing.Point(79, 81);
+            this.TerrainType.Name = "TerrainType";
+            this.TerrainType.Size = new System.Drawing.Size(138, 21);
+            this.TerrainType.TabIndex = 7;
+            this.TerrainType.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label4
+            // labelTerrainType
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Terrain Type:";
+            this.labelTerrainType.AutoSize = true;
+            this.labelTerrainType.Location = new System.Drawing.Point(3, 78);
+            this.labelTerrainType.Name = "labelTerrainType";
+            this.labelTerrainType.Size = new System.Drawing.Size(70, 13);
+            this.labelTerrainType.TabIndex = 8;
+            this.labelTerrainType.Text = "Terrain Type:";
             // 
-            // label6
+            // labelErosion
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Erosion";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.labelErosion.AutoSize = true;
+            this.labelErosion.Location = new System.Drawing.Point(3, 125);
+            this.labelErosion.Name = "labelErosion";
+            this.labelErosion.Size = new System.Drawing.Size(42, 13);
+            this.labelErosion.TabIndex = 11;
+            this.labelErosion.Text = "Erosion";
+            this.labelErosion.Click += new System.EventHandler(this.label6_Click);
             // 
-            // checkBox2
+            // Erosion
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(79, 128);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 12;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.Erosion.AutoSize = true;
+            this.Erosion.Location = new System.Drawing.Point(79, 128);
+            this.Erosion.Name = "Erosion";
+            this.Erosion.Size = new System.Drawing.Size(15, 14);
+            this.Erosion.TabIndex = 12;
+            this.Erosion.UseVisualStyleBackColor = true;
+            this.Erosion.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // label8
+            // labelAirThreat
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 165);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Air Threat";
+            this.labelAirThreat.AutoSize = true;
+            this.labelAirThreat.Location = new System.Drawing.Point(3, 165);
+            this.labelAirThreat.Name = "labelAirThreat";
+            this.labelAirThreat.Size = new System.Drawing.Size(53, 13);
+            this.labelAirThreat.TabIndex = 15;
+            this.labelAirThreat.Text = "Air Threat";
             // 
-            // checkBox1
+            // HostileAI
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(79, 108);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.HostileAI.AutoSize = true;
+            this.HostileAI.Location = new System.Drawing.Point(79, 108);
+            this.HostileAI.Name = "HostileAI";
+            this.HostileAI.Size = new System.Drawing.Size(15, 14);
+            this.HostileAI.TabIndex = 10;
+            this.HostileAI.UseVisualStyleBackColor = true;
+            this.HostileAI.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // AirThreat
+            // 
+            this.AirThreat.AutoSize = true;
+            this.AirThreat.Location = new System.Drawing.Point(79, 168);
+            this.AirThreat.Name = "AirThreat";
+            this.AirThreat.Size = new System.Drawing.Size(15, 14);
+            this.AirThreat.TabIndex = 17;
+            this.AirThreat.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
             // 
@@ -432,7 +432,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.tabControl1);
+            this.groupBox2.Controls.Add(this.Tabs);
             this.groupBox2.Location = new System.Drawing.Point(252, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(506, 793);
@@ -441,20 +441,20 @@
             this.groupBox2.Text = "Settings";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // tabControl1
+            // Tabs
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Location = new System.Drawing.Point(6, 19);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(492, 363);
-            this.tabControl1.TabIndex = 1;
+            this.Tabs.Controls.Add(this.tabPage1);
+            this.Tabs.Controls.Add(this.tabPage2);
+            this.Tabs.Controls.Add(this.tabPage3);
+            this.Tabs.Controls.Add(this.tabPage4);
+            this.Tabs.Controls.Add(this.tabPage5);
+            this.Tabs.Controls.Add(this.tabPage6);
+            this.Tabs.Controls.Add(this.tabPage7);
+            this.Tabs.Location = new System.Drawing.Point(6, 19);
+            this.Tabs.Name = "Tabs";
+            this.Tabs.SelectedIndex = 0;
+            this.Tabs.Size = new System.Drawing.Size(492, 363);
+            this.Tabs.TabIndex = 1;
             // 
             // tabPage1
             // 
@@ -472,11 +472,11 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.groupBox11, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.groupBox12, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.groupBox9, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.groupBox14, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.groupBox10, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.LabelDamageToPlayer, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.LabelDamageFromPlayer, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.LabelSpawnChance, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.LabelHunger, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.LabelSpeed, 0, 3);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(-4, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 6;
@@ -489,25 +489,25 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(470, 387);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // groupBox11
+            // LabelDamageToPlayer
             // 
-            this.groupBox11.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox11.Location = new System.Drawing.Point(3, 3);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(464, 55);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Damage to Player";
+            this.LabelDamageToPlayer.Controls.Add(this.tableLayoutPanel4);
+            this.LabelDamageToPlayer.Location = new System.Drawing.Point(3, 3);
+            this.LabelDamageToPlayer.Name = "LabelDamageToPlayer";
+            this.LabelDamageToPlayer.Size = new System.Drawing.Size(464, 55);
+            this.LabelDamageToPlayer.TabIndex = 0;
+            this.LabelDamageToPlayer.TabStop = false;
+            this.LabelDamageToPlayer.Text = "Damage to Player";
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel4.Controls.Add(this.checkBox6, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox4, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label10, 1, 0);
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel4.Controls.Add(this.DefaultPlayerDamage, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.textBoxCustomDamage, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.labelCustomDamage, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -516,57 +516,57 @@
             this.tableLayoutPanel4.TabIndex = 0;
             this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
-            // checkBox6
+            // DefaultPlayerDamage
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Checked = true;
-            this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox6.Location = new System.Drawing.Point(3, 3);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(60, 17);
-            this.checkBox6.TabIndex = 0;
-            this.checkBox6.Text = "Default";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            this.DefaultPlayerDamage.AutoSize = true;
+            this.DefaultPlayerDamage.Checked = true;
+            this.DefaultPlayerDamage.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultPlayerDamage.Location = new System.Drawing.Point(3, 3);
+            this.DefaultPlayerDamage.Name = "DefaultPlayerDamage";
+            this.DefaultPlayerDamage.Size = new System.Drawing.Size(60, 17);
+            this.DefaultPlayerDamage.TabIndex = 0;
+            this.DefaultPlayerDamage.Text = "Default";
+            this.DefaultPlayerDamage.UseVisualStyleBackColor = true;
+            this.DefaultPlayerDamage.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // textBox4
+            // textBoxCustomDamage
             // 
-            this.textBox4.AcceptsReturn = true;
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(187, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(233, 20);
-            this.textBox4.TabIndex = 1;
+            this.textBoxCustomDamage.AcceptsReturn = true;
+            this.textBoxCustomDamage.Enabled = false;
+            this.textBoxCustomDamage.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomDamage.Name = "textBoxCustomDamage";
+            this.textBoxCustomDamage.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomDamage.TabIndex = 1;
             // 
-            // label10
+            // labelCustomDamage
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(91, 5);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Custom Damage:";
+            this.labelCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomDamage.AutoSize = true;
+            this.labelCustomDamage.Location = new System.Drawing.Point(90, 5);
+            this.labelCustomDamage.Name = "labelCustomDamage";
+            this.labelCustomDamage.Size = new System.Drawing.Size(89, 13);
+            this.labelCustomDamage.TabIndex = 2;
+            this.labelCustomDamage.Text = "Custom Damage:";
             // 
-            // groupBox12
+            // LabelDamageFromPlayer
             // 
-            this.groupBox12.Controls.Add(this.tableLayoutPanel5);
-            this.groupBox12.Location = new System.Drawing.Point(3, 64);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(464, 56);
-            this.groupBox12.TabIndex = 1;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Damage from Player";
+            this.LabelDamageFromPlayer.Controls.Add(this.tableLayoutPanel5);
+            this.LabelDamageFromPlayer.Location = new System.Drawing.Point(3, 64);
+            this.LabelDamageFromPlayer.Name = "LabelDamageFromPlayer";
+            this.LabelDamageFromPlayer.Size = new System.Drawing.Size(464, 56);
+            this.LabelDamageFromPlayer.TabIndex = 1;
+            this.LabelDamageFromPlayer.TabStop = false;
+            this.LabelDamageFromPlayer.Text = "Damage from Player";
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel5.Controls.Add(this.checkBox7, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label13, 1, 0);
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel5.Controls.Add(this.DefaultDamageFromPlayer, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.textBoxCustomPlayerDamage, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.labelPlayerCustomDamage, 1, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(7, 13);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -574,57 +574,57 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(451, 27);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
-            // checkBox7
+            // DefaultDamageFromPlayer
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Checked = true;
-            this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox7.Location = new System.Drawing.Point(3, 3);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(60, 17);
-            this.checkBox7.TabIndex = 0;
-            this.checkBox7.Text = "Default";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
+            this.DefaultDamageFromPlayer.AutoSize = true;
+            this.DefaultDamageFromPlayer.Checked = true;
+            this.DefaultDamageFromPlayer.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultDamageFromPlayer.Location = new System.Drawing.Point(3, 3);
+            this.DefaultDamageFromPlayer.Name = "DefaultDamageFromPlayer";
+            this.DefaultDamageFromPlayer.Size = new System.Drawing.Size(60, 17);
+            this.DefaultDamageFromPlayer.TabIndex = 0;
+            this.DefaultDamageFromPlayer.Text = "Default";
+            this.DefaultDamageFromPlayer.UseVisualStyleBackColor = true;
+            this.DefaultDamageFromPlayer.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
-            // textBox5
+            // textBoxCustomPlayerDamage
             // 
-            this.textBox5.AcceptsReturn = true;
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(187, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(233, 20);
-            this.textBox5.TabIndex = 1;
+            this.textBoxCustomPlayerDamage.AcceptsReturn = true;
+            this.textBoxCustomPlayerDamage.Enabled = false;
+            this.textBoxCustomPlayerDamage.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomPlayerDamage.Name = "textBoxCustomPlayerDamage";
+            this.textBoxCustomPlayerDamage.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomPlayerDamage.TabIndex = 1;
             // 
-            // label13
+            // labelPlayerCustomDamage
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(91, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(90, 13);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Custom Damage:";
+            this.labelPlayerCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPlayerCustomDamage.AutoSize = true;
+            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(90, 7);
+            this.labelPlayerCustomDamage.Name = "labelPlayerCustomDamage";
+            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(89, 13);
+            this.labelPlayerCustomDamage.TabIndex = 2;
+            this.labelPlayerCustomDamage.Text = "Custom Damage:";
             // 
-            // groupBox9
+            // LabelSpawnChance
             // 
-            this.groupBox9.Controls.Add(this.tableLayoutPanel8);
-            this.groupBox9.Location = new System.Drawing.Point(3, 285);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(464, 56);
-            this.groupBox9.TabIndex = 1;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Spawn Chance";
+            this.LabelSpawnChance.Controls.Add(this.tableLayoutPanel8);
+            this.LabelSpawnChance.Location = new System.Drawing.Point(3, 285);
+            this.LabelSpawnChance.Name = "LabelSpawnChance";
+            this.LabelSpawnChance.Size = new System.Drawing.Size(464, 56);
+            this.LabelSpawnChance.TabIndex = 1;
+            this.LabelSpawnChance.TabStop = false;
+            this.LabelSpawnChance.Text = "Spawn Chance";
             // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel8.Controls.Add(this.checkBox11, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.textBox8, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.label22, 1, 0);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel8.Controls.Add(this.SpawnChance, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.textBoxCustomSpawnChance, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.labelCustomSpawnChance, 1, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(7, 13);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -632,58 +632,58 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(451, 30);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
-            // checkBox11
+            // SpawnChance
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Checked = true;
-            this.checkBox11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox11.Location = new System.Drawing.Point(3, 3);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(60, 17);
-            this.checkBox11.TabIndex = 0;
-            this.checkBox11.Text = "Default";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            this.SpawnChance.AutoSize = true;
+            this.SpawnChance.Checked = true;
+            this.SpawnChance.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SpawnChance.Location = new System.Drawing.Point(3, 3);
+            this.SpawnChance.Name = "SpawnChance";
+            this.SpawnChance.Size = new System.Drawing.Size(60, 17);
+            this.SpawnChance.TabIndex = 0;
+            this.SpawnChance.Text = "Default";
+            this.SpawnChance.UseVisualStyleBackColor = true;
+            this.SpawnChance.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
-            // textBox8
+            // textBoxCustomSpawnChance
             // 
-            this.textBox8.AcceptsReturn = true;
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(187, 3);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(233, 20);
-            this.textBox8.TabIndex = 1;
+            this.textBoxCustomSpawnChance.AcceptsReturn = true;
+            this.textBoxCustomSpawnChance.Enabled = false;
+            this.textBoxCustomSpawnChance.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomSpawnChance.Name = "textBoxCustomSpawnChance";
+            this.textBoxCustomSpawnChance.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomSpawnChance.TabIndex = 1;
             // 
-            // label22
+            // labelCustomSpawnChance
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(91, 8);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(90, 13);
-            this.label22.TabIndex = 2;
-            this.label22.Text = "Custom Damage:";
+            this.labelCustomSpawnChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomSpawnChance.AutoSize = true;
+            this.labelCustomSpawnChance.Location = new System.Drawing.Point(90, 8);
+            this.labelCustomSpawnChance.Name = "labelCustomSpawnChance";
+            this.labelCustomSpawnChance.Size = new System.Drawing.Size(89, 13);
+            this.labelCustomSpawnChance.TabIndex = 2;
+            this.labelCustomSpawnChance.Text = "Custom Chance";
             // 
-            // groupBox14
+            // LabelHunger
             // 
-            this.groupBox14.Controls.Add(this.tableLayoutPanel9);
-            this.groupBox14.Location = new System.Drawing.Point(3, 223);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(462, 56);
-            this.groupBox14.TabIndex = 3;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Hunger";
-            this.groupBox14.Enter += new System.EventHandler(this.groupBox14_Enter);
+            this.LabelHunger.Controls.Add(this.tableLayoutPanel9);
+            this.LabelHunger.Location = new System.Drawing.Point(3, 223);
+            this.LabelHunger.Name = "LabelHunger";
+            this.LabelHunger.Size = new System.Drawing.Size(462, 56);
+            this.LabelHunger.TabIndex = 3;
+            this.LabelHunger.TabStop = false;
+            this.LabelHunger.Text = "Hunger";
+            this.LabelHunger.Enter += new System.EventHandler(this.groupBox14_Enter);
             // 
             // tableLayoutPanel9
             // 
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel9.Controls.Add(this.checkBox10, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.textBox9, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label25, 1, 0);
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel9.Controls.Add(this.DefaultHunger, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.textBoxCustomHunger, 2, 0);
+            this.tableLayoutPanel9.Controls.Add(this.labelCustomHunger, 1, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(7, 18);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
@@ -691,59 +691,59 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(451, 27);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
-            // checkBox10
+            // DefaultHunger
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Checked = true;
-            this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox10.Location = new System.Drawing.Point(3, 3);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(60, 17);
-            this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "Default";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
+            this.DefaultHunger.AutoSize = true;
+            this.DefaultHunger.Checked = true;
+            this.DefaultHunger.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultHunger.Location = new System.Drawing.Point(3, 3);
+            this.DefaultHunger.Name = "DefaultHunger";
+            this.DefaultHunger.Size = new System.Drawing.Size(60, 17);
+            this.DefaultHunger.TabIndex = 0;
+            this.DefaultHunger.Text = "Default";
+            this.DefaultHunger.UseVisualStyleBackColor = true;
+            this.DefaultHunger.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
-            // textBox9
+            // textBoxCustomHunger
             // 
-            this.textBox9.AcceptsReturn = true;
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(187, 3);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(233, 20);
-            this.textBox9.TabIndex = 1;
+            this.textBoxCustomHunger.AcceptsReturn = true;
+            this.textBoxCustomHunger.Enabled = false;
+            this.textBoxCustomHunger.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomHunger.Name = "textBoxCustomHunger";
+            this.textBoxCustomHunger.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomHunger.TabIndex = 1;
             // 
-            // label25
+            // labelCustomHunger
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(91, 7);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(90, 13);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Custom Hunger:";
+            this.labelCustomHunger.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomHunger.AutoSize = true;
+            this.labelCustomHunger.Location = new System.Drawing.Point(90, 7);
+            this.labelCustomHunger.Name = "labelCustomHunger";
+            this.labelCustomHunger.Size = new System.Drawing.Size(89, 13);
+            this.labelCustomHunger.TabIndex = 2;
+            this.labelCustomHunger.Text = "Custom Hunger:";
             // 
-            // groupBox10
+            // LabelSpeed
             // 
-            this.groupBox10.Controls.Add(this.tableLayoutPanel7);
-            this.groupBox10.Location = new System.Drawing.Point(3, 126);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(464, 91);
-            this.groupBox10.TabIndex = 1;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Speed";
+            this.LabelSpeed.Controls.Add(this.tableLayoutPanel7);
+            this.LabelSpeed.Location = new System.Drawing.Point(3, 126);
+            this.LabelSpeed.Name = "LabelSpeed";
+            this.LabelSpeed.Size = new System.Drawing.Size(464, 91);
+            this.LabelSpeed.TabIndex = 1;
+            this.LabelSpeed.TabStop = false;
+            this.LabelSpeed.Text = "Speed";
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel7.Controls.Add(this.checkBox9, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox6, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label18, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label19, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.textBox7, 2, 1);
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel7.Controls.Add(this.DefaultSpeed, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxCustomSpeed, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.labelCustomSpeed, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.labelDebrisMultiplyer, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.textBoxDebrisMultiplyer, 2, 1);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
@@ -752,57 +752,57 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(451, 64);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
-            // checkBox9
+            // DefaultSpeed
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Checked = true;
-            this.checkBox9.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox9.Location = new System.Drawing.Point(3, 3);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(60, 17);
-            this.checkBox9.TabIndex = 0;
-            this.checkBox9.Text = "Default";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            this.DefaultSpeed.AutoSize = true;
+            this.DefaultSpeed.Checked = true;
+            this.DefaultSpeed.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultSpeed.Location = new System.Drawing.Point(3, 3);
+            this.DefaultSpeed.Name = "DefaultSpeed";
+            this.DefaultSpeed.Size = new System.Drawing.Size(60, 17);
+            this.DefaultSpeed.TabIndex = 0;
+            this.DefaultSpeed.Text = "Default";
+            this.DefaultSpeed.UseVisualStyleBackColor = true;
+            this.DefaultSpeed.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
-            // textBox6
+            // textBoxCustomSpeed
             // 
-            this.textBox6.AcceptsReturn = true;
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(187, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(233, 20);
-            this.textBox6.TabIndex = 1;
+            this.textBoxCustomSpeed.AcceptsReturn = true;
+            this.textBoxCustomSpeed.Enabled = false;
+            this.textBoxCustomSpeed.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomSpeed.Name = "textBoxCustomSpeed";
+            this.textBoxCustomSpeed.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomSpeed.TabIndex = 1;
             // 
-            // label18
+            // labelCustomSpeed
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(91, 9);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(90, 13);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Custom Speed:";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.labelCustomSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomSpeed.AutoSize = true;
+            this.labelCustomSpeed.Location = new System.Drawing.Point(90, 9);
+            this.labelCustomSpeed.Name = "labelCustomSpeed";
+            this.labelCustomSpeed.Size = new System.Drawing.Size(89, 13);
+            this.labelCustomSpeed.TabIndex = 2;
+            this.labelCustomSpeed.Text = "Custom Speed:";
+            this.labelCustomSpeed.Click += new System.EventHandler(this.label18_Click);
             // 
-            // label19
+            // labelDebrisMultiplyer
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(91, 41);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(90, 13);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "Debris Multiplier:";
+            this.labelDebrisMultiplyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelDebrisMultiplyer.AutoSize = true;
+            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(90, 41);
+            this.labelDebrisMultiplyer.Name = "labelDebrisMultiplyer";
+            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(89, 13);
+            this.labelDebrisMultiplyer.TabIndex = 3;
+            this.labelDebrisMultiplyer.Text = "Debris Multiplier:";
             // 
-            // textBox7
+            // textBoxDebrisMultiplyer
             // 
-            this.textBox7.AcceptsReturn = true;
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(187, 35);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(233, 20);
-            this.textBox7.TabIndex = 4;
+            this.textBoxDebrisMultiplyer.AcceptsReturn = true;
+            this.textBoxDebrisMultiplyer.Enabled = false;
+            this.textBoxDebrisMultiplyer.Location = new System.Drawing.Point(185, 35);
+            this.textBoxDebrisMultiplyer.Name = "textBoxDebrisMultiplyer";
+            this.textBoxDebrisMultiplyer.Size = new System.Drawing.Size(233, 20);
+            this.textBoxDebrisMultiplyer.TabIndex = 4;
             // 
             // tabPage2
             // 
@@ -821,7 +821,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.70712F));
             this.tableLayoutPanel2.Controls.Add(this.groupBox6, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LabelErosionSpeed, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -845,10 +845,10 @@
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel13.Controls.Add(this.checkBox14, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.textBox13, 2, 0);
-            this.tableLayoutPanel13.Controls.Add(this.label15, 1, 0);
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel13.Controls.Add(this.DefaultRepairCost, 0, 0);
+            this.tableLayoutPanel13.Controls.Add(this.textBoxRepairCost, 2, 0);
+            this.tableLayoutPanel13.Controls.Add(this.labelRepairCost, 1, 0);
             this.tableLayoutPanel13.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
@@ -856,58 +856,58 @@
             this.tableLayoutPanel13.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel13.TabIndex = 0;
             // 
-            // checkBox14
+            // DefaultRepairCost
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Checked = true;
-            this.checkBox14.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox14.Location = new System.Drawing.Point(3, 3);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(60, 17);
-            this.checkBox14.TabIndex = 0;
-            this.checkBox14.Text = "Default";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
+            this.DefaultRepairCost.AutoSize = true;
+            this.DefaultRepairCost.Checked = true;
+            this.DefaultRepairCost.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultRepairCost.Location = new System.Drawing.Point(3, 3);
+            this.DefaultRepairCost.Name = "DefaultRepairCost";
+            this.DefaultRepairCost.Size = new System.Drawing.Size(60, 17);
+            this.DefaultRepairCost.TabIndex = 0;
+            this.DefaultRepairCost.Text = "Default";
+            this.DefaultRepairCost.UseVisualStyleBackColor = true;
+            this.DefaultRepairCost.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
-            // textBox13
+            // textBoxRepairCost
             // 
-            this.textBox13.AcceptsReturn = true;
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(187, 3);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(233, 20);
-            this.textBox13.TabIndex = 1;
+            this.textBoxRepairCost.AcceptsReturn = true;
+            this.textBoxRepairCost.Enabled = false;
+            this.textBoxRepairCost.Location = new System.Drawing.Point(185, 3);
+            this.textBoxRepairCost.Name = "textBoxRepairCost";
+            this.textBoxRepairCost.Size = new System.Drawing.Size(233, 20);
+            this.textBoxRepairCost.TabIndex = 1;
             // 
-            // label15
+            // labelRepairCost
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(91, 5);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(90, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Repair Cost:";
+            this.labelRepairCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelRepairCost.AutoSize = true;
+            this.labelRepairCost.Location = new System.Drawing.Point(90, 5);
+            this.labelRepairCost.Name = "labelRepairCost";
+            this.labelRepairCost.Size = new System.Drawing.Size(89, 13);
+            this.labelRepairCost.TabIndex = 2;
+            this.labelRepairCost.Text = "Repair Cost:";
             // 
-            // groupBox3
+            // LabelErosionSpeed
             // 
-            this.groupBox3.Controls.Add(this.tableLayoutPanel6);
-            this.groupBox3.Location = new System.Drawing.Point(3, 3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(464, 49);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Erosion Speed";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter_1);
+            this.LabelErosionSpeed.Controls.Add(this.tableLayoutPanel6);
+            this.LabelErosionSpeed.Location = new System.Drawing.Point(3, 3);
+            this.LabelErosionSpeed.Name = "LabelErosionSpeed";
+            this.LabelErosionSpeed.Size = new System.Drawing.Size(464, 49);
+            this.LabelErosionSpeed.TabIndex = 1;
+            this.LabelErosionSpeed.TabStop = false;
+            this.LabelErosionSpeed.Text = "Erosion Speed";
+            this.LabelErosionSpeed.Enter += new System.EventHandler(this.groupBox3_Enter_1);
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel6.Controls.Add(this.checkBox8, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBox10, 2, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label11, 1, 0);
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel6.Controls.Add(this.DefaultErosionSpeed, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.textBoxCustomErosionSpeed, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.labelCustomErosionSpeed, 1, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
@@ -915,37 +915,37 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
-            // checkBox8
+            // DefaultErosionSpeed
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Checked = true;
-            this.checkBox8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox8.Location = new System.Drawing.Point(3, 3);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(60, 17);
-            this.checkBox8.TabIndex = 0;
-            this.checkBox8.Text = "Default";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
+            this.DefaultErosionSpeed.AutoSize = true;
+            this.DefaultErosionSpeed.Checked = true;
+            this.DefaultErosionSpeed.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultErosionSpeed.Location = new System.Drawing.Point(3, 3);
+            this.DefaultErosionSpeed.Name = "DefaultErosionSpeed";
+            this.DefaultErosionSpeed.Size = new System.Drawing.Size(60, 17);
+            this.DefaultErosionSpeed.TabIndex = 0;
+            this.DefaultErosionSpeed.Text = "Default";
+            this.DefaultErosionSpeed.UseVisualStyleBackColor = true;
+            this.DefaultErosionSpeed.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
-            // textBox10
+            // textBoxCustomErosionSpeed
             // 
-            this.textBox10.AcceptsReturn = true;
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(187, 3);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(233, 20);
-            this.textBox10.TabIndex = 1;
+            this.textBoxCustomErosionSpeed.AcceptsReturn = true;
+            this.textBoxCustomErosionSpeed.Enabled = false;
+            this.textBoxCustomErosionSpeed.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomErosionSpeed.Name = "textBoxCustomErosionSpeed";
+            this.textBoxCustomErosionSpeed.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomErosionSpeed.TabIndex = 1;
             // 
-            // label11
+            // labelCustomErosionSpeed
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(91, 5);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 13);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Custom Speed:";
+            this.labelCustomErosionSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomErosionSpeed.AutoSize = true;
+            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(90, 5);
+            this.labelCustomErosionSpeed.Name = "labelCustomErosionSpeed";
+            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(89, 13);
+            this.labelCustomErosionSpeed.TabIndex = 2;
+            this.labelCustomErosionSpeed.Text = "Custom Speed:";
             // 
             // tabPage3
             // 
@@ -987,10 +987,10 @@
             this.tableLayoutPanel12.ColumnCount = 3;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.17767F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.82233F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 253F));
-            this.tableLayoutPanel12.Controls.Add(this.checkBox13, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.textBox12, 2, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label14, 1, 0);
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
+            this.tableLayoutPanel12.Controls.Add(this.DefaultAvalancheFrequency, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.textBoxCustomAvalanchFrequncy, 2, 0);
+            this.tableLayoutPanel12.Controls.Add(this.labelCustomAvalancheFrequency, 1, 0);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
@@ -998,37 +998,37 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel12.TabIndex = 0;
             // 
-            // checkBox13
+            // DefaultAvalancheFrequency
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Checked = true;
-            this.checkBox13.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox13.Location = new System.Drawing.Point(3, 3);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(60, 17);
-            this.checkBox13.TabIndex = 0;
-            this.checkBox13.Text = "Default";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
+            this.DefaultAvalancheFrequency.AutoSize = true;
+            this.DefaultAvalancheFrequency.Checked = true;
+            this.DefaultAvalancheFrequency.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultAvalancheFrequency.Location = new System.Drawing.Point(3, 3);
+            this.DefaultAvalancheFrequency.Name = "DefaultAvalancheFrequency";
+            this.DefaultAvalancheFrequency.Size = new System.Drawing.Size(60, 17);
+            this.DefaultAvalancheFrequency.TabIndex = 0;
+            this.DefaultAvalancheFrequency.Text = "Default";
+            this.DefaultAvalancheFrequency.UseVisualStyleBackColor = true;
+            this.DefaultAvalancheFrequency.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
-            // textBox12
+            // textBoxCustomAvalanchFrequncy
             // 
-            this.textBox12.AcceptsReturn = true;
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(200, 3);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(233, 20);
-            this.textBox12.TabIndex = 1;
+            this.textBoxCustomAvalanchFrequncy.AcceptsReturn = true;
+            this.textBoxCustomAvalanchFrequncy.Enabled = false;
+            this.textBoxCustomAvalanchFrequncy.Location = new System.Drawing.Point(198, 3);
+            this.textBoxCustomAvalanchFrequncy.Name = "textBoxCustomAvalanchFrequncy";
+            this.textBoxCustomAvalanchFrequncy.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomAvalanchFrequncy.TabIndex = 1;
             // 
-            // label14
+            // labelCustomAvalancheFrequency
             // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(92, 5);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(102, 13);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Custom Frequency:";
+            this.labelCustomAvalancheFrequency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomAvalancheFrequency.AutoSize = true;
+            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(91, 5);
+            this.labelCustomAvalancheFrequency.Name = "labelCustomAvalancheFrequency";
+            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(101, 13);
+            this.labelCustomAvalancheFrequency.TabIndex = 2;
+            this.labelCustomAvalancheFrequency.Text = "Custom Frequency:";
             // 
             // groupBox4
             // 
@@ -1045,10 +1045,10 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel11.Controls.Add(this.checkBox12, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.textBox11, 2, 0);
-            this.tableLayoutPanel11.Controls.Add(this.label12, 1, 0);
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel11.Controls.Add(this.defaultAvalancheDamageToPlayers, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.textBoxCustomAvalanchDamage, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.labelCustomAvalancheDamage, 1, 0);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
@@ -1056,37 +1056,37 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
-            // checkBox12
+            // defaultAvalancheDamageToPlayers
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Checked = true;
-            this.checkBox12.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox12.Location = new System.Drawing.Point(3, 3);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(60, 17);
-            this.checkBox12.TabIndex = 0;
-            this.checkBox12.Text = "Default";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            this.defaultAvalancheDamageToPlayers.AutoSize = true;
+            this.defaultAvalancheDamageToPlayers.Checked = true;
+            this.defaultAvalancheDamageToPlayers.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.defaultAvalancheDamageToPlayers.Location = new System.Drawing.Point(3, 3);
+            this.defaultAvalancheDamageToPlayers.Name = "defaultAvalancheDamageToPlayers";
+            this.defaultAvalancheDamageToPlayers.Size = new System.Drawing.Size(60, 17);
+            this.defaultAvalancheDamageToPlayers.TabIndex = 0;
+            this.defaultAvalancheDamageToPlayers.Text = "Default";
+            this.defaultAvalancheDamageToPlayers.UseVisualStyleBackColor = true;
+            this.defaultAvalancheDamageToPlayers.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
-            // textBox11
+            // textBoxCustomAvalanchDamage
             // 
-            this.textBox11.AcceptsReturn = true;
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(187, 3);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(233, 20);
-            this.textBox11.TabIndex = 1;
+            this.textBoxCustomAvalanchDamage.AcceptsReturn = true;
+            this.textBoxCustomAvalanchDamage.Enabled = false;
+            this.textBoxCustomAvalanchDamage.Location = new System.Drawing.Point(185, 3);
+            this.textBoxCustomAvalanchDamage.Name = "textBoxCustomAvalanchDamage";
+            this.textBoxCustomAvalanchDamage.Size = new System.Drawing.Size(233, 20);
+            this.textBoxCustomAvalanchDamage.TabIndex = 1;
             // 
-            // label12
+            // labelCustomAvalancheDamage
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(91, 5);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(90, 13);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Custom Damage:";
+            this.labelCustomAvalancheDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCustomAvalancheDamage.AutoSize = true;
+            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(90, 5);
+            this.labelCustomAvalancheDamage.Name = "labelCustomAvalancheDamage";
+            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(89, 13);
+            this.labelCustomAvalancheDamage.TabIndex = 2;
+            this.labelCustomAvalancheDamage.Text = "Custom Damage:";
             // 
             // tabPage4
             // 
@@ -1128,10 +1128,10 @@
             this.tableLayoutPanel15.ColumnCount = 3;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.10695F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.89305F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 259F));
-            this.tableLayoutPanel15.Controls.Add(this.checkBox15, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.textBox14, 2, 0);
-            this.tableLayoutPanel15.Controls.Add(this.label16, 1, 0);
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 261F));
+            this.tableLayoutPanel15.Controls.Add(this.DefaultAirQuantity, 0, 0);
+            this.tableLayoutPanel15.Controls.Add(this.textBoxAirQuantity, 2, 0);
+            this.tableLayoutPanel15.Controls.Add(this.labelAirQuantity, 1, 0);
             this.tableLayoutPanel15.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
@@ -1139,37 +1139,37 @@
             this.tableLayoutPanel15.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel15.TabIndex = 0;
             // 
-            // checkBox15
+            // DefaultAirQuantity
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Checked = true;
-            this.checkBox15.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox15.Location = new System.Drawing.Point(3, 3);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(60, 17);
-            this.checkBox15.TabIndex = 0;
-            this.checkBox15.Text = "Default";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
+            this.DefaultAirQuantity.AutoSize = true;
+            this.DefaultAirQuantity.Checked = true;
+            this.DefaultAirQuantity.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultAirQuantity.Location = new System.Drawing.Point(3, 3);
+            this.DefaultAirQuantity.Name = "DefaultAirQuantity";
+            this.DefaultAirQuantity.Size = new System.Drawing.Size(60, 17);
+            this.DefaultAirQuantity.TabIndex = 0;
+            this.DefaultAirQuantity.Text = "Default";
+            this.DefaultAirQuantity.UseVisualStyleBackColor = true;
+            this.DefaultAirQuantity.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
-            // textBox14
+            // textBoxAirQuantity
             // 
-            this.textBox14.AcceptsReturn = true;
-            this.textBox14.Enabled = false;
-            this.textBox14.Location = new System.Drawing.Point(194, 3);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(225, 20);
-            this.textBox14.TabIndex = 1;
+            this.textBoxAirQuantity.AcceptsReturn = true;
+            this.textBoxAirQuantity.Enabled = false;
+            this.textBoxAirQuantity.Location = new System.Drawing.Point(192, 3);
+            this.textBoxAirQuantity.Name = "textBoxAirQuantity";
+            this.textBoxAirQuantity.Size = new System.Drawing.Size(225, 20);
+            this.textBoxAirQuantity.TabIndex = 1;
             // 
-            // label16
+            // labelAirQuantity
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(80, 5);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(108, 13);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Custom Level:";
+            this.labelAirQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelAirQuantity.AutoSize = true;
+            this.labelAirQuantity.Location = new System.Drawing.Point(79, 5);
+            this.labelAirQuantity.Name = "labelAirQuantity";
+            this.labelAirQuantity.Size = new System.Drawing.Size(107, 13);
+            this.labelAirQuantity.TabIndex = 2;
+            this.labelAirQuantity.Text = "Custom Level:";
             // 
             // groupBox8
             // 
@@ -1186,10 +1186,10 @@
             this.tableLayoutPanel16.ColumnCount = 3;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 259F));
-            this.tableLayoutPanel16.Controls.Add(this.checkBox16, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.textBox15, 2, 0);
-            this.tableLayoutPanel16.Controls.Add(this.label17, 1, 0);
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 261F));
+            this.tableLayoutPanel16.Controls.Add(this.DefaultRateOfConsumption, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.textBoxRateOfConsumption, 2, 0);
+            this.tableLayoutPanel16.Controls.Add(this.labelRateOfConsumption, 1, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
@@ -1197,37 +1197,37 @@
             this.tableLayoutPanel16.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel16.TabIndex = 0;
             // 
-            // checkBox16
+            // DefaultRateOfConsumption
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Checked = true;
-            this.checkBox16.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox16.Location = new System.Drawing.Point(3, 3);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(60, 17);
-            this.checkBox16.TabIndex = 0;
-            this.checkBox16.Text = "Default";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
+            this.DefaultRateOfConsumption.AutoSize = true;
+            this.DefaultRateOfConsumption.Checked = true;
+            this.DefaultRateOfConsumption.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultRateOfConsumption.Location = new System.Drawing.Point(3, 3);
+            this.DefaultRateOfConsumption.Name = "DefaultRateOfConsumption";
+            this.DefaultRateOfConsumption.Size = new System.Drawing.Size(60, 17);
+            this.DefaultRateOfConsumption.TabIndex = 0;
+            this.DefaultRateOfConsumption.Text = "Default";
+            this.DefaultRateOfConsumption.UseVisualStyleBackColor = true;
+            this.DefaultRateOfConsumption.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
-            // textBox15
+            // textBoxRateOfConsumption
             // 
-            this.textBox15.AcceptsReturn = true;
-            this.textBox15.Enabled = false;
-            this.textBox15.Location = new System.Drawing.Point(194, 3);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(233, 20);
-            this.textBox15.TabIndex = 1;
+            this.textBoxRateOfConsumption.AcceptsReturn = true;
+            this.textBoxRateOfConsumption.Enabled = false;
+            this.textBoxRateOfConsumption.Location = new System.Drawing.Point(192, 3);
+            this.textBoxRateOfConsumption.Name = "textBoxRateOfConsumption";
+            this.textBoxRateOfConsumption.Size = new System.Drawing.Size(233, 20);
+            this.textBoxRateOfConsumption.TabIndex = 1;
             // 
-            // label17
+            // labelRateOfConsumption
             // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(75, 5);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 13);
-            this.label17.TabIndex = 2;
-            this.label17.Text = " Custom Consumption:";
+            this.labelRateOfConsumption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelRateOfConsumption.AutoSize = true;
+            this.labelRateOfConsumption.Location = new System.Drawing.Point(74, 5);
+            this.labelRateOfConsumption.Name = "labelRateOfConsumption";
+            this.labelRateOfConsumption.Size = new System.Drawing.Size(112, 13);
+            this.labelRateOfConsumption.TabIndex = 2;
+            this.labelRateOfConsumption.Text = " Custom Consumption:";
             // 
             // tabPage5
             // 
@@ -1269,10 +1269,10 @@
             this.tableLayoutPanel19.ColumnCount = 3;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 259F));
-            this.tableLayoutPanel19.Controls.Add(this.checkBox18, 0, 0);
-            this.tableLayoutPanel19.Controls.Add(this.textBox17, 2, 0);
-            this.tableLayoutPanel19.Controls.Add(this.label21, 1, 0);
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 261F));
+            this.tableLayoutPanel19.Controls.Add(this.DefaultPowerDrain, 0, 0);
+            this.tableLayoutPanel19.Controls.Add(this.textBoxPowerDrain, 2, 0);
+            this.tableLayoutPanel19.Controls.Add(this.label21PowerDrain, 1, 0);
             this.tableLayoutPanel19.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
@@ -1280,37 +1280,37 @@
             this.tableLayoutPanel19.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel19.TabIndex = 0;
             // 
-            // checkBox18
+            // DefaultPowerDrain
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Checked = true;
-            this.checkBox18.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox18.Location = new System.Drawing.Point(3, 3);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(60, 17);
-            this.checkBox18.TabIndex = 0;
-            this.checkBox18.Text = "Default";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            this.checkBox18.CheckStateChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
+            this.DefaultPowerDrain.AutoSize = true;
+            this.DefaultPowerDrain.Checked = true;
+            this.DefaultPowerDrain.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.DefaultPowerDrain.Location = new System.Drawing.Point(3, 3);
+            this.DefaultPowerDrain.Name = "DefaultPowerDrain";
+            this.DefaultPowerDrain.Size = new System.Drawing.Size(60, 17);
+            this.DefaultPowerDrain.TabIndex = 0;
+            this.DefaultPowerDrain.Text = "Default";
+            this.DefaultPowerDrain.UseVisualStyleBackColor = true;
+            this.DefaultPowerDrain.CheckStateChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
-            // textBox17
+            // textBoxPowerDrain
             // 
-            this.textBox17.AcceptsReturn = true;
-            this.textBox17.Enabled = false;
-            this.textBox17.Location = new System.Drawing.Point(194, 3);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(233, 20);
-            this.textBox17.TabIndex = 1;
+            this.textBoxPowerDrain.AcceptsReturn = true;
+            this.textBoxPowerDrain.Enabled = false;
+            this.textBoxPowerDrain.Location = new System.Drawing.Point(192, 3);
+            this.textBoxPowerDrain.Name = "textBoxPowerDrain";
+            this.textBoxPowerDrain.Size = new System.Drawing.Size(233, 20);
+            this.textBoxPowerDrain.TabIndex = 1;
             // 
-            // label21
+            // label21PowerDrain
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(75, 5);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(113, 13);
-            this.label21.TabIndex = 2;
-            this.label21.Text = " Custom Multiplier:";
+            this.label21PowerDrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21PowerDrain.AutoSize = true;
+            this.label21PowerDrain.Location = new System.Drawing.Point(74, 5);
+            this.label21PowerDrain.Name = "label21PowerDrain";
+            this.label21PowerDrain.Size = new System.Drawing.Size(112, 13);
+            this.label21PowerDrain.TabIndex = 2;
+            this.label21PowerDrain.Text = " Custom Multiplier:";
             // 
             // tabPage6
             // 
@@ -1359,8 +1359,8 @@
             this.tableLayoutPanel24.ColumnCount = 3;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel24.Controls.Add(this.checkBox22, 0, 0);
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel24.Controls.Add(this.ActiveReachTheTile, 0, 0);
             this.tableLayoutPanel24.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 1;
@@ -1368,15 +1368,15 @@
             this.tableLayoutPanel24.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel24.TabIndex = 0;
             // 
-            // checkBox22
+            // ActiveReachTheTile
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(3, 3);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(56, 17);
-            this.checkBox22.TabIndex = 0;
-            this.checkBox22.Text = "Active";
-            this.checkBox22.UseVisualStyleBackColor = true;
+            this.ActiveReachTheTile.AutoSize = true;
+            this.ActiveReachTheTile.Location = new System.Drawing.Point(3, 3);
+            this.ActiveReachTheTile.Name = "ActiveReachTheTile";
+            this.ActiveReachTheTile.Size = new System.Drawing.Size(56, 17);
+            this.ActiveReachTheTile.TabIndex = 0;
+            this.ActiveReachTheTile.Text = "Active";
+            this.ActiveReachTheTile.UseVisualStyleBackColor = true;
             // 
             // groupBox18
             // 
@@ -1393,10 +1393,10 @@
             this.tableLayoutPanel23.ColumnCount = 3;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel23.Controls.Add(this.checkBox21, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.label26, 1, 0);
-            this.tableLayoutPanel23.Controls.Add(this.comboBox4, 2, 0);
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel23.Controls.Add(this.ActiveRescue, 0, 0);
+            this.tableLayoutPanel23.Controls.Add(this.labelRescueUnit, 1, 0);
+            this.tableLayoutPanel23.Controls.Add(this.comboBoxRescueUnit, 2, 0);
             this.tableLayoutPanel23.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
@@ -1404,32 +1404,32 @@
             this.tableLayoutPanel23.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel23.TabIndex = 0;
             // 
-            // checkBox21
+            // ActiveRescue
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(3, 3);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(56, 17);
-            this.checkBox21.TabIndex = 0;
-            this.checkBox21.Text = "Active";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            this.checkBox21.Click += new System.EventHandler(this.checkBox21_CheckedChanged);
+            this.ActiveRescue.AutoSize = true;
+            this.ActiveRescue.Location = new System.Drawing.Point(3, 3);
+            this.ActiveRescue.Name = "ActiveRescue";
+            this.ActiveRescue.Size = new System.Drawing.Size(56, 17);
+            this.ActiveRescue.TabIndex = 0;
+            this.ActiveRescue.Text = "Active";
+            this.ActiveRescue.UseVisualStyleBackColor = true;
+            this.ActiveRescue.Click += new System.EventHandler(this.checkBox21_CheckedChanged);
             // 
-            // label26
+            // labelRescueUnit
             // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(91, 5);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(90, 13);
-            this.label26.TabIndex = 2;
-            this.label26.Text = "Specify unit:";
+            this.labelRescueUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelRescueUnit.AutoSize = true;
+            this.labelRescueUnit.Location = new System.Drawing.Point(90, 5);
+            this.labelRescueUnit.Name = "labelRescueUnit";
+            this.labelRescueUnit.Size = new System.Drawing.Size(89, 13);
+            this.labelRescueUnit.TabIndex = 2;
+            this.labelRescueUnit.Text = "Specify unit:";
             // 
-            // comboBox4
+            // comboBoxRescueUnit
             // 
-            this.comboBox4.Enabled = false;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.comboBoxRescueUnit.Enabled = false;
+            this.comboBoxRescueUnit.FormattingEnabled = true;
+            this.comboBoxRescueUnit.Items.AddRange(new object[] {
             "Miner",
             "Miner -Demolition",
             "Miner -Driver",
@@ -1448,10 +1448,10 @@
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBox4.Location = new System.Drawing.Point(187, 3);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(258, 21);
-            this.comboBox4.TabIndex = 8;
+            this.comboBoxRescueUnit.Location = new System.Drawing.Point(185, 3);
+            this.comboBoxRescueUnit.Name = "comboBoxRescueUnit";
+            this.comboBoxRescueUnit.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxRescueUnit.TabIndex = 8;
             // 
             // groupBox17
             // 
@@ -1468,10 +1468,10 @@
             this.tableLayoutPanel22.ColumnCount = 3;
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel22.Controls.Add(this.checkBox20, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.label24, 1, 0);
-            this.tableLayoutPanel22.Controls.Add(this.comboBox2, 2, 0);
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel22.Controls.Add(this.ActiveSpecificUnit, 0, 0);
+            this.tableLayoutPanel22.Controls.Add(this.labelSpecificUnit, 1, 0);
+            this.tableLayoutPanel22.Controls.Add(this.comboBoxSpecificUnit, 2, 0);
             this.tableLayoutPanel22.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 1;
@@ -1479,32 +1479,32 @@
             this.tableLayoutPanel22.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel22.TabIndex = 0;
             // 
-            // checkBox20
+            // ActiveSpecificUnit
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(3, 3);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(56, 17);
-            this.checkBox20.TabIndex = 0;
-            this.checkBox20.Text = "Active";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            this.checkBox20.Click += new System.EventHandler(this.checkBox20_CheckedChanged);
+            this.ActiveSpecificUnit.AutoSize = true;
+            this.ActiveSpecificUnit.Location = new System.Drawing.Point(3, 3);
+            this.ActiveSpecificUnit.Name = "ActiveSpecificUnit";
+            this.ActiveSpecificUnit.Size = new System.Drawing.Size(56, 17);
+            this.ActiveSpecificUnit.TabIndex = 0;
+            this.ActiveSpecificUnit.Text = "Active";
+            this.ActiveSpecificUnit.UseVisualStyleBackColor = true;
+            this.ActiveSpecificUnit.Click += new System.EventHandler(this.checkBox20_CheckedChanged);
             // 
-            // label24
+            // labelSpecificUnit
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(91, 5);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(90, 13);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Specify unit:";
+            this.labelSpecificUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSpecificUnit.AutoSize = true;
+            this.labelSpecificUnit.Location = new System.Drawing.Point(90, 5);
+            this.labelSpecificUnit.Name = "labelSpecificUnit";
+            this.labelSpecificUnit.Size = new System.Drawing.Size(89, 13);
+            this.labelSpecificUnit.TabIndex = 2;
+            this.labelSpecificUnit.Text = "Specify unit:";
             // 
-            // comboBox2
+            // comboBoxSpecificUnit
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxSpecificUnit.Enabled = false;
+            this.comboBoxSpecificUnit.FormattingEnabled = true;
+            this.comboBoxSpecificUnit.Items.AddRange(new object[] {
             "Miner",
             "Miner -Demolition",
             "Miner -Driver",
@@ -1523,10 +1523,10 @@
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBox2.Location = new System.Drawing.Point(187, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(258, 21);
-            this.comboBox2.TabIndex = 8;
+            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(185, 3);
+            this.comboBoxSpecificUnit.Name = "comboBoxSpecificUnit";
+            this.comboBoxSpecificUnit.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxSpecificUnit.TabIndex = 8;
             // 
             // groupBox13
             // 
@@ -1543,10 +1543,10 @@
             this.tableLayoutPanel20.ColumnCount = 3;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
-            this.tableLayoutPanel20.Controls.Add(this.checkBox17, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.label20, 1, 0);
-            this.tableLayoutPanel20.Controls.Add(this.comboBox3, 2, 0);
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
+            this.tableLayoutPanel20.Controls.Add(this.ActiveSpecificBuilding, 0, 0);
+            this.tableLayoutPanel20.Controls.Add(this.labelSpecificBuilding, 1, 0);
+            this.tableLayoutPanel20.Controls.Add(this.comboBoxSpecificBuilding, 2, 0);
             this.tableLayoutPanel20.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 1;
@@ -1554,32 +1554,32 @@
             this.tableLayoutPanel20.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel20.TabIndex = 0;
             // 
-            // checkBox17
+            // ActiveSpecificBuilding
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(3, 3);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(56, 17);
-            this.checkBox17.TabIndex = 0;
-            this.checkBox17.Text = "Active";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            this.checkBox17.Click += new System.EventHandler(this.checkBox17_CheckedChanged);
+            this.ActiveSpecificBuilding.AutoSize = true;
+            this.ActiveSpecificBuilding.Location = new System.Drawing.Point(3, 3);
+            this.ActiveSpecificBuilding.Name = "ActiveSpecificBuilding";
+            this.ActiveSpecificBuilding.Size = new System.Drawing.Size(56, 17);
+            this.ActiveSpecificBuilding.TabIndex = 0;
+            this.ActiveSpecificBuilding.Text = "Active";
+            this.ActiveSpecificBuilding.UseVisualStyleBackColor = true;
+            this.ActiveSpecificBuilding.Click += new System.EventHandler(this.checkBox17_CheckedChanged);
             // 
-            // label20
+            // labelSpecificBuilding
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(91, 5);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(90, 13);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Specify Building:";
+            this.labelSpecificBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSpecificBuilding.AutoSize = true;
+            this.labelSpecificBuilding.Location = new System.Drawing.Point(90, 5);
+            this.labelSpecificBuilding.Name = "labelSpecificBuilding";
+            this.labelSpecificBuilding.Size = new System.Drawing.Size(89, 13);
+            this.labelSpecificBuilding.TabIndex = 2;
+            this.labelSpecificBuilding.Text = "Specify Building:";
             // 
-            // comboBox3
+            // comboBoxSpecificBuilding
             // 
-            this.comboBox3.Enabled = false;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxSpecificBuilding.Enabled = false;
+            this.comboBoxSpecificBuilding.FormattingEnabled = true;
+            this.comboBoxSpecificBuilding.Items.AddRange(new object[] {
             "FOB",
             "Transporter Pad",
             "Generators",
@@ -1593,10 +1593,10 @@
             "Infrastructure",
             "Microwave Emitters",
             " "});
-            this.comboBox3.Location = new System.Drawing.Point(187, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(258, 21);
-            this.comboBox3.TabIndex = 9;
+            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(185, 3);
+            this.comboBoxSpecificBuilding.Name = "comboBoxSpecificBuilding";
+            this.comboBoxSpecificBuilding.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxSpecificBuilding.TabIndex = 9;
             // 
             // groupBox16
             // 
@@ -1614,10 +1614,10 @@
             this.tableLayoutPanel21.ColumnCount = 3;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.36364F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.63636F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
-            this.tableLayoutPanel21.Controls.Add(this.checkBox19, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.textBox18, 2, 0);
-            this.tableLayoutPanel21.Controls.Add(this.label23, 1, 0);
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
+            this.tableLayoutPanel21.Controls.Add(this.ActiveCrystalCollection, 0, 0);
+            this.tableLayoutPanel21.Controls.Add(this.textBoxCrystalCollection, 2, 0);
+            this.tableLayoutPanel21.Controls.Add(this.labelCrystalCollection, 1, 0);
             this.tableLayoutPanel21.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 1;
@@ -1625,35 +1625,35 @@
             this.tableLayoutPanel21.Size = new System.Drawing.Size(451, 24);
             this.tableLayoutPanel21.TabIndex = 0;
             // 
-            // checkBox19
+            // ActiveCrystalCollection
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(3, 3);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(56, 17);
-            this.checkBox19.TabIndex = 0;
-            this.checkBox19.Text = "Active";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            this.checkBox19.CheckedChanged += new System.EventHandler(this.checkBox19_CheckedChanged);
+            this.ActiveCrystalCollection.AutoSize = true;
+            this.ActiveCrystalCollection.Location = new System.Drawing.Point(3, 3);
+            this.ActiveCrystalCollection.Name = "ActiveCrystalCollection";
+            this.ActiveCrystalCollection.Size = new System.Drawing.Size(56, 17);
+            this.ActiveCrystalCollection.TabIndex = 0;
+            this.ActiveCrystalCollection.Text = "Active";
+            this.ActiveCrystalCollection.UseVisualStyleBackColor = true;
+            this.ActiveCrystalCollection.CheckedChanged += new System.EventHandler(this.checkBox19_CheckedChanged);
             // 
-            // textBox18
+            // textBoxCrystalCollection
             // 
-            this.textBox18.AcceptsReturn = true;
-            this.textBox18.Enabled = false;
-            this.textBox18.Location = new System.Drawing.Point(220, 3);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(225, 20);
-            this.textBox18.TabIndex = 1;
+            this.textBoxCrystalCollection.AcceptsReturn = true;
+            this.textBoxCrystalCollection.Enabled = false;
+            this.textBoxCrystalCollection.Location = new System.Drawing.Point(218, 3);
+            this.textBoxCrystalCollection.Name = "textBoxCrystalCollection";
+            this.textBoxCrystalCollection.Size = new System.Drawing.Size(225, 20);
+            this.textBoxCrystalCollection.TabIndex = 1;
             // 
-            // label23
+            // labelCrystalCollection
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(93, 5);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(121, 13);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "Custom Crystal Amount";
+            this.labelCrystalCollection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCrystalCollection.AutoSize = true;
+            this.labelCrystalCollection.Location = new System.Drawing.Point(92, 5);
+            this.labelCrystalCollection.Name = "labelCrystalCollection";
+            this.labelCrystalCollection.Size = new System.Drawing.Size(120, 13);
+            this.labelCrystalCollection.TabIndex = 2;
+            this.labelCrystalCollection.Text = "Custom Crystal Amount";
             // 
             // tabPage7
             // 
@@ -1709,22 +1709,22 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.Tabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
+            this.LabelDamageToPlayer.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
+            this.LabelDamageFromPlayer.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
+            this.LabelSpawnChance.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
+            this.LabelHunger.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
+            this.LabelSpeed.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1732,7 +1732,7 @@
             this.groupBox6.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.LabelErosionSpeed.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -1781,26 +1781,26 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox MapName;
+        private System.Windows.Forms.TextBox Height;
+        private System.Windows.Forms.TextBox Width;
+        private System.Windows.Forms.Label labelMapName;
+        private System.Windows.Forms.Label labelWidth;
+        private System.Windows.Forms.Label labelHeight;
+        private System.Windows.Forms.ComboBox TerrainType;
+        private System.Windows.Forms.Label labelHostileAI;
+        private System.Windows.Forms.Label labelTerrainType;
+        private System.Windows.Forms.CheckBox HostileAI;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.CheckBox Erosion;
+        private System.Windows.Forms.Label labelErosion;
+        private System.Windows.Forms.Label labelAvalanches;
+        private System.Windows.Forms.CheckBox Avalanche;
+        private System.Windows.Forms.Label labelAirThreat;
+        private System.Windows.Forms.Label labelPowerDrain;
+        private System.Windows.Forms.CheckBox AirThreat;
+        private System.Windows.Forms.CheckBox PowerDrain;
+        private System.Windows.Forms.TabControl Tabs;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
@@ -1811,98 +1811,98 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.GroupBox LabelSpeed;
+        private System.Windows.Forms.GroupBox LabelDamageToPlayer;
+        private System.Windows.Forms.GroupBox LabelDamageFromPlayer;
+        private System.Windows.Forms.GroupBox LabelHunger;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckBox DefaultPlayerDamage;
+        private System.Windows.Forms.TextBox textBoxCustomDamage;
+        private System.Windows.Forms.Label labelCustomDamage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox DefaultDamageFromPlayer;
+        private System.Windows.Forms.TextBox textBoxCustomPlayerDamage;
+        private System.Windows.Forms.Label labelPlayerCustomDamage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.CheckBox SpawnChance;
+        private System.Windows.Forms.TextBox textBoxCustomHunger;
+        private System.Windows.Forms.Label labelCustomHunger;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.CheckBox DefaultSpeed;
+        private System.Windows.Forms.TextBox textBoxCustomSpeed;
+        private System.Windows.Forms.Label labelCustomSpeed;
+        private System.Windows.Forms.Label labelDebrisMultiplyer;
+        private System.Windows.Forms.TextBox textBoxDebrisMultiplyer;
+        private System.Windows.Forms.GroupBox LabelSpawnChance;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.CheckBox DefaultHunger;
+        private System.Windows.Forms.TextBox textBoxCustomSpawnChance;
+        private System.Windows.Forms.Label labelCustomSpawnChance;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox LabelErosionSpeed;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox DefaultErosionSpeed;
+        private System.Windows.Forms.TextBox textBoxCustomErosionSpeed;
+        private System.Windows.Forms.Label labelCustomErosionSpeed;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox DefaultAvalancheFrequency;
+        private System.Windows.Forms.TextBox textBoxCustomAvalanchFrequncy;
+        private System.Windows.Forms.Label labelCustomAvalancheFrequency;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox defaultAvalancheDamageToPlayers;
+        private System.Windows.Forms.TextBox textBoxCustomAvalanchDamage;
+        private System.Windows.Forms.Label labelCustomAvalancheDamage;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox DefaultRepairCost;
+        private System.Windows.Forms.TextBox textBoxRepairCost;
+        private System.Windows.Forms.Label labelRepairCost;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.CheckBox DefaultAirQuantity;
+        private System.Windows.Forms.TextBox textBoxAirQuantity;
+        private System.Windows.Forms.Label labelAirQuantity;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.CheckBox DefaultRateOfConsumption;
+        private System.Windows.Forms.TextBox textBoxRateOfConsumption;
+        private System.Windows.Forms.Label labelRateOfConsumption;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.CheckBox DefaultPowerDrain;
+        private System.Windows.Forms.TextBox textBoxPowerDrain;
+        private System.Windows.Forms.Label label21PowerDrain;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.CheckBox ActiveSpecificBuilding;
+        private System.Windows.Forms.Label labelSpecificBuilding;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.CheckBox ActiveCrystalCollection;
+        private System.Windows.Forms.TextBox textBoxCrystalCollection;
+        private System.Windows.Forms.Label labelCrystalCollection;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.CheckBox ActiveSpecificUnit;
+        private System.Windows.Forms.Label labelSpecificUnit;
+        private System.Windows.Forms.ComboBox comboBoxSpecificUnit;
+        private System.Windows.Forms.ComboBox comboBoxSpecificBuilding;
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
-        private System.Windows.Forms.CheckBox checkBox22;
+        private System.Windows.Forms.CheckBox ActiveReachTheTile;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.CheckBox ActiveRescue;
+        private System.Windows.Forms.Label labelRescueUnit;
+        private System.Windows.Forms.ComboBox comboBoxRescueUnit;
     }
 }

@@ -12,16 +12,11 @@ namespace WindowsFormsApp2
 {
     public partial class Default_Window : Form
     {
-
-        ToolStripMenuItem Quitt; 
+        Form newMapWindow;
         public Default_Window()
         {
             InitializeComponent();
-            Functionality();
-        }
-        public void Functionality()
-        {
-            Quitt = this.Quit;
+            Form newMapWindow;
         }
 
         private void QuitButton(object sender, EventArgs e)
@@ -32,10 +27,13 @@ namespace WindowsFormsApp2
         private void New_Map(object sender, EventArgs e)
         {
 
-            Form newMapWindow = new New_Map();
+            newMapWindow = new New_Map();
             newMapWindow.Show();
         }
-
+        public Form getNewMap()
+        {
+            return newMapWindow;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

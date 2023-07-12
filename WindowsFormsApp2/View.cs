@@ -54,6 +54,11 @@ namespace WindowsFormsApp2
         { 
             return Default_Window; 
         }
+
+        public void getData()
+        {
+
+        }
         
         public ToolStripMenuItem GetQuit()
         {

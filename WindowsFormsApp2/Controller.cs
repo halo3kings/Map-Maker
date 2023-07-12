@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
 
             Application.Run(VIEW.GetWindow("Default_Window"));
             Application.Run();
-
+            VIEW.GetDefaultWindow().
 
         }
 
