@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Map Maker tool", "WindowsFormsApp2\Map Maker tool.csproj", "{064B1D21-6754-4732-ACAD-55061AFACB32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064B1D21-6754-4732-ACAD-55061AFACB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064B1D21-6754-4732-ACAD-55061AFACB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064B1D21-6754-4732-ACAD-55061AFACB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064B1D21-6754-4732-ACAD-55061AFACB32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F0DBC43-1872-4203-BC6B-A50298A2EA5F}
+	EndGlobalSection
+EndGlobal
