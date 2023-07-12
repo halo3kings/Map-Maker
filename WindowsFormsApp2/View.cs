@@ -11,12 +11,15 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    internal class View
+     public class View
     {
         public int NumberOfWindows = 0;
         List<String> WindowNameList = new List<String> { "<Name>" };
         Form[] Windows = new Form[64];
         string[] WindowNames = new string[64];
+
+        Default_Window Default_Window = new Default_Window();
+        //New_Map New_Map = new New_Map();
 
         public View()
         {
@@ -24,26 +27,39 @@ namespace WindowsFormsApp2
             Debug.WriteLine("Initializing Windows...");
 
             /*
-            * (1). create new default window called 'Default_Window' 
-            * (2). set 'Default_Window' as the form for position 0 in the 'Windows' Form Array.
+            * (1). create new window
+            * (2). set new window as the 'Form' for position 0 in the 'Windows' Form Array.
             * (3). populate the 'WindowName' array with their names, starting at pos 0.
             * (4). iterate the global number of frames by one.
             */
 
 
-
-
             //--------------------------------------------------------
 
-            Default_Window Default_Window = new Default_Window();   // (1)
             Windows[NumberOfWindows] = Default_Window;              // (2)
             WindowNames[NumberOfWindows] = "Default_Window";        // (3)
             NumberOfWindows++;                                      // (4)
 
             //--------------------------------------------------------
 
+           // Windows[NumberOfWindows] = New_Map;                      // (2)
+            //WindowNames[NumberOfWindows] = "New_Map";                // (3)
+            //NumberOfWindows++;                                       // (4)
+
+            //--------------------------------------------------------
 
         }
+
+        public Form GetDefaultWindow() 
+        { 
+            return Default_Window; 
+        }
+        
+        public ToolStripMenuItem GetQuit()
+        {
+            return Default_Window.getQuit();
+        }
+        
         public Form GetWindow(string Name)
         {
             for (int i = 0; 0 <= WindowNames.Length; i++)
@@ -57,14 +73,5 @@ namespace WindowsFormsApp2
 
             return null;
         }
-        public void NewMapWindowCreated()
-        {
-            SetVisible(GetWindow("New_MapWindow"));
-        }
-        public void SetVisible(Form Window)
-        {
-            Window.Show();
-        }
-        
     }
 }

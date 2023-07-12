@@ -19,27 +19,6 @@ namespace WindowsFormsApp2
             Debug.WriteLine("Initialize New_Map");
             InitializeComponent();
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void New_Map_Load(object sender, EventArgs e)
         {
 
@@ -75,51 +54,14 @@ namespace WindowsFormsApp2
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label18_Click(object sender, EventArgs e)
         {
 
@@ -137,14 +79,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox6_CheckedChanged");
             if (checkBox6.Checked == true)
             {
-                textBox4.Visible = false;
+                textBox4.Enabled = false;
                 textBox4.Invalidate();
                 textBox4.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox4.Visible = true;
+                textBox4.Enabled = true;
             }
         }
         public void checkBox7_CheckedChanged(object sender, EventArgs e)
@@ -152,14 +94,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox7_CheckedChanged");
             if (checkBox7.Checked == true)
             {
-                textBox5.Visible = false;
+                textBox5.Enabled = false;
                 textBox5.Invalidate();
                 textBox5.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox5.Visible = true;
+                textBox5.Enabled = true;
             }
         }
         public void checkBox9_CheckedChanged(object sender, EventArgs e)
@@ -167,8 +109,8 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox7_CheckedChanged");
             if (checkBox9.Checked == true)
             {
-                textBox6.Visible = false;
-                textBox7.Visible = false;
+                textBox6.Enabled = false;
+                textBox7.Enabled = false;
 
                 textBox6.Invalidate();
                 textBox7.Invalidate();
@@ -180,8 +122,8 @@ namespace WindowsFormsApp2
             }
             else
             {
-                textBox6.Visible = true;
-                textBox7.Visible = true;
+                textBox6.Enabled = true;
+                textBox7.Enabled = true;
             }
         }
         public void checkBox10_CheckedChanged(object sender, EventArgs e)
@@ -189,14 +131,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox10_CheckedChanged");
             if (checkBox10.Checked == true)
             {
-                textBox9.Visible = false;
+                textBox9.Enabled = false;
                 textBox9.Invalidate();
                 textBox9.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox9.Visible = true;
+                textBox9.Enabled = true;
             }
         }
         public void checkBox11_CheckedChanged(object sender, EventArgs e)
@@ -204,14 +146,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox11_CheckedChanged");
             if (checkBox11.Checked == true)
             {
-                textBox8.Visible = false;
+                textBox8.Enabled = false;
                 textBox8.Invalidate();
                 textBox8.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox8.Visible = true;
+                textBox8.Enabled = true;
             }
         }
 
@@ -221,14 +163,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox8_CheckedChanged");
             if (checkBox8.Checked == true)
             {
-                textBox10.Visible = false;
+                textBox10.Enabled = false;
                 textBox10.Invalidate();
                 textBox10.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox10.Visible = true;
+                textBox10.Enabled = true;
             }
         }
         public void checkBox14_CheckedChanged(object sender, EventArgs e)
@@ -236,14 +178,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox8_CheckedChanged");
             if (checkBox14.Checked == true)
             {
-                textBox13.Visible = false;
+                textBox13.Enabled = false;
                 textBox13.Invalidate();
                 textBox13.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox13.Visible = true;
+                textBox13.Enabled = true;
             }
         }
 
@@ -253,14 +195,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox8_CheckedChanged");
             if (checkBox12.Checked == true)
             {
-                textBox11.Visible = false;
+                textBox11.Enabled = false;
                 textBox11.Invalidate();
                 textBox11.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox11.Visible = true;
+                textBox11.Enabled = true;
             }
         }
         public void checkBox13_CheckedChanged(object sender, EventArgs e)
@@ -268,14 +210,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox8_CheckedChanged");
             if (checkBox13.Checked == true)
             {
-                textBox12.Visible = false;
+                textBox12.Enabled = false;
                 textBox12.Invalidate();
                 textBox12.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox12.Visible = true;
+                textBox12.Enabled = true;
             }
         }
 
@@ -285,14 +227,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox8_CheckedChanged");
             if (checkBox16.Checked == true)
             {
-                textBox15.Visible = false;
+                textBox15.Enabled = false;
                 textBox15.Invalidate();
                 textBox15.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox15.Visible = true;
+                textBox15.Enabled = true;
             }
         }
         public void checkBox15_CheckedChanged(object sender, EventArgs e)
@@ -300,14 +242,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox8_CheckedChanged");
             if (checkBox15.Checked == true)
             {
-                textBox14.Visible = false;
+                textBox14.Enabled = false;
                 textBox14.Invalidate();
                 textBox14.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox14.Visible = true;
+                textBox14.Enabled = true;
             }
         }
 
@@ -317,14 +259,14 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox18_CheckedChanged");
             if (checkBox18.Checked == true)
             {
-                textBox17.Visible = false;
+                textBox17.Enabled = false;
                 textBox17.Invalidate();
                 textBox17.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox17.Visible = true;
+                textBox17.Enabled = true;
             }
         }
 
@@ -334,44 +276,33 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox19_CheckedChanged");
             if (checkBox19.Checked == true)
             {
-                textBox18.Visible = false;
+                textBox18.Enabled = true;
                 textBox18.Invalidate();
                 textBox18.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBox18.Visible = true;
+                textBox18.Enabled = false;
             }
         }
         public void checkBox17_CheckedChanged(object sender, EventArgs e)
         {
-            Debug.WriteLine("checkBox17_CheckedChanged");
-            if (checkBox17.Checked == true)
-            {
-                comboBox3.Visible = false;
-                comboBox3.Invalidate();
-                comboBox3.Refresh();
-                Application.DoEvents();
-            }
-            else
-            {
-                comboBox3.Visible = true;
-            }
+
         }
         public void checkBox20_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox20_CheckedChanged");
             if (checkBox17.Checked == true)
             {
-                comboBox2.Visible = false;
+                comboBox2.Enabled = true;
                 comboBox2.Invalidate();
                 comboBox2.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                comboBox2.Visible = true;
+                comboBox2.Enabled = false;
             }
         }
         public void checkBox21_CheckedChanged(object sender, EventArgs e)
@@ -379,19 +310,15 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox21_CheckedChanged");
             if (checkBox21.Checked == true)
             {
-                comboBox4.Visible = false;
+                comboBox4.Enabled = true;
                 comboBox4.Invalidate();
                 comboBox4.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                comboBox4.Visible = true;
+                comboBox4.Enabled = false;
             }
-        }
-        public void checkBox22_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
         private void groupBox3_Enter_1(object sender, EventArgs e)
         {
@@ -416,7 +343,7 @@ namespace WindowsFormsApp2
 
         }
 
-        public void MapSettings(string name, int width , int height, int terrainType, bool hostile)
+        //public void MapSettings(string name, int width , int height, int terrainType, bool hostile)
 
     }
 }

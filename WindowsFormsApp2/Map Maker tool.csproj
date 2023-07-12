@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="MapLogger.cs" />
     <Compile Include="View.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Default Window.cs">
@@ -61,7 +63,7 @@
     <Compile Include="New_Map Window.Designer.cs">
       <DependentUpon>New_Map Window.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main%28Controller%29.cs" />
+    <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Default Window.resx">
       <DependentUpon>Default Window.cs</DependentUpon>

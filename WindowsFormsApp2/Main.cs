@@ -11,13 +11,8 @@ namespace WindowsFormsApp2
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Model model = new Model();
-            View view = new View();
+            Controller controller = new Controller();
 
-            Application.Run(view.GetWindow("Default_Window"));
-            Application.Run();
         }        
     }
 }
