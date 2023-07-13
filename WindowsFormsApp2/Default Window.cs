@@ -48,10 +48,6 @@ namespace WindowsFormsApp2
         {
 
         }
-        public ToolStripMenuItem getQuit()
-        {
-            return Quitt;
-        }
 
     }
 

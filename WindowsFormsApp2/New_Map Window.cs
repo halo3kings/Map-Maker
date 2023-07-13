@@ -79,6 +79,7 @@ namespace WindowsFormsApp2
             Debug.WriteLine("checkBox6_CheckedChanged");
             if (DefaultPlayerDamage.Checked == true)
             {
+                Properties.Settings.Default.HostileAi = true;
                 textBoxCustomDamage.Enabled = false;
                 textBoxCustomDamage.Invalidate();
                 textBoxCustomDamage.Refresh();
@@ -270,30 +271,44 @@ namespace WindowsFormsApp2
             }
         }
 
-        //Win State
+        //Win States
+        //--Crystal Collection 
         public void checkBox19_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox19_CheckedChanged");
             if (ActiveCrystalCollection.Checked == true)
             {
-                textBoxCrystalCollection.Enabled = true;
-                textBoxCrystalCollection.Invalidate();
-                textBoxCrystalCollection.Refresh();
+                comboBoxCrystals.Enabled = true;
+                comboBoxCrystals.Invalidate();
+                comboBoxCrystals.Refresh();
                 Application.DoEvents();
             }
             else
             {
-                textBoxCrystalCollection.Enabled = false;
+                comboBoxCrystals.Enabled = false;
             }
         }
-        public void checkBox17_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        //--Building Requirment
         public void checkBox20_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox20_CheckedChanged");
             if (ActiveSpecificBuilding.Checked == true)
+            {
+                comboBoxSpecificBuilding.Enabled = true;
+                comboBoxSpecificBuilding.Invalidate();
+                comboBoxSpecificBuilding.Refresh();
+                Application.DoEvents();
+            }
+            else
+            {
+                comboBoxSpecificBuilding.Enabled = false;
+            }
+        }
+        //--Unit requirement
+        public void checkBox21_CheckedChanged(object sender, EventArgs e)
+        {
+            Debug.WriteLine("checkBox20_CheckedChanged");
+            if (ActiveSpecificUnit.Checked == true)
             {
                 comboBoxSpecificUnit.Enabled = true;
                 comboBoxSpecificUnit.Invalidate();
@@ -305,7 +320,8 @@ namespace WindowsFormsApp2
                 comboBoxSpecificUnit.Enabled = false;
             }
         }
-        public void checkBox21_CheckedChanged(object sender, EventArgs e)
+        //--Rescue
+        public void checkBox22_CheckedChanged(object sender, EventArgs e)
         {
             Debug.WriteLine("checkBox21_CheckedChanged");
             if (ActiveRescue.Checked == true)
@@ -320,6 +336,21 @@ namespace WindowsFormsApp2
                 comboBoxRescueUnit.Enabled = false;
             }
         }
+        //--Reach the tile
+        public void checkbox23_CheckedChanged(object sender, EventArgs e)
+        {
+            Debug.WriteLine("checkBox21_CheckedChanged");
+            if (ActiveReachTheTile.Checked == true)
+            {
+
+                Application.DoEvents();
+            }
+            else
+            {
+
+            }
+        }
+
         private void groupBox3_Enter_1(object sender, EventArgs e)
         {
 

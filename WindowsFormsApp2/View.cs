@@ -59,12 +59,7 @@ namespace WindowsFormsApp2
         {
 
         }
-        
-        public ToolStripMenuItem GetQuit()
-        {
-            return Default_Window.getQuit();
-        }
-        
+                
         public Form GetWindow(string Name)
         {
             for (int i = 0; 0 <= WindowNames.Length; i++)
