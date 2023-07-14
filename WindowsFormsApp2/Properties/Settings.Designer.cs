@@ -23,36 +23,42 @@ namespace WindowsFormsApp2.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Map")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string MapName {
             get {
                 return ((string)(this["MapName"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Width {
-            get {
-                return ((int)(this["Width"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Height {
-            get {
-                return ((int)(this["Height"]));
+            set {
+                this["MapName"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public int Width {
+            get {
+                return ((int)(this["Width"]));
+            }
+            set {
+                this["Width"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int Height {
+            get {
+                return ((int)(this["Height"]));
+            }
+            set {
+                this["Height"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public bool HostileAi {
             get {
                 return ((bool)(this["HostileAi"]));
@@ -62,39 +68,312 @@ namespace WindowsFormsApp2.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool Erosion {
             get {
                 return ((bool)(this["Erosion"]));
             }
+            set {
+                this["Erosion"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool Avalanches {
             get {
                 return ((bool)(this["Avalanches"]));
             }
+            set {
+                this["Avalanches"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool AirThreat {
             get {
                 return ((bool)(this["AirThreat"]));
             }
+            set {
+                this["AirThreat"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool PowerDrain {
             get {
                 return ((bool)(this["PowerDrain"]));
+            }
+            set {
+                this["PowerDrain"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int DamageToPlayer {
+            get {
+                return ((int)(this["DamageToPlayer"]));
+            }
+            set {
+                this["DamageToPlayer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int DamageFromPlayer {
+            get {
+                return ((int)(this["DamageFromPlayer"]));
+            }
+            set {
+                this["DamageFromPlayer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int CreatureSpeed {
+            get {
+                return ((int)(this["CreatureSpeed"]));
+            }
+            set {
+                this["CreatureSpeed"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int DebrisMultiplayer {
+            get {
+                return ((int)(this["DebrisMultiplayer"]));
+            }
+            set {
+                this["DebrisMultiplayer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int Hunger {
+            get {
+                return ((int)(this["Hunger"]));
+            }
+            set {
+                this["Hunger"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public float SpawnChance {
+            get {
+                return ((float)(this["SpawnChance"]));
+            }
+            set {
+                this["SpawnChance"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public float ErosionSpeed {
+            get {
+                return ((float)(this["ErosionSpeed"]));
+            }
+            set {
+                this["ErosionSpeed"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int RepairCost {
+            get {
+                return ((int)(this["RepairCost"]));
+            }
+            set {
+                this["RepairCost"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int AvalancheDamageToPlayer {
+            get {
+                return ((int)(this["AvalancheDamageToPlayer"]));
+            }
+            set {
+                this["AvalancheDamageToPlayer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public float Frequency {
+            get {
+                return ((float)(this["Frequency"]));
+            }
+            set {
+                this["Frequency"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public float RateOfConsumption {
+            get {
+                return ((float)(this["RateOfConsumption"]));
+            }
+            set {
+                this["RateOfConsumption"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int AirQuantity {
+            get {
+                return ((int)(this["AirQuantity"]));
+            }
+            set {
+                this["AirQuantity"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int PowerDrainMultiplyer {
+            get {
+                return ((int)(this["PowerDrainMultiplyer"]));
+            }
+            set {
+                this["PowerDrainMultiplyer"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CollectCrystals {
+            get {
+                return ((bool)(this["CollectCrystals"]));
+            }
+            set {
+                this["CollectCrystals"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int CrystalsCount {
+            get {
+                return ((int)(this["CrystalsCount"]));
+            }
+            set {
+                this["CrystalsCount"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BuildSpecificBuilding {
+            get {
+                return ((bool)(this["BuildSpecificBuilding"]));
+            }
+            set {
+                this["BuildSpecificBuilding"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SpecificBuilding {
+            get {
+                return ((string)(this["SpecificBuilding"]));
+            }
+            set {
+                this["SpecificBuilding"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BuildSpecificUnit {
+            get {
+                return ((bool)(this["BuildSpecificUnit"]));
+            }
+            set {
+                this["BuildSpecificUnit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SpecificUnit {
+            get {
+                return ((string)(this["SpecificUnit"]));
+            }
+            set {
+                this["SpecificUnit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RescueSpecificUnit {
+            get {
+                return ((bool)(this["RescueSpecificUnit"]));
+            }
+            set {
+                this["RescueSpecificUnit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SpecificRescueUnit {
+            get {
+                return ((string)(this["SpecificRescueUnit"]));
+            }
+            set {
+                this["SpecificRescueUnit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TileReach {
+            get {
+                return ((bool)(this["TileReach"]));
+            }
+            set {
+                this["TileReach"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TerrainType {
+            get {
+                return ((string)(this["TerrainType"]));
+            }
+            set {
+                this["TerrainType"] = value;
             }
         }
     }

@@ -49,7 +49,7 @@
     <Compile Include="Controller.cs" />
     <Compile Include="MapLogger.cs" />
     <Compile Include="View.cs" />
-    <Compile Include="Model.cs" />
+    <Compile Include="DefaultValues.cs" />
     <Compile Include="Default Window.cs">
       <SubType>Form</SubType>
     </Compile>

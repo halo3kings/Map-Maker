@@ -38,15 +38,6 @@ namespace WindowsFormsApp2
 
             Windows[NumberOfWindows] = Default_Window;              // (2)
             WindowNames[NumberOfWindows] = "Default_Window";        // (3)
-            NumberOfWindows++;                                      // (4)
-
-            //--------------------------------------------------------
-
-           // Windows[NumberOfWindows] = New_Map;                      // (2)
-            //WindowNames[NumberOfWindows] = "New_Map";                // (3)
-            //NumberOfWindows++;                                       // (4)
-
-            //--------------------------------------------------------
 
         }
 
@@ -59,7 +50,7 @@ namespace WindowsFormsApp2
         {
 
         }
-                
+                  
         public Form GetWindow(string Name)
         {
             for (int i = 0; 0 <= WindowNames.Length; i++)

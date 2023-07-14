@@ -8,17 +8,15 @@ namespace WindowsFormsApp2
 {
     internal class Controller
     {
-        Model MODEL;
-        View VIEW;
+        DefaultValues Default = new DefaultValues();
+
         public Controller() 
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            MODEL = new Model();
-            VIEW = new View();
-            MapLogger ML = new MapLogger();
-
-            Application.Run(VIEW.GetWindow("Default_Window"));
+            Default.SetValuesToDefault();
+            Default_Window Default_Window = new Default_Window();
+            Application.Run(Default_Window);
             Application.Run();
 
         }

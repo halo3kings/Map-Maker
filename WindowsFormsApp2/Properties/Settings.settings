@@ -2,29 +2,98 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsFormsApp2.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="MapName" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Map</Value>
+    <Setting Name="MapName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Width" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Height" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="HostileAi" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Erosion" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Avalanches" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="Erosion" Type="System.Boolean" Scope="Application">
+    <Setting Name="AirThreat" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="Avalanches" Type="System.Boolean" Scope="Application">
+    <Setting Name="PowerDrain" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="AirThreat" Type="System.Boolean" Scope="Application">
+    <Setting Name="DamageToPlayer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DamageFromPlayer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CreatureSpeed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DebrisMultiplayer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Hunger" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SpawnChance" Type="System.Single" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ErosionSpeed" Type="System.Single" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RepairCost" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AvalancheDamageToPlayer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Frequency" Type="System.Single" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RateOfConsumption" Type="System.Single" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AirQuantity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PowerDrainMultiplyer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CollectCrystals" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="PowerDrain" Type="System.Boolean" Scope="Application">
+    <Setting Name="CrystalsCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BuildSpecificBuilding" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SpecificBuilding" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BuildSpecificUnit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SpecificUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RescueSpecificUnit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SpecificRescueUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TileReach" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TerrainType" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

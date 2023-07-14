@@ -351,6 +351,11 @@ namespace WindowsFormsApp2
             }
         }
 
+        public void SetMapName()
+        {
+
+        }
+
         private void groupBox3_Enter_1(object sender, EventArgs e)
         {
 
@@ -370,6 +375,29 @@ namespace WindowsFormsApp2
         }
         //Save
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SetMapName(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.MapName = (string)sender;
+        }
+        public void SetWidth(object sender, EventArgs e)
+        {
+            try
+            {
+                int Width = Int32.Parse((string)sender);
+                Properties.Settings.Default.Width = Width;
+            }
+            catch (FormatException)
+            {
+                Debug.WriteLine("Error, Invalid input.");
+
+            }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
