@@ -29,17 +29,16 @@
         public void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.WidthIn = new System.Windows.Forms.NumericUpDown();
             this.labelPowerDrain = new System.Windows.Forms.Label();
             this.PowerDrain = new System.Windows.Forms.CheckBox();
             this.labelAvalanches = new System.Windows.Forms.Label();
             this.Avalanche = new System.Windows.Forms.CheckBox();
             this.labelHostileAI = new System.Windows.Forms.Label();
             this.MapName = new System.Windows.Forms.TextBox();
-            this.Height = new System.Windows.Forms.TextBox();
             this.labelMapName = new System.Windows.Forms.Label();
             this.labelWidth = new System.Windows.Forms.Label();
             this.labelHeight = new System.Windows.Forms.Label();
-            this.Width = new System.Windows.Forms.TextBox();
             this.TerrainType = new System.Windows.Forms.ComboBox();
             this.labelTerrainType = new System.Windows.Forms.Label();
             this.labelErosion = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.labelAirThreat = new System.Windows.Forms.Label();
             this.HostileAI = new System.Windows.Forms.CheckBox();
             this.AirThreat = new System.Windows.Forms.CheckBox();
+            this.HeightIn = new System.Windows.Forms.NumericUpDown();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,73 +56,73 @@
             this.LabelDamageToPlayer = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultPlayerDamage = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomDamage = new System.Windows.Forms.TextBox();
             this.labelCustomDamage = new System.Windows.Forms.Label();
+            this.CustomDamage = new System.Windows.Forms.NumericUpDown();
             this.LabelDamageFromPlayer = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultDamageFromPlayer = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomPlayerDamage = new System.Windows.Forms.TextBox();
             this.labelPlayerCustomDamage = new System.Windows.Forms.Label();
+            this.CustomPlayerDamage = new System.Windows.Forms.NumericUpDown();
             this.LabelSpawnChance = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.SpawnChance = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomSpawnChance = new System.Windows.Forms.TextBox();
             this.labelCustomSpawnChance = new System.Windows.Forms.Label();
+            this.CustomSpawnChance = new System.Windows.Forms.NumericUpDown();
             this.LabelHunger = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultHunger = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomHunger = new System.Windows.Forms.TextBox();
             this.labelCustomHunger = new System.Windows.Forms.Label();
+            this.CustomHunger = new System.Windows.Forms.NumericUpDown();
             this.LabelSpeed = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultSpeed = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomSpeed = new System.Windows.Forms.TextBox();
             this.labelCustomSpeed = new System.Windows.Forms.Label();
             this.labelDebrisMultiplyer = new System.Windows.Forms.Label();
-            this.textBoxDebrisMultiplyer = new System.Windows.Forms.TextBox();
+            this.CustomSpeed = new System.Windows.Forms.NumericUpDown();
+            this.DebrisMultiplier = new System.Windows.Forms.NumericUpDown();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultRepairCost = new System.Windows.Forms.CheckBox();
-            this.textBoxRepairCost = new System.Windows.Forms.TextBox();
             this.labelRepairCost = new System.Windows.Forms.Label();
+            this.RepairCost = new System.Windows.Forms.NumericUpDown();
             this.LabelErosionSpeed = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultErosionSpeed = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomErosionSpeed = new System.Windows.Forms.TextBox();
             this.labelCustomErosionSpeed = new System.Windows.Forms.Label();
+            this.CustomErosionSpeed = new System.Windows.Forms.NumericUpDown();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultAvalancheFrequency = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomAvalanchFrequncy = new System.Windows.Forms.TextBox();
             this.labelCustomAvalancheFrequency = new System.Windows.Forms.Label();
+            this.CustomAvalanchFrequncy = new System.Windows.Forms.NumericUpDown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.defaultAvalancheDamageToPlayers = new System.Windows.Forms.CheckBox();
-            this.textBoxCustomAvalanchDamage = new System.Windows.Forms.TextBox();
             this.labelCustomAvalancheDamage = new System.Windows.Forms.Label();
+            this.CustomAvalanchDamage = new System.Windows.Forms.NumericUpDown();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultAirQuantity = new System.Windows.Forms.CheckBox();
-            this.textBoxAirQuantity = new System.Windows.Forms.TextBox();
             this.labelAirQuantity = new System.Windows.Forms.Label();
+            this.AirQuantity = new System.Windows.Forms.NumericUpDown();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultRateOfConsumption = new System.Windows.Forms.CheckBox();
-            this.textBoxRateOfConsumption = new System.Windows.Forms.TextBox();
             this.labelRateOfConsumption = new System.Windows.Forms.Label();
+            this.RateOfConsumption = new System.Windows.Forms.NumericUpDown();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.DefaultPowerDrain = new System.Windows.Forms.CheckBox();
-            this.textBoxPowerDrain = new System.Windows.Forms.TextBox();
             this.label21PowerDrain = new System.Windows.Forms.Label();
+            this.PowerDrainMultiplier = new System.Windows.Forms.NumericUpDown();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
@@ -147,12 +147,14 @@
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.ActiveCrystalCollection = new System.Windows.Forms.CheckBox();
             this.labelCrystalCollection = new System.Windows.Forms.Label();
-            this.comboBoxCrystals = new System.Windows.Forms.ComboBox();
+            this.NeededCrystals = new System.Windows.Forms.NumericUpDown();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WidthIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeightIn)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -161,36 +163,49 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.LabelDamageToPlayer.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomDamage)).BeginInit();
             this.LabelDamageFromPlayer.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomPlayerDamage)).BeginInit();
             this.LabelSpawnChance.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomSpawnChance)).BeginInit();
             this.LabelHunger.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomHunger)).BeginInit();
             this.LabelSpeed.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DebrisMultiplier)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairCost)).BeginInit();
             this.LabelErosionSpeed.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomErosionSpeed)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomAvalanchFrequncy)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomAvalanchDamage)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AirQuantity)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RateOfConsumption)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PowerDrainMultiplier)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.groupBox19.SuspendLayout();
@@ -203,6 +218,7 @@
             this.tableLayoutPanel20.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NeededCrystals)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -212,17 +228,16 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.WidthIn, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelPowerDrain, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.PowerDrain, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.labelAvalanches, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.Avalanche, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.labelHostileAI, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.MapName, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.Height, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.labelMapName, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelWidth, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelHeight, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.Width, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.TerrainType, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelTerrainType, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelErosion, 0, 5);
@@ -230,6 +245,7 @@
             this.tableLayoutPanel1.Controls.Add(this.labelAirThreat, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.HostileAI, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.AirThreat, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.HeightIn, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 19);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
@@ -244,7 +260,29 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(233, 221);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // WidthIn
+            // 
+            this.WidthIn.Location = new System.Drawing.Point(79, 29);
+            this.WidthIn.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.WidthIn.Minimum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.WidthIn.Name = "WidthIn";
+            this.WidthIn.Size = new System.Drawing.Size(120, 20);
+            this.WidthIn.TabIndex = 1;
+            this.WidthIn.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.WidthIn.ValueChanged += new System.EventHandler(this.SetWidth);
             // 
             // labelPowerDrain
             // 
@@ -263,6 +301,7 @@
             this.PowerDrain.Size = new System.Drawing.Size(15, 14);
             this.PowerDrain.TabIndex = 18;
             this.PowerDrain.UseVisualStyleBackColor = true;
+            this.PowerDrain.CheckedChanged += new System.EventHandler(this.checkBoxPowerDrain);
             // 
             // labelAvalanches
             // 
@@ -281,6 +320,7 @@
             this.Avalanche.Size = new System.Drawing.Size(15, 14);
             this.Avalanche.TabIndex = 14;
             this.Avalanche.UseVisualStyleBackColor = true;
+            this.Avalanche.CheckedChanged += new System.EventHandler(this.checkBoxAvalanche);
             // 
             // labelHostileAI
             // 
@@ -299,15 +339,9 @@
             this.MapName.Name = "MapName";
             this.MapName.Size = new System.Drawing.Size(138, 20);
             this.MapName.TabIndex = 0;
-            this.MapName.TextChanged += new System.EventHandler(this.SetMapName);
-            this.MapName.Enter += new System.EventHandler(this.SetMapName);
-            // 
-            // Height
-            // 
-            this.Height.Location = new System.Drawing.Point(79, 55);
-            this.Height.Name = "Height";
-            this.Height.Size = new System.Drawing.Size(138, 20);
-            this.Height.TabIndex = 2;
+            this.MapName.Text = "NewMap";
+            this.MapName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MapNameEnterKey);
+            this.MapName.Leave += new System.EventHandler(this.SetMapName);
             // 
             // labelMapName
             // 
@@ -337,15 +371,6 @@
             this.labelHeight.TabIndex = 6;
             this.labelHeight.Text = "Height(Y)";
             // 
-            // Width
-            // 
-            this.Width.Location = new System.Drawing.Point(79, 29);
-            this.Width.Name = "Width";
-            this.Width.Size = new System.Drawing.Size(138, 20);
-            this.Width.TabIndex = 3;
-            this.Width.Click += new System.EventHandler(this.SetWidth);
-            this.Width.TextChanged += new System.EventHandler(this.SetWidth);
-            // 
             // TerrainType
             // 
             this.TerrainType.FormattingEnabled = true;
@@ -357,7 +382,9 @@
             this.TerrainType.Name = "TerrainType";
             this.TerrainType.Size = new System.Drawing.Size(138, 21);
             this.TerrainType.TabIndex = 7;
-            this.TerrainType.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.TerrainType.Text = "Select Type";
+            this.TerrainType.TextChanged += new System.EventHandler(this.SetTerrainType);
+            this.TerrainType.Leave += new System.EventHandler(this.SetTerrainType);
             // 
             // labelTerrainType
             // 
@@ -386,7 +413,7 @@
             this.Erosion.Size = new System.Drawing.Size(15, 14);
             this.Erosion.TabIndex = 12;
             this.Erosion.UseVisualStyleBackColor = true;
-            this.Erosion.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.Erosion.CheckedChanged += new System.EventHandler(this.checkBoxErosion);
             // 
             // labelAirThreat
             // 
@@ -405,7 +432,7 @@
             this.HostileAI.Size = new System.Drawing.Size(15, 14);
             this.HostileAI.TabIndex = 10;
             this.HostileAI.UseVisualStyleBackColor = true;
-            this.HostileAI.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.HostileAI.CheckedChanged += new System.EventHandler(this.checkBoxHostileAI);
             // 
             // AirThreat
             // 
@@ -415,6 +442,30 @@
             this.AirThreat.Size = new System.Drawing.Size(15, 14);
             this.AirThreat.TabIndex = 17;
             this.AirThreat.UseVisualStyleBackColor = true;
+            this.AirThreat.CheckedChanged += new System.EventHandler(this.checkBoxAirThreat);
+            // 
+            // HeightIn
+            // 
+            this.HeightIn.Location = new System.Drawing.Point(79, 55);
+            this.HeightIn.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.HeightIn.Minimum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.HeightIn.Name = "HeightIn";
+            this.HeightIn.Size = new System.Drawing.Size(120, 20);
+            this.HeightIn.TabIndex = 19;
+            this.HeightIn.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.HeightIn.ValueChanged += new System.EventHandler(this.SetHeight);
             // 
             // flowLayoutPanel1
             // 
@@ -482,6 +533,7 @@
             this.tableLayoutPanel3.Controls.Add(this.LabelSpawnChance, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.LabelHunger, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.LabelSpeed, 0, 3);
+            this.tableLayoutPanel3.Enabled = false;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(-4, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 6;
@@ -509,10 +561,10 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.tableLayoutPanel4.Controls.Add(this.DefaultPlayerDamage, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBoxCustomDamage, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.labelCustomDamage, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.CustomDamage, 2, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -534,24 +586,23 @@
             this.DefaultPlayerDamage.UseVisualStyleBackColor = true;
             this.DefaultPlayerDamage.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // textBoxCustomDamage
-            // 
-            this.textBoxCustomDamage.AcceptsReturn = true;
-            this.textBoxCustomDamage.Enabled = false;
-            this.textBoxCustomDamage.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomDamage.Name = "textBoxCustomDamage";
-            this.textBoxCustomDamage.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomDamage.TabIndex = 1;
-            // 
             // labelCustomDamage
             // 
             this.labelCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomDamage.AutoSize = true;
-            this.labelCustomDamage.Location = new System.Drawing.Point(89, 5);
+            this.labelCustomDamage.Location = new System.Drawing.Point(155, 5);
             this.labelCustomDamage.Name = "labelCustomDamage";
-            this.labelCustomDamage.Size = new System.Drawing.Size(88, 13);
+            this.labelCustomDamage.Size = new System.Drawing.Size(160, 13);
             this.labelCustomDamage.TabIndex = 2;
             this.labelCustomDamage.Text = "Custom Damage:";
+            // 
+            // CustomDamage
+            // 
+            this.CustomDamage.Enabled = false;
+            this.CustomDamage.Location = new System.Drawing.Point(321, 3);
+            this.CustomDamage.Name = "CustomDamage";
+            this.CustomDamage.Size = new System.Drawing.Size(120, 20);
+            this.CustomDamage.TabIndex = 3;
             // 
             // LabelDamageFromPlayer
             // 
@@ -568,10 +619,10 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel5.Controls.Add(this.DefaultDamageFromPlayer, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBoxCustomPlayerDamage, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.labelPlayerCustomDamage, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.CustomPlayerDamage, 2, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(7, 13);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -592,24 +643,23 @@
             this.DefaultDamageFromPlayer.UseVisualStyleBackColor = true;
             this.DefaultDamageFromPlayer.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
-            // textBoxCustomPlayerDamage
-            // 
-            this.textBoxCustomPlayerDamage.AcceptsReturn = true;
-            this.textBoxCustomPlayerDamage.Enabled = false;
-            this.textBoxCustomPlayerDamage.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomPlayerDamage.Name = "textBoxCustomPlayerDamage";
-            this.textBoxCustomPlayerDamage.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomPlayerDamage.TabIndex = 1;
-            // 
             // labelPlayerCustomDamage
             // 
             this.labelPlayerCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPlayerCustomDamage.AutoSize = true;
-            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(89, 7);
+            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(155, 7);
             this.labelPlayerCustomDamage.Name = "labelPlayerCustomDamage";
-            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(88, 13);
+            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(162, 13);
             this.labelPlayerCustomDamage.TabIndex = 2;
             this.labelPlayerCustomDamage.Text = "Custom Damage:";
+            // 
+            // CustomPlayerDamage
+            // 
+            this.CustomPlayerDamage.Enabled = false;
+            this.CustomPlayerDamage.Location = new System.Drawing.Point(323, 3);
+            this.CustomPlayerDamage.Name = "CustomPlayerDamage";
+            this.CustomPlayerDamage.Size = new System.Drawing.Size(120, 20);
+            this.CustomPlayerDamage.TabIndex = 3;
             // 
             // LabelSpawnChance
             // 
@@ -626,10 +676,10 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel8.Controls.Add(this.SpawnChance, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.textBoxCustomSpawnChance, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.labelCustomSpawnChance, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.CustomSpawnChance, 2, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(7, 13);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -650,24 +700,23 @@
             this.SpawnChance.UseVisualStyleBackColor = true;
             this.SpawnChance.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
-            // textBoxCustomSpawnChance
-            // 
-            this.textBoxCustomSpawnChance.AcceptsReturn = true;
-            this.textBoxCustomSpawnChance.Enabled = false;
-            this.textBoxCustomSpawnChance.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomSpawnChance.Name = "textBoxCustomSpawnChance";
-            this.textBoxCustomSpawnChance.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomSpawnChance.TabIndex = 1;
-            // 
             // labelCustomSpawnChance
             // 
             this.labelCustomSpawnChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpawnChance.AutoSize = true;
-            this.labelCustomSpawnChance.Location = new System.Drawing.Point(89, 8);
+            this.labelCustomSpawnChance.Location = new System.Drawing.Point(156, 8);
             this.labelCustomSpawnChance.Name = "labelCustomSpawnChance";
-            this.labelCustomSpawnChance.Size = new System.Drawing.Size(88, 13);
+            this.labelCustomSpawnChance.Size = new System.Drawing.Size(163, 13);
             this.labelCustomSpawnChance.TabIndex = 2;
             this.labelCustomSpawnChance.Text = "Custom Chance";
+            // 
+            // CustomSpawnChance
+            // 
+            this.CustomSpawnChance.Enabled = false;
+            this.CustomSpawnChance.Location = new System.Drawing.Point(325, 3);
+            this.CustomSpawnChance.Name = "CustomSpawnChance";
+            this.CustomSpawnChance.Size = new System.Drawing.Size(119, 20);
+            this.CustomSpawnChance.TabIndex = 3;
             // 
             // LabelHunger
             // 
@@ -685,10 +734,10 @@
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel9.Controls.Add(this.DefaultHunger, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.textBoxCustomHunger, 2, 0);
             this.tableLayoutPanel9.Controls.Add(this.labelCustomHunger, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.CustomHunger, 2, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(7, 18);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
@@ -709,24 +758,23 @@
             this.DefaultHunger.UseVisualStyleBackColor = true;
             this.DefaultHunger.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
-            // textBoxCustomHunger
-            // 
-            this.textBoxCustomHunger.AcceptsReturn = true;
-            this.textBoxCustomHunger.Enabled = false;
-            this.textBoxCustomHunger.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomHunger.Name = "textBoxCustomHunger";
-            this.textBoxCustomHunger.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomHunger.TabIndex = 1;
-            // 
             // labelCustomHunger
             // 
             this.labelCustomHunger.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomHunger.AutoSize = true;
-            this.labelCustomHunger.Location = new System.Drawing.Point(89, 7);
+            this.labelCustomHunger.Location = new System.Drawing.Point(155, 7);
             this.labelCustomHunger.Name = "labelCustomHunger";
-            this.labelCustomHunger.Size = new System.Drawing.Size(88, 13);
+            this.labelCustomHunger.Size = new System.Drawing.Size(162, 13);
             this.labelCustomHunger.TabIndex = 2;
             this.labelCustomHunger.Text = "Custom Hunger:";
+            // 
+            // CustomHunger
+            // 
+            this.CustomHunger.Enabled = false;
+            this.CustomHunger.Location = new System.Drawing.Point(323, 3);
+            this.CustomHunger.Name = "CustomHunger";
+            this.CustomHunger.Size = new System.Drawing.Size(120, 20);
+            this.CustomHunger.TabIndex = 3;
             // 
             // LabelSpeed
             // 
@@ -743,12 +791,12 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel7.Controls.Add(this.DefaultSpeed, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBoxCustomSpeed, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelCustomSpeed, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelDebrisMultiplyer, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.textBoxDebrisMultiplyer, 2, 1);
+            this.tableLayoutPanel7.Controls.Add(this.CustomSpeed, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.DebrisMultiplier, 2, 1);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
@@ -770,22 +818,13 @@
             this.DefaultSpeed.UseVisualStyleBackColor = true;
             this.DefaultSpeed.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
-            // textBoxCustomSpeed
-            // 
-            this.textBoxCustomSpeed.AcceptsReturn = true;
-            this.textBoxCustomSpeed.Enabled = false;
-            this.textBoxCustomSpeed.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomSpeed.Name = "textBoxCustomSpeed";
-            this.textBoxCustomSpeed.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomSpeed.TabIndex = 1;
-            // 
             // labelCustomSpeed
             // 
             this.labelCustomSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpeed.AutoSize = true;
-            this.labelCustomSpeed.Location = new System.Drawing.Point(89, 9);
+            this.labelCustomSpeed.Location = new System.Drawing.Point(155, 9);
             this.labelCustomSpeed.Name = "labelCustomSpeed";
-            this.labelCustomSpeed.Size = new System.Drawing.Size(88, 13);
+            this.labelCustomSpeed.Size = new System.Drawing.Size(162, 13);
             this.labelCustomSpeed.TabIndex = 2;
             this.labelCustomSpeed.Text = "Custom Speed:";
             this.labelCustomSpeed.Click += new System.EventHandler(this.label18_Click);
@@ -794,20 +833,27 @@
             // 
             this.labelDebrisMultiplyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDebrisMultiplyer.AutoSize = true;
-            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(89, 41);
+            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(155, 41);
             this.labelDebrisMultiplyer.Name = "labelDebrisMultiplyer";
-            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(88, 13);
+            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(162, 13);
             this.labelDebrisMultiplyer.TabIndex = 3;
             this.labelDebrisMultiplyer.Text = "Debris Multiplier:";
             // 
-            // textBoxDebrisMultiplyer
+            // CustomSpeed
             // 
-            this.textBoxDebrisMultiplyer.AcceptsReturn = true;
-            this.textBoxDebrisMultiplyer.Enabled = false;
-            this.textBoxDebrisMultiplyer.Location = new System.Drawing.Point(183, 35);
-            this.textBoxDebrisMultiplyer.Name = "textBoxDebrisMultiplyer";
-            this.textBoxDebrisMultiplyer.Size = new System.Drawing.Size(233, 20);
-            this.textBoxDebrisMultiplyer.TabIndex = 4;
+            this.CustomSpeed.Enabled = false;
+            this.CustomSpeed.Location = new System.Drawing.Point(323, 3);
+            this.CustomSpeed.Name = "CustomSpeed";
+            this.CustomSpeed.Size = new System.Drawing.Size(120, 20);
+            this.CustomSpeed.TabIndex = 4;
+            // 
+            // DebrisMultiplier
+            // 
+            this.DebrisMultiplier.Enabled = false;
+            this.DebrisMultiplier.Location = new System.Drawing.Point(323, 35);
+            this.DebrisMultiplier.Name = "DebrisMultiplier";
+            this.DebrisMultiplier.Size = new System.Drawing.Size(120, 20);
+            this.DebrisMultiplier.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -827,6 +873,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.70712F));
             this.tableLayoutPanel2.Controls.Add(this.groupBox6, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.LabelErosionSpeed, 0, 0);
+            this.tableLayoutPanel2.Enabled = false;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -850,10 +897,10 @@
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel13.Controls.Add(this.DefaultRepairCost, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.textBoxRepairCost, 2, 0);
             this.tableLayoutPanel13.Controls.Add(this.labelRepairCost, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.RepairCost, 2, 0);
             this.tableLayoutPanel13.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
@@ -874,24 +921,23 @@
             this.DefaultRepairCost.UseVisualStyleBackColor = true;
             this.DefaultRepairCost.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
             // 
-            // textBoxRepairCost
-            // 
-            this.textBoxRepairCost.AcceptsReturn = true;
-            this.textBoxRepairCost.Enabled = false;
-            this.textBoxRepairCost.Location = new System.Drawing.Point(183, 3);
-            this.textBoxRepairCost.Name = "textBoxRepairCost";
-            this.textBoxRepairCost.Size = new System.Drawing.Size(233, 20);
-            this.textBoxRepairCost.TabIndex = 1;
-            // 
             // labelRepairCost
             // 
             this.labelRepairCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRepairCost.AutoSize = true;
-            this.labelRepairCost.Location = new System.Drawing.Point(89, 5);
+            this.labelRepairCost.Location = new System.Drawing.Point(155, 5);
             this.labelRepairCost.Name = "labelRepairCost";
-            this.labelRepairCost.Size = new System.Drawing.Size(88, 13);
+            this.labelRepairCost.Size = new System.Drawing.Size(162, 13);
             this.labelRepairCost.TabIndex = 2;
             this.labelRepairCost.Text = "Repair Cost:";
+            // 
+            // RepairCost
+            // 
+            this.RepairCost.Enabled = false;
+            this.RepairCost.Location = new System.Drawing.Point(323, 3);
+            this.RepairCost.Name = "RepairCost";
+            this.RepairCost.Size = new System.Drawing.Size(120, 20);
+            this.RepairCost.TabIndex = 3;
             // 
             // LabelErosionSpeed
             // 
@@ -909,10 +955,10 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel6.Controls.Add(this.DefaultErosionSpeed, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBoxCustomErosionSpeed, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelCustomErosionSpeed, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.CustomErosionSpeed, 2, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
@@ -933,24 +979,23 @@
             this.DefaultErosionSpeed.UseVisualStyleBackColor = true;
             this.DefaultErosionSpeed.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
-            // textBoxCustomErosionSpeed
-            // 
-            this.textBoxCustomErosionSpeed.AcceptsReturn = true;
-            this.textBoxCustomErosionSpeed.Enabled = false;
-            this.textBoxCustomErosionSpeed.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomErosionSpeed.Name = "textBoxCustomErosionSpeed";
-            this.textBoxCustomErosionSpeed.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomErosionSpeed.TabIndex = 1;
-            // 
             // labelCustomErosionSpeed
             // 
             this.labelCustomErosionSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomErosionSpeed.AutoSize = true;
-            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(89, 5);
+            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(155, 5);
             this.labelCustomErosionSpeed.Name = "labelCustomErosionSpeed";
-            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(88, 13);
+            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(162, 13);
             this.labelCustomErosionSpeed.TabIndex = 2;
             this.labelCustomErosionSpeed.Text = "Custom Speed:";
+            // 
+            // CustomErosionSpeed
+            // 
+            this.CustomErosionSpeed.Enabled = false;
+            this.CustomErosionSpeed.Location = new System.Drawing.Point(323, 3);
+            this.CustomErosionSpeed.Name = "CustomErosionSpeed";
+            this.CustomErosionSpeed.Size = new System.Drawing.Size(120, 20);
+            this.CustomErosionSpeed.TabIndex = 3;
             // 
             // tabPage3
             // 
@@ -969,6 +1014,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.70712F));
             this.tableLayoutPanel10.Controls.Add(this.groupBox5, 0, 1);
             this.tableLayoutPanel10.Controls.Add(this.groupBox4, 0, 0);
+            this.tableLayoutPanel10.Enabled = false;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 1);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 2;
@@ -990,12 +1036,12 @@
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 3;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.17767F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.82233F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.82609F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.17391F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.tableLayoutPanel12.Controls.Add(this.DefaultAvalancheFrequency, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.textBoxCustomAvalanchFrequncy, 2, 0);
             this.tableLayoutPanel12.Controls.Add(this.labelCustomAvalancheFrequency, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.CustomAvalanchFrequncy, 2, 0);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
@@ -1016,24 +1062,23 @@
             this.DefaultAvalancheFrequency.UseVisualStyleBackColor = true;
             this.DefaultAvalancheFrequency.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
-            // textBoxCustomAvalanchFrequncy
-            // 
-            this.textBoxCustomAvalanchFrequncy.AcceptsReturn = true;
-            this.textBoxCustomAvalanchFrequncy.Enabled = false;
-            this.textBoxCustomAvalanchFrequncy.Location = new System.Drawing.Point(196, 3);
-            this.textBoxCustomAvalanchFrequncy.Name = "textBoxCustomAvalanchFrequncy";
-            this.textBoxCustomAvalanchFrequncy.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomAvalanchFrequncy.TabIndex = 1;
-            // 
             // labelCustomAvalancheFrequency
             // 
             this.labelCustomAvalancheFrequency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheFrequency.AutoSize = true;
-            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(90, 5);
+            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(155, 5);
             this.labelCustomAvalancheFrequency.Name = "labelCustomAvalancheFrequency";
-            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(100, 13);
+            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(160, 13);
             this.labelCustomAvalancheFrequency.TabIndex = 2;
             this.labelCustomAvalancheFrequency.Text = "Custom Frequency:";
+            // 
+            // CustomAvalanchFrequncy
+            // 
+            this.CustomAvalanchFrequncy.Enabled = false;
+            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(321, 3);
+            this.CustomAvalanchFrequncy.Name = "CustomAvalanchFrequncy";
+            this.CustomAvalanchFrequncy.Size = new System.Drawing.Size(120, 20);
+            this.CustomAvalanchFrequncy.TabIndex = 3;
             // 
             // groupBox4
             // 
@@ -1050,10 +1095,10 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel11.Controls.Add(this.defaultAvalancheDamageToPlayers, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.textBoxCustomAvalanchDamage, 2, 0);
             this.tableLayoutPanel11.Controls.Add(this.labelCustomAvalancheDamage, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.CustomAvalanchDamage, 2, 0);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
@@ -1074,24 +1119,23 @@
             this.defaultAvalancheDamageToPlayers.UseVisualStyleBackColor = true;
             this.defaultAvalancheDamageToPlayers.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
-            // textBoxCustomAvalanchDamage
-            // 
-            this.textBoxCustomAvalanchDamage.AcceptsReturn = true;
-            this.textBoxCustomAvalanchDamage.Enabled = false;
-            this.textBoxCustomAvalanchDamage.Location = new System.Drawing.Point(183, 3);
-            this.textBoxCustomAvalanchDamage.Name = "textBoxCustomAvalanchDamage";
-            this.textBoxCustomAvalanchDamage.Size = new System.Drawing.Size(233, 20);
-            this.textBoxCustomAvalanchDamage.TabIndex = 1;
-            // 
             // labelCustomAvalancheDamage
             // 
             this.labelCustomAvalancheDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheDamage.AutoSize = true;
-            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(89, 5);
+            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(155, 5);
             this.labelCustomAvalancheDamage.Name = "labelCustomAvalancheDamage";
-            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(88, 13);
+            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(162, 13);
             this.labelCustomAvalancheDamage.TabIndex = 2;
             this.labelCustomAvalancheDamage.Text = "Custom Damage:";
+            // 
+            // CustomAvalanchDamage
+            // 
+            this.CustomAvalanchDamage.Enabled = false;
+            this.CustomAvalanchDamage.Location = new System.Drawing.Point(323, 3);
+            this.CustomAvalanchDamage.Name = "CustomAvalanchDamage";
+            this.CustomAvalanchDamage.Size = new System.Drawing.Size(120, 20);
+            this.CustomAvalanchDamage.TabIndex = 3;
             // 
             // tabPage4
             // 
@@ -1110,6 +1154,7 @@
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.70712F));
             this.tableLayoutPanel14.Controls.Add(this.groupBox7, 0, 1);
             this.tableLayoutPanel14.Controls.Add(this.groupBox8, 0, 0);
+            this.tableLayoutPanel14.Enabled = false;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 1);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 2;
@@ -1133,10 +1178,10 @@
             this.tableLayoutPanel15.ColumnCount = 3;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.10695F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.89305F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 263F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel15.Controls.Add(this.DefaultAirQuantity, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.textBoxAirQuantity, 2, 0);
             this.tableLayoutPanel15.Controls.Add(this.labelAirQuantity, 1, 0);
+            this.tableLayoutPanel15.Controls.Add(this.AirQuantity, 2, 0);
             this.tableLayoutPanel15.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
@@ -1157,24 +1202,23 @@
             this.DefaultAirQuantity.UseVisualStyleBackColor = true;
             this.DefaultAirQuantity.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             // 
-            // textBoxAirQuantity
-            // 
-            this.textBoxAirQuantity.AcceptsReturn = true;
-            this.textBoxAirQuantity.Enabled = false;
-            this.textBoxAirQuantity.Location = new System.Drawing.Point(190, 3);
-            this.textBoxAirQuantity.Name = "textBoxAirQuantity";
-            this.textBoxAirQuantity.Size = new System.Drawing.Size(225, 20);
-            this.textBoxAirQuantity.TabIndex = 1;
-            // 
             // labelAirQuantity
             // 
             this.labelAirQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAirQuantity.AutoSize = true;
-            this.labelAirQuantity.Location = new System.Drawing.Point(78, 5);
+            this.labelAirQuantity.Location = new System.Drawing.Point(132, 5);
             this.labelAirQuantity.Name = "labelAirQuantity";
-            this.labelAirQuantity.Size = new System.Drawing.Size(106, 13);
+            this.labelAirQuantity.Size = new System.Drawing.Size(186, 13);
             this.labelAirQuantity.TabIndex = 2;
             this.labelAirQuantity.Text = "Custom Level:";
+            // 
+            // AirQuantity
+            // 
+            this.AirQuantity.Enabled = false;
+            this.AirQuantity.Location = new System.Drawing.Point(324, 3);
+            this.AirQuantity.Name = "AirQuantity";
+            this.AirQuantity.Size = new System.Drawing.Size(120, 20);
+            this.AirQuantity.TabIndex = 3;
             // 
             // groupBox8
             // 
@@ -1189,12 +1233,12 @@
             // tableLayoutPanel16
             // 
             this.tableLayoutPanel16.ColumnCount = 3;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 263F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.74074F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.25926F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel16.Controls.Add(this.DefaultRateOfConsumption, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.textBoxRateOfConsumption, 2, 0);
             this.tableLayoutPanel16.Controls.Add(this.labelRateOfConsumption, 1, 0);
+            this.tableLayoutPanel16.Controls.Add(this.RateOfConsumption, 2, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
@@ -1215,24 +1259,23 @@
             this.DefaultRateOfConsumption.UseVisualStyleBackColor = true;
             this.DefaultRateOfConsumption.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
-            // textBoxRateOfConsumption
-            // 
-            this.textBoxRateOfConsumption.AcceptsReturn = true;
-            this.textBoxRateOfConsumption.Enabled = false;
-            this.textBoxRateOfConsumption.Location = new System.Drawing.Point(190, 3);
-            this.textBoxRateOfConsumption.Name = "textBoxRateOfConsumption";
-            this.textBoxRateOfConsumption.Size = new System.Drawing.Size(233, 20);
-            this.textBoxRateOfConsumption.TabIndex = 1;
-            // 
             // labelRateOfConsumption
             // 
             this.labelRateOfConsumption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRateOfConsumption.AutoSize = true;
-            this.labelRateOfConsumption.Location = new System.Drawing.Point(73, 0);
+            this.labelRateOfConsumption.Location = new System.Drawing.Point(135, 5);
             this.labelRateOfConsumption.Name = "labelRateOfConsumption";
-            this.labelRateOfConsumption.Size = new System.Drawing.Size(111, 24);
+            this.labelRateOfConsumption.Size = new System.Drawing.Size(186, 13);
             this.labelRateOfConsumption.TabIndex = 2;
             this.labelRateOfConsumption.Text = " Custom Consumption:";
+            // 
+            // RateOfConsumption
+            // 
+            this.RateOfConsumption.Enabled = false;
+            this.RateOfConsumption.Location = new System.Drawing.Point(327, 3);
+            this.RateOfConsumption.Name = "RateOfConsumption";
+            this.RateOfConsumption.Size = new System.Drawing.Size(120, 20);
+            this.RateOfConsumption.TabIndex = 3;
             // 
             // tabPage5
             // 
@@ -1250,6 +1293,7 @@
             this.tableLayoutPanel17.ColumnCount = 1;
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.70712F));
             this.tableLayoutPanel17.Controls.Add(this.groupBox15, 0, 0);
+            this.tableLayoutPanel17.Enabled = false;
             this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 1);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 2;
@@ -1274,10 +1318,10 @@
             this.tableLayoutPanel19.ColumnCount = 3;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 263F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.tableLayoutPanel19.Controls.Add(this.DefaultPowerDrain, 0, 0);
-            this.tableLayoutPanel19.Controls.Add(this.textBoxPowerDrain, 2, 0);
             this.tableLayoutPanel19.Controls.Add(this.label21PowerDrain, 1, 0);
+            this.tableLayoutPanel19.Controls.Add(this.PowerDrainMultiplier, 2, 0);
             this.tableLayoutPanel19.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 1;
@@ -1298,24 +1342,23 @@
             this.DefaultPowerDrain.UseVisualStyleBackColor = true;
             this.DefaultPowerDrain.CheckStateChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
             // 
-            // textBoxPowerDrain
-            // 
-            this.textBoxPowerDrain.AcceptsReturn = true;
-            this.textBoxPowerDrain.Enabled = false;
-            this.textBoxPowerDrain.Location = new System.Drawing.Point(190, 3);
-            this.textBoxPowerDrain.Name = "textBoxPowerDrain";
-            this.textBoxPowerDrain.Size = new System.Drawing.Size(233, 20);
-            this.textBoxPowerDrain.TabIndex = 1;
-            // 
             // label21PowerDrain
             // 
             this.label21PowerDrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label21PowerDrain.AutoSize = true;
-            this.label21PowerDrain.Location = new System.Drawing.Point(73, 5);
+            this.label21PowerDrain.Location = new System.Drawing.Point(125, 5);
             this.label21PowerDrain.Name = "label21PowerDrain";
-            this.label21PowerDrain.Size = new System.Drawing.Size(111, 13);
+            this.label21PowerDrain.Size = new System.Drawing.Size(195, 13);
             this.label21PowerDrain.TabIndex = 2;
             this.label21PowerDrain.Text = " Custom Multiplier:";
+            // 
+            // PowerDrainMultiplier
+            // 
+            this.PowerDrainMultiplier.Enabled = false;
+            this.PowerDrainMultiplier.Location = new System.Drawing.Point(326, 3);
+            this.PowerDrainMultiplier.Name = "PowerDrainMultiplier";
+            this.PowerDrainMultiplier.Size = new System.Drawing.Size(118, 20);
+            this.PowerDrainMultiplier.TabIndex = 3;
             // 
             // tabPage6
             // 
@@ -1364,7 +1407,7 @@
             this.tableLayoutPanel24.ColumnCount = 3;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 276F));
             this.tableLayoutPanel24.Controls.Add(this.ActiveReachTheTile, 0, 0);
             this.tableLayoutPanel24.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
@@ -1397,9 +1440,9 @@
             // tableLayoutPanel23
             // 
             this.tableLayoutPanel23.ColumnCount = 3;
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.53312F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.46688F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.tableLayoutPanel23.Controls.Add(this.ActiveRescue, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.labelRescueUnit, 1, 0);
             this.tableLayoutPanel23.Controls.Add(this.comboBoxRescueUnit, 2, 0);
@@ -1425,9 +1468,9 @@
             // 
             this.labelRescueUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRescueUnit.AutoSize = true;
-            this.labelRescueUnit.Location = new System.Drawing.Point(89, 5);
+            this.labelRescueUnit.Location = new System.Drawing.Point(139, 5);
             this.labelRescueUnit.Name = "labelRescueUnit";
-            this.labelRescueUnit.Size = new System.Drawing.Size(88, 13);
+            this.labelRescueUnit.Size = new System.Drawing.Size(171, 13);
             this.labelRescueUnit.TabIndex = 2;
             this.labelRescueUnit.Text = "Specify unit:";
             // 
@@ -1454,9 +1497,9 @@
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxRescueUnit.Location = new System.Drawing.Point(183, 3);
+            this.comboBoxRescueUnit.Location = new System.Drawing.Point(316, 3);
             this.comboBoxRescueUnit.Name = "comboBoxRescueUnit";
-            this.comboBoxRescueUnit.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxRescueUnit.Size = new System.Drawing.Size(128, 21);
             this.comboBoxRescueUnit.TabIndex = 8;
             // 
             // groupBox17
@@ -1472,9 +1515,9 @@
             // tableLayoutPanel22
             // 
             this.tableLayoutPanel22.ColumnCount = 3;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.23602F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.76398F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.tableLayoutPanel22.Controls.Add(this.ActiveSpecificUnit, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.labelSpecificUnit, 1, 0);
             this.tableLayoutPanel22.Controls.Add(this.comboBoxSpecificUnit, 2, 0);
@@ -1500,9 +1543,9 @@
             // 
             this.labelSpecificUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpecificUnit.AutoSize = true;
-            this.labelSpecificUnit.Location = new System.Drawing.Point(89, 5);
+            this.labelSpecificUnit.Location = new System.Drawing.Point(137, 5);
             this.labelSpecificUnit.Name = "labelSpecificUnit";
-            this.labelSpecificUnit.Size = new System.Drawing.Size(88, 13);
+            this.labelSpecificUnit.Size = new System.Drawing.Size(178, 13);
             this.labelSpecificUnit.TabIndex = 2;
             this.labelSpecificUnit.Text = "Specify unit:";
             // 
@@ -1529,9 +1572,9 @@
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(183, 3);
+            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(321, 3);
             this.comboBoxSpecificUnit.Name = "comboBoxSpecificUnit";
-            this.comboBoxSpecificUnit.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxSpecificUnit.Size = new System.Drawing.Size(123, 21);
             this.comboBoxSpecificUnit.TabIndex = 8;
             // 
             // groupBox13
@@ -1547,9 +1590,9 @@
             // tableLayoutPanel20
             // 
             this.tableLayoutPanel20.ColumnCount = 3;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.10526F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.89474F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.tableLayoutPanel20.Controls.Add(this.ActiveSpecificBuilding, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.labelSpecificBuilding, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.comboBoxSpecificBuilding, 2, 0);
@@ -1575,9 +1618,9 @@
             // 
             this.labelSpecificBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpecificBuilding.AutoSize = true;
-            this.labelSpecificBuilding.Location = new System.Drawing.Point(89, 5);
+            this.labelSpecificBuilding.Location = new System.Drawing.Point(137, 5);
             this.labelSpecificBuilding.Name = "labelSpecificBuilding";
-            this.labelSpecificBuilding.Size = new System.Drawing.Size(88, 13);
+            this.labelSpecificBuilding.Size = new System.Drawing.Size(179, 13);
             this.labelSpecificBuilding.TabIndex = 2;
             this.labelSpecificBuilding.Text = "Specify Building:";
             // 
@@ -1599,9 +1642,9 @@
             "Infrastructure",
             "Microwave Emitters",
             " "});
-            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(183, 3);
+            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(322, 3);
             this.comboBoxSpecificBuilding.Name = "comboBoxSpecificBuilding";
-            this.comboBoxSpecificBuilding.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxSpecificBuilding.Size = new System.Drawing.Size(122, 21);
             this.comboBoxSpecificBuilding.TabIndex = 9;
             // 
             // groupBox16
@@ -1620,10 +1663,10 @@
             this.tableLayoutPanel21.ColumnCount = 3;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.36364F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.63636F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel21.Controls.Add(this.ActiveCrystalCollection, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.labelCrystalCollection, 1, 0);
-            this.tableLayoutPanel21.Controls.Add(this.comboBoxCrystals, 2, 0);
+            this.tableLayoutPanel21.Controls.Add(this.NeededCrystals, 2, 0);
             this.tableLayoutPanel21.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 1;
@@ -1646,41 +1689,19 @@
             // 
             this.labelCrystalCollection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCrystalCollection.AutoSize = true;
-            this.labelCrystalCollection.Location = new System.Drawing.Point(91, 5);
+            this.labelCrystalCollection.Location = new System.Drawing.Point(136, 5);
             this.labelCrystalCollection.Name = "labelCrystalCollection";
-            this.labelCrystalCollection.Size = new System.Drawing.Size(119, 13);
+            this.labelCrystalCollection.Size = new System.Drawing.Size(182, 13);
             this.labelCrystalCollection.TabIndex = 2;
             this.labelCrystalCollection.Text = "Custom Crystal Amount";
             // 
-            // comboBoxCrystals
+            // NeededCrystals
             // 
-            this.comboBoxCrystals.Enabled = false;
-            this.comboBoxCrystals.FormattingEnabled = true;
-            this.comboBoxCrystals.Items.AddRange(new object[] {
-            "5",
-            "10",
-            "15",
-            "20",
-            "25",
-            "30",
-            "35",
-            "40",
-            "45",
-            "50",
-            "55",
-            "60",
-            "65",
-            "70",
-            "75",
-            "80",
-            "85",
-            "90",
-            "95",
-            "100"});
-            this.comboBoxCrystals.Location = new System.Drawing.Point(216, 3);
-            this.comboBoxCrystals.Name = "comboBoxCrystals";
-            this.comboBoxCrystals.Size = new System.Drawing.Size(231, 21);
-            this.comboBoxCrystals.TabIndex = 10;
+            this.NeededCrystals.Enabled = false;
+            this.NeededCrystals.Location = new System.Drawing.Point(324, 3);
+            this.NeededCrystals.Name = "NeededCrystals";
+            this.NeededCrystals.Size = new System.Drawing.Size(120, 20);
+            this.NeededCrystals.TabIndex = 3;
             // 
             // tabPage7
             // 
@@ -1733,6 +1754,8 @@
             this.Load += new System.EventHandler(this.New_Map_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WidthIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeightIn)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1742,47 +1765,60 @@
             this.LabelDamageToPlayer.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomDamage)).EndInit();
             this.LabelDamageFromPlayer.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomPlayerDamage)).EndInit();
             this.LabelSpawnChance.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomSpawnChance)).EndInit();
             this.LabelHunger.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomHunger)).EndInit();
             this.LabelSpeed.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DebrisMultiplier)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairCost)).EndInit();
             this.LabelErosionSpeed.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomErosionSpeed)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomAvalanchFrequncy)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomAvalanchDamage)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel14.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AirQuantity)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RateOfConsumption)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tableLayoutPanel17.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.tableLayoutPanel19.ResumeLayout(false);
             this.tableLayoutPanel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PowerDrainMultiplier)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tableLayoutPanel18.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
@@ -1800,6 +1836,7 @@
             this.groupBox16.ResumeLayout(false);
             this.tableLayoutPanel21.ResumeLayout(false);
             this.tableLayoutPanel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NeededCrystals)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1809,8 +1846,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox MapName;
-        private System.Windows.Forms.TextBox Height;
-        private System.Windows.Forms.TextBox Width;
         private System.Windows.Forms.Label labelMapName;
         private System.Windows.Forms.Label labelWidth;
         private System.Windows.Forms.Label labelHeight;
@@ -1844,26 +1879,20 @@
         private System.Windows.Forms.GroupBox LabelHunger;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.CheckBox DefaultPlayerDamage;
-        private System.Windows.Forms.TextBox textBoxCustomDamage;
         private System.Windows.Forms.Label labelCustomDamage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.CheckBox DefaultDamageFromPlayer;
-        private System.Windows.Forms.TextBox textBoxCustomPlayerDamage;
         private System.Windows.Forms.Label labelPlayerCustomDamage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.CheckBox SpawnChance;
-        private System.Windows.Forms.TextBox textBoxCustomHunger;
         private System.Windows.Forms.Label labelCustomHunger;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.CheckBox DefaultSpeed;
-        private System.Windows.Forms.TextBox textBoxCustomSpeed;
         private System.Windows.Forms.Label labelCustomSpeed;
         private System.Windows.Forms.Label labelDebrisMultiplyer;
-        private System.Windows.Forms.TextBox textBoxDebrisMultiplyer;
         private System.Windows.Forms.GroupBox LabelSpawnChance;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.CheckBox DefaultHunger;
-        private System.Windows.Forms.TextBox textBoxCustomSpawnChance;
         private System.Windows.Forms.Label labelCustomSpawnChance;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
@@ -1872,40 +1901,33 @@
         private System.Windows.Forms.GroupBox LabelErosionSpeed;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.CheckBox DefaultErosionSpeed;
-        private System.Windows.Forms.TextBox textBoxCustomErosionSpeed;
         private System.Windows.Forms.Label labelCustomErosionSpeed;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.CheckBox DefaultAvalancheFrequency;
-        private System.Windows.Forms.TextBox textBoxCustomAvalanchFrequncy;
         private System.Windows.Forms.Label labelCustomAvalancheFrequency;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.CheckBox defaultAvalancheDamageToPlayers;
-        private System.Windows.Forms.TextBox textBoxCustomAvalanchDamage;
         private System.Windows.Forms.Label labelCustomAvalancheDamage;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.CheckBox DefaultRepairCost;
-        private System.Windows.Forms.TextBox textBoxRepairCost;
         private System.Windows.Forms.Label labelRepairCost;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.CheckBox DefaultAirQuantity;
-        private System.Windows.Forms.TextBox textBoxAirQuantity;
         private System.Windows.Forms.Label labelAirQuantity;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.CheckBox DefaultRateOfConsumption;
-        private System.Windows.Forms.TextBox textBoxRateOfConsumption;
         private System.Windows.Forms.Label labelRateOfConsumption;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private System.Windows.Forms.CheckBox DefaultPowerDrain;
-        private System.Windows.Forms.TextBox textBoxPowerDrain;
         private System.Windows.Forms.Label label21PowerDrain;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.GroupBox groupBox13;
@@ -1930,6 +1952,21 @@
         private System.Windows.Forms.CheckBox ActiveRescue;
         private System.Windows.Forms.Label labelRescueUnit;
         private System.Windows.Forms.ComboBox comboBoxRescueUnit;
-        private System.Windows.Forms.ComboBox comboBoxCrystals;
+        private System.Windows.Forms.NumericUpDown WidthIn;
+        private System.Windows.Forms.NumericUpDown HeightIn;
+        private System.Windows.Forms.NumericUpDown CustomDamage;
+        private System.Windows.Forms.NumericUpDown CustomPlayerDamage;
+        private System.Windows.Forms.NumericUpDown CustomSpawnChance;
+        private System.Windows.Forms.NumericUpDown CustomHunger;
+        private System.Windows.Forms.NumericUpDown CustomSpeed;
+        private System.Windows.Forms.NumericUpDown DebrisMultiplier;
+        private System.Windows.Forms.NumericUpDown RepairCost;
+        private System.Windows.Forms.NumericUpDown CustomErosionSpeed;
+        private System.Windows.Forms.NumericUpDown CustomAvalanchFrequncy;
+        private System.Windows.Forms.NumericUpDown CustomAvalanchDamage;
+        private System.Windows.Forms.NumericUpDown AirQuantity;
+        private System.Windows.Forms.NumericUpDown RateOfConsumption;
+        private System.Windows.Forms.NumericUpDown PowerDrainMultiplier;
+        private System.Windows.Forms.NumericUpDown NeededCrystals;
     }
 }

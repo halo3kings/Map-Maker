@@ -37,6 +37,7 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("4")]
         public int Width {
             get {
                 return ((int)(this["Width"]));
@@ -59,12 +60,12 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public bool HostileAi {
+        public bool HostileAI {
             get {
-                return ((bool)(this["HostileAi"]));
+                return ((bool)(this["HostileAI"]));
             }
             set {
-                this["HostileAi"] = value;
+                this["HostileAI"] = value;
             }
         }
         

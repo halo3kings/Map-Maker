@@ -6,12 +6,12 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Width" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">4</Value>
     </Setting>
     <Setting Name="Height" Type="System.Int32" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="HostileAi" Type="System.Boolean" Scope="User">
+    <Setting Name="HostileAI" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Erosion" Type="System.Boolean" Scope="User">
