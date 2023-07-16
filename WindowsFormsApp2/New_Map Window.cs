@@ -13,12 +13,14 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+
     public partial class New_Map : Form
     {
         DefaultValues DefVal = new DefaultValues();
@@ -85,8 +87,10 @@ namespace WindowsFormsApp2
         {
             DefaultCheckBoxes("PowerDrain");
         }
-
-        //all of the buttons and tabs and things they link too
+        
+        //---------------------------------------------------------------------------------------------
+        //all of the default buttons, tabs and how they effect their respective enabled states. 
+       
         //---Enemy Ai
         public void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
@@ -164,46 +168,54 @@ namespace WindowsFormsApp2
         //--Rescue
         public void checkBox22_CheckedChanged(object sender, EventArgs e)
         {
-            DefaultCheckBoxes("RescueSpecificUnit");
+            DefaultCheckBoxes("SpecificRescueUnit");
         }
         //--Reach the tile
         public void checkbox23_CheckedChanged(object sender, EventArgs e)
         {
-            DefaultCheckBoxes("SpecificRescueUnit");
-        }
-        private void groupBox3_Enter_1(object sender, EventArgs e)
-        {
-
-        }
-        private void groupBox15_Enter(object sender, EventArgs e)
-        {
-
-        }
-        private void groupBox16_Enter(object sender, EventArgs e)
-        {
-
+            DefaultCheckBoxes("TileReach");
         }
 
+        //-----------------------------------------------------------------------------------------------------------------------------
+        // The setting of the Custom Values section of  the code
+
+        //set the new map name
         private void SetMapName(object sender, EventArgs e)
         {
             Properties.Settings.Default.MapName = MapName.Text;
             Console.WriteLine($"MapName set to: {MapName.Text}");
         }
+        //set the new map name
+        // For when enter is pressed while typing a map name.
+        public void MapNameEnterKey(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Properties.Settings.Default.MapName = MapName.Text;
+                Console.WriteLine($"Height set to: {MapName.Text}");
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        //set the Width
         public void SetWidth(object sender, EventArgs e)
         {
 
             //Gets the value of the Width Numerical box, converts its value to an int and changes the application settings to the new value.
-            int W = Convert.ToInt32(WidthIn.Value);
-            Properties.Settings.Default.Width = W;
-            Console.WriteLine($"Width set to: {W}");
+            Properties.Settings.Default.Width = Convert.ToInt32(WidthIn.Value);
+            Console.WriteLine($"Width set to: {Convert.ToInt32(WidthIn.Value)}");
         }
+
+        //set the Height
         public void SetHeight(object sender, EventArgs e)
         {
             //Gets the value of the Width Numerical box, converts its value to an int and changes the application settings to the new value.
-            int H = Convert.ToInt32(HeightIn.Value);
-            Properties.Settings.Default.Height = H;
-            Console.WriteLine($"Height set to: {H}");
+            Properties.Settings.Default.Height = Convert.ToInt32(HeightIn.Value);
+            Console.WriteLine($"Height set to: {Convert.ToInt32(HeightIn.Value)}");
         }
+
+        //set the new Terrain
         public void SetTerrainType(object sender, EventArgs e)
         {
             if(TerrainType.Text.Equals("Rock") || TerrainType.Text.Equals("Lava") || TerrainType.Text.Equals("Ice"))
@@ -217,33 +229,89 @@ namespace WindowsFormsApp2
                 Properties.Settings.Default.TerrainType = DefVal.TerrainType;
             }
         }
-        // For when enter is pressed while typing a map name.
-        public void MapNameEnterKey(object sender, KeyEventArgs e)
+
+        //Custom Values for Hostile AI.
+        public void CustomValue_DamageToPlayer(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                Properties.Settings.Default.MapName = MapName.Text;
-                Console.WriteLine($"Height set to: {MapName.Text}");
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-            }
+            UserInput("DamageToPlayer");
         }
-        public void CustomizedValueEnterKey(object sender, KeyEventArgs e)
+        public void CustomValue_DamageFromPlayer(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-               // UserInput()
-
-
-
-                //Properties.Settings.Default.MapName = MapName.Text;
-                //Console.WriteLine($"Height set to: {MapName.Text}");
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-            }
+            UserInput("DamageFromPlayer");
+        }
+        public void CustomValue_CreatureSpeed(object sender, EventArgs e)
+        {
+            UserInput("CreatureSpeed");
+        }
+        public void CustomValue_DebrisMultiplier(object sender, EventArgs e)
+        {
+            UserInput("DebrisMultiplier");
+        }
+        public void CustomValue_HungerValue(object sender, EventArgs e)
+        {
+            UserInput("Hunger");
+        }
+        public void CustomValue_Spawn(object sender, EventArgs e)
+        {
+            UserInput("SpawnChance");
+        }
+        
+        //Erosion values
+        public void CustomValue_Erosion(object sender, EventArgs e)
+        {
+            UserInput("ErosionSpeed");
+        }
+        public void CustomValue_RepairCost(object sender, EventArgs e)
+        {
+            UserInput("RepairCost");
         }
 
-        //public void MapSettings(string name, int width , int height, int terrainType, bool hostile)
+        //Avalanche values
+        public void CustomValue_AvalancheDamageToPlayer(object sender, EventArgs e)
+        {
+            UserInput("AvalancheDamageToPlayer");
+        }
+        public void CustomValue_AvalancheFrequency(object sender, EventArgs e)
+        {
+            UserInput("Frequency");
+        }
+        
+        //Air Values 
+        public void CustomValue_RateOfConsumption(object sender, EventArgs e)
+        {
+            UserInput("RateOfConsumption");
+        }
+        public void CustomValue_AirQuantity(object sender, EventArgs e)
+        {
+            UserInput("AirQuantity");
+        }
+
+        // Power Drain Values
+        public void CustomValue_PowerDrainMultiplier(object sender, EventArgs e)
+        {
+            UserInput("PowerDrainMultiplier");
+        }
+
+        //Win condition values 
+        public void CustomValue_CrystalsCount(object sender, EventArgs e)
+        {
+            UserInput("CrystalsCount");
+        }
+        public void CustomValue_SpecificBuilding(object sender, EventArgs e)
+        {
+            UserInput("SpecificBuilding");
+        }
+        public void CustomValue_SpecificUnit(object sender, EventArgs e)
+        {
+            UserInput("SpecificUnit");
+        }
+        public void CustomValue_SpecificRescueUnit(object sender, EventArgs e)
+        {
+            UserInput("SpecificRescueUnit");
+        }
+
+
+
 
 
         public void DefaultCheckBoxes(string DefaultCheckBoxAction)
@@ -631,7 +699,7 @@ namespace WindowsFormsApp2
                     }
                     break;
 
-                case "RescueSpecificUnit":
+                case "SpecificRescueUnit":
                     Debug.WriteLine("ActiveRescue Checked");
                     if (ActiveRescue.Checked == true)
                     {
@@ -676,61 +744,100 @@ namespace WindowsFormsApp2
             {
                 case "DamageToPlayer":
                     Properties.Settings.Default.DamageToPlayer = Convert.ToInt32(CustomDamage.Value);
+                    Debug.WriteLine($"DamageToPlayer set to: {Convert.ToInt32(CustomDamage.Value)}");
                     break;
 
                 case "DamageFromPlayer":
                     Properties.Settings.Default.DamageFromPlayer = Convert.ToInt32(CustomPlayerDamage.Value);
+                    Debug.WriteLine($"DamageFromPlayer set to: {Convert.ToInt32(CustomPlayerDamage.Value)}");
                     break;
 
                 case "CreatureSpeed":
                     Properties.Settings.Default.CreatureSpeed = Convert.ToInt32(CustomSpeed.Value);
+                    Debug.WriteLine($"CreatureSpeed set to: {Convert.ToInt32(CustomSpeed.Value)}");
                     break;
 
                 case "DebrisMultiplier":
                     Properties.Settings.Default.DebrisMultiplier = Convert.ToInt32(DebrisMultiplier.Value);
+                    Debug.WriteLine($"DebrisMultiplier set to: {Convert.ToInt32(DebrisMultiplier.Value)}");
                     break;
 
                 case "Hunger":
                     Properties.Settings.Default.Hunger = Convert.ToInt32(CustomHunger.Value);
+                    Debug.WriteLine($"Hunger set to: {Convert.ToInt32(CustomHunger.Value)}");
                     break;
 
                 case "SpawnChance":
                     Properties.Settings.Default.SpawnChance = Convert.ToInt32(CustomSpawnChance.Value);
+                    Debug.WriteLine($"SpawnChance set to: {Convert.ToInt32(CustomSpawnChance.Value)}");
                     break;
 
                 case "ErosionSpeed":
-                    Properties.Settings.Default.ErosionSpeed = Convert.ToInt32(CustomSpawnChance.Value);
+                    Properties.Settings.Default.ErosionSpeed = Convert.ToInt32(CustomErosionSpeed.Value);
+                    Debug.WriteLine($"ErosionSpeed set to: {Convert.ToInt32(CustomErosionSpeed.Value)}");
                     break;
 
                 case "RepairCost":
-                    Properties.Settings.Default.RepairCost = Convert.ToInt32(RepairCost);
+                    Properties.Settings.Default.RepairCost = Convert.ToInt32(RepairCost.Value);
+                    Debug.WriteLine($"RepairCost set to: {Convert.ToInt32(RepairCost.Value)}");
                     break;
 
                 case "AvalancheDamageToPlayer":
-                    Properties.Settings.Default.AvalancheDamageToPlayer = Convert.ToInt32(CustomAvalanchDamage);
+                    Properties.Settings.Default.AvalancheDamageToPlayer = Convert.ToInt32(CustomAvalanchDamage.Value);
+                    Debug.WriteLine($"AvalancheDamageToPlayer set to: {Convert.ToInt32(CustomAvalanchDamage.Value)}");
                     break;
 
                 case "Frequency":
-                    Properties.Settings.Default.Frequency = Convert.ToInt32(CustomAvalanchFrequncy);
+                    Properties.Settings.Default.Frequency = Convert.ToInt32(CustomAvalanchFrequncy.Value);
+                    Debug.WriteLine($"Frequency set to: {Convert.ToInt32(CustomAvalanchFrequncy.Value)}");
                     break;
 
                 case "RateOfConsumption":
-                    Properties.Settings.Default.RateOfConsumption = Convert.ToInt32(RateOfConsumption);
+                    Properties.Settings.Default.RateOfConsumption = Convert.ToInt32(RateOfConsumption.Value);
+                    Debug.WriteLine($"RateOfConsumption set to: {Convert.ToInt32(RateOfConsumption.Value)}");
                     break;
 
                 case "AirQuantity":
-                    Properties.Settings.Default.AirQuantity = Convert.ToInt32(AirQuantity);
+                    Properties.Settings.Default.AirQuantity = Convert.ToInt32(AirQuantity.Value);
+                    Debug.WriteLine($"AirQuantity set to: {Convert.ToInt32(AirQuantity.Value)}");
                     break;
 
                 case "PowerDrainMultiplier":
-                    Properties.Settings.Default.PowerDrainMultiplier = Convert.ToInt32(PowerDrainMultiplier);
+                    Properties.Settings.Default.PowerDrainMultiplier = Convert.ToInt32(PowerDrainMultiplier.Value);
+                    Debug.WriteLine($"PowerDrainMultiplier set to: {Convert.ToInt32(PowerDrainMultiplier.Value)}");
                     break;
+
+                case "CrystalsCount":
+                    Properties.Settings.Default.CrystalsCount = Convert.ToInt32(NeededCrystals.Value);
+                    Debug.WriteLine($"CrystalsCount set to: {Convert.ToInt32(NeededCrystals.Value)}");
+                    break;
+
+                case "SpecificBuilding":
+                    Properties.Settings.Default.SpecificBuilding = comboBoxSpecificBuilding.Text;
+                    Debug.WriteLine($"SpecificBuilding set to: {comboBoxSpecificBuilding.Text}");
+                    break;
+
+                case "SpecificUnit":
+                    Properties.Settings.Default.SpecificUnit = comboBoxSpecificUnit.Text;
+                    Debug.WriteLine($"SpecificUnit set to: {comboBoxSpecificUnit.Text}");
+                    break;
+
+                case "SpecificRescueUnit":
+                    Properties.Settings.Default.SpecificRescueUnit = comboBoxRescueUnit.Text;
+                    Debug.WriteLine($"SpecificRescueUnit set to: {comboBoxRescueUnit.Text}");
+                    break;
+
                 default:
                     Console.WriteLine("---Error_Code_2---");
                     Console.WriteLine($"EC2: ( {NameOfDesiredVariableToChange} ) is not a recognized 'UserInput' CaseStatement Fix this You dummy... its probabably spelling");
                     break;
 
             }
+        }
+
+        private void MapName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -339,7 +339,8 @@
             this.MapName.Name = "MapName";
             this.MapName.Size = new System.Drawing.Size(138, 20);
             this.MapName.TabIndex = 0;
-            this.MapName.Text = "NewMap";
+            this.MapName.Text = global::WindowsFormsApp2.Properties.Settings.Default.MapName;
+            this.MapName.TextChanged += new System.EventHandler(this.SetMapName);
             this.MapName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MapNameEnterKey);
             this.MapName.Leave += new System.EventHandler(this.SetMapName);
             // 
@@ -495,7 +496,6 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Settings";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // Tabs
             // 
@@ -561,7 +561,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tableLayoutPanel4.Controls.Add(this.DefaultPlayerDamage, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.labelCustomDamage, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.CustomDamage, 2, 0);
@@ -590,19 +590,20 @@
             // 
             this.labelCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomDamage.AutoSize = true;
-            this.labelCustomDamage.Location = new System.Drawing.Point(154, 5);
+            this.labelCustomDamage.Location = new System.Drawing.Point(150, 5);
             this.labelCustomDamage.Name = "labelCustomDamage";
-            this.labelCustomDamage.Size = new System.Drawing.Size(160, 13);
+            this.labelCustomDamage.Size = new System.Drawing.Size(156, 13);
             this.labelCustomDamage.TabIndex = 2;
             this.labelCustomDamage.Text = "Custom Damage:";
             // 
             // CustomDamage
             // 
             this.CustomDamage.Enabled = false;
-            this.CustomDamage.Location = new System.Drawing.Point(320, 3);
+            this.CustomDamage.Location = new System.Drawing.Point(312, 3);
             this.CustomDamage.Name = "CustomDamage";
             this.CustomDamage.Size = new System.Drawing.Size(120, 20);
             this.CustomDamage.TabIndex = 3;
+            this.CustomDamage.ValueChanged += new System.EventHandler(this.CustomValue_DamageToPlayer);
             // 
             // LabelDamageFromPlayer
             // 
@@ -619,7 +620,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel5.Controls.Add(this.DefaultDamageFromPlayer, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.labelPlayerCustomDamage, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.CustomPlayerDamage, 2, 0);
@@ -647,19 +648,20 @@
             // 
             this.labelPlayerCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPlayerCustomDamage.AutoSize = true;
-            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(155, 7);
+            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(151, 7);
             this.labelPlayerCustomDamage.Name = "labelPlayerCustomDamage";
-            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(161, 13);
+            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(157, 13);
             this.labelPlayerCustomDamage.TabIndex = 2;
             this.labelPlayerCustomDamage.Text = "Custom Damage:";
             // 
             // CustomPlayerDamage
             // 
             this.CustomPlayerDamage.Enabled = false;
-            this.CustomPlayerDamage.Location = new System.Drawing.Point(322, 3);
+            this.CustomPlayerDamage.Location = new System.Drawing.Point(314, 3);
             this.CustomPlayerDamage.Name = "CustomPlayerDamage";
             this.CustomPlayerDamage.Size = new System.Drawing.Size(120, 20);
             this.CustomPlayerDamage.TabIndex = 3;
+            this.CustomPlayerDamage.ValueChanged += new System.EventHandler(this.CustomValue_DamageFromPlayer);
             // 
             // LabelSpawnChance
             // 
@@ -676,7 +678,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.tableLayoutPanel8.Controls.Add(this.SpawnChance, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.labelCustomSpawnChance, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.CustomSpawnChance, 2, 0);
@@ -704,19 +706,20 @@
             // 
             this.labelCustomSpawnChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpawnChance.AutoSize = true;
-            this.labelCustomSpawnChance.Location = new System.Drawing.Point(156, 8);
+            this.labelCustomSpawnChance.Location = new System.Drawing.Point(152, 8);
             this.labelCustomSpawnChance.Name = "labelCustomSpawnChance";
-            this.labelCustomSpawnChance.Size = new System.Drawing.Size(162, 13);
+            this.labelCustomSpawnChance.Size = new System.Drawing.Size(158, 13);
             this.labelCustomSpawnChance.TabIndex = 2;
             this.labelCustomSpawnChance.Text = "Custom Chance";
             // 
             // CustomSpawnChance
             // 
             this.CustomSpawnChance.Enabled = false;
-            this.CustomSpawnChance.Location = new System.Drawing.Point(324, 3);
+            this.CustomSpawnChance.Location = new System.Drawing.Point(316, 3);
             this.CustomSpawnChance.Name = "CustomSpawnChance";
             this.CustomSpawnChance.Size = new System.Drawing.Size(119, 20);
             this.CustomSpawnChance.TabIndex = 3;
+            this.CustomSpawnChance.ValueChanged += new System.EventHandler(this.CustomValue_Spawn);
             // 
             // LabelHunger
             // 
@@ -734,7 +737,7 @@
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel9.Controls.Add(this.DefaultHunger, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.labelCustomHunger, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.CustomHunger, 2, 0);
@@ -762,19 +765,20 @@
             // 
             this.labelCustomHunger.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomHunger.AutoSize = true;
-            this.labelCustomHunger.Location = new System.Drawing.Point(155, 7);
+            this.labelCustomHunger.Location = new System.Drawing.Point(151, 7);
             this.labelCustomHunger.Name = "labelCustomHunger";
-            this.labelCustomHunger.Size = new System.Drawing.Size(161, 13);
+            this.labelCustomHunger.Size = new System.Drawing.Size(157, 13);
             this.labelCustomHunger.TabIndex = 2;
             this.labelCustomHunger.Text = "Custom Hunger:";
             // 
             // CustomHunger
             // 
             this.CustomHunger.Enabled = false;
-            this.CustomHunger.Location = new System.Drawing.Point(322, 3);
+            this.CustomHunger.Location = new System.Drawing.Point(314, 3);
             this.CustomHunger.Name = "CustomHunger";
             this.CustomHunger.Size = new System.Drawing.Size(120, 20);
             this.CustomHunger.TabIndex = 3;
+            this.CustomHunger.ValueChanged += new System.EventHandler(this.CustomValue_HungerValue);
             // 
             // LabelSpeed
             // 
@@ -791,7 +795,7 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel7.Controls.Add(this.DefaultSpeed, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelCustomSpeed, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelDebrisMultiplyer, 1, 1);
@@ -822,9 +826,9 @@
             // 
             this.labelCustomSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpeed.AutoSize = true;
-            this.labelCustomSpeed.Location = new System.Drawing.Point(155, 9);
+            this.labelCustomSpeed.Location = new System.Drawing.Point(151, 9);
             this.labelCustomSpeed.Name = "labelCustomSpeed";
-            this.labelCustomSpeed.Size = new System.Drawing.Size(161, 13);
+            this.labelCustomSpeed.Size = new System.Drawing.Size(157, 13);
             this.labelCustomSpeed.TabIndex = 2;
             this.labelCustomSpeed.Text = "Custom Speed:";
             this.labelCustomSpeed.Click += new System.EventHandler(this.label18_Click);
@@ -833,27 +837,29 @@
             // 
             this.labelDebrisMultiplyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDebrisMultiplyer.AutoSize = true;
-            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(155, 41);
+            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(151, 41);
             this.labelDebrisMultiplyer.Name = "labelDebrisMultiplyer";
-            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(161, 13);
+            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(157, 13);
             this.labelDebrisMultiplyer.TabIndex = 3;
             this.labelDebrisMultiplyer.Text = "Debris Multiplier:";
             // 
             // CustomSpeed
             // 
             this.CustomSpeed.Enabled = false;
-            this.CustomSpeed.Location = new System.Drawing.Point(322, 3);
+            this.CustomSpeed.Location = new System.Drawing.Point(314, 3);
             this.CustomSpeed.Name = "CustomSpeed";
             this.CustomSpeed.Size = new System.Drawing.Size(120, 20);
             this.CustomSpeed.TabIndex = 4;
+            this.CustomSpeed.ValueChanged += new System.EventHandler(this.CustomValue_CreatureSpeed);
             // 
             // DebrisMultiplier
             // 
             this.DebrisMultiplier.Enabled = false;
-            this.DebrisMultiplier.Location = new System.Drawing.Point(322, 35);
+            this.DebrisMultiplier.Location = new System.Drawing.Point(314, 35);
             this.DebrisMultiplier.Name = "DebrisMultiplier";
             this.DebrisMultiplier.Size = new System.Drawing.Size(120, 20);
             this.DebrisMultiplier.TabIndex = 5;
+            this.DebrisMultiplier.ValueChanged += new System.EventHandler(this.CustomValue_DebrisMultiplier);
             // 
             // tabPage2
             // 
@@ -897,7 +903,7 @@
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel13.Controls.Add(this.DefaultRepairCost, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.labelRepairCost, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.RepairCost, 2, 0);
@@ -925,19 +931,20 @@
             // 
             this.labelRepairCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRepairCost.AutoSize = true;
-            this.labelRepairCost.Location = new System.Drawing.Point(155, 5);
+            this.labelRepairCost.Location = new System.Drawing.Point(151, 5);
             this.labelRepairCost.Name = "labelRepairCost";
-            this.labelRepairCost.Size = new System.Drawing.Size(161, 13);
+            this.labelRepairCost.Size = new System.Drawing.Size(157, 13);
             this.labelRepairCost.TabIndex = 2;
             this.labelRepairCost.Text = "Repair Cost:";
             // 
             // RepairCost
             // 
             this.RepairCost.Enabled = false;
-            this.RepairCost.Location = new System.Drawing.Point(322, 3);
+            this.RepairCost.Location = new System.Drawing.Point(314, 3);
             this.RepairCost.Name = "RepairCost";
             this.RepairCost.Size = new System.Drawing.Size(120, 20);
             this.RepairCost.TabIndex = 3;
+            this.RepairCost.ValueChanged += new System.EventHandler(this.CustomValue_RepairCost);
             // 
             // LabelErosionSpeed
             // 
@@ -948,14 +955,13 @@
             this.LabelErosionSpeed.TabIndex = 1;
             this.LabelErosionSpeed.TabStop = false;
             this.LabelErosionSpeed.Text = "Erosion Speed";
-            this.LabelErosionSpeed.Enter += new System.EventHandler(this.groupBox3_Enter_1);
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel6.Controls.Add(this.DefaultErosionSpeed, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelCustomErosionSpeed, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.CustomErosionSpeed, 2, 0);
@@ -983,19 +989,20 @@
             // 
             this.labelCustomErosionSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomErosionSpeed.AutoSize = true;
-            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(155, 5);
+            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(151, 5);
             this.labelCustomErosionSpeed.Name = "labelCustomErosionSpeed";
-            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(161, 13);
+            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(157, 13);
             this.labelCustomErosionSpeed.TabIndex = 2;
             this.labelCustomErosionSpeed.Text = "Custom Speed:";
             // 
             // CustomErosionSpeed
             // 
             this.CustomErosionSpeed.Enabled = false;
-            this.CustomErosionSpeed.Location = new System.Drawing.Point(322, 3);
+            this.CustomErosionSpeed.Location = new System.Drawing.Point(314, 3);
             this.CustomErosionSpeed.Name = "CustomErosionSpeed";
             this.CustomErosionSpeed.Size = new System.Drawing.Size(120, 20);
             this.CustomErosionSpeed.TabIndex = 3;
+            this.CustomErosionSpeed.ValueChanged += new System.EventHandler(this.CustomValue_Erosion);
             // 
             // tabPage3
             // 
@@ -1038,7 +1045,7 @@
             this.tableLayoutPanel12.ColumnCount = 3;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.82609F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.17391F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tableLayoutPanel12.Controls.Add(this.DefaultAvalancheFrequency, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.labelCustomAvalancheFrequency, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.CustomAvalanchFrequncy, 2, 0);
@@ -1066,19 +1073,20 @@
             // 
             this.labelCustomAvalancheFrequency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheFrequency.AutoSize = true;
-            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(155, 5);
+            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(151, 5);
             this.labelCustomAvalancheFrequency.Name = "labelCustomAvalancheFrequency";
-            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(159, 13);
+            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(155, 13);
             this.labelCustomAvalancheFrequency.TabIndex = 2;
             this.labelCustomAvalancheFrequency.Text = "Custom Frequency:";
             // 
             // CustomAvalanchFrequncy
             // 
             this.CustomAvalanchFrequncy.Enabled = false;
-            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(320, 3);
+            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(312, 3);
             this.CustomAvalanchFrequncy.Name = "CustomAvalanchFrequncy";
             this.CustomAvalanchFrequncy.Size = new System.Drawing.Size(120, 20);
             this.CustomAvalanchFrequncy.TabIndex = 3;
+            this.CustomAvalanchFrequncy.ValueChanged += new System.EventHandler(this.CustomValue_AvalancheFrequency);
             // 
             // groupBox4
             // 
@@ -1095,7 +1103,7 @@
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel11.Controls.Add(this.defaultAvalancheDamageToPlayers, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.labelCustomAvalancheDamage, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.CustomAvalanchDamage, 2, 0);
@@ -1123,19 +1131,20 @@
             // 
             this.labelCustomAvalancheDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheDamage.AutoSize = true;
-            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(155, 5);
+            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(151, 5);
             this.labelCustomAvalancheDamage.Name = "labelCustomAvalancheDamage";
-            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(161, 13);
+            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(157, 13);
             this.labelCustomAvalancheDamage.TabIndex = 2;
             this.labelCustomAvalancheDamage.Text = "Custom Damage:";
             // 
             // CustomAvalanchDamage
             // 
             this.CustomAvalanchDamage.Enabled = false;
-            this.CustomAvalanchDamage.Location = new System.Drawing.Point(322, 3);
+            this.CustomAvalanchDamage.Location = new System.Drawing.Point(314, 3);
             this.CustomAvalanchDamage.Name = "CustomAvalanchDamage";
             this.CustomAvalanchDamage.Size = new System.Drawing.Size(120, 20);
             this.CustomAvalanchDamage.TabIndex = 3;
+            this.CustomAvalanchDamage.ValueChanged += new System.EventHandler(this.CustomValue_AvalancheDamageToPlayer);
             // 
             // tabPage4
             // 
@@ -1178,7 +1187,7 @@
             this.tableLayoutPanel15.ColumnCount = 3;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.10695F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.89305F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel15.Controls.Add(this.DefaultAirQuantity, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.labelAirQuantity, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.AirQuantity, 2, 0);
@@ -1206,19 +1215,20 @@
             // 
             this.labelAirQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAirQuantity.AutoSize = true;
-            this.labelAirQuantity.Location = new System.Drawing.Point(131, 5);
+            this.labelAirQuantity.Location = new System.Drawing.Point(128, 5);
             this.labelAirQuantity.Name = "labelAirQuantity";
-            this.labelAirQuantity.Size = new System.Drawing.Size(186, 13);
+            this.labelAirQuantity.Size = new System.Drawing.Size(181, 13);
             this.labelAirQuantity.TabIndex = 2;
             this.labelAirQuantity.Text = "Custom Level:";
             // 
             // AirQuantity
             // 
             this.AirQuantity.Enabled = false;
-            this.AirQuantity.Location = new System.Drawing.Point(323, 3);
+            this.AirQuantity.Location = new System.Drawing.Point(315, 3);
             this.AirQuantity.Name = "AirQuantity";
             this.AirQuantity.Size = new System.Drawing.Size(120, 20);
             this.AirQuantity.TabIndex = 3;
+            this.AirQuantity.ValueChanged += new System.EventHandler(this.CustomValue_AirQuantity);
             // 
             // groupBox8
             // 
@@ -1276,6 +1286,7 @@
             this.RateOfConsumption.Name = "RateOfConsumption";
             this.RateOfConsumption.Size = new System.Drawing.Size(120, 20);
             this.RateOfConsumption.TabIndex = 3;
+            this.RateOfConsumption.ValueChanged += new System.EventHandler(this.CustomValue_RateOfConsumption);
             // 
             // tabPage5
             // 
@@ -1311,14 +1322,13 @@
             this.groupBox15.TabIndex = 1;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Usage multiplier";
-            this.groupBox15.Enter += new System.EventHandler(this.groupBox15_Enter);
             // 
             // tableLayoutPanel19
             // 
             this.tableLayoutPanel19.ColumnCount = 3;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
             this.tableLayoutPanel19.Controls.Add(this.DefaultPowerDrain, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.label21PowerDrain, 1, 0);
             this.tableLayoutPanel19.Controls.Add(this.PowerDrainMultiplier, 2, 0);
@@ -1346,19 +1356,20 @@
             // 
             this.label21PowerDrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label21PowerDrain.AutoSize = true;
-            this.label21PowerDrain.Location = new System.Drawing.Point(124, 5);
+            this.label21PowerDrain.Location = new System.Drawing.Point(121, 5);
             this.label21PowerDrain.Name = "label21PowerDrain";
-            this.label21PowerDrain.Size = new System.Drawing.Size(195, 13);
+            this.label21PowerDrain.Size = new System.Drawing.Size(190, 13);
             this.label21PowerDrain.TabIndex = 2;
             this.label21PowerDrain.Text = " Custom Multiplier:";
             // 
             // PowerDrainMultiplier
             // 
             this.PowerDrainMultiplier.Enabled = false;
-            this.PowerDrainMultiplier.Location = new System.Drawing.Point(325, 3);
+            this.PowerDrainMultiplier.Location = new System.Drawing.Point(317, 3);
             this.PowerDrainMultiplier.Name = "PowerDrainMultiplier";
             this.PowerDrainMultiplier.Size = new System.Drawing.Size(118, 20);
             this.PowerDrainMultiplier.TabIndex = 3;
+            this.PowerDrainMultiplier.ValueChanged += new System.EventHandler(this.CustomValue_PowerDrainMultiplier);
             // 
             // tabPage6
             // 
@@ -1407,7 +1418,7 @@
             this.tableLayoutPanel24.ColumnCount = 3;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 277F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 285F));
             this.tableLayoutPanel24.Controls.Add(this.ActiveReachTheTile, 0, 0);
             this.tableLayoutPanel24.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
@@ -1442,7 +1453,7 @@
             this.tableLayoutPanel23.ColumnCount = 3;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.53312F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.46688F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.tableLayoutPanel23.Controls.Add(this.ActiveRescue, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.labelRescueUnit, 1, 0);
             this.tableLayoutPanel23.Controls.Add(this.comboBoxRescueUnit, 2, 0);
@@ -1468,9 +1479,9 @@
             // 
             this.labelRescueUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRescueUnit.AutoSize = true;
-            this.labelRescueUnit.Location = new System.Drawing.Point(139, 5);
+            this.labelRescueUnit.Location = new System.Drawing.Point(135, 5);
             this.labelRescueUnit.Name = "labelRescueUnit";
-            this.labelRescueUnit.Size = new System.Drawing.Size(170, 13);
+            this.labelRescueUnit.Size = new System.Drawing.Size(166, 13);
             this.labelRescueUnit.TabIndex = 2;
             this.labelRescueUnit.Text = "Specify unit:";
             // 
@@ -1497,10 +1508,11 @@
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxRescueUnit.Location = new System.Drawing.Point(315, 3);
+            this.comboBoxRescueUnit.Location = new System.Drawing.Point(307, 3);
             this.comboBoxRescueUnit.Name = "comboBoxRescueUnit";
             this.comboBoxRescueUnit.Size = new System.Drawing.Size(128, 21);
             this.comboBoxRescueUnit.TabIndex = 8;
+            this.comboBoxRescueUnit.TextChanged += new System.EventHandler(this.CustomValue_SpecificRescueUnit);
             // 
             // groupBox17
             // 
@@ -1517,7 +1529,7 @@
             this.tableLayoutPanel22.ColumnCount = 3;
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.23602F));
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.76398F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tableLayoutPanel22.Controls.Add(this.ActiveSpecificUnit, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.labelSpecificUnit, 1, 0);
             this.tableLayoutPanel22.Controls.Add(this.comboBoxSpecificUnit, 2, 0);
@@ -1543,9 +1555,9 @@
             // 
             this.labelSpecificUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpecificUnit.AutoSize = true;
-            this.labelSpecificUnit.Location = new System.Drawing.Point(137, 5);
+            this.labelSpecificUnit.Location = new System.Drawing.Point(133, 5);
             this.labelSpecificUnit.Name = "labelSpecificUnit";
-            this.labelSpecificUnit.Size = new System.Drawing.Size(177, 13);
+            this.labelSpecificUnit.Size = new System.Drawing.Size(173, 13);
             this.labelSpecificUnit.TabIndex = 2;
             this.labelSpecificUnit.Text = "Specify unit:";
             // 
@@ -1572,10 +1584,11 @@
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(320, 3);
+            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(312, 3);
             this.comboBoxSpecificUnit.Name = "comboBoxSpecificUnit";
             this.comboBoxSpecificUnit.Size = new System.Drawing.Size(123, 21);
             this.comboBoxSpecificUnit.TabIndex = 8;
+            this.comboBoxSpecificUnit.TextChanged += new System.EventHandler(this.CustomValue_SpecificUnit);
             // 
             // groupBox13
             // 
@@ -1592,7 +1605,7 @@
             this.tableLayoutPanel20.ColumnCount = 3;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.10526F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.89474F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel20.Controls.Add(this.ActiveSpecificBuilding, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.labelSpecificBuilding, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.comboBoxSpecificBuilding, 2, 0);
@@ -1618,9 +1631,9 @@
             // 
             this.labelSpecificBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpecificBuilding.AutoSize = true;
-            this.labelSpecificBuilding.Location = new System.Drawing.Point(137, 5);
+            this.labelSpecificBuilding.Location = new System.Drawing.Point(133, 5);
             this.labelSpecificBuilding.Name = "labelSpecificBuilding";
-            this.labelSpecificBuilding.Size = new System.Drawing.Size(178, 13);
+            this.labelSpecificBuilding.Size = new System.Drawing.Size(174, 13);
             this.labelSpecificBuilding.TabIndex = 2;
             this.labelSpecificBuilding.Text = "Specify Building:";
             // 
@@ -1642,10 +1655,11 @@
             "Infrastructure",
             "Microwave Emitters",
             " "});
-            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(321, 3);
+            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(313, 3);
             this.comboBoxSpecificBuilding.Name = "comboBoxSpecificBuilding";
             this.comboBoxSpecificBuilding.Size = new System.Drawing.Size(122, 21);
             this.comboBoxSpecificBuilding.TabIndex = 9;
+            this.comboBoxSpecificBuilding.TextChanged += new System.EventHandler(this.CustomValue_SpecificBuilding);
             // 
             // groupBox16
             // 
@@ -1656,14 +1670,13 @@
             this.groupBox16.TabIndex = 1;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Collect Crystals";
-            this.groupBox16.Enter += new System.EventHandler(this.groupBox16_Enter);
             // 
             // tableLayoutPanel21
             // 
             this.tableLayoutPanel21.ColumnCount = 3;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.36364F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.63636F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel21.Controls.Add(this.ActiveCrystalCollection, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.labelCrystalCollection, 1, 0);
             this.tableLayoutPanel21.Controls.Add(this.NeededCrystals, 2, 0);
@@ -1689,19 +1702,20 @@
             // 
             this.labelCrystalCollection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCrystalCollection.AutoSize = true;
-            this.labelCrystalCollection.Location = new System.Drawing.Point(135, 5);
+            this.labelCrystalCollection.Location = new System.Drawing.Point(132, 5);
             this.labelCrystalCollection.Name = "labelCrystalCollection";
-            this.labelCrystalCollection.Size = new System.Drawing.Size(182, 13);
+            this.labelCrystalCollection.Size = new System.Drawing.Size(177, 13);
             this.labelCrystalCollection.TabIndex = 2;
             this.labelCrystalCollection.Text = "Custom Crystal Amount";
             // 
             // NeededCrystals
             // 
             this.NeededCrystals.Enabled = false;
-            this.NeededCrystals.Location = new System.Drawing.Point(323, 3);
+            this.NeededCrystals.Location = new System.Drawing.Point(315, 3);
             this.NeededCrystals.Name = "NeededCrystals";
             this.NeededCrystals.Size = new System.Drawing.Size(120, 20);
             this.NeededCrystals.TabIndex = 3;
+            this.NeededCrystals.ValueChanged += new System.EventHandler(this.CustomValue_CrystalsCount);
             // 
             // tabPage7
             // 
