@@ -6,7 +6,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Width" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">4</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Height" Type="System.Int32" Scope="User">
       <Value Profile="(Default)" />
@@ -35,7 +35,7 @@
     <Setting Name="CreatureSpeed" Type="System.Int32" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DebrisMultiplayer" Type="System.Int32" Scope="User">
+    <Setting Name="DebrisMultiplier" Type="System.Int32" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Hunger" Type="System.Int32" Scope="User">
@@ -62,7 +62,7 @@
     <Setting Name="AirQuantity" Type="System.Int32" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="PowerDrainMultiplyer" Type="System.Int32" Scope="User">
+    <Setting Name="PowerDrainMultiplier" Type="System.Int32" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="CollectCrystals" Type="System.Boolean" Scope="User">

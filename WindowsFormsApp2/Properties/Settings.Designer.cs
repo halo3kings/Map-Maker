@@ -37,7 +37,6 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("4")]
         public int Width {
             get {
                 return ((int)(this["Width"]));
@@ -151,12 +150,12 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public int DebrisMultiplayer {
+        public int DebrisMultiplier {
             get {
-                return ((int)(this["DebrisMultiplayer"]));
+                return ((int)(this["DebrisMultiplier"]));
             }
             set {
-                this["DebrisMultiplayer"] = value;
+                this["DebrisMultiplier"] = value;
             }
         }
         
@@ -250,12 +249,12 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public int PowerDrainMultiplyer {
+        public int PowerDrainMultiplier {
             get {
-                return ((int)(this["PowerDrainMultiplyer"]));
+                return ((int)(this["PowerDrainMultiplier"]));
             }
             set {
-                this["PowerDrainMultiplyer"] = value;
+                this["PowerDrainMultiplier"] = value;
             }
         }
         
