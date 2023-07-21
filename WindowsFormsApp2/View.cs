@@ -15,62 +15,27 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;   
+using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+
      public class View
     {
-        public int NumberOfWindows = 0;
-        List<String> WindowNameList = new List<String> { "<Name>" };
-        Form[] Windows = new Form[64];
-        string[] WindowNames = new string[64];
-
-        Default_Window Default_Window = new Default_Window();
-        //New_Map New_Map = new New_Map();
-
+        DefaultValues DefVal = new DefaultValues();
+        public Default_Window DEFWIN = new Default_Window();
+        public New_Map NEWMAP = new New_Map();
+        public MainApplicationBody MAINAPP = new MainApplicationBody();
         public View()
         {
-
-            Debug.WriteLine("Initializing Windows...");
-
-            /*
-            * (1). create new window
-            * (2). set new window as the 'Form' for position 0 in the 'Windows' Form Array.
-            * (3). populate the 'WindowName' array with their names, starting at pos 0.
-            * (4). iterate the global number of frames by one.
-            */
-
-
-            //--------------------------------------------------------
-
-            Windows[NumberOfWindows] = Default_Window;              // (2)
-            WindowNames[NumberOfWindows] = "Default_Window";        // (3)
-
+            //Initialize();
         }
-
-        public Form GetDefaultWindow() 
-        { 
-            return Default_Window; 
-        }
-
-        public void getData()
+        public void Run()
         {
+            Application.Run(DEFWIN);
+
 
         }
-                  
-        public Form GetWindow(string Name)
-        {
-            for (int i = 0; 0 <= WindowNames.Length; i++)
-            {
-                if(Name == WindowNames[i])
-                {
-                    return Windows[i];
-                }
-            }
 
-
-            return null;
-        }
     }
 }

@@ -392,5 +392,17 @@ namespace WindowsFormsApp2.Properties {
                 this["TerrainType"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NewMapWindowOpen {
+            get {
+                return ((bool)(this["NewMapWindowOpen"]));
+            }
+            set {
+                this["NewMapWindowOpen"] = value;
+            }
+        }
     }
 }

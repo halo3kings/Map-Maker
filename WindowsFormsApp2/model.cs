@@ -1,11 +1,4 @@
-﻿/* Copyright (C) 2023 Austin Tyler - All Rights Reserved
- * You may use, distribute and modify this code under the
- * terms of the Attribution-ShareAlike 4.0 International, 
- * 
- * You should have received a copy of the Attribution-ShareAlike 4.0 International with
- * this file. If not, please write to: AustinTyler88@gmail.com
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -15,8 +8,7 @@ using WindowsFormsApp2.Properties;
 
 namespace WindowsFormsApp2
 {
-
-    public class DefaultValues
+    public class model
     {
         //Map Name
         public string MapName = "New Map";
@@ -32,6 +24,7 @@ namespace WindowsFormsApp2
         public bool Avalanches = false;
         public bool AirThreat = false;
         public bool PowerDrain = false;
+        
 
         //Enemy Ai Values
         //---Damage
@@ -83,7 +76,7 @@ namespace WindowsFormsApp2
         //---Reach Tile
         public bool TileReach = false;
 
-        public DefaultValues()
+        public model()
         {
             Debug.Write("Setting Settings to default.");
         }
@@ -158,14 +151,10 @@ namespace WindowsFormsApp2
             Properties.Settings.Default.TileReach = TileReach;
 
         }
-    
+
     }
 }
 
- 
-      
+
     
-
-
-  
 

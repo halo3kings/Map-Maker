@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,42 +21,22 @@ namespace WindowsFormsApp2
 {
     public partial class Default_Window : Form
     {
-        Form newMapWindow;
+
         public Default_Window()
         {
             InitializeComponent();
-            Form newMapWindow;
         }
 
-        private void QuitButton(object sender, EventArgs e)
-        {
-            this.Close();
-            
+        public void QuitButton(object sender, EventArgs e)
+        {  
+
         }
         private void New_Map(object sender, EventArgs e)
         {
-
-            newMapWindow = new New_Map();
-            newMapWindow.Show();
-        }
-        public Form getNewMap()
-        {
-            return newMapWindow;
+            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-        public void ShowNewMapWindow()
-        {
-
-        }
-
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
     }
 

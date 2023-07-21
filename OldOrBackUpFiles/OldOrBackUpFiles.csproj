@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{064B1D21-6754-4732-ACAD-55061AFACB32}</ProjectGuid>
+    <ProjectGuid>{928D3169-55B4-4F75-BD0B-27A24FD74EED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp2</RootNamespace>
-    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <RootNamespace>OldOrBackUpFiles</RootNamespace>
+    <AssemblyName>OldOrBackUpFiles</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,44 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller.cs" />
-    <Compile Include="model.cs" />
-    <Compile Include="MainApplicationBody.cs">
+    <Compile Include="BackupMap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainApplicationBody.Designer.cs">
-      <DependentUpon>MainApplicationBody.cs</DependentUpon>
+    <Compile Include="BackupMap.Designer.cs">
+      <DependentUpon>BackupMap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="View.cs" />
-    <Compile Include="DefaultValues.cs" />
-    <Compile Include="Default Window.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include=".Designer.cs">
-      <DependentUpon>Default Window.cs</DependentUpon>
-      <SubType>Form</SubType>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="New_Map Window.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="New_Map Window.Designer.cs">
-      <DependentUpon>New_Map Window.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Default Window.resx">
-      <DependentUpon>Default Window.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainApplicationBody.resx">
-      <DependentUpon>MainApplicationBody.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="New_Map Window.resx">
-      <DependentUpon>New_Map Window.cs</DependentUpon>
+    <EmbeddedResource Include="BackupMap.resx">
+      <DependentUpon>BackupMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,13 +72,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View.resx">
-      <DependentUpon>View.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

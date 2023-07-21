@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Map Maker tool", "WindowsFormsApp2\Map Maker tool.csproj", "{064B1D21-6754-4732-ACAD-55061AFACB32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldOrBackUpFiles", "OldOrBackUpFiles\OldOrBackUpFiles.csproj", "{928D3169-55B4-4F75-BD0B-27A24FD74EED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{064B1D21-6754-4732-ACAD-55061AFACB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064B1D21-6754-4732-ACAD-55061AFACB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064B1D21-6754-4732-ACAD-55061AFACB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928D3169-55B4-4F75-BD0B-27A24FD74EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928D3169-55B4-4F75-BD0B-27A24FD74EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928D3169-55B4-4F75-BD0B-27A24FD74EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928D3169-55B4-4F75-BD0B-27A24FD74EED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
