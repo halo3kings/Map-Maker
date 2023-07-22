@@ -23,16 +23,16 @@ namespace WindowsFormsApp2
      public class View
     {
         DefaultValues DefVal = new DefaultValues();
-        public Default_Window DEFWIN = new Default_Window();
+        public Default_Window MAINAPP = new Default_Window();
         public New_Map NEWMAP = new New_Map();
-        public MainApplicationBody MAINAPP = new MainApplicationBody();
+
         public View()
         {
             //Initialize();
         }
         public void Run()
         {
-            Application.Run(DEFWIN);
+            Application.Run(MAINAPP);
 
 
         }

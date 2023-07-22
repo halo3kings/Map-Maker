@@ -13,14 +13,19 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+
     public partial class Default_Window : Form
     {
+
+        [DllImport("Kernel32.dll")]
+        static extern Boolean AllocConsole();
 
         public Default_Window()
         {
@@ -36,8 +41,34 @@ namespace WindowsFormsApp2
             
         }
 
-        
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Workspace_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void MapZoom(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MapZoom(object sender, ScrollEventArgs e)
+        {
+
+        }
     }
 
 }

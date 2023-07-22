@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Net.Configuration;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,114 +22,24 @@ namespace WindowsFormsApp2
         }
         public void InitializeView()
         {
+            InitializeMainAppWindow();
             InitializeNewMap();
             VIEW.Run();
         }
-        //initialize Form Button function.
-        public void InitializeViewButtonFunctions()
-        {
-            InitializeDefaultWindowButtons();
-        }
-        public void InitializeDefaultWindowButtons()
-        {
-            this.VIEW.DEFWIN.Quit.Click += this.ClickOnQuit;
-            this.VIEW.DEFWIN.mapToolStripMenuItem.Click += this.File_New_Map;
-        }
-        public void InitializeNewMap()
-        {
-            this.InitializeViewButtonFunctions();
-            this.InitializeNewMapButtons();
-            this.setNewMapValuesToDefault();
-        }
-        public void InitializeNewMapButtons()
-        {
-            this.VIEW.NEWMAP.WidthIn.ValueChanged += SetWidth;
-            this.VIEW.NEWMAP.PowerDrain.CheckedChanged += this.checkBoxPowerDrain;
-            this.VIEW.NEWMAP.Avalanche.CheckedChanged += this.checkBoxAvalanche;
-            this.VIEW.NEWMAP.MapName.TextChanged += this.SetMapName;
-            this.VIEW.NEWMAP.KeyDown += this.SetMapName;
-            this.VIEW.NEWMAP.Leave += this.SetMapName;
-            this.VIEW.NEWMAP.TerrainType.TextChanged += this.SetTerrainType;
-            this.VIEW.NEWMAP.TerrainType.Leave += this.SetTerrainType;
-            this.VIEW.NEWMAP.Erosion.CheckedChanged += this.checkBoxErosion;
-            this.VIEW.NEWMAP.HostileAI.CheckedChanged += this.checkBoxHostileAI;
-            this.VIEW.NEWMAP.AirThreat.CheckedChanged += this.checkBoxAirThreat;
-            this.VIEW.NEWMAP.HeightIn.ValueChanged += this.SetHeight;
-            this.VIEW.NEWMAP.DefaultPlayerDamage.CheckedChanged += this.checkBox6_CheckedChanged;
-            this.VIEW.NEWMAP.CustomDamage.ValueChanged += this.CustomValue_DamageToPlayer;
-            this.VIEW.NEWMAP.DefaultDamageFromPlayer.CheckedChanged += this.checkBox7_CheckedChanged;
-            this.VIEW.NEWMAP.CustomPlayerDamage.ValueChanged += this.CustomValue_DamageFromPlayer;
-            this.VIEW.NEWMAP.SpawnChance.CheckedChanged += this.checkBox11_CheckedChanged;
-            this.VIEW.NEWMAP.CustomSpawnChance.ValueChanged += this.CustomValue_Spawn;
-            this.VIEW.NEWMAP.DefaultHunger.CheckedChanged += this.checkBox10_CheckedChanged;
-            this.VIEW.NEWMAP.CustomHunger.ValueChanged += this.CustomValue_HungerValue;
-            this.VIEW.NEWMAP.DefaultSpeed.CheckedChanged += this.checkBox9_CheckedChanged;
-            this.VIEW.NEWMAP.CustomSpeed.ValueChanged += this.CustomValue_CreatureSpeed;
-            this.VIEW.NEWMAP.DebrisMultiplier.ValueChanged += this.CustomValue_DebrisMultiplier;
-            this.VIEW.NEWMAP.DefaultRepairCost.CheckedChanged += this.checkBox14_CheckedChanged;
-            this.VIEW.NEWMAP.RepairCost.ValueChanged += this.CustomValue_RepairCost;
-            this.VIEW.NEWMAP.DefaultErosionSpeed.CheckedChanged += this.checkBox8_CheckedChanged;
-            this.VIEW.NEWMAP.CustomErosionSpeed.ValueChanged += this.CustomValue_Erosion;
-            this.VIEW.NEWMAP.DefaultAvalancheFrequency.CheckedChanged += this.checkBox13_CheckedChanged;
-            this.VIEW.NEWMAP.CustomAvalanchFrequncy.ValueChanged += this.CustomValue_AvalancheFrequency;
-            this.VIEW.NEWMAP.defaultAvalancheDamageToPlayers.CheckedChanged += this.checkBox12_CheckedChanged;
-            this.VIEW.NEWMAP.CustomAvalanchDamage.ValueChanged += this.CustomValue_AvalancheDamageToPlayer;
-            this.VIEW.NEWMAP.DefaultAirQuantity.CheckedChanged += this.checkBox15_CheckedChanged;
-            this.VIEW.NEWMAP.AirQuantity.ValueChanged += this.CustomValue_AirQuantity;
-            this.VIEW.NEWMAP.DefaultRateOfConsumption.CheckedChanged += this.checkBox16_CheckedChanged;
-            this.VIEW.NEWMAP.RateOfConsumption.ValueChanged += CustomValue_RateOfConsumption;
-            this.VIEW.NEWMAP.DefaultPowerDrain.CheckedChanged  += this.checkBox18_CheckedChanged;
-            this.VIEW.NEWMAP.PowerDrainMultiplier.ValueChanged += this.CustomValue_PowerDrainMultiplier;
-            this.VIEW.NEWMAP.ActiveReachTheTile.CheckedChanged += this.checkbox23_CheckedChanged;
-            this.VIEW.NEWMAP.ActiveRescue.CheckedChanged += this.checkBox22_CheckedChanged;
-            this.VIEW.NEWMAP.comboBoxRescueUnit.TextChanged += this.CustomValue_SpecificRescueUnit;
-            this.VIEW.NEWMAP.ActiveSpecificUnit.CheckedChanged += this.checkBox21_CheckedChanged;
-            this.VIEW.NEWMAP.comboBoxSpecificUnit.TextChanged += this.CustomValue_SpecificUnit;
-            this.VIEW.NEWMAP.ActiveSpecificBuilding.CheckedChanged += this.checkBox20_CheckedChanged;
-            this.VIEW.NEWMAP.comboBoxSpecificBuilding.TextChanged += this.CustomValue_SpecificBuilding;
-            this.VIEW.NEWMAP.ActiveCrystalCollection.CheckedChanged += this.checkBox19_CheckedChanged;
-            this.VIEW.NEWMAP.NeededCrystals.ValueChanged += this.CustomValue_CrystalsCount;
-            this.VIEW.NEWMAP.button1.Click += this.ApplyButton;
-        }
-        public void setNewMapValuesToDefault()
-        {
-            this.VIEW.NEWMAP.WidthIn.Value = this.MODEL.Width;
-            this.VIEW.NEWMAP.PowerDrain.Checked = this.MODEL.PowerDrain;
-            this.VIEW.NEWMAP.Avalanche.Checked = this.MODEL.Avalanches;
-            this.VIEW.NEWMAP.TerrainType.Text = this.MODEL.TerrainType;
-            this.VIEW.NEWMAP.Erosion.Checked = this.MODEL.Erosion;
-            this.VIEW.NEWMAP.HostileAI.Checked = this.MODEL.HostileAI;
-            this.VIEW.NEWMAP.AirThreat.Checked = this.MODEL.AirThreat;
-            this.VIEW.NEWMAP.CustomSpeed.Value = this.MODEL.CreatureSpeed;
-            this.VIEW.NEWMAP.HeightIn.Value = this.MODEL.Height;
-            this.VIEW.NEWMAP.CustomDamage.Value = this.MODEL.DamageToPlayer;
-            this.VIEW.NEWMAP.CustomPlayerDamage.Value = this.MODEL.DamageFromPlayer;
-            this.VIEW.NEWMAP.CustomSpawnChance.Value = this.MODEL.SpawnChance;
-            this.VIEW.NEWMAP.CustomHunger.Value = this.MODEL.Hunger;
-            this.VIEW.NEWMAP.DebrisMultiplier.Value = this.MODEL.Debrismultiplier;
-            this.VIEW.NEWMAP.RepairCost.Value = this.MODEL.RepairCost;
-            this.VIEW.NEWMAP.CustomErosionSpeed.Value = this.MODEL.ErosionSpeed;
-            this.VIEW.NEWMAP.CustomAvalanchFrequncy.Value = this.MODEL.Frequency;
-            this.VIEW.NEWMAP.CustomAvalanchDamage.Value = this.MODEL.AvalancheDamageToPlayer;
-            this.VIEW.NEWMAP.AirQuantity.Value = this.MODEL.AirQuantity;
-            this.VIEW.NEWMAP.RateOfConsumption.Value = this.MODEL.RateOfConsumption;
-            this.VIEW.NEWMAP.PowerDrainMultiplier.Value = this.MODEL.PowerDrainMultiplyer;
-            this.VIEW.NEWMAP.ActiveReachTheTile.Checked = this.MODEL.TileReach;
-            this.VIEW.NEWMAP.ActiveRescue.Checked = this.MODEL.RescueSpecificUnit;
-            this.VIEW.NEWMAP.comboBoxRescueUnit.Text = this.MODEL.SpecificRescueUnit;
-            this.VIEW.NEWMAP.ActiveSpecificUnit.Checked = this.MODEL.BuildSpecificUnit;
-            this.VIEW.NEWMAP.comboBoxSpecificUnit.Text = this.MODEL.SpecificUnit;
-            this.VIEW.NEWMAP.ActiveSpecificBuilding.Checked = this.MODEL.BuildSpecificBuilding;
-            this.VIEW.NEWMAP.comboBoxSpecificBuilding.Text = this.MODEL.SpecificBuilding;
-            this.VIEW.NEWMAP.ActiveCrystalCollection.Checked = this.MODEL.CollectCrystals;
-            this.VIEW.NEWMAP.NeededCrystals.Value = this.MODEL.CrystalsCount;
-        }
 
+        //-----------------------------------------------------------------DEFAULT WINDOW METHODS----------------------------------------------------\\
+        public void InitializeMainAppWindow()
+        {
+            this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
+            this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
+            this.VIEW.MAINAPP.MAP.Scroll += this.MapZoom;
+        }
+        
         //Button Functions.
-        //--DefaultWindow.
+        //--MainAppWindow.
         private void ClickOnQuit(object sender, EventArgs e)
         {
-            VIEW.DEFWIN.Close();
+            VIEW.MAINAPP.Close();
             Debug.WriteLine("Closing Application.");
             Application.Exit();
         }
@@ -135,6 +47,16 @@ namespace WindowsFormsApp2
         {
             VIEW.NEWMAP.Show();
         }
+        private void MapZoom(object sender, EventArgs e)
+        {
+            
+
+        }
+
+
+        //----------------------------------------------------------------END OF DEFAULT WINDOW METHODS---------------------------------------------\\
+
+        //-----------------------------------------------------------------NEW MAP METHODS----------------------------------------------------------\\
         
         //On Switches for enviromental map  effects
         private void checkBoxHostileAI(object sender, EventArgs e)
@@ -158,7 +80,6 @@ namespace WindowsFormsApp2
             DefaultCheckBoxes("PowerDrain");
         }
 
-        //---------------------------------------------------------------------------------------------
         //all of the default buttons, tabs and how they effect their respective enabled states. 
 
         //---Enemy Ai
@@ -256,9 +177,6 @@ namespace WindowsFormsApp2
             VIEW.NEWMAP.Close();
 
         }
-        //-----------------------------------------------------------------------------------------------------------------------------
-        // The setting of the Custom Values section of  the code
-
         //set the new map name
         private void SetMapName(object sender, EventArgs e)
         {
@@ -390,10 +308,6 @@ namespace WindowsFormsApp2
         {
             UserInput("SpecificRescueUnit");
         }
-        public event EventHandler ButtonClicked;
-
-
-
 
         public void DefaultCheckBoxes(string DefaultCheckBoxAction)
         {
@@ -733,17 +647,33 @@ namespace WindowsFormsApp2
 
                     if (VIEW.NEWMAP.ActiveCrystalCollection.Checked == true)
                     {
+
                         VIEW.NEWMAP.NeededCrystals.Enabled = true;
+                        this.MODEL.CollectCrystals = true;
                         VIEW.NEWMAP.UserInput("CrystalsCount");
                         VIEW.NEWMAP.NeededCrystals.Invalidate();
                         VIEW.NEWMAP.NeededCrystals.Refresh();
                         Application.DoEvents();
+                        if (WinCondCheck() == true)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = true;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = true;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
                     else
-                    {
+                    {                        
                         VIEW.NEWMAP.NeededCrystals.Enabled = false;
                         MODEL.CollectCrystals = false;
                         Debug.WriteLine($"CollectCrystals Checked. it is now: False");
+                        if (WinCondCheck() == false)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = false;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = false;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
 
                     break;
@@ -752,16 +682,31 @@ namespace WindowsFormsApp2
                     if (VIEW.NEWMAP.ActiveSpecificBuilding.Checked == true)
                     {
                         VIEW.NEWMAP.comboBoxSpecificBuilding.Enabled = true;
+                        this.MODEL.BuildSpecificBuilding = true;
                         VIEW.NEWMAP.UserInput("SpecificBuilding");
                         VIEW.NEWMAP.comboBoxSpecificBuilding.Invalidate();
                         VIEW.NEWMAP.comboBoxSpecificBuilding.Refresh();
                         Application.DoEvents();
+                        if (WinCondCheck() == true)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = true;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = true;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
                     else
                     {
                         VIEW.NEWMAP.comboBoxSpecificBuilding.Enabled = false;
                         MODEL.BuildSpecificBuilding = false;
                         Debug.WriteLine($"BuildSpecificBuilding Checked. it is now: False");
+                        if (WinCondCheck() == false)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = false;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = false;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
 
                     break;
@@ -770,16 +715,31 @@ namespace WindowsFormsApp2
                     if (VIEW.NEWMAP.ActiveSpecificUnit.Checked == true)
                     {
                         VIEW.NEWMAP.comboBoxSpecificUnit.Enabled = true;
+                        this.MODEL.BuildSpecificUnit = true;
                         VIEW.NEWMAP.UserInput("SpecificUnit");
                         VIEW.NEWMAP.comboBoxSpecificUnit.Invalidate();
                         VIEW.NEWMAP.comboBoxSpecificUnit.Refresh();
                         Application.DoEvents();
+                        if (WinCondCheck() == true)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = true;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = true;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
                     else
                     {
                         VIEW.NEWMAP.comboBoxSpecificUnit.Enabled = false;
                         MODEL.BuildSpecificUnit = false;
                         Debug.WriteLine($"BuildSpecificUnit Checked. it is now: False");
+                        if (WinCondCheck() == false)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = false;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = false;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
                     break;
 
@@ -788,16 +748,31 @@ namespace WindowsFormsApp2
                     if (VIEW.NEWMAP.ActiveRescue.Checked == true)
                     {
                         VIEW.NEWMAP.comboBoxRescueUnit.Enabled = true;
+                        this.MODEL.RescueSpecificUnit = true;
                         VIEW.NEWMAP.UserInput("SpecificRescueUnit");
                         VIEW.NEWMAP.comboBoxRescueUnit.Invalidate();
                         VIEW.NEWMAP.comboBoxRescueUnit.Refresh();
                         Application.DoEvents();
+                        if (WinCondCheck() == true)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = true;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = true;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
                     else
                     {
                         VIEW.NEWMAP.comboBoxRescueUnit.Enabled = false;
                         MODEL.RescueSpecificUnit = false;
                         Debug.WriteLine($"RescueSpecificUnit Checked. it is now: False");
+                        if (WinCondCheck() == false)
+                        {
+                            this.VIEW.NEWMAP.button1.Enabled = false;
+                            this.VIEW.NEWMAP.button1.Refresh();
+                            this.VIEW.NEWMAP.button2.Enabled = false;
+                            this.VIEW.NEWMAP.button2.Refresh();
+                        }
                     }
 
                     break;
@@ -806,12 +781,19 @@ namespace WindowsFormsApp2
                         Console.WriteLine("Reach the Tile Checked");
                         if (VIEW.NEWMAP.ActiveReachTheTile.Checked == true)
                         {
-
+                            this.MODEL.TileReach = true;
                             Application.DoEvents();
+
                         }
                         else
                         {
-
+                            if (WinCondCheck() == false)
+                            {
+                                this.VIEW.NEWMAP.button1.Enabled = false;
+                                this.VIEW.NEWMAP.button1.Refresh();
+                                this.VIEW.NEWMAP.button2.Enabled = false;
+                                this.VIEW.NEWMAP.button2.Refresh();
+                            }
                         }
                     }
                     break;
@@ -919,169 +901,333 @@ namespace WindowsFormsApp2
 
             }
         }
+        public bool WinCondCheck()
+        {
+            Debug.WriteLine("Testing Win Condition Check");
+
+            bool a, b, c, d, e;
+            a = MODEL.CollectCrystals;
+            b = MODEL.BuildSpecificBuilding;
+            c = MODEL.BuildSpecificUnit;
+            d = MODEL.RescueSpecificUnit;
+            e = MODEL.TileReach;
+
+            if (a == false && b == false  && c == false && d == false && e == false)
+            {
+                Debug.WriteLine("Win condition does not exists");
+                return false;
+            }
+            else
+            {
+                Debug.WriteLine("Win condition exists");
+                return true;
+            }
+            
+        }
         public void ApplySettings()
         {
-            //Values from imputable boxes
-            Debug.WriteLine("---Saving Values---");
-            Debug.WriteLine("-----------------------------------------------------------------------------------Foundations");
-            //Foundations.-----------------------------------------------------------
-            //Map Name
-            MODEL.MapName = VIEW.NEWMAP.MapName.Text;
-            Debug.WriteLine($"MapName set to:                   {VIEW.NEWMAP.MapName.Text}");
+            if (WinCondCheck() == true)
+            {
+                //Values from imputable boxes
+                Debug.WriteLine("---Saving Values---");
+                Debug.WriteLine("-----------------------------------------------------------------------------------Foundations");
+                //Foundations.-----------------------------------------------------------
+                //Map Name
+                MODEL.MapName = VIEW.NEWMAP.MapName.Text;
+                Debug.WriteLine($"MapName set to:                   {VIEW.NEWMAP.MapName.Text}");
 
-            //Width
-            MODEL.Width = Convert.ToInt32(VIEW.NEWMAP.WidthIn.Value);
-            Debug.WriteLine($"Width set to:                     {VIEW.NEWMAP.WidthIn.Value}");
+                //Width
+                MODEL.Width = Convert.ToInt32(VIEW.NEWMAP.WidthIn.Value);
+                Debug.WriteLine($"Width set to:                     {VIEW.NEWMAP.WidthIn.Value}");
 
-            //Height
-            MODEL.Height = Convert.ToInt32(VIEW.NEWMAP.HeightIn.Value);
-            Debug.WriteLine($"Height set to:                    {VIEW.NEWMAP.HeightIn.Value}");
+                //Height
+                MODEL.Height = Convert.ToInt32(VIEW.NEWMAP.HeightIn.Value);
+                Debug.WriteLine($"Height set to:                    {VIEW.NEWMAP.HeightIn.Value}");
 
-            //Terrain Type
-            MODEL.TerrainType = VIEW.NEWMAP.TerrainType.Text;
-            Debug.WriteLine($"TerrainType set to:               {VIEW.NEWMAP.TerrainType.Text}");
+                //Terrain Type
+                MODEL.TerrainType = VIEW.NEWMAP.TerrainType.Text;
+                Debug.WriteLine($"TerrainType set to:               {VIEW.NEWMAP.TerrainType.Text}");
 
-            //Environmental factors----------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Environmental");
+                //Environmental factors----------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Environmental");
 
-            //Hostile AI
-            MODEL.HostileAI = VIEW.NEWMAP.HostileAI.Checked;
-            Debug.WriteLine($"HostileAI set to:                 {VIEW.NEWMAP.HostileAI.Checked}");
+                //Hostile AI
+                MODEL.HostileAI = VIEW.NEWMAP.HostileAI.Checked;
+                Debug.WriteLine($"HostileAI set to:                 {VIEW.NEWMAP.HostileAI.Checked}");
 
-            //Erosion State
-            MODEL.Erosion = VIEW.NEWMAP.Erosion.Checked;
-            Debug.WriteLine($"Erosion set to:                   {VIEW.NEWMAP.Erosion.Checked}");
+                //Erosion State
+                MODEL.Erosion = VIEW.NEWMAP.Erosion.Checked;
+                Debug.WriteLine($"Erosion set to:                   {VIEW.NEWMAP.Erosion.Checked}");
 
-            //Avalanche State
-            MODEL.Avalanches = VIEW.NEWMAP.Avalanche.Checked;
-            Debug.WriteLine($"Avalanches set to:                {VIEW.NEWMAP.Avalanche.Checked}");
+                //Avalanche State
+                MODEL.Avalanches = VIEW.NEWMAP.Avalanche.Checked;
+                Debug.WriteLine($"Avalanches set to:                {VIEW.NEWMAP.Avalanche.Checked}");
 
-            //Air Threat State
-            MODEL.AirThreat = VIEW.NEWMAP.AirThreat.Checked;
-            Debug.WriteLine($"AirThreat set to:                 {VIEW.NEWMAP.AirThreat.Checked}");
+                //Air Threat State
+                MODEL.AirThreat = VIEW.NEWMAP.AirThreat.Checked;
+                Debug.WriteLine($"AirThreat set to:                 {VIEW.NEWMAP.AirThreat.Checked}");
 
-            //Power Drain Sate
-            MODEL.PowerDrain = VIEW.NEWMAP.PowerDrain.Checked;
-            Debug.WriteLine($"PowerDrain set to:                {VIEW.NEWMAP.PowerDrain.Checked}");
-
-
-            //Enemy Ai-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Enemy Ai");
-
-            //Damage to player
-            MODEL.DamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value);
-            Debug.WriteLine($"DamageToPlayer set to:            {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
-
-            //Damage From Player
-            MODEL.DamageFromPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value);
-            Debug.WriteLine($"DamageFromPlayer set to:          {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
-
-            //Creature Speed
-            MODEL.CreatureSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value);
-            Debug.WriteLine($"CreatureSpeed set to:             {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
-
-            //Debris speed multiplier
-            MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value);
-            Debug.WriteLine($"DebrisMultiplier set to:          {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
-
-            //Hunger
-            MODEL.Hunger = Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value);
-            Debug.WriteLine($"Hunger set to:                    {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
-
-            //Spawn Chance
-            MODEL.SpawnChance = Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value);
-            Debug.WriteLine($"SpawnChance set to:               {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
-
-            //Erosion-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Erosion");
-
-            //Erosion speed
-            MODEL.ErosionSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value);
-            Debug.WriteLine($"ErosionSpeed set to:              {Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value)}");
-
-            //Erosion Repair cost
-            MODEL.RepairCost = Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value);
-            Debug.WriteLine($"RepairCost set to:                {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
-
-            //Avalanche-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Avalanche");
-
-            //Avalanche to player
-            MODEL.AvalancheDamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value);
-            Debug.WriteLine($"AvalancheDamageToPlayer set to:   {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
-
-            //Avalanche Frequency
-            MODEL.Frequency = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value);
-            Debug.WriteLine($"Frequency set to:                 {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
-
-            //Air-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Air");
-
-            //Rate of Consumption
-            MODEL.RateOfConsumption = Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value);
-            Debug.WriteLine($"RateOfConsumption set to:         {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
-
-            //Air Quantity
-            MODEL.AirQuantity = Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value);
-            Debug.WriteLine($"AirQuantity set to:               {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
-
-            //PowerDrain-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------PowerDrain");
-
-            //Power Drain Multiplier
-            MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value);
-            Debug.WriteLine($"PowerDrainMultiplier set to:      {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
-
-            //Winstate-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Winstate");
+                //Power Drain Sate
+                MODEL.PowerDrain = VIEW.NEWMAP.PowerDrain.Checked;
+                Debug.WriteLine($"PowerDrain set to:                {VIEW.NEWMAP.PowerDrain.Checked}");
 
 
-            //true or false values on all settings.
+                //Enemy Ai-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Enemy Ai");
 
-            //WinConditions.
-            //Collect Crystal State
-            MODEL.CollectCrystals = VIEW.NEWMAP.ActiveCrystalCollection.Checked;
-            Debug.WriteLine($"CollectCrystals set to:           {VIEW.NEWMAP.ActiveCrystalCollection.Checked}");
+                //Damage to player
+                MODEL.DamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value);
+                Debug.WriteLine($"DamageToPlayer set to:            {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
 
-            //Build Specific Building State
-            MODEL.BuildSpecificBuilding = VIEW.NEWMAP.ActiveSpecificBuilding.Checked;
-            Debug.WriteLine($"BuildSpecificBuilding set to:     {VIEW.NEWMAP.ActiveSpecificBuilding.Checked}");
+                //Damage From Player
+                MODEL.DamageFromPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value);
+                Debug.WriteLine($"DamageFromPlayer set to:          {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
 
-            //Build Specific unit State
-            MODEL.BuildSpecificUnit = VIEW.NEWMAP.ActiveSpecificUnit.Checked;
-            Debug.WriteLine($"BuildSpecificUnit set to:         {VIEW.NEWMAP.ActiveSpecificUnit.Checked}");
+                //Creature Speed
+                MODEL.CreatureSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value);
+                Debug.WriteLine($"CreatureSpeed set to:             {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
 
-            //Resuce Specific unit State
-            MODEL.RescueSpecificUnit = VIEW.NEWMAP.ActiveRescue.Checked;
-            Debug.WriteLine($"RescueSpecificUnit set to:        {VIEW.NEWMAP.ActiveRescue.Checked}");
+                //Debris speed multiplier
+                MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value);
+                Debug.WriteLine($"DebrisMultiplier set to:          {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
 
-            //Reach the tile State
-            MODEL.TileReach = VIEW.NEWMAP.ActiveReachTheTile.Checked;
-            Debug.WriteLine($"TileReach set to:                 {VIEW.NEWMAP.ActiveReachTheTile.Checked}");
+                //Hunger
+                MODEL.Hunger = Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value);
+                Debug.WriteLine($"Hunger set to:                    {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
 
-            //Winstate Values-----------------------------------------------------------------------------------
-            Debug.WriteLine("-----------------------------------------------------------------------------------Winstate Values");
+                //Spawn Chance
+                MODEL.SpawnChance = Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value);
+                Debug.WriteLine($"SpawnChance set to:               {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
 
-            //Energy Crystal
-            MODEL.CrystalsCount = Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value);
-            Debug.WriteLine($"CrystalsCount set to:             {Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value)}");
+                //Erosion-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Erosion");
 
-            //build Specific Building
-            MODEL.SpecificBuilding = VIEW.NEWMAP.comboBoxSpecificBuilding.Text;
-            Debug.WriteLine($"SpecificBuilding set to:          {VIEW.NEWMAP.comboBoxSpecificBuilding.Text}");
+                //Erosion speed
+                MODEL.ErosionSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value);
+                Debug.WriteLine($"ErosionSpeed set to:              {Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value)}");
 
-            //Build Specific Unit
-            MODEL.SpecificUnit = VIEW.NEWMAP.comboBoxSpecificUnit.Text;
-            Debug.WriteLine($"SpecificUnit set to:              {VIEW.NEWMAP.comboBoxSpecificUnit.Text}");
+                //Erosion Repair cost
+                MODEL.RepairCost = Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value);
+                Debug.WriteLine($"RepairCost set to:                {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
 
-            //Rescue Specific Unit
-            MODEL.SpecificRescueUnit = VIEW.NEWMAP.comboBoxRescueUnit.Text;
-            Debug.WriteLine($"SpecificRescueUnit set to:        {VIEW.NEWMAP.comboBoxRescueUnit.Text}");
+                //Avalanche-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Avalanche");
 
-            Debug.WriteLine("-----------------------------------------------------------------------------------Values Saved");
-            Debug.WriteLine("All Values saved to system settings ✓");
+                //Avalanche to player
+                MODEL.AvalancheDamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value);
+                Debug.WriteLine($"AvalancheDamageToPlayer set to:   {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
+
+                //Avalanche Frequency
+                MODEL.Frequency = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value);
+                Debug.WriteLine($"Frequency set to:                 {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
+
+                //Air-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Air");
+
+                //Rate of Consumption
+                MODEL.RateOfConsumption = Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value);
+                Debug.WriteLine($"RateOfConsumption set to:         {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
+
+                //Air Quantity
+                MODEL.AirQuantity = Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value);
+                Debug.WriteLine($"AirQuantity set to:               {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
+
+                //PowerDrain-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------PowerDrain");
+
+                //Power Drain Multiplier
+                MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value);
+                Debug.WriteLine($"PowerDrainMultiplier set to:      {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
+
+                //Winstate-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Winstate");
+
+
+                //true or false values on all settings.
+
+                //WinConditions.
+                //Collect Crystal State
+                MODEL.CollectCrystals = VIEW.NEWMAP.ActiveCrystalCollection.Checked;
+                Debug.WriteLine($"CollectCrystals set to:           {VIEW.NEWMAP.ActiveCrystalCollection.Checked}");
+
+                //Build Specific Building State
+                MODEL.BuildSpecificBuilding = VIEW.NEWMAP.ActiveSpecificBuilding.Checked;
+                Debug.WriteLine($"BuildSpecificBuilding set to:     {VIEW.NEWMAP.ActiveSpecificBuilding.Checked}");
+
+                //Build Specific unit State
+                MODEL.BuildSpecificUnit = VIEW.NEWMAP.ActiveSpecificUnit.Checked;
+                Debug.WriteLine($"BuildSpecificUnit set to:         {VIEW.NEWMAP.ActiveSpecificUnit.Checked}");
+
+                //Resuce Specific unit State
+                MODEL.RescueSpecificUnit = VIEW.NEWMAP.ActiveRescue.Checked;
+                Debug.WriteLine($"RescueSpecificUnit set to:        {VIEW.NEWMAP.ActiveRescue.Checked}");
+
+                //Reach the tile State
+                MODEL.TileReach = VIEW.NEWMAP.ActiveReachTheTile.Checked;
+                Debug.WriteLine($"TileReach set to:                 {VIEW.NEWMAP.ActiveReachTheTile.Checked}");
+
+                //Winstate Values-----------------------------------------------------------------------------------
+                Debug.WriteLine("-----------------------------------------------------------------------------------Winstate Values");
+
+                //Energy Crystal
+                if (MODEL.CrystalsCount == 0)
+                {
+                    MODEL.CrystalsCount = 10;
+                    Debug.WriteLine($"CrystalsCount set to:             10 (to avoid not having a wincondition)");
+                }
+                else
+                {
+                    MODEL.CrystalsCount = Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value);
+                    Debug.WriteLine($"CrystalsCount set to:             {Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value)}");
+                }
+
+                //build Specific Building
+                MODEL.SpecificBuilding = VIEW.NEWMAP.comboBoxSpecificBuilding.Text;
+                Debug.WriteLine($"SpecificBuilding set to:          {VIEW.NEWMAP.comboBoxSpecificBuilding.Text}");
+
+                //Build Specific Unit
+                MODEL.SpecificUnit = VIEW.NEWMAP.comboBoxSpecificUnit.Text;
+                Debug.WriteLine($"SpecificUnit set to:              {VIEW.NEWMAP.comboBoxSpecificUnit.Text}");
+
+                //Rescue Specific Unit
+                MODEL.SpecificRescueUnit = VIEW.NEWMAP.comboBoxRescueUnit.Text;
+                Debug.WriteLine($"SpecificRescueUnit set to:        {VIEW.NEWMAP.comboBoxRescueUnit.Text}");
+
+                Debug.WriteLine("-----------------------------------------------------------------------------------Values Saved");
+                Debug.WriteLine("All Values saved to system settings ✓");
+            }
+            else
+            {
+                //E/rror
+            }
 
         }
+        public void InitializeNewMap()
+        {
+            this.InitializeNewMapButtons();
+            this.setNewMapValuesToDefault();
+        }
+        public void InitializeNewMapButtons()
+        {
+            this.VIEW.NEWMAP.WidthIn.ValueChanged += SetWidth;
+            this.VIEW.NEWMAP.PowerDrain.CheckedChanged += this.checkBoxPowerDrain;
+            this.VIEW.NEWMAP.Avalanche.CheckedChanged += this.checkBoxAvalanche;
+            this.VIEW.NEWMAP.MapName.TextChanged += this.SetMapName;
+            this.VIEW.NEWMAP.KeyDown += this.SetMapName;
+            this.VIEW.NEWMAP.Leave += this.SetMapName;
+            this.VIEW.NEWMAP.TerrainType.TextChanged += this.SetTerrainType;
+            this.VIEW.NEWMAP.TerrainType.Leave += this.SetTerrainType;
+            this.VIEW.NEWMAP.Erosion.CheckedChanged += this.checkBoxErosion;
+            this.VIEW.NEWMAP.HostileAI.CheckedChanged += this.checkBoxHostileAI;
+            this.VIEW.NEWMAP.AirThreat.CheckedChanged += this.checkBoxAirThreat;
+            this.VIEW.NEWMAP.HeightIn.ValueChanged += this.SetHeight;
+            this.VIEW.NEWMAP.DefaultPlayerDamage.CheckedChanged += this.checkBox6_CheckedChanged;
+            this.VIEW.NEWMAP.CustomDamage.ValueChanged += this.CustomValue_DamageToPlayer;
+            this.VIEW.NEWMAP.DefaultDamageFromPlayer.CheckedChanged += this.checkBox7_CheckedChanged;
+            this.VIEW.NEWMAP.CustomPlayerDamage.ValueChanged += this.CustomValue_DamageFromPlayer;
+            this.VIEW.NEWMAP.SpawnChance.CheckedChanged += this.checkBox11_CheckedChanged;
+            this.VIEW.NEWMAP.CustomSpawnChance.ValueChanged += this.CustomValue_Spawn;
+            this.VIEW.NEWMAP.DefaultHunger.CheckedChanged += this.checkBox10_CheckedChanged;
+            this.VIEW.NEWMAP.CustomHunger.ValueChanged += this.CustomValue_HungerValue;
+            this.VIEW.NEWMAP.DefaultSpeed.CheckedChanged += this.checkBox9_CheckedChanged;
+            this.VIEW.NEWMAP.CustomSpeed.ValueChanged += this.CustomValue_CreatureSpeed;
+            this.VIEW.NEWMAP.DebrisMultiplier.ValueChanged += this.CustomValue_DebrisMultiplier;
+            this.VIEW.NEWMAP.DefaultRepairCost.CheckedChanged += this.checkBox14_CheckedChanged;
+            this.VIEW.NEWMAP.RepairCost.ValueChanged += this.CustomValue_RepairCost;
+            this.VIEW.NEWMAP.DefaultErosionSpeed.CheckedChanged += this.checkBox8_CheckedChanged;
+            this.VIEW.NEWMAP.CustomErosionSpeed.ValueChanged += this.CustomValue_Erosion;
+            this.VIEW.NEWMAP.DefaultAvalancheFrequency.CheckedChanged += this.checkBox13_CheckedChanged;
+            this.VIEW.NEWMAP.CustomAvalanchFrequncy.ValueChanged += this.CustomValue_AvalancheFrequency;
+            this.VIEW.NEWMAP.defaultAvalancheDamageToPlayers.CheckedChanged += this.checkBox12_CheckedChanged;
+            this.VIEW.NEWMAP.CustomAvalanchDamage.ValueChanged += this.CustomValue_AvalancheDamageToPlayer;
+            this.VIEW.NEWMAP.DefaultAirQuantity.CheckedChanged += this.checkBox15_CheckedChanged;
+            this.VIEW.NEWMAP.AirQuantity.ValueChanged += this.CustomValue_AirQuantity;
+            this.VIEW.NEWMAP.DefaultRateOfConsumption.CheckedChanged += this.checkBox16_CheckedChanged;
+            this.VIEW.NEWMAP.RateOfConsumption.ValueChanged += CustomValue_RateOfConsumption;
+            this.VIEW.NEWMAP.DefaultPowerDrain.CheckedChanged += this.checkBox18_CheckedChanged;
+            this.VIEW.NEWMAP.PowerDrainMultiplier.ValueChanged += this.CustomValue_PowerDrainMultiplier;
+            this.VIEW.NEWMAP.ActiveReachTheTile.CheckedChanged += this.checkbox23_CheckedChanged;
+            this.VIEW.NEWMAP.ActiveRescue.CheckedChanged += this.checkBox22_CheckedChanged;
+            this.VIEW.NEWMAP.comboBoxRescueUnit.TextChanged += this.CustomValue_SpecificRescueUnit;
+            this.VIEW.NEWMAP.ActiveSpecificUnit.CheckedChanged += this.checkBox21_CheckedChanged;
+            this.VIEW.NEWMAP.comboBoxSpecificUnit.TextChanged += this.CustomValue_SpecificUnit;
+            this.VIEW.NEWMAP.ActiveSpecificBuilding.CheckedChanged += this.checkBox20_CheckedChanged;
+            this.VIEW.NEWMAP.comboBoxSpecificBuilding.TextChanged += this.CustomValue_SpecificBuilding;
+            this.VIEW.NEWMAP.ActiveCrystalCollection.CheckedChanged += this.checkBox19_CheckedChanged;
+            this.VIEW.NEWMAP.NeededCrystals.ValueChanged += this.CustomValue_CrystalsCount;
+            this.VIEW.NEWMAP.button1.Click += this.ApplyButton;
+            this.VIEW.NEWMAP.button2.Click += this.SaveButton;
+        }
+        public void setNewMapValuesToDefault()
+        {
+            //Map Name
+            this.VIEW.NEWMAP.MapName.Text = this.MODEL.MapName;
+
+            //Map Dimensions and terrain type
+            this.VIEW.NEWMAP.WidthIn.Value = this.MODEL.Width;
+            this.VIEW.NEWMAP.HeightIn.Value = this.MODEL.Height;
+            this.VIEW.NEWMAP.TerrainType.Text = this.MODEL.TerrainType;
+
+            //Enviromental factors
+            this.VIEW.NEWMAP.HostileAI.Checked = this.MODEL.HostileAI;
+            this.VIEW.NEWMAP.Erosion.Checked = this.MODEL.Erosion;
+            this.VIEW.NEWMAP.Avalanche.Checked = this.MODEL.Avalanches;
+            this.VIEW.NEWMAP.AirThreat.Checked = this.MODEL.AirThreat;
+            this.VIEW.NEWMAP.PowerDrain.Checked = this.MODEL.PowerDrain;
+
+            //Enemy Ai Values
+            //---Damage
+            this.VIEW.NEWMAP.CustomDamage.Value = this.MODEL.DamageToPlayer;
+            this.VIEW.NEWMAP.CustomPlayerDamage.Value = this.MODEL.DamageFromPlayer;
+
+            //---Speed
+            this.VIEW.NEWMAP.CustomSpeed.Value = this.MODEL.CreatureSpeed;
+            this.VIEW.NEWMAP.DebrisMultiplier.Value = this.MODEL.Debrismultiplier;
+
+            //---Hunger(how many crystals it will eat before leaving
+            this.VIEW.NEWMAP.CustomHunger.Value = this.MODEL.Hunger;
+
+            //---Spawn
+            this.VIEW.NEWMAP.CustomSpawnChance.Value = this.MODEL.SpawnChance;
+
+            //Erosion
+            this.VIEW.NEWMAP.CustomErosionSpeed.Value = this.MODEL.ErosionSpeed;
+            this.VIEW.NEWMAP.RepairCost.Value = this.MODEL.RepairCost;
+
+            //Avalanche
+            this.VIEW.NEWMAP.CustomAvalanchDamage.Value = this.MODEL.AvalancheDamageToPlayer;
+            this.VIEW.NEWMAP.CustomAvalanchFrequncy.Value = this.MODEL.Frequency;
+
+            //Air Consumption
+            this.VIEW.NEWMAP.RateOfConsumption.Value = this.MODEL.RateOfConsumption;
+            this.VIEW.NEWMAP.AirQuantity.Value = this.MODEL.AirQuantity;
+
+            //Power Drain
+            this.VIEW.NEWMAP.PowerDrainMultiplier.Value = this.MODEL.PowerDrainMultiplyer;
+
+            //Win Conditions
+            //---Collect Crystals
+            this.VIEW.NEWMAP.ActiveCrystalCollection.Checked = this.MODEL.CollectCrystals;
+            this.VIEW.NEWMAP.NeededCrystals.Value = this.MODEL.CrystalsCount;
+
+            //---Build Specific Buildings
+            this.VIEW.NEWMAP.ActiveSpecificBuilding.Checked = this.MODEL.BuildSpecificBuilding;
+            this.VIEW.NEWMAP.comboBoxSpecificBuilding.Text = this.MODEL.SpecificBuilding;
+
+            //---Build Specific Unit
+            this.VIEW.NEWMAP.ActiveSpecificUnit.Checked = this.MODEL.BuildSpecificUnit;
+            this.VIEW.NEWMAP.comboBoxSpecificUnit.Text = this.MODEL.SpecificUnit;
+
+            //---Rescue Specific Unit
+            this.VIEW.NEWMAP.ActiveRescue.Checked = this.MODEL.RescueSpecificUnit;
+            this.VIEW.NEWMAP.comboBoxRescueUnit.Text = this.MODEL.SpecificRescueUnit;
+
+            //---Reach the tile
+            this.VIEW.NEWMAP.ActiveReachTheTile.Checked = this.MODEL.TileReach;
+
+
+        }
+        //-----------------------------------------------------------------------------END OF NEW MAP METHODS--------------------------------------------------------------\\
     }
 
 }
