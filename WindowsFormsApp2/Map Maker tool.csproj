@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tile.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="model.cs" />
     <Compile Include="Properties\Settings1.Designer.cs">
@@ -93,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View.resx">
       <DependentUpon>View.cs</DependentUpon>
@@ -108,6 +110,43 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Art\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256x256V9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

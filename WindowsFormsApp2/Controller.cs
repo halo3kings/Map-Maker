@@ -32,7 +32,8 @@ namespace WindowsFormsApp2
         {
             this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
             this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
-            this.VIEW.MAINAPP.MAP.Scroll += this.MapZoom;
+            CreateMap();
+
         }
         
         //Button Functions.
@@ -51,6 +52,25 @@ namespace WindowsFormsApp2
         {
             
 
+        }
+        public void CreateMap()
+        {
+            for(int i = 0; i < this.MODEL.Width; i++)
+            {
+                addColumns();
+            }
+            for(int i = 0; i < this.MODEL.Height; i++) 
+            { 
+                addRow(); 
+            }
+        }
+        public void addColumns()
+        {
+            this.VIEW.MAINAPP.dataGridView1.Columns.Add("", "");
+        }
+        public void addRow()
+        {
+            this.VIEW.MAINAPP.dataGridView1.Rows.Add("1");
         }
 
 

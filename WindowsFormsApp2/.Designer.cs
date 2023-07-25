@@ -5,10 +5,6 @@ namespace WindowsFormsApp2
     partial class Default_Window
     {
         public event EventHandler QuitBut;
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -31,7 +27,7 @@ namespace WindowsFormsApp2
         /// </summary>
         public void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Default_Window));
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,13 +52,13 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.Workspace = new System.Windows.Forms.Panel();
-            this.MAP = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -71,13 +67,13 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel3.SuspendLayout();
             this.Buildings.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.Workspace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -90,7 +86,7 @@ namespace WindowsFormsApp2
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(968, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1281, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -194,7 +190,7 @@ namespace WindowsFormsApp2
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(78, 467);
+            this.groupBox1.Size = new System.Drawing.Size(78, 732);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tools";
@@ -205,7 +201,8 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 19);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 15;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
@@ -223,16 +220,16 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.666667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(66, 436);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(72, 713);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.tabControl1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox3.Location = new System.Drawing.Point(764, 24);
+            this.groupBox3.Location = new System.Drawing.Point(1077, 24);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(204, 467);
+            this.groupBox3.Size = new System.Drawing.Size(204, 732);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Assets";
@@ -246,7 +243,7 @@ namespace WindowsFormsApp2
             this.tabControl1.Location = new System.Drawing.Point(3, 16);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(198, 448);
+            this.tabControl1.Size = new System.Drawing.Size(198, 713);
             this.tabControl1.TabIndex = 0;
             // 
             // Tiles
@@ -255,7 +252,7 @@ namespace WindowsFormsApp2
             this.Tiles.Location = new System.Drawing.Point(4, 22);
             this.Tiles.Name = "Tiles";
             this.Tiles.Padding = new System.Windows.Forms.Padding(3);
-            this.Tiles.Size = new System.Drawing.Size(190, 422);
+            this.Tiles.Size = new System.Drawing.Size(190, 687);
             this.Tiles.TabIndex = 1;
             this.Tiles.Text = "Tiles";
             this.Tiles.UseVisualStyleBackColor = true;
@@ -284,7 +281,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(184, 416);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(184, 681);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // Buildings
@@ -293,7 +290,7 @@ namespace WindowsFormsApp2
             this.Buildings.Location = new System.Drawing.Point(4, 22);
             this.Buildings.Name = "Buildings";
             this.Buildings.Padding = new System.Windows.Forms.Padding(3);
-            this.Buildings.Size = new System.Drawing.Size(190, 422);
+            this.Buildings.Size = new System.Drawing.Size(190, 687);
             this.Buildings.TabIndex = 0;
             this.Buildings.Text = "Buildings";
             this.Buildings.UseVisualStyleBackColor = true;
@@ -316,7 +313,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 416);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 681);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox4
@@ -325,7 +322,7 @@ namespace WindowsFormsApp2
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(78, 24);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(686, 467);
+            this.groupBox4.Size = new System.Drawing.Size(999, 732);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Viewer";
@@ -335,89 +332,88 @@ namespace WindowsFormsApp2
             // 
             this.Workspace.BackColor = System.Drawing.SystemColors.Window;
             this.Workspace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Workspace.Controls.Add(this.MAP);
             this.Workspace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Workspace.Location = new System.Drawing.Point(3, 16);
             this.Workspace.Name = "Workspace";
-            this.Workspace.Size = new System.Drawing.Size(680, 448);
+            this.Workspace.Size = new System.Drawing.Size(993, 713);
             this.Workspace.TabIndex = 0;
             this.Workspace.Paint += new System.Windows.Forms.PaintEventHandler(this.Workspace_Paint);
-            // 
-            // MAP
-            // 
-            this.MAP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MAP.Location = new System.Drawing.Point(77, 38);
-            this.MAP.Name = "MAP";
-            this.MAP.Size = new System.Drawing.Size(517, 364);
-            this.MAP.TabIndex = 0;
-            this.MAP.Scroll += new System.Windows.Forms.ScrollEventHandler(this.MapZoom);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources._256x256;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 46);
+            this.pictureBox1.Size = new System.Drawing.Size(86, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources._256x256V2;
             this.pictureBox2.Location = new System.Drawing.Point(95, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(86, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(86, 79);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 55);
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources._256x256V3;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 88);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(86, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(86, 79);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(95, 55);
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources._256x256V4;
+            this.pictureBox4.Location = new System.Drawing.Point(95, 88);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(86, 46);
+            this.pictureBox4.Size = new System.Drawing.Size(86, 79);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(3, 107);
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources._256x256V5;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 173);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(86, 46);
+            this.pictureBox5.Size = new System.Drawing.Size(86, 79);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(95, 107);
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources._256x256V6;
+            this.pictureBox6.Location = new System.Drawing.Point(95, 173);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(86, 46);
+            this.pictureBox6.Size = new System.Drawing.Size(86, 79);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            // 
+            // modelBindingSource
+            // 
+            this.modelBindingSource.DataSource = typeof(WindowsFormsApp2.model);
             // 
             // Default_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 491);
+            this.ClientSize = new System.Drawing.Size(1281, 756);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -436,13 +432,13 @@ namespace WindowsFormsApp2
             this.Buildings.ResumeLayout(false);
             this.Buildings.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            this.Workspace.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,13 +470,14 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.TabPage Tiles;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        public System.Windows.Forms.Panel MAP;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.PictureBox pictureBox4;
+        public System.Windows.Forms.PictureBox pictureBox5;
+        public System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.BindingSource modelBindingSource;
+        private System.ComponentModel.IContainer components;
     }
 }
 
