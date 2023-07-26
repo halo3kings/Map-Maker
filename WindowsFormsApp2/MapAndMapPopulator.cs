@@ -13,15 +13,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace WindowsFormsApp2
 {
     public class MapAndMapPopulator
     {
-        public int Height, Width;
+        static public int Height, Width;
         public Tile[,] TILE;
         public int[,] MAPDATA;
         public int size = 64;
+        public static Tile[,] TiLE; 
         public MapAndMapPopulator(int H, int W)
         {
             Debug.WriteLine("Map Generation beginging...");
@@ -154,6 +156,8 @@ namespace WindowsFormsApp2
                 Debug.WriteLine($"Resizing  new tile");
             }
         }
+
+        
 
         public void WidthPlacement(int W, int H)
         {

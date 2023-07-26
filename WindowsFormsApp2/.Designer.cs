@@ -417,7 +417,6 @@ namespace WindowsFormsApp2
             this.Map.Name = "Map";
             this.Map.Size = new System.Drawing.Size(991, 711);
             this.Map.TabIndex = 0;
-            this.Map.Scroll += new System.Windows.Forms.ScrollEventHandler(this.MapZoom);
             this.Map.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.New_Map);
             // 
             // modelBindingSource
@@ -433,9 +432,11 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Default_Window";
             this.Text = "Form1";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

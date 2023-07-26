@@ -13,6 +13,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,15 +31,15 @@ namespace WindowsFormsApp2
         public Default_Window()
         {
             InitializeComponent();
+       
         }
-
         public void QuitButton(object sender, EventArgs e)
-        {  
+        {
 
         }
         private void New_Map(object sender, EventArgs e)
         {
-            
+
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -60,15 +61,12 @@ namespace WindowsFormsApp2
         {
 
         }
-        private void MapZoom(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void KeyPressed(object sender, KeyPressEventArgs e)
         {
 
         }
     }
-
 }
+
+
+

@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
         {
             this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
             this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
-            this.VIEW.MAINAPP.Map.MouseWheel += this.MapZoom;
+            this.VIEW.MAINAPP.KeyPress += this.MapZoom;
             
 
         }
@@ -59,22 +59,21 @@ namespace WindowsFormsApp2
         {
             VIEW.NEWMAP.Show();
         }
-        private void MapZoom(object sender, MouseEventArgs e)
+        private void MapZoom(object sender, KeyPressEventArgs e)
         {
-            if (e.Delta > 0)
+            if (e.KeyChar == 'e')
             {
-                Debug.WriteLine($"Mouse scroll in: {e.Delta}");
+                Debug.WriteLine($"Mouse scroll in: ");
                 this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() + 32);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
 
             }
-            else
+            else if (e.KeyChar == 'q')
             {
-                Debug.WriteLine($"Mouse scroll in: {e.Delta}");
+                Debug.WriteLine($"Mouse scroll out: ");
                 this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() - 32);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
             }
-            
 
         }
         public void CreateMap()
