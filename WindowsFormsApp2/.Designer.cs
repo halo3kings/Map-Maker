@@ -48,16 +48,17 @@ namespace WindowsFormsApp2
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tiles = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.Buildings = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.Workspace = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Buildings = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Workspace = new System.Windows.Forms.Panel();
+            this.Map = new System.Windows.Forms.Panel();
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,14 +66,15 @@ namespace WindowsFormsApp2
             this.tabControl1.SuspendLayout();
             this.Tiles.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.Buildings.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.Buildings.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.Workspace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -284,61 +286,6 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel3.Size = new System.Drawing.Size(184, 681);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // Buildings
-            // 
-            this.Buildings.Controls.Add(this.tableLayoutPanel1);
-            this.Buildings.Location = new System.Drawing.Point(4, 22);
-            this.Buildings.Name = "Buildings";
-            this.Buildings.Padding = new System.Windows.Forms.Padding(3);
-            this.Buildings.Size = new System.Drawing.Size(190, 687);
-            this.Buildings.TabIndex = 0;
-            this.Buildings.Text = "Buildings";
-            this.Buildings.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 681);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.Workspace);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(78, 24);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(999, 732);
-            this.groupBox4.TabIndex = 5;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Viewer";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
-            // 
-            // Workspace
-            // 
-            this.Workspace.BackColor = System.Drawing.SystemColors.Window;
-            this.Workspace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Workspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Workspace.Location = new System.Drawing.Point(3, 16);
-            this.Workspace.Name = "Workspace";
-            this.Workspace.Size = new System.Drawing.Size(993, 713);
-            this.Workspace.TabIndex = 0;
-            this.Workspace.Paint += new System.Windows.Forms.PaintEventHandler(this.Workspace_Paint);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -405,6 +352,74 @@ namespace WindowsFormsApp2
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
             // 
+            // Buildings
+            // 
+            this.Buildings.Controls.Add(this.tableLayoutPanel1);
+            this.Buildings.Location = new System.Drawing.Point(4, 22);
+            this.Buildings.Name = "Buildings";
+            this.Buildings.Padding = new System.Windows.Forms.Padding(3);
+            this.Buildings.Size = new System.Drawing.Size(190, 687);
+            this.Buildings.TabIndex = 0;
+            this.Buildings.Text = "Buildings";
+            this.Buildings.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 8;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 681);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.Workspace);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(78, 24);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(999, 732);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Viewer";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // Workspace
+            // 
+            this.Workspace.BackColor = System.Drawing.SystemColors.Window;
+            this.Workspace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Workspace.Controls.Add(this.Map);
+            this.Workspace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Workspace.Location = new System.Drawing.Point(3, 16);
+            this.Workspace.Name = "Workspace";
+            this.Workspace.Size = new System.Drawing.Size(993, 713);
+            this.Workspace.TabIndex = 0;
+            this.Workspace.Paint += new System.Windows.Forms.PaintEventHandler(this.Workspace_Paint);
+            // 
+            // Map
+            // 
+            this.Map.AutoScroll = true;
+            this.Map.AutoSize = true;
+            this.Map.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Map.Location = new System.Drawing.Point(0, 0);
+            this.Map.Name = "Map";
+            this.Map.Size = new System.Drawing.Size(991, 711);
+            this.Map.TabIndex = 0;
+            this.Map.Scroll += new System.Windows.Forms.ScrollEventHandler(this.MapZoom);
+            this.Map.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.New_Map);
+            // 
             // modelBindingSource
             // 
             this.modelBindingSource.DataSource = typeof(WindowsFormsApp2.model);
@@ -429,15 +444,17 @@ namespace WindowsFormsApp2
             this.Tiles.ResumeLayout(false);
             this.Tiles.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.Buildings.ResumeLayout(false);
-            this.Buildings.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.Buildings.ResumeLayout(false);
+            this.Buildings.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.Workspace.ResumeLayout(false);
+            this.Workspace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -478,6 +495,7 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.BindingSource modelBindingSource;
         private System.ComponentModel.IContainer components;
+        public System.Windows.Forms.Panel Map;
     }
 }
 

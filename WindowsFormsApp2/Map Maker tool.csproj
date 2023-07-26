@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapAndMapPopulator.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="model.cs" />

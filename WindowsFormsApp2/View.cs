@@ -25,17 +25,42 @@ namespace WindowsFormsApp2
         DefaultValues DefVal = new DefaultValues();
         public Default_Window MAINAPP = new Default_Window();
         public New_Map NEWMAP = new New_Map();
+        public MapAndMapPopulator MAP;
+
 
         public View()
         {
+
             //Initialize();
         }
         public void Run()
         {
             Application.Run(MAINAPP);
+        }
+        public void CreateMap(int w, int h)
+        {
+            int H = 0;
+            Debug.WriteLine("Generating  map in viewer...");
+            MAP = new MapAndMapPopulator(w,h);
+            Debug.WriteLine("Map Generated...");
 
+            Debug.WriteLine("adding map to pannel 'Map' on the workspace...");
+            while (H < h)
+            {
+                for (int i = 0; i < w ; i++)
+                {
+                    MAINAPP.Map.Controls.Add(MAP.TILE[i, H].getTile());
+                    Debug.WriteLine($"Adding tile: {MAP.TILE[i, H].TILE.Name} to map");
+                }
+                H++;
+            }
+            //this.MAINAPP.Map.Size = new System.Drawing.Size(w *256, h*256);
+            //this.MAINAPP.Map.AutoScroll = true;
 
         }
 
     }
 }
+
+
+    

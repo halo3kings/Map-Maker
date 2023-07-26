@@ -60,11 +60,6 @@ namespace WindowsFormsApp2
         {
 
         }
-        private void MapZoom(object sender, EventArgs e)
-        {
-
-        }
-
         private void MapZoom(object sender, ScrollEventArgs e)
         {
 

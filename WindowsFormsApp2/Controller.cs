@@ -1,9 +1,17 @@
-﻿using System;
+﻿/* Copyright (C) 2023 Austin Tyler - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the Attribution-ShareAlike 4.0 International, 
+ * 
+ * You should have received a copy of the Attribution-ShareAlike 4.0 International with
+ * this file. If not, please write to: AustinTyler88@gmail.com
+ */
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net.Configuration;
+using System.Reflection;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,12 +24,14 @@ namespace WindowsFormsApp2
         public event EventHandler Button_Clicked;
         public View VIEW = new View();
         public model MODEL = new model();
+         
         public Controller() 
         {
             InitializeView();
         }
         public void InitializeView()
         {
+            //InitializeNewMapAndMapPopulator();
             InitializeMainAppWindow();
             InitializeNewMap();
             VIEW.Run();
@@ -32,7 +42,8 @@ namespace WindowsFormsApp2
         {
             this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
             this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
-            CreateMap();
+            this.VIEW.MAINAPP.Map.MouseWheel += this.MapZoom;
+            
 
         }
         
@@ -48,30 +59,30 @@ namespace WindowsFormsApp2
         {
             VIEW.NEWMAP.Show();
         }
-        private void MapZoom(object sender, EventArgs e)
+        private void MapZoom(object sender, MouseEventArgs e)
         {
+            if (e.Delta > 0)
+            {
+                Debug.WriteLine($"Mouse scroll in: {e.Delta}");
+                this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() + 32);
+                this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
+
+            }
+            else
+            {
+                Debug.WriteLine($"Mouse scroll in: {e.Delta}");
+                this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() - 32);
+                this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
+            }
             
 
         }
         public void CreateMap()
         {
-            for(int i = 0; i < this.MODEL.Width; i++)
-            {
-                addColumns();
-            }
-            for(int i = 0; i < this.MODEL.Height; i++) 
-            { 
-                addRow(); 
-            }
+            this.VIEW.CreateMap(MODEL.Width, MODEL.Height);
+            
         }
-        public void addColumns()
-        {
-            this.VIEW.MAINAPP.dataGridView1.Columns.Add("", "");
-        }
-        public void addRow()
-        {
-            this.VIEW.MAINAPP.dataGridView1.Rows.Add("1");
-        }
+      
 
 
         //----------------------------------------------------------------END OF DEFAULT WINDOW METHODS---------------------------------------------\\
@@ -186,15 +197,18 @@ namespace WindowsFormsApp2
         {
             DefaultCheckBoxes("TileReach");
         }
+        //Apply Button
         public void ApplyButton(object sender, EventArgs e)
         {
             ApplySettings();
 
         }
+        //Save  Button
         public void SaveButton(object sender, EventArgs e)
         {
             ApplySettings();
             VIEW.NEWMAP.Close();
+            CreateMap();
 
         }
         //set the new map name
@@ -1115,6 +1129,7 @@ namespace WindowsFormsApp2
 
                 Debug.WriteLine("-----------------------------------------------------------------------------------Values Saved");
                 Debug.WriteLine("All Values saved to system settings ✓");
+                Debug.WriteLine("");
             }
             else
             {
