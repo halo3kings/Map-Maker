@@ -26,52 +26,50 @@ namespace WindowsFormsApp2
         public int Size = 0;
         public int ID = 0;
         public int TYPE = 0;
+        public bool clicked = false;
         public Tile(int size)
         {
             Size = size;
             InitializePictureBox();
-
-
-            //This must be last.
-            InitializeTile();
+            InitializeTile();//must be last
         }
         public void InitializeTile()
         {
             TILE = new System.Windows.Forms.Panel();
-            Debug.WriteLine("initializing panel");
+            Debug.WriteLine("|Tile|   initializing panel");
             //has picture
 
             //Generic window information
             this.TILE.BackColor = System.Drawing.SystemColors.Window;
             this.TILE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            Debug.WriteLine("Generic window information");
+            Debug.WriteLine("|Tile|   Generic window information");
 
             //top  left  corner  orgin
             this.TILE.Location = new System.Drawing.Point(0, 0);
-            Debug.WriteLine("settting top  left  corner  orgin");
+            Debug.WriteLine("|Tile|   settting top  left  corner  orgin");
 
             //"TILE" will  be the default name with the added ID number on the end
             this.TILE.Name = "TILE" + ID;
-            Debug.WriteLine("creating  title");
+            Debug.WriteLine("|Tile|   creating  title");
 
             //This sets the panel's Height and Width.
             this.TILE.Size = new System.Drawing.Size(Size, Size);
-            Debug.WriteLine("setting  width and  height");
+            Debug.WriteLine("|Tile|   setting  width and  height");
 
             // picture
             this.TILE.Controls.Add(PICTUREBOX);
-            Debug.WriteLine("adding picture box");
+            Debug.WriteLine("|Tile|   adding picture box");
 
             //ActionEvent
             this.TILE.Click += new System.EventHandler(this.OnClick);
-            Debug.WriteLine("Adding action  even");
-            Debug.WriteLine("end off initializing panel");
+            Debug.WriteLine("|Tile|   Adding action  even");
+            Debug.WriteLine("|Tile|   end off initializing panel");
 
         }
         public void InitializePictureBox()
         {
             PICTUREBOX = new System.Windows.Forms.PictureBox();
-            Debug.WriteLine("initializing picture box");
+            Debug.WriteLine("|Tile|   initializing picture box");
             //fill the TILE
             this.PICTUREBOX.Dock = System.Windows.Forms.DockStyle.Fill;
 
@@ -92,7 +90,7 @@ namespace WindowsFormsApp2
         }
         public void OnClick(object sender, EventArgs e)
         {
-
+            clicked = true;
         }
 
         public void SetLocation(int X, int Y)
@@ -192,5 +190,6 @@ namespace WindowsFormsApp2
         {
             return PICTUREBOX;
         }
+
     }
 }

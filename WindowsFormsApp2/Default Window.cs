@@ -65,6 +65,16 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

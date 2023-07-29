@@ -34,25 +34,105 @@ namespace WindowsFormsApp2
             //InitializeNewMapAndMapPopulator();
             InitializeMainAppWindow();
             InitializeNewMap();
+            //initalize
             VIEW.Run();
         }
 
-        //-----------------------------------------------------------------DEFAULT WINDOW METHODS----------------------------------------------------\\
+        //-----------------------------------------------------------------MainApp METHODS----------------------------------------------------\\
         public void InitializeMainAppWindow()
         {
             this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
             this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
             this.VIEW.MAINAPP.KeyPress += this.MapZoom;
-            
+            this.VIEW.MAINAPP.SelectTool.Click += this.SelectToolClicked;
+            this.VIEW.MAINAPP.BoxSelectTool.Click += this.BoxSelectToolClicked;
+            this.VIEW.MAINAPP.EraserTool.Click +=  this.EraserToolClicked;
+            this.VIEW.MAINAPP.EyeDropperTool.Click += this.EyeDropperToolClicked;
 
         }
         
         //Button Functions.
         //--MainAppWindow.
+        private void SelectToolClicked(object sender, EventArgs e)
+        {
+            Debug.WriteLine($"|Controller|  Select Tool Clicked.");
+            //Value must be flipped for the toggle to work.
+            if (MODEL.SelectToolSelected == true)
+            {
+                this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
+                MODEL.SelectToolSelected = false;
+                Debug.WriteLine($"|Controller|  Select tool set to false.");
+
+            }
+            else if (MODEL.SelectToolSelected == false)
+            {
+                this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.Fixed3D;
+                this.MODEL.SetTool("SelectTool");
+                Debug.WriteLine($"|Controller|  Select tool set to true.");
+            }
+
+        }
+        private void BoxSelectToolClicked(object sender, EventArgs e)
+        {
+            this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.Fixed3D;
+            Debug.WriteLine($"|Controller|  Box Select Tool Clicked.");
+            //Value must be flipped for the toggle to work.
+            if (MODEL.BoxSelectToolSelected == true)
+            {
+                this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
+                MODEL.BoxSelectToolSelected = false;
+                Debug.WriteLine($"|Controller|  Select tool set to  false.");
+
+            }
+            else if (MODEL.BoxSelectToolSelected == false)
+            {
+                this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.Fixed3D;
+                this.MODEL.SetTool("BoxSelectTool");
+                Debug.WriteLine($"|Controller|  Select tool set to  true.");
+            }
+        }
+        private void EyeDropperToolClicked(object sender, EventArgs e)
+        {
+            this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.Fixed3D;
+            Debug.WriteLine($"|Controller|  EyeDroper Tool Clicked.");
+            //Value must be flipped for the toggle to work.
+            if (MODEL.EyeDropperToolSelected == true)
+            {
+                this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
+                MODEL.EyeDropperToolSelected = false;
+                Debug.WriteLine($"|Controller|  Select tool set to  false.");
+
+            }
+            else if (MODEL.EyeDropperToolSelected == false)
+            {
+                this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.Fixed3D;
+                this.MODEL.SetTool("EyeDropperTool");
+                Debug.WriteLine($"|Controller|  Select tool set to  true.");
+            }
+        }
+        private void EraserToolClicked(object sender, EventArgs e)
+        {
+            this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
+            Debug.WriteLine($"|Controller|  Eraser Tool Clicked.");
+            //Value must be flipped for the toggle to work.
+            if (MODEL.EraserToolSelected == true)
+            {
+                this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
+                MODEL.EraserToolSelected = false;
+                Debug.WriteLine($"|Controller|  Select tool set to  false.");
+
+            }
+            else if (MODEL.EraserToolSelected == false)
+            {
+                this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
+                this.MODEL.SetTool("EraserTool");
+                Debug.WriteLine($"|Controller|  Select tool set to  true.");
+            }
+        }
         private void ClickOnQuit(object sender, EventArgs e)
         {
             VIEW.MAINAPP.Close();
-            Debug.WriteLine("Closing Application.");
+            Debug.WriteLine($"|Controller|  Closing Application.");
             Application.Exit();
         }
         private void File_New_Map(object sender, EventArgs e)
@@ -63,23 +143,76 @@ namespace WindowsFormsApp2
         {
             if (e.KeyChar == 'e')
             {
-                Debug.WriteLine($"Mouse scroll in: ");
+                Debug.WriteLine($"|Controller|  Mouse scroll in: ");
+                this.VIEW.MAINAPP.Map.AutoScroll = false;
                 this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() + 32);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
+                this.VIEW.MAINAPP.Map.AutoScroll = true;
 
             }
             else if (e.KeyChar == 'q')
             {
-                Debug.WriteLine($"Mouse scroll out: ");
+                Debug.WriteLine($"|Controller|    Mouse scroll out: ");
+                this.VIEW.MAINAPP.Map.AutoScroll = false;
                 this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() - 32);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
+                this.VIEW.MAINAPP.Map.AutoScroll = true;
             }
 
         }
+        public void TileClicked(object sender, EventArgs e)
+        {
+            bool Run = true;
+            int H = 0;
+            int w = 0;
+            int h = 0;
+            while (H < MODEL.Height && Run == true)
+            {
+
+                for (int W = 0; W < MODEL.Width; W++)
+                {
+                    if(this.VIEW.MAP.TILE[W, H].clicked == true)
+                    {
+                        w = W;
+                        h = H;
+                        Run = false;
+                    }
+                    
+                }
+            }
+            // depending on  the tool, do x action to tile w,h. 
+            switch (w)// replace 'w' with tool that is enabled.
+            {
+                case 0:
+                    {
+
+                    }
+                    break;
+            }
+        }
+        // when the save 
         public void CreateMap()
         {
             this.VIEW.CreateMap(MODEL.Width, MODEL.Height);
+            Debug.WriteLine($"|Controller|    Map created, initializing tile click actions.");
+            initializeTileClickAction();
             
+        }
+        // this sets  the tile clicked action within the view>map>Tile[]. Tile object
+        public void initializeTileClickAction()
+        {
+            Debug.WriteLine($"|Controller|    Initializing tile click..");
+            int H = 0;
+            while (H < MODEL.Height)
+            {
+                
+                for (int W = 0; W < MODEL.Width; W++)
+                {
+                    this.VIEW.MAP.TILE[W, H].TILE.Click += this.TileClicked;
+                    Debug.WriteLine($"|Controller|    Initializing tile click action for tile: {W},{H}");
+                }
+                H++;
+            }
         }
       
 
@@ -209,13 +342,14 @@ namespace WindowsFormsApp2
             VIEW.NEWMAP.Close();
             CreateMap();
 
+
         }
         //set the new map name
         private void SetMapName(object sender, EventArgs e)
         {
 
             MODEL.MapName = VIEW.NEWMAP.MapName.Text;
-            Console.WriteLine($"MapName set to: {VIEW.NEWMAP.MapName.Text}");
+            Console.WriteLine($"|Controller|    MapName set to: {VIEW.NEWMAP.MapName.Text}");
         }
         //set the new map name
         // For when enter is pressed while typing a map name.
@@ -224,7 +358,7 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Enter)
             {
                 MODEL.MapName = VIEW.NEWMAP.MapName.Text;
-                Console.WriteLine($"Height set to: {VIEW.NEWMAP.MapName.Text}");
+                Console.WriteLine($"|Controller|    Height set to: {VIEW.NEWMAP.MapName.Text}");
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
@@ -236,7 +370,7 @@ namespace WindowsFormsApp2
 
             //Gets the value of the Width Numerical box, converts its value to an int and changes the application settings to the new value.
             MODEL.Width = Convert.ToInt32(VIEW.NEWMAP.WidthIn.Value);
-            Console.WriteLine($"Width set to: {Convert.ToInt32(VIEW.NEWMAP.WidthIn.Value)}");
+            Console.WriteLine($"|Controller|    Width set to: {Convert.ToInt32(VIEW.NEWMAP.WidthIn.Value)}");
         }
 
         //set the Height
@@ -244,7 +378,7 @@ namespace WindowsFormsApp2
         {
             //Gets the value of the Width Numerical box, converts its value to an int and changes the application settings to the new value.
             MODEL.Height = Convert.ToInt32(VIEW.NEWMAP.HeightIn.Value);
-            Console.WriteLine($"Height set to: {Convert.ToInt32(VIEW.NEWMAP.HeightIn.Value)}");
+            Console.WriteLine($"|Controller|    Height set to: {Convert.ToInt32(VIEW.NEWMAP.HeightIn.Value)}");
         }
 
         //set the new Terrain
@@ -253,11 +387,11 @@ namespace WindowsFormsApp2
             if (VIEW.NEWMAP.TerrainType.Text.Equals("Rock") || VIEW.NEWMAP.TerrainType.Text.Equals("Lava") || VIEW.NEWMAP.TerrainType.Text.Equals("Ice"))
             {
                 MODEL.TerrainType = VIEW.NEWMAP.TerrainType.Text;
-                Console.WriteLine($"Terrain set to: {VIEW.NEWMAP.TerrainType.Text}");
+                Console.WriteLine($"|Controller|    Terrain set to: {VIEW.NEWMAP.TerrainType.Text}");
             }
             else
             {
-                Console.WriteLine($"Terrain Type Invalid! defaulting to rock.");
+                Console.WriteLine($"|Controller|    Terrain Type Invalid! defaulting to rock.");
                 //MODEL.TerrainType = this.MODEL.TerrainType;
             }
         }
@@ -369,13 +503,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.tableLayoutPanel3.Invalidate();
                         VIEW.NEWMAP.tableLayoutPanel3.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Hostile AI Off");
+                        Debug.WriteLine($"|Controller|  Hostile AI Off");
                     }
                     else
                     {
                         VIEW.NEWMAP.tableLayoutPanel3.Enabled = true;
                         MODEL.HostileAI = true;
-                        Debug.WriteLine("Hostile AI On");
+                        Debug.WriteLine($"|Controller|  Hostile AI On");
                     }
                     break;
                 case "Erosion":
@@ -387,13 +521,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.tableLayoutPanel2.Invalidate();
                         VIEW.NEWMAP.tableLayoutPanel2.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Erosion Off");
+                        Debug.WriteLine($"|Controller|  Erosion Off");
                     }
                     else
                     {
                         VIEW.NEWMAP.tableLayoutPanel2.Enabled = true;
                         MODEL.Erosion = true;
-                        Debug.WriteLine("Erosion On");
+                        Debug.WriteLine($"|Controller|  Erosion On");
                     }
 
                     break;
@@ -405,13 +539,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.tableLayoutPanel10.Invalidate();
                         VIEW.NEWMAP.tableLayoutPanel10.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Avalanches Off");
+                        Debug.WriteLine($"|Controller|  Avalanches Off");
                     }
                     else
                     {
                         VIEW.NEWMAP.tableLayoutPanel10.Enabled = true;
                         MODEL.Avalanches = true;
-                        Debug.WriteLine("Avalanches On");
+                        Debug.WriteLine($"|Controller|  Avalanches On");
                     }
 
                     break;
@@ -423,13 +557,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.tableLayoutPanel14.Invalidate();
                         VIEW.NEWMAP.tableLayoutPanel14.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Air Threat Off");
+                        Debug.WriteLine($"|Controller|  Air Threat Off");
                     }
                     else
                     {
                         VIEW.NEWMAP.tableLayoutPanel14.Enabled = true;
                         MODEL.AirThreat = true;
-                        Debug.WriteLine("Air Threat On");
+                        Debug.WriteLine($"|Controller|  Air Threat On");
                     }
 
                     break;
@@ -441,13 +575,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.tableLayoutPanel17.Invalidate();
                         VIEW.NEWMAP.tableLayoutPanel17.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("PowerDrain Off");
+                        Debug.WriteLine($"|Controller|  PowerDrain Off");
                     }
                     else
                     {
                         VIEW.NEWMAP.tableLayoutPanel17.Enabled = true;
                         MODEL.PowerDrain = true;
-                        Debug.WriteLine("PowerDrain On");
+                        Debug.WriteLine($"|Controller|  PowerDrain On");
                     }
 
                     break;
@@ -459,13 +593,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomDamage.Invalidate();
                         VIEW.NEWMAP.CustomDamage.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("DamageToPlayer set to Default");
+                        Debug.WriteLine($"|Controller|  DamageToPlayer set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomDamage.Enabled = true;
                         VIEW.NEWMAP.UserInput("DamageToPlayer");
-                        Debug.WriteLine($"DamageToPlayer Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
+                        Debug.WriteLine($"|Controller|    DamageToPlayer Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
                     }
                     break;
                 case "DamageFromPlayer":
@@ -476,13 +610,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomPlayerDamage.Invalidate();
                         VIEW.NEWMAP.CustomPlayerDamage.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("CustomPlayerDamage set to Default");
+                        Debug.WriteLine($"|Controller|  CustomPlayerDamage set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomPlayerDamage.Enabled = true;
                         VIEW.NEWMAP.UserInput("DamageFromPlayer");
-                        Debug.WriteLine($"CustomPlayerDamage Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
+                        Debug.WriteLine($"|Controller|    CustomPlayerDamage Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
                     }
                     break;
 
@@ -499,7 +633,7 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomSpeed.Refresh();
                         VIEW.NEWMAP.DebrisMultiplier.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Creature speed set to Default");
+                        Debug.WriteLine($"|Controller|  Creature speed set to Default");
                     }
                     else
                     {
@@ -507,8 +641,8 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.DebrisMultiplier.Enabled = true;
                         VIEW.NEWMAP.UserInput("CreatureSpeed");
                         VIEW.NEWMAP.UserInput("DebrisMultiplier");
-                        Debug.WriteLine($"CreatureSpeed Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
-                        Debug.WriteLine($"DebrisMultiplier Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
+                        Debug.WriteLine($"|Controller|    CreatureSpeed Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
+                        Debug.WriteLine($"|Controller|    DebrisMultiplier Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
                     }
 
                     break;
@@ -520,14 +654,14 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomHunger.Invalidate();
                         VIEW.NEWMAP.CustomHunger.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Creature Hunger set to Default");
+                        Debug.WriteLine($"|Controller|  Creature Hunger set to Default");
 
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomHunger.Enabled = true;
                         VIEW.NEWMAP.UserInput("Hunger");
-                        Debug.WriteLine($"Hunger Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
+                        Debug.WriteLine($"|Controller|    Hunger Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
                     }
 
                     break;
@@ -539,13 +673,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomSpawnChance.Invalidate();
                         VIEW.NEWMAP.CustomSpawnChance.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("Creature SpawnChance set to Default");
+                        Debug.WriteLine($"|Controller|  Creature SpawnChance set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomSpawnChance.Enabled = true;
                         VIEW.NEWMAP.UserInput("SpawnChance");
-                        Debug.WriteLine($"SpawnChance Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
+                        Debug.WriteLine($"|Controller|    SpawnChance Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
                     }
 
                     break;
@@ -557,13 +691,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomErosionSpeed.Invalidate();
                         VIEW.NEWMAP.CustomErosionSpeed.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("ErosionSpeed set to Default");
+                        Debug.WriteLine($"|Controller|  ErosionSpeed set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomErosionSpeed.Enabled = true;
                         VIEW.NEWMAP.UserInput("ErosionSpeed");
-                        Debug.WriteLine($"CustomErosionSpeed. Checked it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
+                        Debug.WriteLine($"|Controller|    CustomErosionSpeed. Checked it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
                     }
 
                     break;
@@ -575,13 +709,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.RepairCost.Invalidate();
                         VIEW.NEWMAP.RepairCost.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("RepairCost set to Default");
+                        Debug.WriteLine($"|Controller|  RepairCost set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.RepairCost.Enabled = true;
                         VIEW.NEWMAP.UserInput("RepairCost");
-                        Debug.WriteLine($"RepairCost Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
+                        Debug.WriteLine($"|Controller|    RepairCost Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
                     }
 
                     break;
@@ -593,18 +727,18 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomAvalanchDamage.Invalidate();
                         VIEW.NEWMAP.CustomAvalanchDamage.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("AvalancheDamageToPlayer set to Default");
+                        Debug.WriteLine($"|Controller|  AvalancheDamageToPlayer set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomAvalanchDamage.Enabled = true;
                         VIEW.NEWMAP.UserInput("AvalancheDamageToPlayer");
-                        Debug.WriteLine($"AvalancheDamageToPlayer Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
+                        Debug.WriteLine($"|Controller|    AvalancheDamageToPlayer Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
                     }
 
                     break;
                 case "Frequency":
-                    Debug.WriteLine("CustomAvalanchFrequncy Checked");
+                    Debug.WriteLine($"|Controller|  CustomAvalanchFrequncy Checked");
                     if (VIEW.NEWMAP.DefaultAvalancheFrequency.Checked == true)
                     {
                         //MODEL.Frequency = MODEL.Frequency;
@@ -612,13 +746,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.CustomAvalanchFrequncy.Invalidate();
                         VIEW.NEWMAP.CustomAvalanchFrequncy.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("CustomAvalanchFrequncy set to Default");
+                        Debug.WriteLine($"|Controller|  CustomAvalanchFrequncy set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.CustomAvalanchFrequncy.Enabled = true;
                         VIEW.NEWMAP.UserInput("Frequency");
-                        Debug.WriteLine($"Frequency Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
+                        Debug.WriteLine($"|Controller|  Frequency Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
                     }
 
                     break;
@@ -630,13 +764,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.RateOfConsumption.Invalidate();
                         VIEW.NEWMAP.RateOfConsumption.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("RateOfConsumption set to Default");
+                        Debug.WriteLine($"|Controller|  RateOfConsumption set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.RateOfConsumption.Enabled = true;
                         VIEW.NEWMAP.UserInput("RateOfConsumption");
-                        Debug.WriteLine($"RateOfConsumption Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
+                        Debug.WriteLine($"|Controller|  RateOfConsumption Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
                     }
                     break;
                 case "AirQuantity":
@@ -648,13 +782,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.AirQuantity.Invalidate();
                         VIEW.NEWMAP.AirQuantity.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("AirQuantity set to Default");
+                        Debug.WriteLine($"|Controller|  AirQuantity set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.AirQuantity.Enabled = true;
                         VIEW.NEWMAP.UserInput("AirQuantity");
-                        Debug.WriteLine($"AirQuantity Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
+                        Debug.WriteLine($"|Controller|  AirQuantity Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
                     }
                     break;
                 case "PowerDrainMultiplier":
@@ -666,13 +800,13 @@ namespace WindowsFormsApp2
                         VIEW.NEWMAP.PowerDrainMultiplier.Invalidate();
                         VIEW.NEWMAP.PowerDrainMultiplier.Refresh();
                         Application.DoEvents();
-                        Debug.WriteLine("PowerDrainMultiplier set to Default");
+                        Debug.WriteLine($"|Controller|  PowerDrainMultiplier set to Default");
                     }
                     else
                     {
                         VIEW.NEWMAP.PowerDrainMultiplier.Enabled = true;
                         VIEW.NEWMAP.UserInput("PowerDrainMultiplier");
-                        Debug.WriteLine($"AirQuantity Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
+                        Debug.WriteLine($"|Controller|  AirQuantity Checked. it is now: {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
                     }
 
                     break;
@@ -699,7 +833,7 @@ namespace WindowsFormsApp2
                     {                        
                         VIEW.NEWMAP.NeededCrystals.Enabled = false;
                         MODEL.CollectCrystals = false;
-                        Debug.WriteLine($"CollectCrystals Checked. it is now: False");
+                        Debug.WriteLine($"|Controller|  CollectCrystals Checked. it is now: False");
                         if (WinCondCheck() == false)
                         {
                             this.VIEW.NEWMAP.button1.Enabled = false;
@@ -711,7 +845,7 @@ namespace WindowsFormsApp2
 
                     break;
                 case "BuildSpecificBuilding":
-                    Debug.WriteLine("SpecificBuilding Checked");
+                    Debug.WriteLine($"|Controller|  SpecificBuilding Checked");
                     if (VIEW.NEWMAP.ActiveSpecificBuilding.Checked == true)
                     {
                         VIEW.NEWMAP.comboBoxSpecificBuilding.Enabled = true;
@@ -732,7 +866,7 @@ namespace WindowsFormsApp2
                     {
                         VIEW.NEWMAP.comboBoxSpecificBuilding.Enabled = false;
                         MODEL.BuildSpecificBuilding = false;
-                        Debug.WriteLine($"BuildSpecificBuilding Checked. it is now: False");
+                        Debug.WriteLine($"|Controller|  BuildSpecificBuilding Checked. it is now: False");
                         if (WinCondCheck() == false)
                         {
                             this.VIEW.NEWMAP.button1.Enabled = false;
@@ -744,7 +878,7 @@ namespace WindowsFormsApp2
 
                     break;
                 case "BuildSpecificUnit":
-                    Debug.WriteLine("SpecificUnit Checked");
+                    Debug.WriteLine($"|Controller|  SpecificUnit Checked");
                     if (VIEW.NEWMAP.ActiveSpecificUnit.Checked == true)
                     {
                         VIEW.NEWMAP.comboBoxSpecificUnit.Enabled = true;
@@ -765,7 +899,7 @@ namespace WindowsFormsApp2
                     {
                         VIEW.NEWMAP.comboBoxSpecificUnit.Enabled = false;
                         MODEL.BuildSpecificUnit = false;
-                        Debug.WriteLine($"BuildSpecificUnit Checked. it is now: False");
+                        Debug.WriteLine($"|Controller|  BuildSpecificUnit Checked. it is now: False");
                         if (WinCondCheck() == false)
                         {
                             this.VIEW.NEWMAP.button1.Enabled = false;
@@ -777,7 +911,7 @@ namespace WindowsFormsApp2
                     break;
 
                 case "SpecificRescueUnit":
-                    Debug.WriteLine("ActiveRescue Checked");
+                    Debug.WriteLine($"|Controller|  ActiveRescue Checked");
                     if (VIEW.NEWMAP.ActiveRescue.Checked == true)
                     {
                         VIEW.NEWMAP.comboBoxRescueUnit.Enabled = true;
@@ -798,7 +932,7 @@ namespace WindowsFormsApp2
                     {
                         VIEW.NEWMAP.comboBoxRescueUnit.Enabled = false;
                         MODEL.RescueSpecificUnit = false;
-                        Debug.WriteLine($"RescueSpecificUnit Checked. it is now: False");
+                        Debug.WriteLine($"|Controller|  RescueSpecificUnit Checked. it is now: False");
                         if (WinCondCheck() == false)
                         {
                             this.VIEW.NEWMAP.button1.Enabled = false;
@@ -811,7 +945,7 @@ namespace WindowsFormsApp2
                     break;
                 case "TileReach":
                     {
-                        Console.WriteLine("Reach the Tile Checked");
+                        Console.WriteLine($"|Controller|  Reach the Tile Checked");
                         if (VIEW.NEWMAP.ActiveReachTheTile.Checked == true)
                         {
                             this.MODEL.TileReach = true;
@@ -831,8 +965,8 @@ namespace WindowsFormsApp2
                     }
                     break;
                 default:
-                    Console.WriteLine("---Error_Code_1---");
-                    Console.WriteLine($"EC1: ( {DefaultCheckBoxAction} ) is not a recognized 'DefaultCheckBoxes' CaseStatement Fix this You dummy... its probabably spelling");
+                    Console.WriteLine($"|Controller|  ---Error_Code_1---");
+                    Console.WriteLine($"|Controller|  EC1: ( {DefaultCheckBoxAction} ) is not a recognized 'DefaultCheckBoxes' CaseStatement Fix this You dummy... its probabably spelling");
                     break;
 
             }
@@ -844,99 +978,99 @@ namespace WindowsFormsApp2
             {
                 case "DamageToPlayer":
                     MODEL.DamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value);
-                    Debug.WriteLine($"DamageToPlayer set to: {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
+                    Debug.WriteLine($"|Controller|  DamageToPlayer set to: {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
                     break;
 
                 case "DamageFromPlayer":
                     MODEL.DamageFromPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value);
-                    Debug.WriteLine($"DamageFromPlayer set to: {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
+                    Debug.WriteLine($"|Controller|  DamageFromPlayer set to: {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
                     break;
 
                 case "CreatureSpeed":
                     MODEL.CreatureSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value);
-                    Debug.WriteLine($"CreatureSpeed set to: {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
+                    Debug.WriteLine($"|Controller|  CreatureSpeed set to: {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
                     break;
 
                 case "DebrisMultiplier":
                     MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value);
-                    Debug.WriteLine($"DebrisMultiplier set to: {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
+                    Debug.WriteLine($"|Controller|  DebrisMultiplier set to: {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
                     break;
 
                 case "Hunger":
                     MODEL.Hunger = Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value);
-                    Debug.WriteLine($"Hunger set to: {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
+                    Debug.WriteLine($"|Controller|  Hunger set to: {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
                     break;
 
                 case "SpawnChance":
                     MODEL.SpawnChance = Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value);
-                    Debug.WriteLine($"SpawnChance set to: {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
+                    Debug.WriteLine($"|Controller|  SpawnChance set to: {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
                     break;
 
                 case "ErosionSpeed":
                     MODEL.ErosionSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value);
-                    Debug.WriteLine($"ErosionSpeed set to: {Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value)}");
+                    Debug.WriteLine($"|Controller|  ErosionSpeed set to: {Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value)}");
                     break;
 
                 case "RepairCost":
                     MODEL.RepairCost = Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value);
-                    Debug.WriteLine($"RepairCost set to: {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
+                    Debug.WriteLine($"|Controller|  RepairCost set to: {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
                     break;
 
                 case "AvalancheDamageToPlayer":
                     MODEL.AvalancheDamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value);
-                    Debug.WriteLine($"AvalancheDamageToPlayer set to: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
+                    Debug.WriteLine($"|Controller|  AvalancheDamageToPlayer set to: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
                     break;
 
                 case "Frequency":
                     MODEL.Frequency = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value);
-                    Debug.WriteLine($"Frequency set to: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
+                    Debug.WriteLine($"|Controller|  Frequency set to: {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
                     break;
 
                 case "RateOfConsumption":
                     MODEL.RateOfConsumption = Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value);
-                    Debug.WriteLine($"RateOfConsumption set to: {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
+                    Debug.WriteLine($"|Controller|  RateOfConsumption set to: {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
                     break;
 
                 case "AirQuantity":
                     MODEL.AirQuantity = Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value);
-                    Debug.WriteLine($"AirQuantity set to: {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
+                    Debug.WriteLine($"|Controller|  AirQuantity set to: {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
                     break;
 
                 case "PowerDrainMultiplier":
                     //MODEL.PowerDrainMultiplier = Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value);
-                    Debug.WriteLine($"PowerDrainMultiplier set to: {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
+                    Debug.WriteLine($"|Controller|  PowerDrainMultiplier set to: {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
                     break;
 
                 case "CrystalsCount":
                     MODEL.CrystalsCount = Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value);
-                    Debug.WriteLine($"CrystalsCount set to: {Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value)}");
+                    Debug.WriteLine($"|Controller|  CrystalsCount set to: {Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value)}");
                     break;
 
                 case "SpecificBuilding":
                     MODEL.SpecificBuilding = VIEW.NEWMAP.comboBoxSpecificBuilding.Text;
-                    Debug.WriteLine($"SpecificBuilding set to: {VIEW.NEWMAP.comboBoxSpecificBuilding.Text}");
+                    Debug.WriteLine($"|Controller|  SpecificBuilding set to: {VIEW.NEWMAP.comboBoxSpecificBuilding.Text}");
                     break;
 
                 case "SpecificUnit":
                     MODEL.SpecificUnit = VIEW.NEWMAP.comboBoxSpecificUnit.Text;
-                    Debug.WriteLine($"SpecificUnit set to: {VIEW.NEWMAP.comboBoxSpecificUnit.Text}");
+                    Debug.WriteLine($"|Controller|  SpecificUnit set to: {VIEW.NEWMAP.comboBoxSpecificUnit.Text}");
                     break;
 
                 case "SpecificRescueUnit":
                     MODEL.SpecificRescueUnit = VIEW.NEWMAP.comboBoxRescueUnit.Text;
-                    Debug.WriteLine($"SpecificRescueUnit set to: {VIEW.NEWMAP.comboBoxRescueUnit.Text}");
+                    Debug.WriteLine($"|Controller|  SpecificRescueUnit set to: {VIEW.NEWMAP.comboBoxRescueUnit.Text}");
                     break;
 
                 default:
-                    Console.WriteLine("---Error_Code_2---");
-                    Console.WriteLine($"EC2: ( {NameOfDesiredVariableToChange} ) is not a recognized 'UserInput' CaseStatement Fix this You dummy... its probabably spelling");
+                    Console.WriteLine($"|Controller|  ---Error_Code_2---");
+                    Console.WriteLine($"|Controller|  EC2: ( {NameOfDesiredVariableToChange} ) is not a recognized 'UserInput' CaseStatement Fix this You dummy... its probabably spelling");
                     break;
 
             }
         }
         public bool WinCondCheck()
         {
-            Debug.WriteLine("Testing Win Condition Check");
+            Debug.WriteLine($"|Controller|  Testing Win Condition Check");
 
             bool a, b, c, d, e;
             a = MODEL.CollectCrystals;
@@ -947,12 +1081,12 @@ namespace WindowsFormsApp2
 
             if (a == false && b == false  && c == false && d == false && e == false)
             {
-                Debug.WriteLine("Win condition does not exists");
+                Debug.WriteLine($"|Controller|  Win condition does not exists");
                 return false;
             }
             else
             {
-                Debug.WriteLine("Win condition exists");
+                Debug.WriteLine($"|Controller|  Win condition exists");
                 return true;
             }
             
@@ -962,118 +1096,118 @@ namespace WindowsFormsApp2
             if (WinCondCheck() == true)
             {
                 //Values from imputable boxes
-                Debug.WriteLine("---Saving Values---");
-                Debug.WriteLine("-----------------------------------------------------------------------------------Foundations");
+                Debug.WriteLine($"|Controller|  ---Saving Values---");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Foundations");
                 //Foundations.-----------------------------------------------------------
                 //Map Name
                 MODEL.MapName = VIEW.NEWMAP.MapName.Text;
-                Debug.WriteLine($"MapName set to:                   {VIEW.NEWMAP.MapName.Text}");
+                Debug.WriteLine($"|Controller|  MapName set to:                   {VIEW.NEWMAP.MapName.Text}");
 
                 //Width
                 MODEL.Width = Convert.ToInt32(VIEW.NEWMAP.WidthIn.Value);
-                Debug.WriteLine($"Width set to:                     {VIEW.NEWMAP.WidthIn.Value}");
+                Debug.WriteLine($"|Controller|  Width set to:                     {VIEW.NEWMAP.WidthIn.Value}");
 
                 //Height
                 MODEL.Height = Convert.ToInt32(VIEW.NEWMAP.HeightIn.Value);
-                Debug.WriteLine($"Height set to:                    {VIEW.NEWMAP.HeightIn.Value}");
+                Debug.WriteLine($"|Controller|  Height set to:                    {VIEW.NEWMAP.HeightIn.Value}");
 
                 //Terrain Type
                 MODEL.TerrainType = VIEW.NEWMAP.TerrainType.Text;
-                Debug.WriteLine($"TerrainType set to:               {VIEW.NEWMAP.TerrainType.Text}");
+                Debug.WriteLine($"|Controller|  TerrainType set to:               {VIEW.NEWMAP.TerrainType.Text}");
 
                 //Environmental factors----------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Environmental");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Environmental");
 
                 //Hostile AI
                 MODEL.HostileAI = VIEW.NEWMAP.HostileAI.Checked;
-                Debug.WriteLine($"HostileAI set to:                 {VIEW.NEWMAP.HostileAI.Checked}");
+                Debug.WriteLine($"|Controller|  HostileAI set to:                 {VIEW.NEWMAP.HostileAI.Checked}");
 
                 //Erosion State
                 MODEL.Erosion = VIEW.NEWMAP.Erosion.Checked;
-                Debug.WriteLine($"Erosion set to:                   {VIEW.NEWMAP.Erosion.Checked}");
+                Debug.WriteLine($"|Controller|  Erosion set to:                   {VIEW.NEWMAP.Erosion.Checked}");
 
                 //Avalanche State
                 MODEL.Avalanches = VIEW.NEWMAP.Avalanche.Checked;
-                Debug.WriteLine($"Avalanches set to:                {VIEW.NEWMAP.Avalanche.Checked}");
+                Debug.WriteLine($"|Controller|  Avalanches set to:                {VIEW.NEWMAP.Avalanche.Checked}");
 
                 //Air Threat State
                 MODEL.AirThreat = VIEW.NEWMAP.AirThreat.Checked;
-                Debug.WriteLine($"AirThreat set to:                 {VIEW.NEWMAP.AirThreat.Checked}");
+                Debug.WriteLine($"|Controller|  AirThreat set to:                 {VIEW.NEWMAP.AirThreat.Checked}");
 
                 //Power Drain Sate
                 MODEL.PowerDrain = VIEW.NEWMAP.PowerDrain.Checked;
-                Debug.WriteLine($"PowerDrain set to:                {VIEW.NEWMAP.PowerDrain.Checked}");
+                Debug.WriteLine($"|Controller|  PowerDrain set to:                {VIEW.NEWMAP.PowerDrain.Checked}");
 
 
                 //Enemy Ai-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Enemy Ai");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Enemy Ai");
 
                 //Damage to player
                 MODEL.DamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value);
-                Debug.WriteLine($"DamageToPlayer set to:            {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
+                Debug.WriteLine($"|Controller|  DamageToPlayer set to:            {Convert.ToInt32(VIEW.NEWMAP.CustomDamage.Value)}");
 
                 //Damage From Player
                 MODEL.DamageFromPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value);
-                Debug.WriteLine($"DamageFromPlayer set to:          {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
+                Debug.WriteLine($"|Controller|  DamageFromPlayer set to:          {Convert.ToInt32(VIEW.NEWMAP.CustomPlayerDamage.Value)}");
 
                 //Creature Speed
                 MODEL.CreatureSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value);
-                Debug.WriteLine($"CreatureSpeed set to:             {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
+                Debug.WriteLine($"|Controller|  CreatureSpeed set to:             {Convert.ToInt32(VIEW.NEWMAP.CustomSpeed.Value)}");
 
                 //Debris speed multiplier
                 MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value);
-                Debug.WriteLine($"DebrisMultiplier set to:          {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
+                Debug.WriteLine($"|Controller|  DebrisMultiplier set to:          {Convert.ToInt32(VIEW.NEWMAP.DebrisMultiplier.Value)}");
 
                 //Hunger
                 MODEL.Hunger = Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value);
-                Debug.WriteLine($"Hunger set to:                    {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
+                Debug.WriteLine($"|Controller|  Hunger set to:                    {Convert.ToInt32(VIEW.NEWMAP.CustomHunger.Value)}");
 
                 //Spawn Chance
                 MODEL.SpawnChance = Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value);
-                Debug.WriteLine($"SpawnChance set to:               {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
+                Debug.WriteLine($"|Controller|  SpawnChance set to:               {Convert.ToInt32(VIEW.NEWMAP.CustomSpawnChance.Value)}");
 
                 //Erosion-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Erosion");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Erosion");
 
                 //Erosion speed
                 MODEL.ErosionSpeed = Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value);
-                Debug.WriteLine($"ErosionSpeed set to:              {Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value)}");
+                Debug.WriteLine($"|Controller|  ErosionSpeed set to:              {Convert.ToInt32(VIEW.NEWMAP.CustomErosionSpeed.Value)}");
 
                 //Erosion Repair cost
                 MODEL.RepairCost = Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value);
-                Debug.WriteLine($"RepairCost set to:                {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
+                Debug.WriteLine($"|Controller|  RepairCost set to:                {Convert.ToInt32(VIEW.NEWMAP.RepairCost.Value)}");
 
                 //Avalanche-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Avalanche");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Avalanche");
 
                 //Avalanche to player
                 MODEL.AvalancheDamageToPlayer = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value);
-                Debug.WriteLine($"AvalancheDamageToPlayer set to:   {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
+                Debug.WriteLine($"|Controller|  AvalancheDamageToPlayer set to:   {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchDamage.Value)}");
 
                 //Avalanche Frequency
                 MODEL.Frequency = Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value);
-                Debug.WriteLine($"Frequency set to:                 {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
+                Debug.WriteLine($"|Controller|  Frequency set to:                 {Convert.ToInt32(VIEW.NEWMAP.CustomAvalanchFrequncy.Value)}");
 
                 //Air-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Air");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Air");
 
                 //Rate of Consumption
                 MODEL.RateOfConsumption = Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value);
-                Debug.WriteLine($"RateOfConsumption set to:         {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
+                Debug.WriteLine($"|Controller|  RateOfConsumption set to:         {Convert.ToInt32(VIEW.NEWMAP.RateOfConsumption.Value)}");
 
                 //Air Quantity
                 MODEL.AirQuantity = Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value);
-                Debug.WriteLine($"AirQuantity set to:               {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
+                Debug.WriteLine($"|Controller|  AirQuantity set to:               {Convert.ToInt32(VIEW.NEWMAP.AirQuantity.Value)}");
 
                 //PowerDrain-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------PowerDrain");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------PowerDrain");
 
                 //Power Drain Multiplier
                 MODEL.Debrismultiplier = Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value);
-                Debug.WriteLine($"PowerDrainMultiplier set to:      {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
+                Debug.WriteLine($"|Controller|  PowerDrainMultiplier set to:      {Convert.ToInt32(VIEW.NEWMAP.PowerDrainMultiplier.Value)}");
 
                 //Winstate-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Winstate");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Winstate");
 
 
                 //true or false values on all settings.
@@ -1081,54 +1215,54 @@ namespace WindowsFormsApp2
                 //WinConditions.
                 //Collect Crystal State
                 MODEL.CollectCrystals = VIEW.NEWMAP.ActiveCrystalCollection.Checked;
-                Debug.WriteLine($"CollectCrystals set to:           {VIEW.NEWMAP.ActiveCrystalCollection.Checked}");
+                Debug.WriteLine($"|Controller|  CollectCrystals set to:           {VIEW.NEWMAP.ActiveCrystalCollection.Checked}");
 
                 //Build Specific Building State
                 MODEL.BuildSpecificBuilding = VIEW.NEWMAP.ActiveSpecificBuilding.Checked;
-                Debug.WriteLine($"BuildSpecificBuilding set to:     {VIEW.NEWMAP.ActiveSpecificBuilding.Checked}");
+                Debug.WriteLine($"|Controller|  BuildSpecificBuilding set to:     {VIEW.NEWMAP.ActiveSpecificBuilding.Checked}");
 
                 //Build Specific unit State
                 MODEL.BuildSpecificUnit = VIEW.NEWMAP.ActiveSpecificUnit.Checked;
-                Debug.WriteLine($"BuildSpecificUnit set to:         {VIEW.NEWMAP.ActiveSpecificUnit.Checked}");
+                Debug.WriteLine($"|Controller|  BuildSpecificUnit set to:         {VIEW.NEWMAP.ActiveSpecificUnit.Checked}");
 
                 //Resuce Specific unit State
                 MODEL.RescueSpecificUnit = VIEW.NEWMAP.ActiveRescue.Checked;
-                Debug.WriteLine($"RescueSpecificUnit set to:        {VIEW.NEWMAP.ActiveRescue.Checked}");
+                Debug.WriteLine($"|Controller|  RescueSpecificUnit set to:        {VIEW.NEWMAP.ActiveRescue.Checked}");
 
                 //Reach the tile State
                 MODEL.TileReach = VIEW.NEWMAP.ActiveReachTheTile.Checked;
-                Debug.WriteLine($"TileReach set to:                 {VIEW.NEWMAP.ActiveReachTheTile.Checked}");
+                Debug.WriteLine($"|Controller|  TileReach set to:                 {VIEW.NEWMAP.ActiveReachTheTile.Checked}");
 
                 //Winstate Values-----------------------------------------------------------------------------------
-                Debug.WriteLine("-----------------------------------------------------------------------------------Winstate Values");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Winstate Values");
 
                 //Energy Crystal
                 if (MODEL.CrystalsCount == 0)
                 {
                     MODEL.CrystalsCount = 10;
-                    Debug.WriteLine($"CrystalsCount set to:             10 (to avoid not having a wincondition)");
+                    Debug.WriteLine($"|Controller|  CrystalsCount set to:             10 (to avoid not having a wincondition)");
                 }
                 else
                 {
                     MODEL.CrystalsCount = Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value);
-                    Debug.WriteLine($"CrystalsCount set to:             {Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value)}");
+                    Debug.WriteLine($"|Controller|  CrystalsCount set to:             {Convert.ToInt32(VIEW.NEWMAP.NeededCrystals.Value)}");
                 }
 
                 //build Specific Building
                 MODEL.SpecificBuilding = VIEW.NEWMAP.comboBoxSpecificBuilding.Text;
-                Debug.WriteLine($"SpecificBuilding set to:          {VIEW.NEWMAP.comboBoxSpecificBuilding.Text}");
+                Debug.WriteLine($"|Controller|  SpecificBuilding set to:          {VIEW.NEWMAP.comboBoxSpecificBuilding.Text}");
 
                 //Build Specific Unit
                 MODEL.SpecificUnit = VIEW.NEWMAP.comboBoxSpecificUnit.Text;
-                Debug.WriteLine($"SpecificUnit set to:              {VIEW.NEWMAP.comboBoxSpecificUnit.Text}");
+                Debug.WriteLine($"|Controller|  SpecificUnit set to:              {VIEW.NEWMAP.comboBoxSpecificUnit.Text}");
 
                 //Rescue Specific Unit
                 MODEL.SpecificRescueUnit = VIEW.NEWMAP.comboBoxRescueUnit.Text;
-                Debug.WriteLine($"SpecificRescueUnit set to:        {VIEW.NEWMAP.comboBoxRescueUnit.Text}");
+                Debug.WriteLine($"|Controller|  SpecificRescueUnit set to:        {VIEW.NEWMAP.comboBoxRescueUnit.Text}");
 
-                Debug.WriteLine("-----------------------------------------------------------------------------------Values Saved");
-                Debug.WriteLine("All Values saved to system settings ✓");
-                Debug.WriteLine("");
+                Debug.WriteLine($"|Controller|  -----------------------------------------------------------------------------------Values Saved");
+                Debug.WriteLine($"|Controller|  All Values saved to system settings ✓");
+                Debug.WriteLine($"|Controller|  ");
             }
             else
             {
@@ -1138,7 +1272,11 @@ namespace WindowsFormsApp2
         }
         public void InitializeNewMap()
         {
+            Debug.WriteLine($"");
+            Debug.WriteLine($"|Controller|    Initializing NewMap  window controls");
             this.InitializeNewMapButtons();
+            
+            Debug.WriteLine($"|Controller|    Setting NewMap values to default");
             this.setNewMapValuesToDefault();
         }
         public void InitializeNewMapButtons()

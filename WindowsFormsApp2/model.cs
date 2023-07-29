@@ -11,6 +11,7 @@ namespace WindowsFormsApp2
 
     public class model
     {
+        //-------------------------------------------------------------------------Beginging of MAP DATA------------------------------------------------------------------------------
         //Map Name
         public string MapName = "New Map";
 
@@ -76,10 +77,68 @@ namespace WindowsFormsApp2
 
         //---Reach Tile
         public bool TileReach = false;
+        //-------------------------------------------------------------------END of MAP DATA------------------------------------------------------------------------------
 
+        //--------------------------------------------------------------------Tool settings-----------------------------------------------------------------------------
+        
+        //Select tool
+        public bool SelectToolSelected = false;
+
+        //box Select tool
+        public bool BoxSelectToolSelected = false;
+
+        //EyeDropper tool
+        public bool EyeDropperToolSelected = false;
+
+        //Eraser tool 
+        public bool EraserToolSelected = false;
+
+        
+        public void SetTool(string tool)
+        {
+            switch (tool)
+            {
+                case "SelectTool":
+                    {
+                        Debug.WriteLine($"|MODEL|  SelectTool selected.");
+                        EraserToolSelected = false;
+                        EyeDropperToolSelected = false;
+                        BoxSelectToolSelected = false;
+                        SelectToolSelected = true;
+                    }
+                    break;
+                case "BoxSelectTool":
+                    {
+                        Debug.WriteLine($"|MODEL|  BoxSelectTool selected.");
+                        EraserToolSelected  = false;
+                        EyeDropperToolSelected = false;
+                        BoxSelectToolSelected = true;
+                        SelectToolSelected = false;
+                    }
+                    break;
+                case "EyeDropperTool":
+                    {
+                        Debug.WriteLine($"|MODEL|  EyeDropperTool selected.");
+                        EraserToolSelected  = false;
+                        EyeDropperToolSelected = true;
+                        BoxSelectToolSelected = false;
+                        SelectToolSelected = false;
+                    }
+                    break;
+                case "EraserTool":
+                    {
+                        Debug.WriteLine($"|MODEL|  EraserTool selected.");
+                        EraserToolSelected  = true;
+                        EyeDropperToolSelected = false;
+                        BoxSelectToolSelected = false;
+                        SelectToolSelected = false;
+                    }
+                    break;
+            }
+        }
         public model()
         {
-            Debug.Write("Setting Settings to default.");
+            Debug.Write($"|MODEL|  Setting Settings to default.");
         }
 
         public void SetValuesToDefault()

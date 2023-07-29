@@ -30,7 +30,7 @@ namespace WindowsFormsApp2
 
         public View()
         {
-
+            
             //Initialize();
         }
         public void Run()
@@ -40,17 +40,17 @@ namespace WindowsFormsApp2
         public void CreateMap(int w, int h)
         {
             int H = 0;
-            Debug.WriteLine("Generating  map in viewer...");
+            Debug.WriteLine($"|View|  Generating  map in viewer...");
             MAP = new MapAndMapPopulator(w,h);
-            Debug.WriteLine("Map Generated...");
+            Debug.WriteLine($"|View|  Map Generated...");
 
-            Debug.WriteLine("adding map to pannel 'Map' on the workspace...");
+            Debug.WriteLine($"|View|  adding map to pannel 'Map' on the workspace...");
             while (H < h)
             {
                 for (int i = 0; i < w ; i++)
                 {
                     MAINAPP.Map.Controls.Add(MAP.TILE[i, H].getTile());
-                    Debug.WriteLine($"Adding tile: {MAP.TILE[i, H].TILE.Name} to map");
+                    Debug.WriteLine($"|View|  Adding tile: {MAP.TILE[i, H].TILE.Name} to map");
                 }
                 H++;
             }
@@ -58,7 +58,10 @@ namespace WindowsFormsApp2
             //this.MAINAPP.Map.AutoScroll = true;
 
         }
-
+        public  void TileClick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
 
