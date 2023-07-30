@@ -48,11 +48,15 @@ namespace WindowsFormsApp2
             this.VIEW.MAINAPP.BoxSelectTool.Click += this.BoxSelectToolClicked;
             this.VIEW.MAINAPP.EraserTool.Click +=  this.EraserToolClicked;
             this.VIEW.MAINAPP.EyeDropperTool.Click += this.EyeDropperToolClicked;
+            this.VIEW.MAINAPP.PaintBrush.Click += this.PaintBrushClicked;
 
         }
         
         //Button Functions.
         //--MainAppWindow.
+
+        //-----------------------------------------------------------------Tool methods-------------------------------------------------------------------
+        //select tool
         private void SelectToolClicked(object sender, EventArgs e)
         {
             Debug.WriteLine($"|Controller|  Select Tool Clicked.");
@@ -66,12 +70,13 @@ namespace WindowsFormsApp2
             }
             else if (MODEL.SelectToolSelected == false)
             {
-                this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.Fixed3D;
+                ToolClickEffect("SelectTool");
                 this.MODEL.SetTool("SelectTool");
                 Debug.WriteLine($"|Controller|  Select tool set to true.");
             }
 
         }
+        //box select tool
         private void BoxSelectToolClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.Fixed3D;
@@ -81,16 +86,17 @@ namespace WindowsFormsApp2
             {
                 this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
                 MODEL.BoxSelectToolSelected = false;
-                Debug.WriteLine($"|Controller|  Select tool set to  false.");
+                Debug.WriteLine($"|Controller|  BoxSelect Tool set to  false.");
 
             }
             else if (MODEL.BoxSelectToolSelected == false)
             {
-                this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.Fixed3D;
+                ToolClickEffect("BoxSelectTool");
                 this.MODEL.SetTool("BoxSelectTool");
-                Debug.WriteLine($"|Controller|  Select tool set to  true.");
+                Debug.WriteLine($"|Controller|  BoxSelect tool set to  true.");
             }
         }
+        //eye dropper tool
         private void EyeDropperToolClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.Fixed3D;
@@ -100,16 +106,37 @@ namespace WindowsFormsApp2
             {
                 this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
                 MODEL.EyeDropperToolSelected = false;
-                Debug.WriteLine($"|Controller|  Select tool set to  false.");
+                Debug.WriteLine($"|Controller|  EyeDropper tool set to  false.");
 
             }
             else if (MODEL.EyeDropperToolSelected == false)
             {
-                this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.Fixed3D;
+                ToolClickEffect("EyeDropperTool");
                 this.MODEL.SetTool("EyeDropperTool");
-                Debug.WriteLine($"|Controller|  Select tool set to  true.");
+                Debug.WriteLine($"|Controller|  EyeDropper Tool tool set to  true.");
             }
         }
+        //  Paint brush tool 
+        private void PaintBrushClicked(object sender, EventArgs e)
+        {
+            this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.Fixed3D;
+            Debug.WriteLine($"|Controller|  PaintBrush Tool Clicked.");
+            //Value must be flipped for the toggle to work.
+            if (MODEL.PaintBrushSleceted == true)
+            {
+                this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
+                MODEL.PaintBrushSleceted = false;
+                Debug.WriteLine($"|Controller|  PaintBrush tool set to  false.");
+
+            }
+            else if (MODEL.PaintBrushSleceted == false)
+            {
+                ToolClickEffect("PaintBrush");
+                this.MODEL.SetTool("PaintBrush");
+                Debug.WriteLine($"|Controller|  PaintBrush tool set to  true.");
+            }
+        }
+        //eraser tool
         private void EraserToolClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
@@ -119,26 +146,90 @@ namespace WindowsFormsApp2
             {
                 this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
                 MODEL.EraserToolSelected = false;
-                Debug.WriteLine($"|Controller|  Select tool set to  false.");
+                Debug.WriteLine($"|Controller|  Eraser Tool set to  false.");
 
             }
             else if (MODEL.EraserToolSelected == false)
             {
-                this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
+                ToolClickEffect("EraserTool");
                 this.MODEL.SetTool("EraserTool");
-                Debug.WriteLine($"|Controller|  Select tool set to  true.");
+                Debug.WriteLine($"|Controller|  Eraser Tool set to  true.");
             }
         }
+        //  a one stop shop to change  the border for  the tool icon. 
+        public void ToolClickEffect(string Tool)
+        {
+            switch (Tool)
+            {
+                case "SelectTool":
+                    {
+                        Debug.WriteLine($"|Controller|  SelectTool selected.");
+                        this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.Fixed3D;
+                        this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
+                    }
+                    break;
+                case "BoxSelectTool":
+                    {
+                        Debug.WriteLine($"|Controller|  BoxSelectTool selected.");
+                        this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.Fixed3D;
+
+                    }
+                    break;
+                case "EyeDropperTool":
+                    {
+                        Debug.WriteLine($"|Controller|  EyeDropperTool selected.");
+                        this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.Fixed3D;
+                        this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
+                    }
+                    break;
+                case "EraserTool":
+                    {
+                        Debug.WriteLine($"|Controller|  EraserTool selected.");
+                        this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
+                        this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
+                    }
+                    break;
+                case "PaintBrush":
+                    {
+                        Debug.WriteLine($"|Controller|  PaintBrush selected.");
+                        this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.Fixed3D;
+                        this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
+                        this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
+                    }
+                    break;
+            }
+        }
+        //----------------------------------------------------------------End of Tool Methoods-----------------------------------------------------------------------
+        // close the application when the quit menu option is pressed.
         private void ClickOnQuit(object sender, EventArgs e)
         {
             VIEW.MAINAPP.Close();
             Debug.WriteLine($"|Controller|  Closing Application.");
             Application.Exit();
         }
+
+        //show the new map window
         private void File_New_Map(object sender, EventArgs e)
         {
             VIEW.NEWMAP.Show();
         }
+
+        // Zoom Controls
         private void MapZoom(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 'e')

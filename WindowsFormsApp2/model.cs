@@ -93,6 +93,8 @@ namespace WindowsFormsApp2
         //Eraser tool 
         public bool EraserToolSelected = false;
 
+        //Paint Brush
+        public bool PaintBrushSleceted = false;
         
         public void SetTool(string tool)
         {
@@ -105,6 +107,7 @@ namespace WindowsFormsApp2
                         EyeDropperToolSelected = false;
                         BoxSelectToolSelected = false;
                         SelectToolSelected = true;
+                        PaintBrushSleceted = false;
                     }
                     break;
                 case "BoxSelectTool":
@@ -114,6 +117,7 @@ namespace WindowsFormsApp2
                         EyeDropperToolSelected = false;
                         BoxSelectToolSelected = true;
                         SelectToolSelected = false;
+                        PaintBrushSleceted = false;
                     }
                     break;
                 case "EyeDropperTool":
@@ -123,6 +127,7 @@ namespace WindowsFormsApp2
                         EyeDropperToolSelected = true;
                         BoxSelectToolSelected = false;
                         SelectToolSelected = false;
+                        PaintBrushSleceted = false;
                     }
                     break;
                 case "EraserTool":
@@ -132,6 +137,17 @@ namespace WindowsFormsApp2
                         EyeDropperToolSelected = false;
                         BoxSelectToolSelected = false;
                         SelectToolSelected = false;
+                        PaintBrushSleceted = false;
+                    }
+                    break;
+                case "PaintBrush":
+                    {
+                        Debug.WriteLine($"|MODEL|  PaintBrush selected.");
+                        EraserToolSelected = false;
+                        EyeDropperToolSelected = false;
+                        BoxSelectToolSelected = false;
+                        SelectToolSelected = false;
+                        PaintBrushSleceted = true;
                     }
                     break;
             }

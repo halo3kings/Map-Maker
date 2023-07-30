@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Runtime.Remoting.Messaging;
+using System.Drawing;
 
 namespace WindowsFormsApp2
 {
@@ -76,7 +77,7 @@ namespace WindowsFormsApp2
 
                     Debug.WriteLine($"|MapAndMapPop|      Tile: {TILE[W, H].TILE.Name}");
                     Debug.WriteLine($"|MapAndMapPop|      setting  picture");
-                    TILE[W, H].SetPicture(1);
+                    TILE[W, H].SetPicture("Floor");
                     Debug.WriteLine($"|MapAndMapPop|      setting mapdata aray value for the tile");
                     MAPDATA[W, H] = 1;
 
@@ -86,7 +87,7 @@ namespace WindowsFormsApp2
                     if (H == 0 && W < Width)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Top Of map");
-                        TILE[W, H].SetPicture(9);
+                        TILE[W, H].SetPicture("SolidRock");
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -94,7 +95,7 @@ namespace WindowsFormsApp2
                     if (H == Height - 1 && W < Width)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Bottom Of map");
-                        TILE[W, H].SetPicture(9);
+                        TILE[W, H].SetPicture("SolidRock");
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -103,7 +104,7 @@ namespace WindowsFormsApp2
                     if (W == 0 && H < Height)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Left Of map");
-                        TILE[W, H].SetPicture(9);
+                        TILE[W, H].SetPicture("SolidRock");
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -111,7 +112,7 @@ namespace WindowsFormsApp2
                     if (W == Width - 1 && H < Height)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Right Of map");
-                        TILE[W, H].SetPicture(9);
+                        TILE[W, H].SetPicture("SolidRock");
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }

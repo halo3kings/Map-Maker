@@ -131,53 +131,66 @@ namespace WindowsFormsApp2
         {
             this.TILE.Height = H;
         }
-        public void SetPicture(int TYPE)
+        public void SetPicture(string TYPE)
         {
             switch (TYPE)
             {
-                case 1:
+                //Terrain
+                case "Floor":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Floor;
                     }
                     break;
-                case 2:
+                case "Dirt":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V2;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Dirt256;
                     }
                     break;
-                case 3:
+                case "LooseRock":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V3;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.looseRock;
                     }
                     break;
-                case 4:
+                case "HardRock":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V4;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Hard_Rock;
                     }
                     break;
-                case 5:
+                case "SolidRock":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V5;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.solid_rock;
                     }
                     break;
-                case 6:
+                case "Rubble1":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V6;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.rubble_1;
                     }
                     break;
-                case 7:
+                case "Rubble2":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V7;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.rubble_2;
                     }
                     break;
-                case 8:
+                case "Rubble3":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V8;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.rubble_3;
                     }
                     break;
-                case 9:
+                case "Concrete":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V9;
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Concrete;
+                    }
+                    break;
+                case "Water":
+                    {
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Water;
+                    }
+                    break;
+
+                //Buildings
+                case "ToolStore":
+                    {
+                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.ToolStore;
                     }
                     break;
             }

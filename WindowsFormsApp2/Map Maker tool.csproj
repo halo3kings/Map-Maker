@@ -161,5 +161,41 @@
   <ItemGroup>
     <None Include="Resources\img_468470.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_142231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dirt256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solid rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\looseRock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubble 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubble 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubble 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Concrete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
