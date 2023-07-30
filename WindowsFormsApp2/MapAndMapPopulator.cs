@@ -29,7 +29,7 @@ namespace WindowsFormsApp2
         {
             Debug.WriteLine($"|MapAndMapPop|      Map Generation beginging...");
             Height = H;
-            Width = W;
+            Width = 2W;
 
             Debug.WriteLine($"|MapAndMapPop|      Creating Tile  array...");
             TILE = new Tile[Height, Width];

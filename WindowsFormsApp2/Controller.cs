@@ -236,7 +236,7 @@ namespace WindowsFormsApp2
             {
                 Debug.WriteLine($"|Controller|  Mouse scroll in: ");
                 this.VIEW.MAINAPP.Map.AutoScroll = false;
-                this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() + 32);
+                this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() * 2);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
                 this.VIEW.MAINAPP.Map.AutoScroll = true;
 
@@ -245,7 +245,7 @@ namespace WindowsFormsApp2
             {
                 Debug.WriteLine($"|Controller|    Mouse scroll out: ");
                 this.VIEW.MAINAPP.Map.AutoScroll = false;
-                this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() - 32);
+                this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() / 2);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
                 this.VIEW.MAINAPP.Map.AutoScroll = true;
             }
