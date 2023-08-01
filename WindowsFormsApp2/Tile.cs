@@ -73,7 +73,7 @@ namespace WindowsFormsApp2
             this.PICTUREBOX.Dock = System.Windows.Forms.DockStyle.Fill;
 
             //The default image asset
-            this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources._256x256V9;
+            this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Dirt256;
             
             // orgin
             this.PICTUREBOX.Location = new System.Drawing.Point(0, 0);
