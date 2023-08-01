@@ -4,7 +4,7 @@ namespace WindowsFormsApp2
 {
     partial class Default_Window
     {
-        public event EventHandler QuitBut;
+        
 
         /// <summary>
         /// Clean up any resources being used.
@@ -45,59 +45,60 @@ namespace WindowsFormsApp2
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.EyeDropperTool = new System.Windows.Forms.PictureBox();
+            this.BoxSelectTool = new System.Windows.Forms.PictureBox();
+            this.SelectTool = new System.Windows.Forms.PictureBox();
+            this.PaintBrush = new System.Windows.Forms.PictureBox();
+            this.EraserTool = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tiles = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.Buildings = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.Workspace = new System.Windows.Forms.Panel();
-            this.Map = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.EyeDropperTool = new System.Windows.Forms.PictureBox();
-            this.BoxSelectTool = new System.Windows.Forms.PictureBox();
-            this.SelectTool = new System.Windows.Forms.PictureBox();
-            this.PaintBrush = new System.Windows.Forms.PictureBox();
-            this.EraserTool = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Buildings = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Workspace = new System.Windows.Forms.Panel();
+            this.Map = new System.Windows.Forms.Panel();
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EyeDropperTool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxSelectTool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectTool)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaintBrush)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EraserTool)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Tiles.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.Buildings.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.Workspace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EyeDropperTool)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BoxSelectTool)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectTool)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PaintBrush)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EraserTool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.Buildings.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.Workspace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -244,205 +245,6 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.tabControl1);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox3.Location = new System.Drawing.Point(1077, 24);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(204, 677);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Assets";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.Tiles);
-            this.tabControl1.Controls.Add(this.Buildings);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(3, 16);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(198, 658);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // Tiles
-            // 
-            this.Tiles.Controls.Add(this.tableLayoutPanel3);
-            this.Tiles.Location = new System.Drawing.Point(4, 22);
-            this.Tiles.Name = "Tiles";
-            this.Tiles.Padding = new System.Windows.Forms.Padding(3);
-            this.Tiles.Size = new System.Drawing.Size(190, 632);
-            this.Tiles.TabIndex = 1;
-            this.Tiles.Text = "Tiles";
-            this.Tiles.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox3, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox4, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox5, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox6, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox7, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox8, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox9, 0, 4);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 8;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(184, 626);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // Buildings
-            // 
-            this.Buildings.Controls.Add(this.tableLayoutPanel1);
-            this.Buildings.Location = new System.Drawing.Point(4, 22);
-            this.Buildings.Name = "Buildings";
-            this.Buildings.Padding = new System.Windows.Forms.Padding(3);
-            this.Buildings.Size = new System.Drawing.Size(190, 632);
-            this.Buildings.TabIndex = 0;
-            this.Buildings.Text = "Buildings";
-            this.Buildings.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 626);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.Workspace);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(50, 24);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1027, 677);
-            this.groupBox4.TabIndex = 5;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Viewer";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
-            // 
-            // Workspace
-            // 
-            this.Workspace.BackColor = System.Drawing.SystemColors.Window;
-            this.Workspace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Workspace.Controls.Add(this.Map);
-            this.Workspace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Workspace.Location = new System.Drawing.Point(3, 16);
-            this.Workspace.Name = "Workspace";
-            this.Workspace.Size = new System.Drawing.Size(1021, 658);
-            this.Workspace.TabIndex = 0;
-            this.Workspace.Paint += new System.Windows.Forms.PaintEventHandler(this.Workspace_Paint);
-            // 
-            // Map
-            // 
-            this.Map.AutoScroll = true;
-            this.Map.AutoSize = true;
-            this.Map.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Map.Location = new System.Drawing.Point(0, 0);
-            this.Map.Name = "Map";
-            this.Map.Size = new System.Drawing.Size(1019, 656);
-            this.Map.TabIndex = 0;
-            this.Map.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.New_Map);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Floor;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.Dirt256;
-            this.pictureBox2.Location = new System.Drawing.Point(95, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.looseRock;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 81);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources.Hard_Rock;
-            this.pictureBox4.Location = new System.Drawing.Point(95, 81);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.solid_rock;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 159);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources.Water;
-            this.pictureBox6.Location = new System.Drawing.Point(95, 159);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(86, 72);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
             // EyeDropperTool
             // 
             this.EyeDropperTool.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -503,38 +305,220 @@ namespace WindowsFormsApp2
             this.EraserTool.TabIndex = 5;
             this.EraserTool.TabStop = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tabControl1);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox3.Location = new System.Drawing.Point(1077, 24);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(204, 677);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Assets";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.Tiles);
+            this.tabControl1.Controls.Add(this.Buildings);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(3, 16);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(198, 658);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // Tiles
+            // 
+            this.Tiles.Controls.Add(this.tableLayoutPanel3);
+            this.Tiles.Location = new System.Drawing.Point(4, 22);
+            this.Tiles.Name = "Tiles";
+            this.Tiles.Padding = new System.Windows.Forms.Padding(3);
+            this.Tiles.Size = new System.Drawing.Size(190, 632);
+            this.Tiles.TabIndex = 1;
+            this.Tiles.Text = "Tiles";
+            this.Tiles.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.AutoSize = true;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox3, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox4, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox5, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox6, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox7, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox8, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox9, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 5);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 8;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(184, 626);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FloorTileAsset);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.Dirt_Icon;
+            this.pictureBox2.Location = new System.Drawing.Point(95, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(86, 72);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.DirtTileAsset);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 81);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(86, 72);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.LooseRockAsset);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon;
+            this.pictureBox4.Location = new System.Drawing.Point(95, 81);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(86, 72);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.HardRockAsset);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 159);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(86, 72);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.SolidRockAsset);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
+            this.pictureBox6.Location = new System.Drawing.Point(95, 159);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(86, 72);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.WaterAsset);
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.rubble_1;
+            this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon;
             this.pictureBox7.Location = new System.Drawing.Point(3, 237);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(86, 72);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.Rubble3Asset);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.rubble_2;
+            this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon;
             this.pictureBox8.Location = new System.Drawing.Point(95, 237);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(86, 72);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.Rubble2Asset);
             // 
             // pictureBox9
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = global::WindowsFormsApp2.Properties.Resources.rubble_3;
+            this.pictureBox9.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon;
             this.pictureBox9.Location = new System.Drawing.Point(3, 315);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(86, 72);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.Rubble1Asset);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(3, 393);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(86, 72);
+            this.panel1.TabIndex = 9;
+            // 
+            // Buildings
+            // 
+            this.Buildings.Controls.Add(this.tableLayoutPanel1);
+            this.Buildings.Location = new System.Drawing.Point(4, 22);
+            this.Buildings.Name = "Buildings";
+            this.Buildings.Padding = new System.Windows.Forms.Padding(3);
+            this.Buildings.Size = new System.Drawing.Size(190, 632);
+            this.Buildings.TabIndex = 0;
+            this.Buildings.Text = "Buildings";
+            this.Buildings.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 8;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(184, 626);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox10
             // 
@@ -548,13 +532,49 @@ namespace WindowsFormsApp2
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore;
+            this.pictureBox11.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon;
             this.pictureBox11.Location = new System.Drawing.Point(95, 3);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(86, 72);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 8;
             this.pictureBox11.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.Workspace);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox4.Location = new System.Drawing.Point(50, 24);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1027, 677);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Viewer";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+            // 
+            // Workspace
+            // 
+            this.Workspace.BackColor = System.Drawing.SystemColors.Window;
+            this.Workspace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Workspace.Controls.Add(this.Map);
+            this.Workspace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Workspace.Location = new System.Drawing.Point(3, 16);
+            this.Workspace.Name = "Workspace";
+            this.Workspace.Size = new System.Drawing.Size(1021, 658);
+            this.Workspace.TabIndex = 0;
+            this.Workspace.Paint += new System.Windows.Forms.PaintEventHandler(this.Workspace_Paint);
+            // 
+            // Map
+            // 
+            this.Map.AutoScroll = true;
+            this.Map.AutoSize = true;
+            this.Map.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Map.Location = new System.Drawing.Point(0, 0);
+            this.Map.Name = "Map";
+            this.Map.Size = new System.Drawing.Size(1019, 656);
+            this.Map.TabIndex = 0;
+            this.Map.Click += new System.EventHandler(this.pictureBox7_Click_1);
+            this.Map.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.New_Map);
             // 
             // modelBindingSource
             // 
@@ -578,33 +598,33 @@ namespace WindowsFormsApp2
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EyeDropperTool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxSelectTool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectTool)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaintBrush)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EraserTool)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.Tiles.ResumeLayout(false);
             this.Tiles.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.Buildings.ResumeLayout(false);
-            this.Buildings.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.Workspace.ResumeLayout(false);
-            this.Workspace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EyeDropperTool)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BoxSelectTool)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectTool)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PaintBrush)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EraserTool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.Buildings.ResumeLayout(false);
+            this.Buildings.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.Workspace.ResumeLayout(false);
+            this.Workspace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -656,6 +676,7 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox pictureBox9;
         public System.Windows.Forms.PictureBox pictureBox10;
         public System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

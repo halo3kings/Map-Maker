@@ -23,12 +23,16 @@ namespace WindowsFormsApp2
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Default_Window));
         public System.Windows.Forms.Panel TILE;
         public System.Windows.Forms.PictureBox PICTUREBOX;
+        
+        public event EventHandler Click;
+
         public int Size = 0;
         public int ID = 0;
         public int TYPE = 0;
         public bool clicked = false;
         public Tile(int size)
         {
+            
             Size = size;
             InitializePictureBox();
             InitializeTile();//must be last
@@ -60,11 +64,6 @@ namespace WindowsFormsApp2
             this.TILE.Controls.Add(PICTUREBOX);
             Debug.WriteLine("|Tile|   adding picture box");
 
-            //ActionEvent
-            this.TILE.Click += new System.EventHandler(this.OnClick);
-            Debug.WriteLine("|Tile|   Adding action  even");
-            Debug.WriteLine("|Tile|   end off initializing panel");
-
         }
         public void InitializePictureBox()
         {
@@ -87,9 +86,15 @@ namespace WindowsFormsApp2
             
             //should the container be expanded, the image will strech to fit
             this.PICTUREBOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            //ActionEvent
+            
+            this.PICTUREBOX.Click += new System.EventHandler(this.OnClick);
+            Debug.WriteLine("|Tile|   Adding action  even");
+            Debug.WriteLine("|Tile|   end off initializing panel");
         }
         public void OnClick(object sender, EventArgs e)
         {
+            Debug.WriteLine("|Tile|   clicked");
             clicked = true;
         }
 
@@ -203,6 +208,7 @@ namespace WindowsFormsApp2
         {
             return PICTUREBOX;
         }
+
 
     }
 }

@@ -197,5 +197,65 @@
   <ItemGroup>
     <None Include="Resources\Water.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStore_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolStore_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dirt_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardRock_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LooseRock_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble1_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble2_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble3_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidRock_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dirt_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardRock_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LooseRock_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble1_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble2_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble3_Icon_Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidRock_Icon_Clicked.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

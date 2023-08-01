@@ -24,8 +24,8 @@ namespace WindowsFormsApp2
         public event EventHandler Button_Clicked;
         public View VIEW = new View();
         public model MODEL = new model();
-         
-        public Controller() 
+
+        public Controller()
         {
             InitializeView();
         }
@@ -46,17 +46,35 @@ namespace WindowsFormsApp2
             this.VIEW.MAINAPP.KeyPress += this.MapZoom;
             this.VIEW.MAINAPP.SelectTool.Click += this.SelectToolClicked;
             this.VIEW.MAINAPP.BoxSelectTool.Click += this.BoxSelectToolClicked;
-            this.VIEW.MAINAPP.EraserTool.Click +=  this.EraserToolClicked;
+            this.VIEW.MAINAPP.EraserTool.Click += this.EraserToolClicked;
             this.VIEW.MAINAPP.EyeDropperTool.Click += this.EyeDropperToolClicked;
             this.VIEW.MAINAPP.PaintBrush.Click += this.PaintBrushClicked;
 
         }
-        
+
         //Button Functions.
         //--MainAppWindow.
 
-        //-----------------------------------------------------------------Tool methods-------------------------------------------------------------------
+        //-----------------------------------------------------------------Tool methods-----------------------------------------------------------------------------------------------
         //select tool
+        
+        // this sets  the tile clicked action within the view>map>Tile[]. Tile object
+        public void initializeTileClickAction()
+        {
+            Debug.WriteLine($"|Controller|    Initializing tile click..");
+            int H = 0;
+            while (H < MODEL.Height)
+            {
+
+                for (int W = 0; W < MODEL.Width; W++)
+                {
+                    this.VIEW.MAP.TILE[W, H].PICTUREBOX.Click += this.TileClicked;
+                    Debug.WriteLine($"|Controller|    Initializing tile click action for tile: {W},{H}");
+                }
+                H++;
+            }
+        }
+
         private void SelectToolClicked(object sender, EventArgs e)
         {
             Debug.WriteLine($"|Controller|  Select Tool Clicked.");
@@ -214,6 +232,96 @@ namespace WindowsFormsApp2
                     break;
             }
         }
+        //---------------------------------------------------------------------Tile and Tool Functionality----------------------------------------------------------------------
+        public void TileClicked(object sender, EventArgs e)
+        {
+            bool Run = true;
+            int H = 0;
+            int w = 0;
+            int h = 0;
+            while (H < MODEL.Height && Run == true)
+            {
+                //determining which tile has been selected 
+                for (int W = 0; W < MODEL.Width; W++)
+                {
+                    Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was checked to see if it was clicked selected ");
+                    if (this.VIEW.MAP.TILE[W, H].clicked == true)
+                    {
+                        Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was Clicked... breaking loop for tool actions. ");
+                        if (W == 0)
+                        {
+                            h = H;
+                            Run = false;
+                            break;
+                        }
+                        else if (H == 0)
+                        {
+                            w = W;
+                            Run = false;
+                            break;
+                        }
+                        else
+                        {
+                            h = H;
+                            w = W;
+                            Run = false;
+                            break;
+                        }
+                    }
+
+                }
+                if (Run == false)
+                {
+                    break;
+                }
+                H++;
+            }
+
+            // once determined, check which tool is active. 
+            if (MODEL.PaintBrushSleceted == true)
+            {
+                // this must be false so it will allow the tile to be clicked again.
+                this.VIEW.MAP.TILE[w, h].clicked = false;
+                
+                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
+            }
+            if (MODEL.SelectToolSelected == true)
+            {
+                // this must be false so it will allow the tile to be clicked again.
+                this.VIEW.MAP.TILE[w, h].clicked = false;
+                
+                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the select tool selected ");
+            }
+            if (MODEL.BoxSelectToolSelected == true)
+            {
+                // this must be false so it will allow the tile to be clicked again.
+                this.VIEW.MAP.TILE[w, h].clicked = false;
+                
+                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the box select  tool selected ");
+            }
+            if (MODEL.EyeDropperToolSelected == true)
+            {
+                // this must be false so it will allow the tile to be clicked again.
+                this.VIEW.MAP.TILE[w, h].clicked = false;
+                
+                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the eye dropper  tool selected ");
+            }
+            if (MODEL.EraserToolSelected == true)
+            {
+                // this must be false so it will allow the tile to be clicked again.
+                this.VIEW.MAP.TILE[w, h].clicked = false;
+                
+                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the Eraser tool selected ");
+            }
+            else if (MODEL.NoToolsSelected() == true)
+            {
+                // this must be false so it will allow the tile to be clicked again.
+                this.VIEW.MAP.TILE[w, h].clicked = false;
+                
+                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with -NO- tool selected ");
+            }
+
+        }
         //----------------------------------------------------------------End of Tool Methoods-----------------------------------------------------------------------
         // close the application when the quit menu option is pressed.
         private void ClickOnQuit(object sender, EventArgs e)
@@ -251,36 +359,8 @@ namespace WindowsFormsApp2
             }
 
         }
-        public void TileClicked(object sender, EventArgs e)
-        {
-            bool Run = true;
-            int H = 0;
-            int w = 0;
-            int h = 0;
-            while (H < MODEL.Height && Run == true)
-            {
-
-                for (int W = 0; W < MODEL.Width; W++)
-                {
-                    if(this.VIEW.MAP.TILE[W, H].clicked == true)
-                    {
-                        w = W;
-                        h = H;
-                        Run = false;
-                    }
-                    
-                }
-            }
-            // depending on  the tool, do x action to tile w,h. 
-            switch (w)// replace 'w' with tool that is enabled.
-            {
-                case 0:
-                    {
-
-                    }
-                    break;
-            }
-        }
+          
+        
         // when the save 
         public void CreateMap()
         {
@@ -289,22 +369,7 @@ namespace WindowsFormsApp2
             initializeTileClickAction();
             
         }
-        // this sets  the tile clicked action within the view>map>Tile[]. Tile object
-        public void initializeTileClickAction()
-        {
-            Debug.WriteLine($"|Controller|    Initializing tile click..");
-            int H = 0;
-            while (H < MODEL.Height)
-            {
-                
-                for (int W = 0; W < MODEL.Width; W++)
-                {
-                    this.VIEW.MAP.TILE[W, H].TILE.Click += this.TileClicked;
-                    Debug.WriteLine($"|Controller|    Initializing tile click action for tile: {W},{H}");
-                }
-                H++;
-            }
-        }
+
       
 
 

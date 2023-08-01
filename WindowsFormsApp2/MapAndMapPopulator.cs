@@ -21,20 +21,21 @@ namespace WindowsFormsApp2
 {
     public class MapAndMapPopulator
     {
+        
         static public int Height, Width;
         public Tile[,] TILE;
         public int[,] MAPDATA;
         public int size = 64;
-        public MapAndMapPopulator(int H, int W)
+        public MapAndMapPopulator(int W,int H)
         {
             Debug.WriteLine($"|MapAndMapPop|      Map Generation beginging...");
             Height = H;
-            Width = 2W;
+            Width = W;
 
             Debug.WriteLine($"|MapAndMapPop|      Creating Tile  array...");
-            TILE = new Tile[Height, Width];
+            TILE = new Tile[Width, Height];
             Debug.WriteLine($"|MapAndMapPop|      Creating MapData array...");
-            MAPDATA = new int[Height, Width];
+            MAPDATA = new int[Width, Height];
 
             Debug.WriteLine($"|MapAndMapPop|      Generating  map...");
             InitializeTiles();

@@ -78,8 +78,49 @@ namespace WindowsFormsApp2
 
         private void pictureBox7_Click_1(object sender, EventArgs e)
         {
+            Console.WriteLine("pannel Clicked");
+        }
+        public void FloorTileAsset(object sender, EventArgs e)
+        {
+            
+        }
+        public void DirtTileAsset(object sender, EventArgs e)
+        {
 
         }
+        public void LooseRockAsset(object sender, EventArgs e)
+        {
+
+        }
+        public void HardRockAsset(object sender, EventArgs e)
+        {
+
+        }
+        public void SolidRockAsset(object sender, EventArgs e)
+        {
+
+        }
+        public void ToolStoreAsset(object sender, EventArgs e)
+        {
+
+        }
+        public void WaterAsset(object sender, EventArgs e)
+        {
+
+        }
+        public void Rubble1Asset(object sender, EventArgs e)
+        {
+
+        }
+        public void Rubble2Asset(object sender, EventArgs e)
+        {
+
+        }
+        public void Rubble3Asset(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
 

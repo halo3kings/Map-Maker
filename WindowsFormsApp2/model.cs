@@ -26,7 +26,7 @@ namespace WindowsFormsApp2
         public bool Avalanches = false;
         public bool AirThreat = false;
         public bool PowerDrain = false;
-        
+
 
         //Enemy Ai Values
         //---Damage
@@ -80,7 +80,7 @@ namespace WindowsFormsApp2
         //-------------------------------------------------------------------END of MAP DATA------------------------------------------------------------------------------
 
         //--------------------------------------------------------------------Tool settings-----------------------------------------------------------------------------
-        
+
         //Select tool
         public bool SelectToolSelected = false;
 
@@ -151,6 +151,23 @@ namespace WindowsFormsApp2
                     }
                     break;
             }
+        }
+        public bool NoToolsSelected()
+        {
+            // if all tools are false then return true
+            if (EraserToolSelected      == false &&
+                EyeDropperToolSelected  == false &&
+                BoxSelectToolSelected   == false &&
+                SelectToolSelected      == false &&
+                PaintBrushSleceted      == false)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
         public model()
         {
