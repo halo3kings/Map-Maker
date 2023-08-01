@@ -50,6 +50,7 @@ namespace WindowsFormsApp2
             this.VIEW.MAINAPP.EyeDropperTool.Click += this.EyeDropperToolClicked;
             this.VIEW.MAINAPP.PaintBrush.Click += this.PaintBrushClicked;
 
+
         }
 
         //Button Functions.
