@@ -476,7 +476,7 @@ namespace WindowsFormsApp2
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Rubble3Asset);
+            this.pictureBox7.Click += new System.EventHandler(this.Rubble1Asset);
             // 
             // pictureBox8
             // 
@@ -502,7 +502,7 @@ namespace WindowsFormsApp2
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Rubble1Asset);
+            this.pictureBox9.Click += new System.EventHandler(this.Rubble3Asset);
             // 
             // panel1
             // 
@@ -519,7 +519,7 @@ namespace WindowsFormsApp2
             this.Buildings.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Buildings.Name = "Buildings";
             this.Buildings.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.Buildings.Size = new System.Drawing.Size(603, 1734);
+            this.Buildings.Size = new System.Drawing.Size(602, 1806);
             this.Buildings.TabIndex = 0;
             this.Buildings.Text = "Buildings";
             this.Buildings.UseVisualStyleBackColor = true;
@@ -545,7 +545,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(583, 1716);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(582, 1788);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox10
@@ -565,7 +565,7 @@ namespace WindowsFormsApp2
             this.pictureBox11.Location = new System.Drawing.Point(301, 9);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(272, 196);
+            this.pictureBox11.Size = new System.Drawing.Size(271, 196);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 8;
             this.pictureBox11.TabStop = false;
@@ -699,7 +699,6 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox pictureBox5;
         public System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.BindingSource modelBindingSource;
-        public System.ComponentModel.IContainer components;
         public System.Windows.Forms.Panel Map;
         public System.Windows.Forms.PictureBox SelectTool;
         public System.Windows.Forms.PictureBox BoxSelectTool;
@@ -712,6 +711,7 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox pictureBox10;
         public System.Windows.Forms.PictureBox pictureBox11;
         public System.Windows.Forms.Panel panel1;
+        private System.ComponentModel.IContainer components;
     }
 }
 
