@@ -41,14 +41,22 @@ namespace WindowsFormsApp2
         //-----------------------------------------------------------------MainApp METHODS----------------------------------------------------\\
         public void InitializeMainAppWindow()
         {
+            //Menu bar
             this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
             this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
+
+            //keyboard shortcuts
             this.VIEW.MAINAPP.KeyPress += this.MapZoom;
+
+            //Tools
             this.VIEW.MAINAPP.SelectTool.Click += this.SelectToolClicked;
             this.VIEW.MAINAPP.BoxSelectTool.Click += this.BoxSelectToolClicked;
             this.VIEW.MAINAPP.EraserTool.Click += this.EraserToolClicked;
             this.VIEW.MAINAPP.EyeDropperTool.Click += this.EyeDropperToolClicked;
             this.VIEW.MAINAPP.PaintBrush.Click += this.PaintBrushClicked;
+
+            //Asset Buttons
+            this.VIEW.MAINAPP.pictureBox1.Click += this.AssetFloorSelected;
 
 
         }
@@ -245,7 +253,7 @@ namespace WindowsFormsApp2
                 //determining which tile has been selected 
                 for (int W = 0; W < MODEL.Width; W++)
                 {
-                    Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was checked to see if it was clicked selected ");
+                    Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was checked to see if it was clicked. ");
                     if (this.VIEW.MAP.TILE[W, H].clicked == true)
                     {
                         Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was Clicked... breaking loop for tool actions. ");
@@ -324,6 +332,15 @@ namespace WindowsFormsApp2
 
         }
         //----------------------------------------------------------------End of Tool Methoods-----------------------------------------------------------------------
+
+        //----------------------------------------------------------------Asset Selection------------------------------------------------------------------
+        public void AssetFloorSelected(object sender, EventArgs e)
+        {
+
+            Console.WriteLine($"|Controller|    FloorAsset Selected.");
+        }
+
+
         // close the application when the quit menu option is pressed.
         private void ClickOnQuit(object sender, EventArgs e)
         {
