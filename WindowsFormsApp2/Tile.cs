@@ -30,6 +30,8 @@ namespace WindowsFormsApp2
         public int ID = 0;
         public int TYPE = 0;
         public bool clicked = false;
+        public bool exists = false;
+        public Image texture = WindowsFormsApp2.Properties.Resources.Dirt256;
         public Tile(int size)
         {
             
@@ -73,8 +75,8 @@ namespace WindowsFormsApp2
             this.PICTUREBOX.Dock = System.Windows.Forms.DockStyle.Fill;
 
             //The default image asset
-            this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Dirt256;
-            
+            this.PICTUREBOX.Image = texture;
+
             // orgin
             this.PICTUREBOX.Location = new System.Drawing.Point(0, 0);
             
@@ -99,7 +101,15 @@ namespace WindowsFormsApp2
         }
         public Image GetTexture()
         {
-            return this.PICTUREBOX.Image;
+            return this.texture;
+        }
+        public void SetTexture(Image DesiredTexture)
+        {
+            this.texture = DesiredTexture;
+        }
+        public void setPictureBoxTexture()
+        {
+            PICTUREBOX.Image = texture;
         }
         public void SetLocation(int X, int Y)
         {
@@ -139,6 +149,10 @@ namespace WindowsFormsApp2
         {
             this.TILE.Height = H;
         }
+        public bool Existance()
+        {
+            return exists;
+        }
         public void SetPicture(string TYPE)
         {
             switch (TYPE)
@@ -146,59 +160,70 @@ namespace WindowsFormsApp2
                 //Terrain
                 case "Floor":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Floor;
+                        texture = WindowsFormsApp2.Properties.Resources.Floor;
+                        setPictureBoxTexture();
                     }
                     break;
                 case "Dirt":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Dirt256;
+                        texture = WindowsFormsApp2.Properties.Resources.Dirt256;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "LooseRock":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.looseRock;
+                        texture = WindowsFormsApp2.Properties.Resources.looseRock;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "HardRock":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Hard_Rock;
+                        texture = WindowsFormsApp2.Properties.Resources.Hard_Rock;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "SolidRock":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.solid_rock;
+                        texture = WindowsFormsApp2.Properties.Resources.solid_rock;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "Rubble1":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.rubble_1;
+                        texture = WindowsFormsApp2.Properties.Resources.rubble_1;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "Rubble2":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.rubble_2;
+                        texture = WindowsFormsApp2.Properties.Resources.rubble_2;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "Rubble3":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.rubble_3;
+                        texture = WindowsFormsApp2.Properties.Resources.rubble_3;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "Concrete":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Concrete;
+                        texture = WindowsFormsApp2.Properties.Resources.Concrete;
+                        setPictureBoxTexture(); 
                     }
                     break;
                 case "Water":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.Water;
+                        texture = WindowsFormsApp2.Properties.Resources.Water;
+                        setPictureBoxTexture(); 
                     }
                     break;
 
                 //Buildings
                 case "ToolStore":
                     {
-                        this.PICTUREBOX.Image = WindowsFormsApp2.Properties.Resources.ToolStore;
+                        texture = WindowsFormsApp2.Properties.Resources.ToolStore;
+                        setPictureBoxTexture(); 
                     }
                     break;
             }

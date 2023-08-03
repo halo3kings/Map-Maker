@@ -21,12 +21,12 @@ namespace WindowsFormsApp2
 {
     public class MapAndMapPopulator
     {
-        
+
         static public int Height, Width;
         public Tile[,] TILE;
         public int[,] MAPDATA;
         public int size = 64;
-        public MapAndMapPopulator(int W,int H)
+        public MapAndMapPopulator(int W, int H)
         {
             Debug.WriteLine($"|MapAndMapPop|      Map Generation beginging...");
             Height = H;
@@ -41,6 +41,13 @@ namespace WindowsFormsApp2
             InitializeTiles();
             GenerateMap();
         }
+        public void ClearMap(int W, int H)
+        {
+            Tile[,] ResetTiles = new Tile[W, H];
+            TILE = ResetTiles;
+            InitializeTiles();
+        }
+
         public void InitializeTiles()
         {
             int H = 0;
@@ -53,6 +60,7 @@ namespace WindowsFormsApp2
                     TILE[i, H] = new Tile(size);
                     Debug.WriteLine($"|MapAndMapPop|      Adding tile: ({i},{H})  to map");
                     TILE[i, H].TILE.Click += this.TileClicked;
+                    TILE[i, H].exists = true;
                 }
 
                 Debug.WriteLine($"|MapAndMapPop|      move to the next array index");

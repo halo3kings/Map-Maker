@@ -9,10 +9,13 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Net.Configuration;
 using System.Reflection;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -44,6 +47,7 @@ namespace WindowsFormsApp2
             //Menu bar
             this.VIEW.MAINAPP.Quit.Click += this.ClickOnQuit;
             this.VIEW.MAINAPP.mapToolStripMenuItem.Click += this.File_New_Map;
+            this.VIEW.MAINAPP.mapImageToolStripMenuItem.Click += this.SaveMapImage;
 
             //keyboard shortcuts
             this.VIEW.MAINAPP.KeyPress += this.MapZoom;
@@ -73,7 +77,7 @@ namespace WindowsFormsApp2
 
         //-----------------------------------------------------------------Tool methods-----------------------------------------------------------------------------------------------
         //select tool
-        
+
         // this sets  the tile clicked action within the view>map>Tile[]. Tile object
         public void initializeTileClickAction()
         {
@@ -312,28 +316,28 @@ namespace WindowsFormsApp2
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                
+
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the box select  tool selected ");
             }
             if (MODEL.EyeDropperToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                MODEL.TextureSelected = this.VIEW.MAP.TILE[w,h].GetTexture();
+                MODEL.TextureSelected = this.VIEW.MAP.TILE[w, h].GetTexture();
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the eye dropper  tool selected ");
             }
             if (MODEL.EraserToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                
+
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the Eraser tool selected ");
             }
             else if (MODEL.NoToolsSelected() == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                
+
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with -NO- tool selected ");
             }
 
@@ -384,24 +388,26 @@ namespace WindowsFormsApp2
             }
 
         }
-          
-        
+
+
         // when the save 
         public void CreateMap()
         {
             this.VIEW.CreateMap(MODEL.Width, MODEL.Height);
+            this.MODEL.OldWidth = MODEL.Width;
+            this.MODEL.OldHeight = MODEL.Height;
             Debug.WriteLine($"|Controller|    Map created, initializing tile click actions.");
             initializeTileClickAction();
-            
+
         }
 
-      
+
 
 
         //----------------------------------------------------------------END OF DEFAULT WINDOW METHODS---------------------------------------------\\
 
         //-----------------------------------------------------------------NEW MAP METHODS----------------------------------------------------------\\
-        
+
         //On Switches for enviromental map  effects
         private void checkBoxHostileAI(object sender, EventArgs e)
         {
@@ -520,10 +526,20 @@ namespace WindowsFormsApp2
         public void SaveButton(object sender, EventArgs e)
         {
             ApplySettings();
-            VIEW.NEWMAP.Close();
-            CreateMap();
+            VIEW.NEWMAP.Visible = false;
 
+            if (this.MODEL.MapCreated == true)
+            {
+                this.VIEW.RemoveMap(MODEL.OldWidth, MODEL.OldHeight);
+                this.VIEW.MAP.ClearMap(MODEL.OldWidth, MODEL.OldHeight);
 
+                CreateMap();
+            }
+            else
+            {
+                CreateMap();
+                this.MODEL.MapCreated = true;
+            }
         }
         //set the new map name
         private void SetMapName(object sender, EventArgs e)
@@ -1011,7 +1027,7 @@ namespace WindowsFormsApp2
                         }
                     }
                     else
-                    {                        
+                    {
                         VIEW.NEWMAP.NeededCrystals.Enabled = false;
                         MODEL.CollectCrystals = false;
                         Debug.WriteLine($"|Controller|  CollectCrystals Checked. it is now: False");
@@ -1260,7 +1276,7 @@ namespace WindowsFormsApp2
             d = MODEL.RescueSpecificUnit;
             e = MODEL.TileReach;
 
-            if (a == false && b == false  && c == false && d == false && e == false)
+            if (a == false && b == false && c == false && d == false && e == false)
             {
                 Debug.WriteLine($"|Controller|  Win condition does not exists");
                 return false;
@@ -1270,7 +1286,7 @@ namespace WindowsFormsApp2
                 Debug.WriteLine($"|Controller|  Win condition exists");
                 return true;
             }
-            
+
         }
         public void ApplySettings()
         {
@@ -1456,7 +1472,7 @@ namespace WindowsFormsApp2
             Debug.WriteLine($"");
             Debug.WriteLine($"|Controller|    Initializing NewMap  window controls");
             this.InitializeNewMapButtons();
-            
+
             Debug.WriteLine($"|Controller|    Setting NewMap values to default");
             this.setNewMapValuesToDefault();
         }
@@ -1581,6 +1597,33 @@ namespace WindowsFormsApp2
 
         }
         //-----------------------------------------------------------------------------END OF NEW MAP METHODS--------------------------------------------------------------\\
+        public Bitmap MapImage()
+        {
+            Bitmap map = new Bitmap(this.MODEL.Width * 256, this.MODEL.Height * 256);
+            Graphics g = Graphics.FromImage(map);            
+            {
+                int H = 0;
+                while (H < MODEL.Height)
+                {
+                    for (int i = 0; i < MODEL.Width; i++)
+                    {
+                        Debug.WriteLine($"|Controller|  adding image to graphic:");
+                        Debug.WriteLine($"|Controller|  Tile{i},{H} being placed at: {i*256},{H*256}");
+                        g.DrawImage(VIEW.MAP.TILE[i, H].texture, i*256 , H*256 );
+                    }
+
+                    H++;
+                }
+
+                return map;
+            }
+            
+        }
+        public void SaveMapImage(object sender, EventArgs e)
+        {
+            Debug.WriteLine($"|Controller|  Saving map image");
+            MapImage().Save("C:\\Users\\austi\\Desktop\\img.jpg", ImageFormat.Jpeg);
+        }
     }
 
 }

@@ -38,7 +38,6 @@ namespace WindowsFormsApp2
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mapToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mapToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mapImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Quit = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,7 +114,7 @@ namespace WindowsFormsApp2
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 6, 0, 6);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(1837, 64);
+            this.menuStrip1.Size = new System.Drawing.Size(1837, 69);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -129,7 +128,7 @@ namespace WindowsFormsApp2
             this.exportToolStripMenuItem,
             this.Quit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(103, 52);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(103, 57);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
@@ -137,7 +136,7 @@ namespace WindowsFormsApp2
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mapToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(339, 66);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.newToolStripMenuItem.Text = "New";
             // 
             // mapToolStripMenuItem
@@ -150,13 +149,13 @@ namespace WindowsFormsApp2
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(339, 66);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.saveAsToolStripMenuItem.Text = "Save As";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(339, 66);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // importToolStripMenuItem
@@ -164,7 +163,7 @@ namespace WindowsFormsApp2
             this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mapToolStripMenuItem1});
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(339, 66);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.importToolStripMenuItem.Text = "Import";
             // 
             // mapToolStripMenuItem1
@@ -176,52 +175,46 @@ namespace WindowsFormsApp2
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mapToolStripMenuItem2,
             this.mapImageToolStripMenuItem});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(339, 66);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.exportToolStripMenuItem.Text = "Export";
-            // 
-            // mapToolStripMenuItem2
-            // 
-            this.mapToolStripMenuItem2.Name = "mapToolStripMenuItem2";
-            this.mapToolStripMenuItem2.Size = new System.Drawing.Size(398, 66);
-            this.mapToolStripMenuItem2.Text = "Map";
             // 
             // mapImageToolStripMenuItem
             // 
             this.mapImageToolStripMenuItem.Name = "mapImageToolStripMenuItem";
-            this.mapImageToolStripMenuItem.Size = new System.Drawing.Size(398, 66);
+            this.mapImageToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.mapImageToolStripMenuItem.Text = "Map Image";
+            this.mapImageToolStripMenuItem.Click += new System.EventHandler(this.ExportMapImage);
             // 
             // Quit
             // 
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(339, 66);
+            this.Quit.Size = new System.Drawing.Size(538, 66);
             this.Quit.Text = "Quit";
             this.Quit.Click += new System.EventHandler(this.QuitButton);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(123, 52);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(123, 57);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(110, 52);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(110, 57);
             this.infoToolStripMenuItem.Text = "Info";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox1.Location = new System.Drawing.Point(0, 64);
+            this.groupBox1.Location = new System.Drawing.Point(0, 69);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.groupBox1.Size = new System.Drawing.Size(158, 1931);
+            this.groupBox1.Size = new System.Drawing.Size(158, 1926);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tools";
@@ -247,7 +240,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(138, 1876);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(138, 1871);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -320,11 +313,11 @@ namespace WindowsFormsApp2
             // 
             this.groupBox3.Controls.Add(this.tabControl1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox3.Location = new System.Drawing.Point(1191, 64);
+            this.groupBox3.Location = new System.Drawing.Point(1191, 69);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.groupBox3.Size = new System.Drawing.Size(646, 1931);
+            this.groupBox3.Size = new System.Drawing.Size(646, 1926);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Assets";
@@ -339,7 +332,7 @@ namespace WindowsFormsApp2
             this.tabControl1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(626, 1876);
+            this.tabControl1.Size = new System.Drawing.Size(626, 1871);
             this.tabControl1.TabIndex = 0;
             // 
             // Tiles
@@ -349,7 +342,7 @@ namespace WindowsFormsApp2
             this.Tiles.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Tiles.Name = "Tiles";
             this.Tiles.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.Tiles.Size = new System.Drawing.Size(602, 1806);
+            this.Tiles.Size = new System.Drawing.Size(602, 1801);
             this.Tiles.TabIndex = 1;
             this.Tiles.Text = "Tiles";
             this.Tiles.UseVisualStyleBackColor = true;
@@ -383,7 +376,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(582, 1788);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(582, 1783);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // pictureBox1
@@ -394,7 +387,7 @@ namespace WindowsFormsApp2
             this.pictureBox1.Location = new System.Drawing.Point(10, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox1.Size = new System.Drawing.Size(271, 204);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -407,7 +400,7 @@ namespace WindowsFormsApp2
             this.pictureBox2.Location = new System.Drawing.Point(301, 9);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox2.Size = new System.Drawing.Size(271, 204);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -417,10 +410,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 232);
+            this.pictureBox3.Location = new System.Drawing.Point(10, 231);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox3.Size = new System.Drawing.Size(271, 204);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -430,10 +423,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon;
-            this.pictureBox4.Location = new System.Drawing.Point(301, 232);
+            this.pictureBox4.Location = new System.Drawing.Point(301, 231);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox4.Size = new System.Drawing.Size(271, 204);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -443,10 +436,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon;
-            this.pictureBox5.Location = new System.Drawing.Point(10, 455);
+            this.pictureBox5.Location = new System.Drawing.Point(10, 453);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox5.Size = new System.Drawing.Size(271, 204);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
@@ -456,10 +449,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
-            this.pictureBox6.Location = new System.Drawing.Point(301, 455);
+            this.pictureBox6.Location = new System.Drawing.Point(301, 453);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox6.Size = new System.Drawing.Size(271, 204);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
@@ -469,10 +462,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon;
-            this.pictureBox7.Location = new System.Drawing.Point(10, 678);
+            this.pictureBox7.Location = new System.Drawing.Point(10, 675);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox7.Size = new System.Drawing.Size(271, 204);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
@@ -482,10 +475,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon;
-            this.pictureBox8.Location = new System.Drawing.Point(301, 678);
+            this.pictureBox8.Location = new System.Drawing.Point(301, 675);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox8.Size = new System.Drawing.Size(271, 204);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
@@ -495,10 +488,10 @@ namespace WindowsFormsApp2
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox9.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon;
-            this.pictureBox9.Location = new System.Drawing.Point(10, 901);
+            this.pictureBox9.Location = new System.Drawing.Point(10, 897);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(271, 205);
+            this.pictureBox9.Size = new System.Drawing.Size(271, 204);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
@@ -506,10 +499,10 @@ namespace WindowsFormsApp2
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(10, 1124);
+            this.panel1.Location = new System.Drawing.Point(10, 1119);
             this.panel1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 205);
+            this.panel1.Size = new System.Drawing.Size(271, 204);
             this.panel1.TabIndex = 9;
             // 
             // Buildings
@@ -519,7 +512,7 @@ namespace WindowsFormsApp2
             this.Buildings.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Buildings.Name = "Buildings";
             this.Buildings.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.Buildings.Size = new System.Drawing.Size(602, 1806);
+            this.Buildings.Size = new System.Drawing.Size(602, 1801);
             this.Buildings.TabIndex = 0;
             this.Buildings.Text = "Buildings";
             this.Buildings.UseVisualStyleBackColor = true;
@@ -545,7 +538,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(582, 1788);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(582, 1783);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox10
@@ -574,11 +567,11 @@ namespace WindowsFormsApp2
             // 
             this.groupBox4.Controls.Add(this.Workspace);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(158, 64);
+            this.groupBox4.Location = new System.Drawing.Point(158, 69);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.groupBox4.Size = new System.Drawing.Size(1033, 1931);
+            this.groupBox4.Size = new System.Drawing.Size(1033, 1926);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Viewer";
@@ -593,7 +586,7 @@ namespace WindowsFormsApp2
             this.Workspace.Location = new System.Drawing.Point(10, 46);
             this.Workspace.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Workspace.Name = "Workspace";
-            this.Workspace.Size = new System.Drawing.Size(1013, 1876);
+            this.Workspace.Size = new System.Drawing.Size(1013, 1871);
             this.Workspace.TabIndex = 0;
             this.Workspace.Paint += new System.Windows.Forms.PaintEventHandler(this.Workspace_Paint);
             // 
@@ -605,7 +598,7 @@ namespace WindowsFormsApp2
             this.Map.Location = new System.Drawing.Point(0, 0);
             this.Map.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Map.Name = "Map";
-            this.Map.Size = new System.Drawing.Size(1011, 1874);
+            this.Map.Size = new System.Drawing.Size(1011, 1869);
             this.Map.TabIndex = 0;
             this.Map.Click += new System.EventHandler(this.pictureBox7_Click_1);
             this.Map.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.New_Map);
@@ -677,7 +670,6 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem mapToolStripMenuItem1;
         public System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem mapToolStripMenuItem2;
         public System.Windows.Forms.ToolStripMenuItem mapImageToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem Quit;
         public System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;

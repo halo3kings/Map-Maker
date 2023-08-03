@@ -327,6 +327,11 @@ namespace WindowsFormsApp2
             Console.WriteLine($"|DefaultWindow| Rubble3 Texture Asset Selected");
             UpdateIcons("Rubble3");
         }
+
+        public void ExportMapImage(object sender, EventArgs e)
+        {
+
+        }
         //----------------------------------------------------------End of selected texture--------------------------------------------
     }
 }

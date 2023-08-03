@@ -59,6 +59,22 @@ namespace WindowsFormsApp2
             //this.MAINAPP.Map.AutoScroll = true;
 
         }
+        public void RemoveMap(int w, int h)
+        {
+            int H = 0;
+            Debug.WriteLine($"|View|  Removing  map in viewer...");
+
+            while (H < h)
+            {
+                for (int i = 0; i < w; i++)
+                {
+                    MAINAPP.Map.Controls.Remove(MAP.TILE[i, H].PICTUREBOX);
+                    MAINAPP.Map.Controls.Remove(MAP.TILE[i, H].TILE);
+                    Debug.WriteLine($"|View|  Removing tile: {MAP.TILE[i, H].TILE.Name} from map");
+                }
+                H++;
+            }
+        }
         public void TileClick(object sender, EventArgs e)
         {
 

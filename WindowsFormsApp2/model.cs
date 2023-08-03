@@ -13,6 +13,8 @@ namespace WindowsFormsApp2
     public class model
     {
         //-------------------------------------------------------------------------Beginging of MAP DATA------------------------------------------------------------------------------
+        public bool MapCreated = false;
+        
         //Map Name
         public string MapName = "New Map";
 
@@ -78,7 +80,6 @@ namespace WindowsFormsApp2
 
         //---Reach Tile
         public bool TileReach = false;
-        //-------------------------------------------------------------------END of MAP DATA------------------------------------------------------------------------------
 
         //--------------------------------------------------------------------Tool settings-----------------------------------------------------------------------------
 
@@ -170,6 +171,7 @@ namespace WindowsFormsApp2
             }
             
         }
+        
         //-----------------------------------------------------------Texture Assets------------------------------------------------------------------
         //this is the selected texture for the paint brush.
         public Image TextureSelected = null;
@@ -249,7 +251,9 @@ namespace WindowsFormsApp2
             Properties.Settings.Default.TileReach = TileReach;
 
         }
-
+        //-------------------------------------------------------------Map clearing---------------------------------------------------------------
+        public int OldHeight = 0;
+        public int OldWidth = 0;
     }
 }
 
