@@ -97,7 +97,10 @@ namespace WindowsFormsApp2
             Debug.WriteLine("|Tile|   clicked");
             clicked = true;
         }
-
+        public Image GetTexture()
+        {
+            return this.PICTUREBOX.Image;
+        }
         public void SetLocation(int X, int Y)
         {
             this.TILE.Location = new System.Drawing.Point(X, Y);

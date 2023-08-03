@@ -25,6 +25,7 @@ namespace WindowsFormsApp2
     public partial class Default_Window : Form
     {
         int TotalNumberOfAssets = 10;
+        string SelectedTexture = ""; //test
         bool[] TextureSelected;
 
         [DllImport("Kernel32.dll")]
@@ -33,16 +34,7 @@ namespace WindowsFormsApp2
         public Default_Window()
         {
             InitializeComponent();
-            InitializeTextureSelectedArray();
-
         }
-        private void InitializeTextureSelectedArray()
-        {
-            TextureSelected = new bool[TotalNumberOfAssets];
-            DeselectTexture();
-
-        }
-
         public void QuitButton(object sender, EventArgs e)
         {
 
@@ -51,22 +43,18 @@ namespace WindowsFormsApp2
         {
 
         }
-
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
         }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
-
         private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }
-
         private void Workspace_Paint(object sender, PaintEventArgs e)
         {
 
@@ -75,53 +63,34 @@ namespace WindowsFormsApp2
         {
 
         }
-
         private void pictureBox7_Click(object sender, EventArgs e)
         {
 
         }
-
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void pictureBox7_Click_1(object sender, EventArgs e)
         {
             Console.WriteLine("pannel Clicked");
         }
-        public void DeselectTexture()
+        public void UnselectTexture()
         {
-            for (int i = 0; i < TotalNumberOfAssets; i++)
-            {
-                TextureSelected[i] = false;
-            }
+                SelectedTexture = "";
         }
-        public int GetSelectedTexture()
+        public string GetTextureSelected()
         {
-            for (int i = 0; i < TotalNumberOfAssets; i++)
-            {
-                if (TextureSelected[i] == true)
-                {
-                    return i;
-                }
-            }
-            return 0;
+            return SelectedTexture;
         }
-        public void SetSelectedTexture(int texture)
+        public void SetSelectedTexture(string texture)
         {
-            for (int i = 0; i < TotalNumberOfAssets; i++)
-            {
-                if (i == texture)
-                {
-                    TextureSelected[i] = true;
-                }
-                else
-                {
-                    TextureSelected[i] = false;
-                }
-            }
+            SelectedTexture = texture;
         }
+        //public Image getTexture(string selectedTexture)
+        //{
+            //return 
+       // }
         public void DefaultIconImage()
         {
             this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon;
@@ -136,7 +105,7 @@ namespace WindowsFormsApp2
 
             this.pictureBox11.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon;
 
-
+            SetSelectedTexture("");
         }
         public void UpdateIcons(string selectedIcon)
         {
@@ -144,60 +113,65 @@ namespace WindowsFormsApp2
             {
                 case "Floor":
                     {
+                        Console.WriteLine($"|DefaultWindow| Floor Selected");
                         DefaultIconImage();                        
-                        if (TextureSelected[0] == false)
+                        if (!SelectedTexture.Equals("Floor"))
                         {
-                            SetSelectedTexture(0);
+                            SetSelectedTexture("Floor");
                             this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon_Clicked;
 
                         }
-                        else if (TextureSelected[0] == true)
+                        else if (SelectedTexture.Equals("Floor"))
                         {
-                            DeselectTexture();
+                            
+                            UnselectTexture();
                         }
                     }
                     break;
                 case "Dirt":
                     {
+                        Console.WriteLine($"|DefaultWindow| Dirt Rock Selected");
                         DefaultIconImage();
-                        if (TextureSelected[1] == false)
+                        if (!SelectedTexture.Equals("Dirt"))
                         {
-                            SetSelectedTexture(1);
+                            SetSelectedTexture("Dirt");
                             this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.Dirt_Icon_Clicked;
                         }
-                        else if (TextureSelected[1] == true)
+                        else if (SelectedTexture.Equals("Dirt"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
                     }
                     break;
                 case "LooseRock":
-                    { 
-                         DefaultIconImage();
-                         if (TextureSelected[2] == false)
+                    {
+                        Console.WriteLine($"|DefaultWindow| Loose Rock Selected");
+                        DefaultIconImage();
+                        if (!SelectedTexture.Equals("LooseRock"))
                         {
-                            SetSelectedTexture(2);
+                            SetSelectedTexture("LooseRock");
                             this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon_Clicked;
                         }
-                    else if (TextureSelected[2] == true)
+                    else if (SelectedTexture.Equals("LooseRock"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
 
                     }
                     break;
                 case "HardRock":
                     {
+                        Console.WriteLine($"|DefaultWindow| Hard Rock Selected");
                         {
                             DefaultIconImage();
-                            if (TextureSelected[3] == false)
+                            if (!SelectedTexture.Equals("HardRock"))
                             {
-                                SetSelectedTexture(3);
+                                SetSelectedTexture("HardRock");
                                 this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon_Clicked;
                             }
-                            else if (TextureSelected[3] == true)
+                            else if (SelectedTexture.Equals("HardRock"))
                             {
-                                DeselectTexture();
+                                UnselectTexture();
                             }
 
                         }
@@ -205,72 +179,77 @@ namespace WindowsFormsApp2
                         break;
                 case "SolidRock":
                     {
+                        Console.WriteLine($"|DefaultWindow| Solid rock Selected");
                         DefaultIconImage();
-                        if (TextureSelected[4] == false)
+                        if (!SelectedTexture.Equals("SolidRock"))
                         {
-                            SetSelectedTexture(4);
+                            SetSelectedTexture("SolidRock");
                             this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon_Clicked;
                         }
-                        else if (TextureSelected[4] == true)
+                        else if (SelectedTexture.Equals("SolidRock"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
                     }
                     break;
                 case "Rubble1":
                     {
+                        Console.WriteLine($"|DefaultWindow| Rubble 1 Selected");
                         DefaultIconImage();
-                        if (TextureSelected[7] == false)
+                        if (!SelectedTexture.Equals("Rubble1"))
                         {
-                            SetSelectedTexture(7);
+                            SetSelectedTexture("Rubble1");
                             this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon_Clicked;
                         }
-                        else if (TextureSelected[7] == true)
+                        else if (SelectedTexture.Equals("Rubble1"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
                     }
                     break;
                 case "Rubble2":
                     {
+                        Console.WriteLine($"|DefaultWindow| Rubble 2 Selected");
                         DefaultIconImage();
-                        if (TextureSelected[8] == false)
+                        if (!SelectedTexture.Equals("Rubble2"))
                         {
-                            SetSelectedTexture(8);
+                            SetSelectedTexture("Rubble2");
                             this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon_Clicked;
                         }
-                        else if (TextureSelected[8] == true)
+                        else if (SelectedTexture.Equals("Rubble2"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
                     }
                     break;
                 case "Rubble3":
                     {
+                        Console.WriteLine($"|DefaultWindow| Rubble 3 Selected");
                         DefaultIconImage();
-                        if (TextureSelected[9] == false)
+                        if (!SelectedTexture.Equals("Rubble3"))
                         {
-                            SetSelectedTexture(9);
+                            SetSelectedTexture("Rubble3");
                             this.pictureBox9.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon_Clicked;
                         }
-                        else if (TextureSelected[9] == true)
+                        else if (SelectedTexture.Equals("Rubble3"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
 
                     }
                     break;
                 case "Water":
                     {
+                        Console.WriteLine($"|DefaultWindow| Water Selected");
                         DefaultIconImage();
-                        if (TextureSelected[6] == false)
+                        if (!SelectedTexture.Equals("Water"))
                         {
-                            SetSelectedTexture(6);
+                            SetSelectedTexture("Water");
                             this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon_Clicked;
                         }
-                        else if (TextureSelected[9] == true)
+                        else if (SelectedTexture.Equals("Water"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
 
                     }
@@ -278,15 +257,16 @@ namespace WindowsFormsApp2
                 //Buildings
                 case "ToolStore":
                     {
+                        Console.WriteLine($"|DefaultWindow| Tool Store selected");
                         DefaultIconImage();
-                        if (TextureSelected[9] == false)
+                        if (!SelectedTexture.Equals("ToolStore"))
                         {
-                            SetSelectedTexture(5);
+                            SetSelectedTexture("ToolStore");
                             this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon_Clicked;
                         }
-                        else if (TextureSelected[5] == true)
+                        else if (SelectedTexture.Equals("ToolStore"))
                         {
-                            DeselectTexture();
+                            UnselectTexture();
                         }
 
                     }

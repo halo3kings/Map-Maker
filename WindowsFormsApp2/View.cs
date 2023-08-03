@@ -13,6 +13,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,7 +21,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp2
 {
 
-     public class View
+    public class View
     {
         DefaultValues DefVal = new DefaultValues();
         public Default_Window MAINAPP = new Default_Window();
@@ -30,7 +31,7 @@ namespace WindowsFormsApp2
 
         public View()
         {
-            
+
             //Initialize();
         }
         public void Run()
@@ -41,13 +42,13 @@ namespace WindowsFormsApp2
         {
             int H = 0;
             Debug.WriteLine($"|View|  Generating  map in viewer...");
-            MAP = new MapAndMapPopulator(w,h);
+            MAP = new MapAndMapPopulator(w, h);
             Debug.WriteLine($"|View|  Map Generated...");
 
             Debug.WriteLine($"|View|  adding map to pannel 'Map' on the workspace...");
             while (H < h)
             {
-                for (int i = 0; i < w ; i++)
+                for (int i = 0; i < w; i++)
                 {
                     MAINAPP.Map.Controls.Add(MAP.TILE[i, H].getTile());
                     Debug.WriteLine($"|View|  Adding tile: {MAP.TILE[i, H].TILE.Name} to map");
@@ -58,12 +59,80 @@ namespace WindowsFormsApp2
             //this.MAINAPP.Map.AutoScroll = true;
 
         }
-        public  void TileClick(object sender, EventArgs e)
+        public void TileClick(object sender, EventArgs e)
         {
-            
+
         }
+        public Image GetTexture(string Texture)
+        {
+            switch (Texture)
+            {
+                //Terrain
+                case "Floor":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Floor;
+                    }
+                    break;
+                case "Dirt":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Dirt256;
+                    }
+                    break;
+                case "LooseRock":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.looseRock;
+                    }
+                    break;
+                case "HardRock":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Hard_Rock;
+                    }
+                    break;
+                case "SolidRock":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.solid_rock;
+                    }
+                    break;
+                case "Rubble1":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.rubble_1;
+                    }
+                    break;
+                case "Rubble2":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.rubble_2;
+                    }
+                    break;
+                case "Rubble3":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.rubble_3;
+                    }
+                    break;
+                case "Concrete":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Concrete;
+                    }
+                    break;
+                case "Water":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Water;
+                    }
+                    break;
+
+                //Buildings
+                case "ToolStore":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.ToolStore;
+                    }
+                    break;
+                    
+            }
+            return null;
+        }
+
     }
 }
+
 
 
     

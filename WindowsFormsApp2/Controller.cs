@@ -56,8 +56,15 @@ namespace WindowsFormsApp2
             this.VIEW.MAINAPP.PaintBrush.Click += this.PaintBrushClicked;
 
             //Asset Buttons
-            this.VIEW.MAINAPP.pictureBox1.Click += this.AssetFloorSelected;
-
+            this.VIEW.MAINAPP.pictureBox1.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox2.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox3.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox4.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox5.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox6.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox7.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox8.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox9.Click += this.AssetSelected;
 
         }
 
@@ -291,14 +298,14 @@ namespace WindowsFormsApp2
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                
+                this.VIEW.MAP.TILE[w, h].PICTUREBOX.Image = MODEL.TextureSelected;
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
+                Debug.WriteLine($"|Controller|  Tile should be set to: {MODEL.TextureSelected}");
             }
             if (MODEL.SelectToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the select tool selected ");
             }
             if (MODEL.BoxSelectToolSelected == true)
@@ -312,7 +319,7 @@ namespace WindowsFormsApp2
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                
+                MODEL.TextureSelected = this.VIEW.MAP.TILE[w,h].GetTexture();
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the eye dropper  tool selected ");
             }
             if (MODEL.EraserToolSelected == true)
@@ -334,10 +341,10 @@ namespace WindowsFormsApp2
         //----------------------------------------------------------------End of Tool Methoods-----------------------------------------------------------------------
 
         //----------------------------------------------------------------Asset Selection------------------------------------------------------------------
-        public void AssetFloorSelected(object sender, EventArgs e)
+        public void AssetSelected(object sender, EventArgs e)
         {
-
-            Console.WriteLine($"|Controller|    FloorAsset Selected.");
+            MODEL.TextureSelected = this.VIEW.GetTexture(this.VIEW.MAINAPP.GetTextureSelected());
+            Debug.WriteLine($"|Controller|  texture set to: {this.VIEW.MAINAPP.GetTextureSelected()}.");
         }
 
 
