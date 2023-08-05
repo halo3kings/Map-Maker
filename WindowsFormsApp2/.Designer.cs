@@ -70,6 +70,7 @@ namespace WindowsFormsApp2
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.Workspace = new System.Windows.Forms.Panel();
             this.Map = new System.Windows.Forms.Panel();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -157,6 +158,7 @@ namespace WindowsFormsApp2
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(538, 66);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveAs);
             // 
             // importToolStripMenuItem
             // 
@@ -512,7 +514,7 @@ namespace WindowsFormsApp2
             this.Buildings.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Buildings.Name = "Buildings";
             this.Buildings.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.Buildings.Size = new System.Drawing.Size(602, 1801);
+            this.Buildings.Size = new System.Drawing.Size(602, 1806);
             this.Buildings.TabIndex = 0;
             this.Buildings.Text = "Buildings";
             this.Buildings.UseVisualStyleBackColor = true;
@@ -538,7 +540,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(582, 1783);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(582, 1788);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox10
@@ -602,6 +604,10 @@ namespace WindowsFormsApp2
             this.Map.TabIndex = 0;
             this.Map.Click += new System.EventHandler(this.pictureBox7_Click_1);
             this.Map.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.New_Map);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // modelBindingSource
             // 
@@ -704,6 +710,7 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox pictureBox11;
         public System.Windows.Forms.Panel panel1;
         private System.ComponentModel.IContainer components;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

@@ -23,14 +23,16 @@ namespace WindowsFormsApp2
     {
 
         static public int Height, Width;
+        public string BIOME;
         public Tile[,] TILE;
         public int[,] MAPDATA;
         public int size = 64;
-        public MapAndMapPopulator(int W, int H)
+        public MapAndMapPopulator(int W, int H, string Biome)
         {
             Debug.WriteLine($"|MapAndMapPop|      Map Generation beginging...");
             Height = H;
             Width = W;
+            BIOME = Biome;
 
             Debug.WriteLine($"|MapAndMapPop|      Creating Tile  array...");
             TILE = new Tile[Width, Height];
@@ -50,17 +52,20 @@ namespace WindowsFormsApp2
 
         public void InitializeTiles()
         {
+            int id = 0;
             int H = 0;
             while (H < Height)
             {
                 for (int i = 0; i < Width; i++)
                 {
+                    
                     Debug.WriteLine($"|MapAndMapPop|      creating tile");
                     Debug.WriteLine($"|MapAndMapPop|      Value of  i: {i}");
-                    TILE[i, H] = new Tile(size);
+                    TILE[i, H] = new Tile(size, BIOME,id,i,H);
                     Debug.WriteLine($"|MapAndMapPop|      Adding tile: ({i},{H})  to map");
                     TILE[i, H].TILE.Click += this.TileClicked;
                     TILE[i, H].exists = true;
+                    id++;
                 }
 
                 Debug.WriteLine($"|MapAndMapPop|      move to the next array index");

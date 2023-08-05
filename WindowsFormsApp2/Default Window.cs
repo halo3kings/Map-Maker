@@ -332,6 +332,16 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void SaveAs(object sender, EventArgs e)
+        {
+      
+        }
         //----------------------------------------------------------End of selected texture--------------------------------------------
     }
 }

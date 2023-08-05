@@ -303,6 +303,7 @@ namespace WindowsFormsApp2
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
                 this.VIEW.MAP.TILE[w, h].PICTUREBOX.Image = MODEL.TextureSelected;
+                this.VIEW.MAP.TILE[w, h].SetTexture(MODEL.TextureSelected);
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
                 Debug.WriteLine($"|Controller|  Tile should be set to: {MODEL.TextureSelected}");
             }
@@ -393,7 +394,7 @@ namespace WindowsFormsApp2
         // when the save 
         public void CreateMap()
         {
-            this.VIEW.CreateMap(MODEL.Width, MODEL.Height);
+            this.VIEW.CreateMap(MODEL.Width, MODEL.Height, MODEL.Biome);
             this.MODEL.OldWidth = MODEL.Width;
             this.MODEL.OldHeight = MODEL.Height;
             Debug.WriteLine($"|Controller|    Map created, initializing tile click actions.");
@@ -583,7 +584,7 @@ namespace WindowsFormsApp2
         {
             if (VIEW.NEWMAP.TerrainType.Text.Equals("Rock") || VIEW.NEWMAP.TerrainType.Text.Equals("Lava") || VIEW.NEWMAP.TerrainType.Text.Equals("Ice"))
             {
-                MODEL.TerrainType = VIEW.NEWMAP.TerrainType.Text;
+                MODEL.Biome = VIEW.NEWMAP.TerrainType.Text;
                 Console.WriteLine($"|Controller|    Terrain set to: {VIEW.NEWMAP.TerrainType.Text}");
             }
             else
@@ -1309,7 +1310,7 @@ namespace WindowsFormsApp2
                 Debug.WriteLine($"|Controller|  Height set to:                    {VIEW.NEWMAP.HeightIn.Value}");
 
                 //Terrain Type
-                MODEL.TerrainType = VIEW.NEWMAP.TerrainType.Text;
+                MODEL.Biome = VIEW.NEWMAP.TerrainType.Text;
                 Debug.WriteLine($"|Controller|  TerrainType set to:               {VIEW.NEWMAP.TerrainType.Text}");
 
                 //Environmental factors----------------------------------------------------
@@ -1535,7 +1536,7 @@ namespace WindowsFormsApp2
             //Map Dimensions and terrain type
             this.VIEW.NEWMAP.WidthIn.Value = this.MODEL.Width;
             this.VIEW.NEWMAP.HeightIn.Value = this.MODEL.Height;
-            this.VIEW.NEWMAP.TerrainType.Text = this.MODEL.TerrainType;
+            this.VIEW.NEWMAP.TerrainType.Text = this.MODEL.Biome;
 
             //Enviromental factors
             this.VIEW.NEWMAP.HostileAI.Checked = this.MODEL.HostileAI;
@@ -1599,8 +1600,11 @@ namespace WindowsFormsApp2
         //-----------------------------------------------------------------------------END OF NEW MAP METHODS--------------------------------------------------------------\\
         public Bitmap MapImage()
         {
-            Bitmap map = new Bitmap(this.MODEL.Width * 256, this.MODEL.Height * 256);
-            Graphics g = Graphics.FromImage(map);            
+            // Image resolution
+            int Multiplier = 256;
+            Bitmap map = new Bitmap(this.MODEL.Width * Multiplier, this.MODEL.Height * Multiplier);
+            Graphics g = Graphics.FromImage(map);
+            Bitmap temp;
             {
                 int H = 0;
                 while (H < MODEL.Height)
@@ -1609,7 +1613,8 @@ namespace WindowsFormsApp2
                     {
                         Debug.WriteLine($"|Controller|  adding image to graphic:");
                         Debug.WriteLine($"|Controller|  Tile{i},{H} being placed at: {i*256},{H*256}");
-                        g.DrawImage(VIEW.MAP.TILE[i, H].texture, i*256 , H*256 );
+                        temp = new Bitmap(VIEW.MAP.TILE[i, H].getTexture());
+                        g.DrawImage(temp, i*Multiplier , H*Multiplier );
                     }
 
                     H++;

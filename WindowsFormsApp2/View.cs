@@ -38,11 +38,11 @@ namespace WindowsFormsApp2
         {
             Application.Run(MAINAPP);
         }
-        public void CreateMap(int w, int h)
+        public void CreateMap(int w, int h, string biome)
         {
             int H = 0;
             Debug.WriteLine($"|View|  Generating  map in viewer...");
-            MAP = new MapAndMapPopulator(w, h);
+            MAP = new MapAndMapPopulator(w, h, biome);
             Debug.WriteLine($"|View|  Map Generated...");
 
             Debug.WriteLine($"|View|  adding map to pannel 'Map' on the workspace...");

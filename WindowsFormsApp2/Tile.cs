@@ -26,16 +26,21 @@ namespace WindowsFormsApp2
         
         public event EventHandler Click;
 
-        public int Size = 0;
-        public int ID = 0;
-        public int TYPE = 0;
+        public int TILESIZE = 0;
+        public int XPOS; // X position
+        public int YPOS;// Y position
+        public string BIOME;
+        public int ID;
         public bool clicked = false;
         public bool exists = false;
         public Image texture = WindowsFormsApp2.Properties.Resources.Dirt256;
-        public Tile(int size)
+        public Tile(int size,string biome,int id, int Xpos, int Ypos)
         {
             
-            Size = size;
+            TILESIZE = size;
+            BIOME = biome;
+            XPOS = Xpos;
+            YPOS = Ypos;
             InitializePictureBox();
             InitializeTile();//must be last
         }
@@ -59,7 +64,7 @@ namespace WindowsFormsApp2
             Debug.WriteLine("|Tile|   creating  title");
 
             //This sets the panel's Height and Width.
-            this.TILE.Size = new System.Drawing.Size(Size, Size);
+            this.TILE.Size = new System.Drawing.Size(TILESIZE, TILESIZE);
             Debug.WriteLine("|Tile|   setting  width and  height");
 
             // picture
@@ -84,7 +89,7 @@ namespace WindowsFormsApp2
             this.PICTUREBOX.Name = "pictureBox" + ID;
             
             //size of picture box
-            this.PICTUREBOX.Size = new System.Drawing.Size(Size, Size);
+            this.PICTUREBOX.Size = new System.Drawing.Size(TILESIZE, TILESIZE);
             
             //should the container be expanded, the image will strech to fit
             this.PICTUREBOX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,6 +240,10 @@ namespace WindowsFormsApp2
         public PictureBox GetPicture()
         {
             return PICTUREBOX;
+        }
+        public Image getTexture()
+        {
+            return texture;
         }
 
 

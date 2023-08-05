@@ -21,7 +21,7 @@ namespace WindowsFormsApp2
         //Map Dimensions and terrain type
         public int Width = 16;
         public int Height = 16;
-        public string TerrainType = "Rock";
+        public string Biome = "Rock";
 
         //Enviromental factors
         public bool HostileAI = false;
@@ -190,7 +190,7 @@ namespace WindowsFormsApp2
             //Map Dimensions and terrain type
             Properties.Settings.Default.Width = Width;
             Properties.Settings.Default.Height = Height;
-            Properties.Settings.Default.TerrainType = TerrainType;
+            Properties.Settings.Default.TerrainType = Biome;
 
             //Enviromental factors
             Properties.Settings.Default.HostileAI = HostileAI;
