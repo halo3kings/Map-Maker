@@ -1,9 +1,4 @@
 ﻿/* Copyright (C) 2023 Austin Tyler - All Rights Reserved
- * You may use, distribute and modify this code under the
- * terms of the Attribution-ShareAlike 4.0 International, 
- * 
- * You should have received a copy of the Attribution-ShareAlike 4.0 International with
- * this file. If not, please write to: AustinTyler88@gmail.com
  */
 using System;
 using System.Collections.Generic;
@@ -61,18 +56,18 @@ namespace WindowsFormsApp2
             this.VIEW.MAINAPP.PaintBrush.Click += this.PaintBrushClicked;
 
             //Asset Buttons
-            this.VIEW.MAINAPP.pictureBox1.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox2.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox3.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox4.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox5.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox6.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox7.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox8.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox9.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox19.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox20.Click += this.AssetSelected;
-            this.VIEW.MAINAPP.pictureBox21.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.FloorIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.DirtIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.LooseRockIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.HardRockIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.SolidRockIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.WaterIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.Rubble1Icon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.Rubble2Icon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.Rubble3Icon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.LavaIcon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.LavaErosion1Icon.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.LavaErosion2Icon.Click += this.AssetSelected;
 
 
 
@@ -87,7 +82,7 @@ namespace WindowsFormsApp2
         // this sets  the tile clicked action within the view>map>Tile[]. Tile object
         public void initializeTileClickAction()
         {
-            Debug.WriteLine($"|Controller|    Initializing tile click..");
+            Debug.WriteLine($"|Controller||initializeTileClickAction()|    Initializing tile click..");
             int H = 0;
             while (H < MODEL.Height)
             {
@@ -103,20 +98,20 @@ namespace WindowsFormsApp2
 
         private void SelectToolClicked(object sender, EventArgs e)
         {
-            Debug.WriteLine($"|Controller|  Select Tool Clicked.");
+            Debug.WriteLine($"|Controller||SelectToolClicked()|  Select Tool Clicked.");
             //Value must be flipped for the toggle to work.
             if (MODEL.SelectToolSelected == true)
             {
                 this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
                 MODEL.SelectToolSelected = false;
-                Debug.WriteLine($"|Controller|  Select tool set to false.");
+                Debug.WriteLine($"|Controller||SelectToolClicked()|  Select tool set to false.");
 
             }
             else if (MODEL.SelectToolSelected == false)
             {
                 ToolClickEffect("SelectTool");
                 this.MODEL.SetTool("SelectTool");
-                Debug.WriteLine($"|Controller|  Select tool set to true.");
+                Debug.WriteLine($"|Controller||SelectToolClicked()|  Select tool set to true.");
             }
 
         }
@@ -124,80 +119,80 @@ namespace WindowsFormsApp2
         private void BoxSelectToolClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.Fixed3D;
-            Debug.WriteLine($"|Controller|  Box Select Tool Clicked.");
+            Debug.WriteLine($"|Controller||BoxSelectToolClicked()|  Box Select Tool Clicked.");
             //Value must be flipped for the toggle to work.
             if (MODEL.BoxSelectToolSelected == true)
             {
                 this.VIEW.MAINAPP.BoxSelectTool.BorderStyle = BorderStyle.None;
                 MODEL.BoxSelectToolSelected = false;
-                Debug.WriteLine($"|Controller|  BoxSelect Tool set to  false.");
+                Debug.WriteLine($"|Controller||BoxSelectToolClicked()|   BoxSelect Tool set to  false.");
 
             }
             else if (MODEL.BoxSelectToolSelected == false)
             {
                 ToolClickEffect("BoxSelectTool");
                 this.MODEL.SetTool("BoxSelectTool");
-                Debug.WriteLine($"|Controller|  BoxSelect tool set to  true.");
+                Debug.WriteLine($"|Controller||BoxSelectToolClicked()|   BoxSelect tool set to  true.");
             }
         }
         //eye dropper tool
         private void EyeDropperToolClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.Fixed3D;
-            Debug.WriteLine($"|Controller|  EyeDroper Tool Clicked.");
+            Debug.WriteLine($"|Controller||EyeDropperToolClicked()|  EyeDroper Tool Clicked.");
             //Value must be flipped for the toggle to work.
             if (MODEL.EyeDropperToolSelected == true)
             {
                 this.VIEW.MAINAPP.EyeDropperTool.BorderStyle = BorderStyle.None;
                 MODEL.EyeDropperToolSelected = false;
-                Debug.WriteLine($"|Controller|  EyeDropper tool set to  false.");
+                Debug.WriteLine($"|Controller||EyeDropperToolClicked()|  EyeDropper tool set to  false.");
 
             }
             else if (MODEL.EyeDropperToolSelected == false)
             {
                 ToolClickEffect("EyeDropperTool");
                 this.MODEL.SetTool("EyeDropperTool");
-                Debug.WriteLine($"|Controller|  EyeDropper Tool tool set to  true.");
+                Debug.WriteLine($"|Controller||EyeDropperToolClicked()|  EyeDropper Tool tool set to  true.");
             }
         }
         //  Paint brush tool 
         private void PaintBrushClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.Fixed3D;
-            Debug.WriteLine($"|Controller|  PaintBrush Tool Clicked.");
+            Debug.WriteLine($"|Controller||PaintBrushClicked()|  PaintBrush Tool Clicked.");
             //Value must be flipped for the toggle to work.
             if (MODEL.PaintBrushSleceted == true)
             {
                 this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
                 MODEL.PaintBrushSleceted = false;
-                Debug.WriteLine($"|Controller|  PaintBrush tool set to  false.");
+                Debug.WriteLine($"|Controller||PaintBrushClicked()|  PaintBrush tool set to  false.");
 
             }
             else if (MODEL.PaintBrushSleceted == false)
             {
                 ToolClickEffect("PaintBrush");
                 this.MODEL.SetTool("PaintBrush");
-                Debug.WriteLine($"|Controller|  PaintBrush tool set to  true.");
+                Debug.WriteLine($"|Controller||PaintBrushClicked()|  PaintBrush tool set to  true.");
             }
         }
         //eraser tool
         private void EraserToolClicked(object sender, EventArgs e)
         {
             this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
-            Debug.WriteLine($"|Controller|  Eraser Tool Clicked.");
+            Debug.WriteLine($"|Controller||EraserToolClicked()|  Eraser Tool Clicked.");
             //Value must be flipped for the toggle to work.
             if (MODEL.EraserToolSelected == true)
             {
                 this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
                 MODEL.EraserToolSelected = false;
-                Debug.WriteLine($"|Controller|  Eraser Tool set to  false.");
+                Debug.WriteLine($"|Controller||EraserToolClicked()|  Eraser Tool set to  false.");
 
             }
             else if (MODEL.EraserToolSelected == false)
             {
                 ToolClickEffect("EraserTool");
                 this.MODEL.SetTool("EraserTool");
-                Debug.WriteLine($"|Controller|  Eraser Tool set to  true.");
+                Debug.WriteLine($"|Controller||EraserToolClicked()|   Eraser Tool set to  true.");
             }
         }
         //  a one stop shop to change  the border for  the tool icon. 
@@ -207,7 +202,7 @@ namespace WindowsFormsApp2
             {
                 case "SelectTool":
                     {
-                        Debug.WriteLine($"|Controller|  SelectTool selected.");
+                        Debug.WriteLine($"|Controller||ToolClickEffect()|  SelectTool selected.");
                         this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.Fixed3D;
                         this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
@@ -217,7 +212,7 @@ namespace WindowsFormsApp2
                     break;
                 case "BoxSelectTool":
                     {
-                        Debug.WriteLine($"|Controller|  BoxSelectTool selected.");
+                        Debug.WriteLine($"|Controller||ToolClickEffect()|  BoxSelectTool selected.");
                         this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
@@ -228,7 +223,7 @@ namespace WindowsFormsApp2
                     break;
                 case "EyeDropperTool":
                     {
-                        Debug.WriteLine($"|Controller|  EyeDropperTool selected.");
+                        Debug.WriteLine($"|Controller||ToolClickEffect()|  EyeDropperTool selected.");
                         this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
@@ -238,7 +233,7 @@ namespace WindowsFormsApp2
                     break;
                 case "EraserTool":
                     {
-                        Debug.WriteLine($"|Controller|  EraserTool selected.");
+                        Debug.WriteLine($"|Controller||ToolClickEffect()|  EraserTool selected.");
                         this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.Fixed3D;
                         this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.None;
@@ -248,7 +243,7 @@ namespace WindowsFormsApp2
                     break;
                 case "PaintBrush":
                     {
-                        Debug.WriteLine($"|Controller|  PaintBrush selected.");
+                        Debug.WriteLine($"|Controller||ToolClickEffect()|  PaintBrush selected.");
                         this.VIEW.MAINAPP.SelectTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.EraserTool.BorderStyle = BorderStyle.None;
                         this.VIEW.MAINAPP.PaintBrush.BorderStyle = BorderStyle.Fixed3D;
@@ -270,10 +265,10 @@ namespace WindowsFormsApp2
                 //determining which tile has been selected 
                 for (int W = 0; W < MODEL.Width; W++)
                 {
-                    Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was checked to see if it was clicked. ");
+                    Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {W}, {H} ) was checked to see if it was clicked. ");
                     if (this.VIEW.MAP.TILE[W, H].clicked == true)
                     {
-                        Debug.WriteLine($"|Controller|    Tile: ( {W}, {H} ) was Clicked... breaking loop for tool actions. ");
+                        Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {W}, {H} ) was Clicked... breaking loop for tool actions. ");
                         if (W == 0)
                         {
                             h = H;
@@ -310,8 +305,8 @@ namespace WindowsFormsApp2
                 this.VIEW.MAP.TILE[w, h].clicked = false;
                 this.VIEW.MAP.TILE[w, h].PICTUREBOX.Image = MODEL.TextureSelected;
                 this.VIEW.MAP.TILE[w, h].SetTexture(MODEL.TextureSelected);
-                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
-                Debug.WriteLine($"|Controller|  Tile should be set to: {MODEL.TextureSelected}");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile should be set to: {MODEL.TextureSelected}");
             }
 
             //---------------------------------------------------Select Tool---------------------------------
@@ -320,7 +315,7 @@ namespace WindowsFormsApp2
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the select tool selected ");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with the select tool selected ");
             }
 
             //---------------------------------------------------BoxSelect---------------------------------
@@ -330,7 +325,7 @@ namespace WindowsFormsApp2
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
 
-                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the box select  tool selected ");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with the box select  tool selected ");
             }
 
             //---------------------------------------------------EyeDropper---------------------------------
@@ -339,7 +334,7 @@ namespace WindowsFormsApp2
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
                 MODEL.TextureSelected = this.VIEW.MAP.TILE[w, h].GetTexture();
-                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the eye dropper  tool selected ");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with the eye dropper  tool selected ");
             }
 
             //---------------------------------------------------Eraser tool---------------------------------
@@ -349,7 +344,7 @@ namespace WindowsFormsApp2
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
 
-                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the Eraser tool selected ");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with the Eraser tool selected ");
             }
 
             //---------------------------------------------------No Tool---------------------------------
@@ -359,7 +354,7 @@ namespace WindowsFormsApp2
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
 
-                Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with -NO- tool selected ");
+                Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with -NO- tool selected ");
             }
 
         }
@@ -369,7 +364,7 @@ namespace WindowsFormsApp2
         public void AssetSelected(object sender, EventArgs e)
         {
             MODEL.TextureSelected = this.VIEW.GetTexture(this.VIEW.MAINAPP.GetTextureSelected());
-            Debug.WriteLine($"|Controller|  texture set to: {this.VIEW.MAINAPP.GetTextureSelected()}.");
+            Debug.WriteLine($"|Controller||AssetSelected()|  texture set to: {this.VIEW.MAINAPP.GetTextureSelected()}.");
         }
 
 
@@ -377,7 +372,7 @@ namespace WindowsFormsApp2
         private void ClickOnQuit(object sender, EventArgs e)
         {
             VIEW.MAINAPP.Close();
-            Debug.WriteLine($"|Controller|  Closing Application.");
+            Debug.WriteLine($"|Controller||ClickOnQuit()|  Closing Application.");
             Application.Exit();
         }
 
@@ -392,7 +387,7 @@ namespace WindowsFormsApp2
         {
             if (e.KeyChar == 'e')
             {
-                Debug.WriteLine($"|Controller|  Mouse scroll in: ");
+                Debug.WriteLine($"|Controller||MapZoom()|  Mouse scroll in: ");
                 this.VIEW.MAINAPP.Map.AutoScroll = false;
                 this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() * 2);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
@@ -401,7 +396,7 @@ namespace WindowsFormsApp2
             }
             else if (e.KeyChar == 'q')
             {
-                Debug.WriteLine($"|Controller|    Mouse scroll out: ");
+                Debug.WriteLine($"|Controller||MapZoom()|    Mouse scroll out: ");
                 this.VIEW.MAINAPP.Map.AutoScroll = false;
                 this.VIEW.MAP.CustomResizeMap(this.VIEW.MAP.getSize() / 2);
                 this.VIEW.MAINAPP.Map.Location = new System.Drawing.Point(0, 0);
@@ -417,7 +412,7 @@ namespace WindowsFormsApp2
             this.VIEW.CreateMap(MODEL.Width, MODEL.Height, MODEL.Biome);
             this.MODEL.OldWidth = MODEL.Width;
             this.MODEL.OldHeight = MODEL.Height;
-            Debug.WriteLine($"|Controller|    Map created, initializing tile click actions.");
+            Debug.WriteLine($"|Controller||CreateMap()|    Map created, initializing tile click actions.");
             initializeTileClickAction();
 
         }

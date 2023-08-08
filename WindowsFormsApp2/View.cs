@@ -1,9 +1,4 @@
 ﻿/* Copyright (C) 2023 Austin Tyler - All Rights Reserved
- * You may use, distribute and modify this code under the
- * terms of the Attribution-ShareAlike 4.0 International, 
- * 
- * You should have received a copy of the Attribution-ShareAlike 4.0 International with
- * this file. If not, please write to: AustinTyler88@gmail.com
  */
 
 using System;
@@ -27,6 +22,7 @@ namespace WindowsFormsApp2
         public Default_Window MAINAPP = new Default_Window();
         public New_Map NEWMAP = new New_Map();
         public MapAndMapPopulator MAP;
+        public MapProgress MP = new MapProgress();
 
 
         public View()
@@ -40,24 +36,40 @@ namespace WindowsFormsApp2
         }
         public void CreateMap(int w, int h, string biome)
         {
+            double ProgressBarMax = w * h;
+            double Iterations = 0;
+            MP.Show();
             int H = 0;
-            Debug.WriteLine($"|View|  Generating  map in viewer...");
-            MAP = new MapAndMapPopulator(w, h, biome);
-            Debug.WriteLine($"|View|  Map Generated...");
 
-            Debug.WriteLine($"|View|  adding map to pannel 'Map' on the workspace...");
+            Debug.WriteLine($"|View|  Generating  map in viewer...");
+            MP.text.Text = "|View|  Generating  map in viewer...";
+            MP.Refresh();
+
+            MAP = new MapAndMapPopulator(w, h, biome);
+
+            Debug.WriteLine($"|View|  Map Generated...");
+            MP.text.Text = "|View|  Map Generated...";
+            MP.Refresh();
+
+            Debug.WriteLine($"|View|  adding Tiles to pannel 'Map' on the workspace...");
+            MP.text.Text = "|View|  adding Tiles to pannel 'Map' on the workspace...";
             while (H < h)
             {
                 for (int i = 0; i < w; i++)
                 {
+                    Iterations = Iterations + 1;
                     MAINAPP.Map.Controls.Add(MAP.TILE[i, H].getTile());
                     Debug.WriteLine($"|View|  Adding tile: {MAP.TILE[i, H].TILE.Name} to map");
+                    MP.text.Text = $"|View|  Adding tile: {MAP.TILE[i, H].TILE.Name} to map";
+                    MP.progressBar1.Value = Convert.ToInt32((Iterations / ProgressBarMax) * 100);
+                    Debug.WriteLine($"|View|  Progressbar val {(Iterations/ProgressBarMax)*100}");//Math.Round(Iterations /
+                    MP.Refresh();
+
+
                 }
                 H++;
             }
-            //this.MAINAPP.Map.Size = new System.Drawing.Size(w *256, h*256);
-            //this.MAINAPP.Map.AutoScroll = true;
-
+            MP.Close();
         }
         public void RemoveMap(int w, int h)
         {

@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapProgress.Designer.cs">
+      <DependentUpon>MapProgress.cs</DependentUpon>
+    </Compile>
     <Compile Include="MapAndMapPopulator.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="Controller.cs" />
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Default Window.resx">
       <DependentUpon>Default Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapProgress.resx">
+      <DependentUpon>MapProgress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New_Map Window.resx">
       <DependentUpon>New_Map Window.cs</DependentUpon>

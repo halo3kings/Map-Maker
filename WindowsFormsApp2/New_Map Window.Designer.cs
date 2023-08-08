@@ -298,7 +298,7 @@ namespace WindowsFormsApp2
             this.PowerDrain.Location = new System.Drawing.Point(79, 188);
             this.PowerDrain.Name = "PowerDrain";
             this.PowerDrain.Size = new System.Drawing.Size(15, 14);
-            this.PowerDrain.TabIndex = 18;
+            this.PowerDrain.TabIndex = 8;
             this.PowerDrain.UseVisualStyleBackColor = true;
             this.PowerDrain.CheckedChanged += new System.EventHandler(this.checkBoxPowerDrain);
             // 
@@ -317,7 +317,7 @@ namespace WindowsFormsApp2
             this.Avalanche.Location = new System.Drawing.Point(79, 148);
             this.Avalanche.Name = "Avalanche";
             this.Avalanche.Size = new System.Drawing.Size(15, 14);
-            this.Avalanche.TabIndex = 14;
+            this.Avalanche.TabIndex = 6;
             this.Avalanche.UseVisualStyleBackColor = true;
             this.Avalanche.CheckedChanged += new System.EventHandler(this.checkBoxAvalanche);
             // 
@@ -379,7 +379,7 @@ namespace WindowsFormsApp2
             this.TerrainType.Location = new System.Drawing.Point(79, 81);
             this.TerrainType.Name = "TerrainType";
             this.TerrainType.Size = new System.Drawing.Size(138, 21);
-            this.TerrainType.TabIndex = 7;
+            this.TerrainType.TabIndex = 3;
             this.TerrainType.Text = global::WindowsFormsApp2.Properties.Settings.Default.TerrainType;
             this.TerrainType.TextChanged += new System.EventHandler(this.SetTerrainType);
             this.TerrainType.Leave += new System.EventHandler(this.SetTerrainType);
@@ -408,7 +408,7 @@ namespace WindowsFormsApp2
             this.Erosion.Location = new System.Drawing.Point(79, 128);
             this.Erosion.Name = "Erosion";
             this.Erosion.Size = new System.Drawing.Size(15, 14);
-            this.Erosion.TabIndex = 12;
+            this.Erosion.TabIndex = 5;
             this.Erosion.UseVisualStyleBackColor = true;
             this.Erosion.CheckedChanged += new System.EventHandler(this.checkBoxErosion);
             // 
@@ -427,7 +427,7 @@ namespace WindowsFormsApp2
             this.HostileAI.Location = new System.Drawing.Point(79, 108);
             this.HostileAI.Name = "HostileAI";
             this.HostileAI.Size = new System.Drawing.Size(15, 14);
-            this.HostileAI.TabIndex = 10;
+            this.HostileAI.TabIndex = 4;
             this.HostileAI.UseVisualStyleBackColor = true;
             this.HostileAI.CheckedChanged += new System.EventHandler(this.checkBoxHostileAI);
             // 
@@ -437,7 +437,7 @@ namespace WindowsFormsApp2
             this.AirThreat.Location = new System.Drawing.Point(79, 168);
             this.AirThreat.Name = "AirThreat";
             this.AirThreat.Size = new System.Drawing.Size(15, 14);
-            this.AirThreat.TabIndex = 17;
+            this.AirThreat.TabIndex = 7;
             this.AirThreat.UseVisualStyleBackColor = true;
             this.AirThreat.CheckedChanged += new System.EventHandler(this.checkBoxAirThreat);
             // 
@@ -456,7 +456,7 @@ namespace WindowsFormsApp2
             0});
             this.HeightIn.Name = "HeightIn";
             this.HeightIn.Size = new System.Drawing.Size(120, 20);
-            this.HeightIn.TabIndex = 19;
+            this.HeightIn.TabIndex = 2;
             this.HeightIn.Value = global::WindowsFormsApp2.Properties.Settings.Default.Height;
             this.HeightIn.ValueChanged += new System.EventHandler(this.SetHeight);
             // 
@@ -512,7 +512,7 @@ namespace WindowsFormsApp2
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(492, 363);
-            this.Tabs.TabIndex = 1;
+            this.Tabs.TabIndex = 44;
             // 
             // tabPage1
             // 
@@ -563,7 +563,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.tableLayoutPanel4.Controls.Add(this.DefaultPlayerDamage, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.labelCustomDamage, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.CustomDamage, 2, 0);
@@ -582,7 +582,7 @@ namespace WindowsFormsApp2
             this.DefaultPlayerDamage.Location = new System.Drawing.Point(3, 3);
             this.DefaultPlayerDamage.Name = "DefaultPlayerDamage";
             this.DefaultPlayerDamage.Size = new System.Drawing.Size(60, 17);
-            this.DefaultPlayerDamage.TabIndex = 0;
+            this.DefaultPlayerDamage.TabIndex = 10;
             this.DefaultPlayerDamage.Text = "Default";
             this.DefaultPlayerDamage.UseVisualStyleBackColor = true;
             this.DefaultPlayerDamage.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
@@ -591,7 +591,7 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomDamage.AutoSize = true;
-            this.labelCustomDamage.Location = new System.Drawing.Point(122, 5);
+            this.labelCustomDamage.Location = new System.Drawing.Point(121, 5);
             this.labelCustomDamage.Name = "labelCustomDamage";
             this.labelCustomDamage.Size = new System.Drawing.Size(124, 13);
             this.labelCustomDamage.TabIndex = 2;
@@ -600,10 +600,10 @@ namespace WindowsFormsApp2
             // CustomDamage
             // 
             this.CustomDamage.Enabled = false;
-            this.CustomDamage.Location = new System.Drawing.Point(252, 3);
+            this.CustomDamage.Location = new System.Drawing.Point(251, 3);
             this.CustomDamage.Name = "CustomDamage";
             this.CustomDamage.Size = new System.Drawing.Size(120, 20);
-            this.CustomDamage.TabIndex = 3;
+            this.CustomDamage.TabIndex = 11;
             this.CustomDamage.Value = global::WindowsFormsApp2.Properties.Settings.Default.DamageToPlayer;
             this.CustomDamage.ValueChanged += new System.EventHandler(this.CustomValue_DamageToPlayer);
             // 
@@ -622,7 +622,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel5.Controls.Add(this.DefaultDamageFromPlayer, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.labelPlayerCustomDamage, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.CustomPlayerDamage, 2, 0);
@@ -641,7 +641,7 @@ namespace WindowsFormsApp2
             this.DefaultDamageFromPlayer.Location = new System.Drawing.Point(3, 3);
             this.DefaultDamageFromPlayer.Name = "DefaultDamageFromPlayer";
             this.DefaultDamageFromPlayer.Size = new System.Drawing.Size(60, 17);
-            this.DefaultDamageFromPlayer.TabIndex = 0;
+            this.DefaultDamageFromPlayer.TabIndex = 12;
             this.DefaultDamageFromPlayer.Text = "Default";
             this.DefaultDamageFromPlayer.UseVisualStyleBackColor = true;
             this.DefaultDamageFromPlayer.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
@@ -650,7 +650,7 @@ namespace WindowsFormsApp2
             // 
             this.labelPlayerCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPlayerCustomDamage.AutoSize = true;
-            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(123, 7);
+            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(122, 7);
             this.labelPlayerCustomDamage.Name = "labelPlayerCustomDamage";
             this.labelPlayerCustomDamage.Size = new System.Drawing.Size(125, 13);
             this.labelPlayerCustomDamage.TabIndex = 2;
@@ -659,10 +659,10 @@ namespace WindowsFormsApp2
             // CustomPlayerDamage
             // 
             this.CustomPlayerDamage.Enabled = false;
-            this.CustomPlayerDamage.Location = new System.Drawing.Point(254, 3);
+            this.CustomPlayerDamage.Location = new System.Drawing.Point(253, 3);
             this.CustomPlayerDamage.Name = "CustomPlayerDamage";
             this.CustomPlayerDamage.Size = new System.Drawing.Size(120, 20);
-            this.CustomPlayerDamage.TabIndex = 3;
+            this.CustomPlayerDamage.TabIndex = 13;
             this.CustomPlayerDamage.Value = global::WindowsFormsApp2.Properties.Settings.Default.DamageFromPlayer;
             this.CustomPlayerDamage.ValueChanged += new System.EventHandler(this.CustomValue_DamageFromPlayer);
             // 
@@ -681,7 +681,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
             this.tableLayoutPanel8.Controls.Add(this.SpawnChance, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.labelCustomSpawnChance, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.CustomSpawnChance, 2, 0);
@@ -700,7 +700,7 @@ namespace WindowsFormsApp2
             this.SpawnChance.Location = new System.Drawing.Point(3, 3);
             this.SpawnChance.Name = "SpawnChance";
             this.SpawnChance.Size = new System.Drawing.Size(60, 17);
-            this.SpawnChance.TabIndex = 0;
+            this.SpawnChance.TabIndex = 19;
             this.SpawnChance.Text = "Default";
             this.SpawnChance.UseVisualStyleBackColor = true;
             this.SpawnChance.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
@@ -709,7 +709,7 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomSpawnChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpawnChance.AutoSize = true;
-            this.labelCustomSpawnChance.Location = new System.Drawing.Point(124, 8);
+            this.labelCustomSpawnChance.Location = new System.Drawing.Point(123, 8);
             this.labelCustomSpawnChance.Name = "labelCustomSpawnChance";
             this.labelCustomSpawnChance.Size = new System.Drawing.Size(126, 13);
             this.labelCustomSpawnChance.TabIndex = 2;
@@ -718,10 +718,10 @@ namespace WindowsFormsApp2
             // CustomSpawnChance
             // 
             this.CustomSpawnChance.Enabled = false;
-            this.CustomSpawnChance.Location = new System.Drawing.Point(256, 3);
+            this.CustomSpawnChance.Location = new System.Drawing.Point(255, 3);
             this.CustomSpawnChance.Name = "CustomSpawnChance";
             this.CustomSpawnChance.Size = new System.Drawing.Size(119, 20);
-            this.CustomSpawnChance.TabIndex = 3;
+            this.CustomSpawnChance.TabIndex = 20;
             this.CustomSpawnChance.Value = global::WindowsFormsApp2.Properties.Settings.Default.SpawnChance;
             this.CustomSpawnChance.ValueChanged += new System.EventHandler(this.CustomValue_Spawn);
             // 
@@ -740,7 +740,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel9.Controls.Add(this.DefaultHunger, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.labelCustomHunger, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.CustomHunger, 2, 0);
@@ -759,7 +759,7 @@ namespace WindowsFormsApp2
             this.DefaultHunger.Location = new System.Drawing.Point(3, 3);
             this.DefaultHunger.Name = "DefaultHunger";
             this.DefaultHunger.Size = new System.Drawing.Size(60, 17);
-            this.DefaultHunger.TabIndex = 0;
+            this.DefaultHunger.TabIndex = 17;
             this.DefaultHunger.Text = "Default";
             this.DefaultHunger.UseVisualStyleBackColor = true;
             this.DefaultHunger.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
@@ -768,7 +768,7 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomHunger.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomHunger.AutoSize = true;
-            this.labelCustomHunger.Location = new System.Drawing.Point(123, 7);
+            this.labelCustomHunger.Location = new System.Drawing.Point(122, 7);
             this.labelCustomHunger.Name = "labelCustomHunger";
             this.labelCustomHunger.Size = new System.Drawing.Size(125, 13);
             this.labelCustomHunger.TabIndex = 2;
@@ -777,10 +777,10 @@ namespace WindowsFormsApp2
             // CustomHunger
             // 
             this.CustomHunger.Enabled = false;
-            this.CustomHunger.Location = new System.Drawing.Point(254, 3);
+            this.CustomHunger.Location = new System.Drawing.Point(253, 3);
             this.CustomHunger.Name = "CustomHunger";
             this.CustomHunger.Size = new System.Drawing.Size(120, 20);
-            this.CustomHunger.TabIndex = 3;
+            this.CustomHunger.TabIndex = 18;
             this.CustomHunger.Value = global::WindowsFormsApp2.Properties.Settings.Default.Hunger;
             this.CustomHunger.ValueChanged += new System.EventHandler(this.CustomValue_HungerValue);
             // 
@@ -799,7 +799,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel7.Controls.Add(this.DefaultSpeed, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelCustomSpeed, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelDebrisMultiplyer, 1, 1);
@@ -821,7 +821,7 @@ namespace WindowsFormsApp2
             this.DefaultSpeed.Location = new System.Drawing.Point(3, 3);
             this.DefaultSpeed.Name = "DefaultSpeed";
             this.DefaultSpeed.Size = new System.Drawing.Size(60, 17);
-            this.DefaultSpeed.TabIndex = 0;
+            this.DefaultSpeed.TabIndex = 14;
             this.DefaultSpeed.Text = "Default";
             this.DefaultSpeed.UseVisualStyleBackColor = true;
             this.DefaultSpeed.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
@@ -830,7 +830,7 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpeed.AutoSize = true;
-            this.labelCustomSpeed.Location = new System.Drawing.Point(123, 9);
+            this.labelCustomSpeed.Location = new System.Drawing.Point(122, 9);
             this.labelCustomSpeed.Name = "labelCustomSpeed";
             this.labelCustomSpeed.Size = new System.Drawing.Size(125, 13);
             this.labelCustomSpeed.TabIndex = 2;
@@ -840,7 +840,7 @@ namespace WindowsFormsApp2
             // 
             this.labelDebrisMultiplyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDebrisMultiplyer.AutoSize = true;
-            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(123, 41);
+            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(122, 41);
             this.labelDebrisMultiplyer.Name = "labelDebrisMultiplyer";
             this.labelDebrisMultiplyer.Size = new System.Drawing.Size(125, 13);
             this.labelDebrisMultiplyer.TabIndex = 3;
@@ -849,20 +849,20 @@ namespace WindowsFormsApp2
             // CustomSpeed
             // 
             this.CustomSpeed.Enabled = false;
-            this.CustomSpeed.Location = new System.Drawing.Point(254, 3);
+            this.CustomSpeed.Location = new System.Drawing.Point(253, 3);
             this.CustomSpeed.Name = "CustomSpeed";
             this.CustomSpeed.Size = new System.Drawing.Size(120, 20);
-            this.CustomSpeed.TabIndex = 4;
+            this.CustomSpeed.TabIndex = 15;
             this.CustomSpeed.Value = global::WindowsFormsApp2.Properties.Settings.Default.CreatureSpeed;
             this.CustomSpeed.ValueChanged += new System.EventHandler(this.CustomValue_CreatureSpeed);
             // 
             // DebrisMultiplier
             // 
             this.DebrisMultiplier.Enabled = false;
-            this.DebrisMultiplier.Location = new System.Drawing.Point(254, 35);
+            this.DebrisMultiplier.Location = new System.Drawing.Point(253, 35);
             this.DebrisMultiplier.Name = "DebrisMultiplier";
             this.DebrisMultiplier.Size = new System.Drawing.Size(120, 20);
-            this.DebrisMultiplier.TabIndex = 5;
+            this.DebrisMultiplier.TabIndex = 16;
             this.DebrisMultiplier.Value = global::WindowsFormsApp2.Properties.Settings.Default.DebrisMultiplier;
             this.DebrisMultiplier.ValueChanged += new System.EventHandler(this.CustomValue_DebrisMultiplier);
             // 
@@ -908,7 +908,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel13.Controls.Add(this.DefaultRepairCost, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.labelRepairCost, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.RepairCost, 2, 0);
@@ -927,7 +927,7 @@ namespace WindowsFormsApp2
             this.DefaultRepairCost.Location = new System.Drawing.Point(3, 3);
             this.DefaultRepairCost.Name = "DefaultRepairCost";
             this.DefaultRepairCost.Size = new System.Drawing.Size(60, 17);
-            this.DefaultRepairCost.TabIndex = 0;
+            this.DefaultRepairCost.TabIndex = 23;
             this.DefaultRepairCost.Text = "Default";
             this.DefaultRepairCost.UseVisualStyleBackColor = true;
             this.DefaultRepairCost.CheckedChanged += new System.EventHandler(this.checkBox14_CheckedChanged);
@@ -936,7 +936,7 @@ namespace WindowsFormsApp2
             // 
             this.labelRepairCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRepairCost.AutoSize = true;
-            this.labelRepairCost.Location = new System.Drawing.Point(123, 5);
+            this.labelRepairCost.Location = new System.Drawing.Point(122, 5);
             this.labelRepairCost.Name = "labelRepairCost";
             this.labelRepairCost.Size = new System.Drawing.Size(125, 13);
             this.labelRepairCost.TabIndex = 2;
@@ -945,10 +945,10 @@ namespace WindowsFormsApp2
             // RepairCost
             // 
             this.RepairCost.Enabled = false;
-            this.RepairCost.Location = new System.Drawing.Point(254, 3);
+            this.RepairCost.Location = new System.Drawing.Point(253, 3);
             this.RepairCost.Name = "RepairCost";
             this.RepairCost.Size = new System.Drawing.Size(120, 20);
-            this.RepairCost.TabIndex = 3;
+            this.RepairCost.TabIndex = 24;
             this.RepairCost.Value = global::WindowsFormsApp2.Properties.Settings.Default.RepairCost;
             this.RepairCost.ValueChanged += new System.EventHandler(this.CustomValue_RepairCost);
             // 
@@ -967,7 +967,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel6.Controls.Add(this.DefaultErosionSpeed, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelCustomErosionSpeed, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.CustomErosionSpeed, 2, 0);
@@ -986,7 +986,7 @@ namespace WindowsFormsApp2
             this.DefaultErosionSpeed.Location = new System.Drawing.Point(3, 3);
             this.DefaultErosionSpeed.Name = "DefaultErosionSpeed";
             this.DefaultErosionSpeed.Size = new System.Drawing.Size(60, 17);
-            this.DefaultErosionSpeed.TabIndex = 0;
+            this.DefaultErosionSpeed.TabIndex = 21;
             this.DefaultErosionSpeed.Text = "Default";
             this.DefaultErosionSpeed.UseVisualStyleBackColor = true;
             this.DefaultErosionSpeed.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
@@ -995,7 +995,7 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomErosionSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomErosionSpeed.AutoSize = true;
-            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(123, 5);
+            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(122, 5);
             this.labelCustomErosionSpeed.Name = "labelCustomErosionSpeed";
             this.labelCustomErosionSpeed.Size = new System.Drawing.Size(125, 13);
             this.labelCustomErosionSpeed.TabIndex = 2;
@@ -1004,10 +1004,10 @@ namespace WindowsFormsApp2
             // CustomErosionSpeed
             // 
             this.CustomErosionSpeed.Enabled = false;
-            this.CustomErosionSpeed.Location = new System.Drawing.Point(254, 3);
+            this.CustomErosionSpeed.Location = new System.Drawing.Point(253, 3);
             this.CustomErosionSpeed.Name = "CustomErosionSpeed";
             this.CustomErosionSpeed.Size = new System.Drawing.Size(120, 20);
-            this.CustomErosionSpeed.TabIndex = 3;
+            this.CustomErosionSpeed.TabIndex = 22;
             this.CustomErosionSpeed.Value = global::WindowsFormsApp2.Properties.Settings.Default.ErosionSpeed;
             this.CustomErosionSpeed.ValueChanged += new System.EventHandler(this.CustomValue_Erosion);
             // 
@@ -1052,7 +1052,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel12.ColumnCount = 3;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.82609F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.17391F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.tableLayoutPanel12.Controls.Add(this.DefaultAvalancheFrequency, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.labelCustomAvalancheFrequency, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.CustomAvalanchFrequncy, 2, 0);
@@ -1071,7 +1071,7 @@ namespace WindowsFormsApp2
             this.DefaultAvalancheFrequency.Location = new System.Drawing.Point(3, 3);
             this.DefaultAvalancheFrequency.Name = "DefaultAvalancheFrequency";
             this.DefaultAvalancheFrequency.Size = new System.Drawing.Size(60, 17);
-            this.DefaultAvalancheFrequency.TabIndex = 0;
+            this.DefaultAvalancheFrequency.TabIndex = 27;
             this.DefaultAvalancheFrequency.Text = "Default";
             this.DefaultAvalancheFrequency.UseVisualStyleBackColor = true;
             this.DefaultAvalancheFrequency.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
@@ -1082,17 +1082,17 @@ namespace WindowsFormsApp2
             this.labelCustomAvalancheFrequency.AutoSize = true;
             this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(122, 5);
             this.labelCustomAvalancheFrequency.Name = "labelCustomAvalancheFrequency";
-            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(124, 13);
+            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(123, 13);
             this.labelCustomAvalancheFrequency.TabIndex = 2;
             this.labelCustomAvalancheFrequency.Text = "Custom Frequency:";
             // 
             // CustomAvalanchFrequncy
             // 
             this.CustomAvalanchFrequncy.Enabled = false;
-            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(252, 3);
+            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(251, 3);
             this.CustomAvalanchFrequncy.Name = "CustomAvalanchFrequncy";
             this.CustomAvalanchFrequncy.Size = new System.Drawing.Size(120, 20);
-            this.CustomAvalanchFrequncy.TabIndex = 3;
+            this.CustomAvalanchFrequncy.TabIndex = 28;
             this.CustomAvalanchFrequncy.Value = global::WindowsFormsApp2.Properties.Settings.Default.Frequency;
             this.CustomAvalanchFrequncy.ValueChanged += new System.EventHandler(this.CustomValue_AvalancheFrequency);
             // 
@@ -1111,7 +1111,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel11.Controls.Add(this.defaultAvalancheDamageToPlayers, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.labelCustomAvalancheDamage, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.CustomAvalanchDamage, 2, 0);
@@ -1130,7 +1130,7 @@ namespace WindowsFormsApp2
             this.defaultAvalancheDamageToPlayers.Location = new System.Drawing.Point(3, 3);
             this.defaultAvalancheDamageToPlayers.Name = "defaultAvalancheDamageToPlayers";
             this.defaultAvalancheDamageToPlayers.Size = new System.Drawing.Size(60, 17);
-            this.defaultAvalancheDamageToPlayers.TabIndex = 0;
+            this.defaultAvalancheDamageToPlayers.TabIndex = 25;
             this.defaultAvalancheDamageToPlayers.Text = "Default";
             this.defaultAvalancheDamageToPlayers.UseVisualStyleBackColor = true;
             this.defaultAvalancheDamageToPlayers.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
@@ -1139,7 +1139,7 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomAvalancheDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheDamage.AutoSize = true;
-            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(123, 5);
+            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(122, 5);
             this.labelCustomAvalancheDamage.Name = "labelCustomAvalancheDamage";
             this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(125, 13);
             this.labelCustomAvalancheDamage.TabIndex = 2;
@@ -1148,10 +1148,10 @@ namespace WindowsFormsApp2
             // CustomAvalanchDamage
             // 
             this.CustomAvalanchDamage.Enabled = false;
-            this.CustomAvalanchDamage.Location = new System.Drawing.Point(254, 3);
+            this.CustomAvalanchDamage.Location = new System.Drawing.Point(253, 3);
             this.CustomAvalanchDamage.Name = "CustomAvalanchDamage";
             this.CustomAvalanchDamage.Size = new System.Drawing.Size(120, 20);
-            this.CustomAvalanchDamage.TabIndex = 3;
+            this.CustomAvalanchDamage.TabIndex = 26;
             this.CustomAvalanchDamage.Value = global::WindowsFormsApp2.Properties.Settings.Default.AvalancheDamageToPlayer;
             this.CustomAvalanchDamage.ValueChanged += new System.EventHandler(this.CustomValue_AvalancheDamageToPlayer);
             // 
@@ -1196,7 +1196,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel15.ColumnCount = 3;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.10695F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.89305F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
             this.tableLayoutPanel15.Controls.Add(this.DefaultAirQuantity, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.labelAirQuantity, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.AirQuantity, 2, 0);
@@ -1215,7 +1215,7 @@ namespace WindowsFormsApp2
             this.DefaultAirQuantity.Location = new System.Drawing.Point(3, 3);
             this.DefaultAirQuantity.Name = "DefaultAirQuantity";
             this.DefaultAirQuantity.Size = new System.Drawing.Size(60, 17);
-            this.DefaultAirQuantity.TabIndex = 0;
+            this.DefaultAirQuantity.TabIndex = 31;
             this.DefaultAirQuantity.Text = "Default";
             this.DefaultAirQuantity.UseVisualStyleBackColor = true;
             this.DefaultAirQuantity.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
@@ -1226,17 +1226,17 @@ namespace WindowsFormsApp2
             this.labelAirQuantity.AutoSize = true;
             this.labelAirQuantity.Location = new System.Drawing.Point(104, 5);
             this.labelAirQuantity.Name = "labelAirQuantity";
-            this.labelAirQuantity.Size = new System.Drawing.Size(145, 13);
+            this.labelAirQuantity.Size = new System.Drawing.Size(144, 13);
             this.labelAirQuantity.TabIndex = 2;
             this.labelAirQuantity.Text = "Custom Level:";
             // 
             // AirQuantity
             // 
             this.AirQuantity.Enabled = false;
-            this.AirQuantity.Location = new System.Drawing.Point(255, 3);
+            this.AirQuantity.Location = new System.Drawing.Point(254, 3);
             this.AirQuantity.Name = "AirQuantity";
             this.AirQuantity.Size = new System.Drawing.Size(120, 20);
-            this.AirQuantity.TabIndex = 3;
+            this.AirQuantity.TabIndex = 32;
             this.AirQuantity.Value = global::WindowsFormsApp2.Properties.Settings.Default.AirQuantity;
             this.AirQuantity.ValueChanged += new System.EventHandler(this.CustomValue_AirQuantity);
             // 
@@ -1255,7 +1255,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel16.ColumnCount = 3;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.74074F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.25926F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
             this.tableLayoutPanel16.Controls.Add(this.DefaultRateOfConsumption, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.labelRateOfConsumption, 1, 0);
             this.tableLayoutPanel16.Controls.Add(this.RateOfConsumption, 2, 0);
@@ -1274,7 +1274,7 @@ namespace WindowsFormsApp2
             this.DefaultRateOfConsumption.Location = new System.Drawing.Point(3, 3);
             this.DefaultRateOfConsumption.Name = "DefaultRateOfConsumption";
             this.DefaultRateOfConsumption.Size = new System.Drawing.Size(60, 17);
-            this.DefaultRateOfConsumption.TabIndex = 0;
+            this.DefaultRateOfConsumption.TabIndex = 29;
             this.DefaultRateOfConsumption.Text = "Default";
             this.DefaultRateOfConsumption.UseVisualStyleBackColor = true;
             this.DefaultRateOfConsumption.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
@@ -1283,7 +1283,7 @@ namespace WindowsFormsApp2
             // 
             this.labelRateOfConsumption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRateOfConsumption.AutoSize = true;
-            this.labelRateOfConsumption.Location = new System.Drawing.Point(106, 5);
+            this.labelRateOfConsumption.Location = new System.Drawing.Point(105, 5);
             this.labelRateOfConsumption.Name = "labelRateOfConsumption";
             this.labelRateOfConsumption.Size = new System.Drawing.Size(143, 13);
             this.labelRateOfConsumption.TabIndex = 2;
@@ -1292,10 +1292,10 @@ namespace WindowsFormsApp2
             // RateOfConsumption
             // 
             this.RateOfConsumption.Enabled = false;
-            this.RateOfConsumption.Location = new System.Drawing.Point(255, 3);
+            this.RateOfConsumption.Location = new System.Drawing.Point(254, 3);
             this.RateOfConsumption.Name = "RateOfConsumption";
             this.RateOfConsumption.Size = new System.Drawing.Size(120, 20);
-            this.RateOfConsumption.TabIndex = 3;
+            this.RateOfConsumption.TabIndex = 30;
             this.RateOfConsumption.UseWaitCursor = true;
             this.RateOfConsumption.Value = global::WindowsFormsApp2.Properties.Settings.Default.RateOfConsumption;
             this.RateOfConsumption.ValueChanged += new System.EventHandler(this.CustomValue_RateOfConsumption);
@@ -1340,7 +1340,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel19.ColumnCount = 3;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
             this.tableLayoutPanel19.Controls.Add(this.DefaultPowerDrain, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.label21PowerDrain, 1, 0);
             this.tableLayoutPanel19.Controls.Add(this.PowerDrainMultiplier, 2, 0);
@@ -1359,7 +1359,7 @@ namespace WindowsFormsApp2
             this.DefaultPowerDrain.Location = new System.Drawing.Point(3, 3);
             this.DefaultPowerDrain.Name = "DefaultPowerDrain";
             this.DefaultPowerDrain.Size = new System.Drawing.Size(60, 17);
-            this.DefaultPowerDrain.TabIndex = 0;
+            this.DefaultPowerDrain.TabIndex = 33;
             this.DefaultPowerDrain.Text = "Default";
             this.DefaultPowerDrain.UseVisualStyleBackColor = true;
             this.DefaultPowerDrain.CheckStateChanged += new System.EventHandler(this.checkBox18_CheckedChanged);
@@ -1368,7 +1368,7 @@ namespace WindowsFormsApp2
             // 
             this.label21PowerDrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label21PowerDrain.AutoSize = true;
-            this.label21PowerDrain.Location = new System.Drawing.Point(99, 5);
+            this.label21PowerDrain.Location = new System.Drawing.Point(98, 5);
             this.label21PowerDrain.Name = "label21PowerDrain";
             this.label21PowerDrain.Size = new System.Drawing.Size(152, 13);
             this.label21PowerDrain.TabIndex = 2;
@@ -1377,10 +1377,10 @@ namespace WindowsFormsApp2
             // PowerDrainMultiplier
             // 
             this.PowerDrainMultiplier.Enabled = false;
-            this.PowerDrainMultiplier.Location = new System.Drawing.Point(257, 3);
+            this.PowerDrainMultiplier.Location = new System.Drawing.Point(256, 3);
             this.PowerDrainMultiplier.Name = "PowerDrainMultiplier";
             this.PowerDrainMultiplier.Size = new System.Drawing.Size(118, 20);
-            this.PowerDrainMultiplier.TabIndex = 3;
+            this.PowerDrainMultiplier.TabIndex = 34;
             this.PowerDrainMultiplier.Value = global::WindowsFormsApp2.Properties.Settings.Default.PowerDrainMultiplier;
             this.PowerDrainMultiplier.ValueChanged += new System.EventHandler(this.CustomValue_PowerDrainMultiplier);
             // 
@@ -1431,7 +1431,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel24.ColumnCount = 3;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.62948F));
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.37052F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
             this.tableLayoutPanel24.Controls.Add(this.ActiveReachTheTile, 0, 0);
             this.tableLayoutPanel24.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
@@ -1446,7 +1446,7 @@ namespace WindowsFormsApp2
             this.ActiveReachTheTile.Location = new System.Drawing.Point(3, 3);
             this.ActiveReachTheTile.Name = "ActiveReachTheTile";
             this.ActiveReachTheTile.Size = new System.Drawing.Size(56, 17);
-            this.ActiveReachTheTile.TabIndex = 0;
+            this.ActiveReachTheTile.TabIndex = 43;
             this.ActiveReachTheTile.Text = "Active";
             this.ActiveReachTheTile.UseVisualStyleBackColor = true;
             this.ActiveReachTheTile.CheckedChanged += new System.EventHandler(this.checkbox23_CheckedChanged);
@@ -1466,7 +1466,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel23.ColumnCount = 3;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.53312F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.46688F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel23.Controls.Add(this.ActiveRescue, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.labelRescueUnit, 1, 0);
             this.tableLayoutPanel23.Controls.Add(this.comboBoxRescueUnit, 2, 0);
@@ -1483,7 +1483,7 @@ namespace WindowsFormsApp2
             this.ActiveRescue.Location = new System.Drawing.Point(3, 3);
             this.ActiveRescue.Name = "ActiveRescue";
             this.ActiveRescue.Size = new System.Drawing.Size(56, 17);
-            this.ActiveRescue.TabIndex = 0;
+            this.ActiveRescue.TabIndex = 41;
             this.ActiveRescue.Text = "Active";
             this.ActiveRescue.UseVisualStyleBackColor = true;
             this.ActiveRescue.CheckedChanged += new System.EventHandler(this.checkBox22_CheckedChanged);
@@ -1494,7 +1494,7 @@ namespace WindowsFormsApp2
             this.labelRescueUnit.AutoSize = true;
             this.labelRescueUnit.Location = new System.Drawing.Point(109, 5);
             this.labelRescueUnit.Name = "labelRescueUnit";
-            this.labelRescueUnit.Size = new System.Drawing.Size(132, 13);
+            this.labelRescueUnit.Size = new System.Drawing.Size(131, 13);
             this.labelRescueUnit.TabIndex = 2;
             this.labelRescueUnit.Text = "Specify unit:";
             // 
@@ -1522,10 +1522,10 @@ namespace WindowsFormsApp2
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxRescueUnit.Location = new System.Drawing.Point(247, 3);
+            this.comboBoxRescueUnit.Location = new System.Drawing.Point(246, 3);
             this.comboBoxRescueUnit.Name = "comboBoxRescueUnit";
             this.comboBoxRescueUnit.Size = new System.Drawing.Size(128, 21);
-            this.comboBoxRescueUnit.TabIndex = 8;
+            this.comboBoxRescueUnit.TabIndex = 42;
             this.comboBoxRescueUnit.Text = global::WindowsFormsApp2.Properties.Settings.Default.SpecificRescueUnit;
             this.comboBoxRescueUnit.TextChanged += new System.EventHandler(this.CustomValue_SpecificRescueUnit);
             // 
@@ -1544,7 +1544,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel22.ColumnCount = 3;
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.23602F));
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.76398F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.tableLayoutPanel22.Controls.Add(this.ActiveSpecificUnit, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.labelSpecificUnit, 1, 0);
             this.tableLayoutPanel22.Controls.Add(this.comboBoxSpecificUnit, 2, 0);
@@ -1561,7 +1561,7 @@ namespace WindowsFormsApp2
             this.ActiveSpecificUnit.Location = new System.Drawing.Point(3, 3);
             this.ActiveSpecificUnit.Name = "ActiveSpecificUnit";
             this.ActiveSpecificUnit.Size = new System.Drawing.Size(56, 17);
-            this.ActiveSpecificUnit.TabIndex = 0;
+            this.ActiveSpecificUnit.TabIndex = 39;
             this.ActiveSpecificUnit.Text = "Active";
             this.ActiveSpecificUnit.UseVisualStyleBackColor = true;
             this.ActiveSpecificUnit.CheckedChanged += new System.EventHandler(this.checkBox21_CheckedChanged);
@@ -1572,7 +1572,7 @@ namespace WindowsFormsApp2
             this.labelSpecificUnit.AutoSize = true;
             this.labelSpecificUnit.Location = new System.Drawing.Point(108, 5);
             this.labelSpecificUnit.Name = "labelSpecificUnit";
-            this.labelSpecificUnit.Size = new System.Drawing.Size(138, 13);
+            this.labelSpecificUnit.Size = new System.Drawing.Size(137, 13);
             this.labelSpecificUnit.TabIndex = 2;
             this.labelSpecificUnit.Text = "Specify unit:";
             // 
@@ -1600,10 +1600,10 @@ namespace WindowsFormsApp2
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(252, 3);
+            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(251, 3);
             this.comboBoxSpecificUnit.Name = "comboBoxSpecificUnit";
             this.comboBoxSpecificUnit.Size = new System.Drawing.Size(123, 21);
-            this.comboBoxSpecificUnit.TabIndex = 8;
+            this.comboBoxSpecificUnit.TabIndex = 40;
             this.comboBoxSpecificUnit.Text = global::WindowsFormsApp2.Properties.Settings.Default.SpecificUnit;
             this.comboBoxSpecificUnit.TextChanged += new System.EventHandler(this.CustomValue_SpecificUnit);
             // 
@@ -1622,7 +1622,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel20.ColumnCount = 3;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.10526F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.89474F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.tableLayoutPanel20.Controls.Add(this.ActiveSpecificBuilding, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.labelSpecificBuilding, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.comboBoxSpecificBuilding, 2, 0);
@@ -1639,7 +1639,7 @@ namespace WindowsFormsApp2
             this.ActiveSpecificBuilding.Location = new System.Drawing.Point(3, 3);
             this.ActiveSpecificBuilding.Name = "ActiveSpecificBuilding";
             this.ActiveSpecificBuilding.Size = new System.Drawing.Size(56, 17);
-            this.ActiveSpecificBuilding.TabIndex = 0;
+            this.ActiveSpecificBuilding.TabIndex = 37;
             this.ActiveSpecificBuilding.Text = "Active";
             this.ActiveSpecificBuilding.UseVisualStyleBackColor = true;
             this.ActiveSpecificBuilding.CheckedChanged += new System.EventHandler(this.checkBox20_CheckedChanged);
@@ -1650,7 +1650,7 @@ namespace WindowsFormsApp2
             this.labelSpecificBuilding.AutoSize = true;
             this.labelSpecificBuilding.Location = new System.Drawing.Point(108, 5);
             this.labelSpecificBuilding.Name = "labelSpecificBuilding";
-            this.labelSpecificBuilding.Size = new System.Drawing.Size(139, 13);
+            this.labelSpecificBuilding.Size = new System.Drawing.Size(138, 13);
             this.labelSpecificBuilding.TabIndex = 2;
             this.labelSpecificBuilding.Text = "Specify Building:";
             // 
@@ -1673,10 +1673,10 @@ namespace WindowsFormsApp2
             "Infrastructure",
             "Microwave Emitters",
             " "});
-            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(253, 3);
+            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(252, 3);
             this.comboBoxSpecificBuilding.Name = "comboBoxSpecificBuilding";
             this.comboBoxSpecificBuilding.Size = new System.Drawing.Size(122, 21);
-            this.comboBoxSpecificBuilding.TabIndex = 9;
+            this.comboBoxSpecificBuilding.TabIndex = 38;
             this.comboBoxSpecificBuilding.Text = global::WindowsFormsApp2.Properties.Settings.Default.SpecificBuilding;
             this.comboBoxSpecificBuilding.TextChanged += new System.EventHandler(this.CustomValue_SpecificBuilding);
             // 
@@ -1695,7 +1695,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel21.ColumnCount = 3;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.36364F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.63636F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
             this.tableLayoutPanel21.Controls.Add(this.ActiveCrystalCollection, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.labelCrystalCollection, 1, 0);
             this.tableLayoutPanel21.Controls.Add(this.NeededCrystals, 2, 0);
@@ -1714,7 +1714,7 @@ namespace WindowsFormsApp2
             this.ActiveCrystalCollection.Location = new System.Drawing.Point(3, 3);
             this.ActiveCrystalCollection.Name = "ActiveCrystalCollection";
             this.ActiveCrystalCollection.Size = new System.Drawing.Size(56, 17);
-            this.ActiveCrystalCollection.TabIndex = 0;
+            this.ActiveCrystalCollection.TabIndex = 35;
             this.ActiveCrystalCollection.Text = "Active";
             this.ActiveCrystalCollection.UseVisualStyleBackColor = true;
             this.ActiveCrystalCollection.CheckedChanged += new System.EventHandler(this.checkBox19_CheckedChanged);
@@ -1725,16 +1725,16 @@ namespace WindowsFormsApp2
             this.labelCrystalCollection.AutoSize = true;
             this.labelCrystalCollection.Location = new System.Drawing.Point(107, 5);
             this.labelCrystalCollection.Name = "labelCrystalCollection";
-            this.labelCrystalCollection.Size = new System.Drawing.Size(142, 13);
+            this.labelCrystalCollection.Size = new System.Drawing.Size(141, 13);
             this.labelCrystalCollection.TabIndex = 2;
             this.labelCrystalCollection.Text = "Custom Crystal Amount";
             // 
             // NeededCrystals
             // 
-            this.NeededCrystals.Location = new System.Drawing.Point(255, 3);
+            this.NeededCrystals.Location = new System.Drawing.Point(254, 3);
             this.NeededCrystals.Name = "NeededCrystals";
             this.NeededCrystals.Size = new System.Drawing.Size(120, 20);
-            this.NeededCrystals.TabIndex = 3;
+            this.NeededCrystals.TabIndex = 36;
             this.NeededCrystals.Value = global::WindowsFormsApp2.Properties.Settings.Default.CrystalsCount;
             this.NeededCrystals.ValueChanged += new System.EventHandler(this.CustomValue_CrystalsCount);
             // 
@@ -1762,7 +1762,7 @@ namespace WindowsFormsApp2
             this.button2.Location = new System.Drawing.Point(406, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 99;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -1771,7 +1771,7 @@ namespace WindowsFormsApp2
             this.button1.Location = new System.Drawing.Point(325, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 98;
             this.button1.Text = "Apply";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.ApplyButton);

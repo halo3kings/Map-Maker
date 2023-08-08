@@ -42,85 +42,85 @@ namespace WindowsFormsApp2
             this.Quit = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ToolBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.EyeDropperTool = new System.Windows.Forms.PictureBox();
             this.BoxSelectTool = new System.Windows.Forms.PictureBox();
             this.SelectTool = new System.Windows.Forms.PictureBox();
             this.PaintBrush = new System.Windows.Forms.PictureBox();
             this.EraserTool = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.AssetPannel = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tiles = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.FloorIcon = new System.Windows.Forms.PictureBox();
+            this.DirtIcon = new System.Windows.Forms.PictureBox();
+            this.LooseRockIcon = new System.Windows.Forms.PictureBox();
+            this.HardRockIcon = new System.Windows.Forms.PictureBox();
+            this.SolidRockIcon = new System.Windows.Forms.PictureBox();
+            this.WaterIcon = new System.Windows.Forms.PictureBox();
+            this.Rubble1Icon = new System.Windows.Forms.PictureBox();
+            this.Rubble2Icon = new System.Windows.Forms.PictureBox();
+            this.Rubble3Icon = new System.Windows.Forms.PictureBox();
+            this.LavaIcon = new System.Windows.Forms.PictureBox();
+            this.LavaErosion1Icon = new System.Windows.Forms.PictureBox();
+            this.LavaErosion2Icon = new System.Windows.Forms.PictureBox();
             this.Buildings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.ToolStoreIcon = new System.Windows.Forms.PictureBox();
+            this.TelePadIcon = new System.Windows.Forms.PictureBox();
+            this.DockIcon = new System.Windows.Forms.PictureBox();
+            this.PowerPlantIcon = new System.Windows.Forms.PictureBox();
+            this.SuportStationIcon = new System.Windows.Forms.PictureBox();
+            this.UpgradeStationIcon = new System.Windows.Forms.PictureBox();
+            this.OreRefineIcon = new System.Windows.Forms.PictureBox();
+            this.GeoCenterIcon = new System.Windows.Forms.PictureBox();
+            this.SuperTeleIcon = new System.Windows.Forms.PictureBox();
+            this.LazerIcon = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.Workspace = new System.Windows.Forms.Panel();
             this.Map = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.modelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.ToolBox.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EyeDropperTool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxSelectTool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectTool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaintBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EraserTool)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.AssetPannel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Tiles.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FloorIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DirtIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LooseRockIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HardRockIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SolidRockIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WaterIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rubble1Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rubble2Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rubble3Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LavaIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LavaErosion1Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LavaErosion2Icon)).BeginInit();
             this.Buildings.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ToolStoreIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TelePadIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DockIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PowerPlantIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuportStationIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpgradeStationIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OreRefineIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GeoCenterIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuperTeleIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LazerIcon)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.Workspace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -227,17 +227,17 @@ namespace WindowsFormsApp2
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
             // 
-            // groupBox1
+            // ToolBox
             // 
-            this.groupBox1.Controls.Add(this.tableLayoutPanel2);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox1.Location = new System.Drawing.Point(0, 24);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(50, 559);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tools";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.ToolBox.Controls.Add(this.tableLayoutPanel2);
+            this.ToolBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ToolBox.Location = new System.Drawing.Point(0, 24);
+            this.ToolBox.Name = "ToolBox";
+            this.ToolBox.Size = new System.Drawing.Size(50, 559);
+            this.ToolBox.TabIndex = 1;
+            this.ToolBox.TabStop = false;
+            this.ToolBox.Text = "Tools";
+            this.ToolBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // tableLayoutPanel2
             // 
@@ -322,17 +322,17 @@ namespace WindowsFormsApp2
             this.EraserTool.TabIndex = 5;
             this.EraserTool.TabStop = false;
             // 
-            // groupBox3
+            // AssetPannel
             // 
-            this.groupBox3.Controls.Add(this.tabControl1);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox3.Location = new System.Drawing.Point(760, 24);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(274, 559);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Assets";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.AssetPannel.Controls.Add(this.tabControl1);
+            this.AssetPannel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.AssetPannel.Location = new System.Drawing.Point(760, 24);
+            this.AssetPannel.Name = "AssetPannel";
+            this.AssetPannel.Size = new System.Drawing.Size(274, 559);
+            this.AssetPannel.TabIndex = 4;
+            this.AssetPannel.TabStop = false;
+            this.AssetPannel.Text = "Assets";
+            this.AssetPannel.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // tabControl1
             // 
@@ -363,18 +363,18 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox3, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox4, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox5, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox6, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox7, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox8, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox9, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox19, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox20, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox21, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.FloorIcon, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.DirtIcon, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.LooseRockIcon, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.HardRockIcon, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.SolidRockIcon, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.WaterIcon, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.Rubble1Icon, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.Rubble2Icon, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.Rubble3Icon, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.LavaIcon, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.LavaErosion1Icon, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.LavaErosion2Icon, 0, 5);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -390,150 +390,150 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel3.Size = new System.Drawing.Size(254, 508);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // pictureBox1
+            // FloorIcon
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.FloorTileAsset);
+            this.FloorIcon.BackColor = System.Drawing.Color.Transparent;
+            this.FloorIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FloorIcon.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon;
+            this.FloorIcon.Location = new System.Drawing.Point(3, 3);
+            this.FloorIcon.Name = "FloorIcon";
+            this.FloorIcon.Size = new System.Drawing.Size(121, 84);
+            this.FloorIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FloorIcon.TabIndex = 0;
+            this.FloorIcon.TabStop = false;
+            this.FloorIcon.Click += new System.EventHandler(this.FloorTileAsset);
             // 
-            // pictureBox2
+            // DirtIcon
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.Dirt_Icon;
-            this.pictureBox2.Location = new System.Drawing.Point(121, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.DirtTileAsset);
+            this.DirtIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DirtIcon.Image = global::WindowsFormsApp2.Properties.Resources.Dirt_Icon;
+            this.DirtIcon.Location = new System.Drawing.Point(130, 3);
+            this.DirtIcon.Name = "DirtIcon";
+            this.DirtIcon.Size = new System.Drawing.Size(121, 84);
+            this.DirtIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DirtIcon.TabIndex = 1;
+            this.DirtIcon.TabStop = false;
+            this.DirtIcon.Click += new System.EventHandler(this.DirtTileAsset);
             // 
-            // pictureBox3
+            // LooseRockIcon
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 93);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.LooseRockAsset);
+            this.LooseRockIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LooseRockIcon.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon;
+            this.LooseRockIcon.Location = new System.Drawing.Point(3, 93);
+            this.LooseRockIcon.Name = "LooseRockIcon";
+            this.LooseRockIcon.Size = new System.Drawing.Size(121, 84);
+            this.LooseRockIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LooseRockIcon.TabIndex = 2;
+            this.LooseRockIcon.TabStop = false;
+            this.LooseRockIcon.Click += new System.EventHandler(this.LooseRockAsset);
             // 
-            // pictureBox4
+            // HardRockIcon
             // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon;
-            this.pictureBox4.Location = new System.Drawing.Point(121, 93);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.HardRockAsset);
+            this.HardRockIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HardRockIcon.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon;
+            this.HardRockIcon.Location = new System.Drawing.Point(130, 93);
+            this.HardRockIcon.Name = "HardRockIcon";
+            this.HardRockIcon.Size = new System.Drawing.Size(121, 84);
+            this.HardRockIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.HardRockIcon.TabIndex = 3;
+            this.HardRockIcon.TabStop = false;
+            this.HardRockIcon.Click += new System.EventHandler(this.HardRockAsset);
             // 
-            // pictureBox5
+            // SolidRockIcon
             // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 183);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.SolidRockAsset);
+            this.SolidRockIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SolidRockIcon.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon;
+            this.SolidRockIcon.Location = new System.Drawing.Point(3, 183);
+            this.SolidRockIcon.Name = "SolidRockIcon";
+            this.SolidRockIcon.Size = new System.Drawing.Size(121, 84);
+            this.SolidRockIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SolidRockIcon.TabIndex = 4;
+            this.SolidRockIcon.TabStop = false;
+            this.SolidRockIcon.Click += new System.EventHandler(this.SolidRockAsset);
             // 
-            // pictureBox6
+            // WaterIcon
             // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
-            this.pictureBox6.Location = new System.Drawing.Point(121, 183);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.WaterAsset);
+            this.WaterIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WaterIcon.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
+            this.WaterIcon.Location = new System.Drawing.Point(130, 183);
+            this.WaterIcon.Name = "WaterIcon";
+            this.WaterIcon.Size = new System.Drawing.Size(121, 84);
+            this.WaterIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.WaterIcon.TabIndex = 5;
+            this.WaterIcon.TabStop = false;
+            this.WaterIcon.Click += new System.EventHandler(this.WaterAsset);
             // 
-            // pictureBox7
+            // Rubble1Icon
             // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 273);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Rubble1Asset);
+            this.Rubble1Icon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Rubble1Icon.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon;
+            this.Rubble1Icon.Location = new System.Drawing.Point(3, 273);
+            this.Rubble1Icon.Name = "Rubble1Icon";
+            this.Rubble1Icon.Size = new System.Drawing.Size(121, 84);
+            this.Rubble1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Rubble1Icon.TabIndex = 6;
+            this.Rubble1Icon.TabStop = false;
+            this.Rubble1Icon.Click += new System.EventHandler(this.Rubble1Asset);
             // 
-            // pictureBox8
+            // Rubble2Icon
             // 
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon;
-            this.pictureBox8.Location = new System.Drawing.Point(121, 273);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.Rubble2Asset);
+            this.Rubble2Icon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Rubble2Icon.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon;
+            this.Rubble2Icon.Location = new System.Drawing.Point(130, 273);
+            this.Rubble2Icon.Name = "Rubble2Icon";
+            this.Rubble2Icon.Size = new System.Drawing.Size(121, 84);
+            this.Rubble2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Rubble2Icon.TabIndex = 7;
+            this.Rubble2Icon.TabStop = false;
+            this.Rubble2Icon.Click += new System.EventHandler(this.Rubble2Asset);
             // 
-            // pictureBox9
+            // Rubble3Icon
             // 
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox9.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon;
-            this.pictureBox9.Location = new System.Drawing.Point(3, 363);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Rubble3Asset);
+            this.Rubble3Icon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Rubble3Icon.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon;
+            this.Rubble3Icon.Location = new System.Drawing.Point(3, 363);
+            this.Rubble3Icon.Name = "Rubble3Icon";
+            this.Rubble3Icon.Size = new System.Drawing.Size(121, 84);
+            this.Rubble3Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Rubble3Icon.TabIndex = 8;
+            this.Rubble3Icon.TabStop = false;
+            this.Rubble3Icon.Click += new System.EventHandler(this.Rubble3Asset);
             // 
-            // pictureBox19
+            // LavaIcon
             // 
-            this.pictureBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox19.Image = global::WindowsFormsApp2.Properties.Resources.Lava_Icon;
-            this.pictureBox19.Location = new System.Drawing.Point(121, 363);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 9;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.Click += new System.EventHandler(this.LavaAsset);
+            this.LavaIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LavaIcon.Image = global::WindowsFormsApp2.Properties.Resources.Lava_Icon;
+            this.LavaIcon.Location = new System.Drawing.Point(130, 363);
+            this.LavaIcon.Name = "LavaIcon";
+            this.LavaIcon.Size = new System.Drawing.Size(121, 84);
+            this.LavaIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LavaIcon.TabIndex = 9;
+            this.LavaIcon.TabStop = false;
+            this.LavaIcon.Click += new System.EventHandler(this.LavaAsset);
             // 
-            // pictureBox20
+            // LavaErosion1Icon
             // 
-            this.pictureBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox20.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion1_Icon;
-            this.pictureBox20.Location = new System.Drawing.Point(121, 453);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 10;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Click += new System.EventHandler(this.Erosion1Asset);
+            this.LavaErosion1Icon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LavaErosion1Icon.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion1_Icon;
+            this.LavaErosion1Icon.Location = new System.Drawing.Point(130, 453);
+            this.LavaErosion1Icon.Name = "LavaErosion1Icon";
+            this.LavaErosion1Icon.Size = new System.Drawing.Size(121, 84);
+            this.LavaErosion1Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LavaErosion1Icon.TabIndex = 10;
+            this.LavaErosion1Icon.TabStop = false;
+            this.LavaErosion1Icon.Click += new System.EventHandler(this.Erosion1Asset);
             // 
-            // pictureBox21
+            // LavaErosion2Icon
             // 
-            this.pictureBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox21.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon;
-            this.pictureBox21.Location = new System.Drawing.Point(3, 453);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 11;
-            this.pictureBox21.TabStop = false;
-            this.pictureBox21.Click += new System.EventHandler(this.Erosion2asset);
+            this.LavaErosion2Icon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LavaErosion2Icon.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon;
+            this.LavaErosion2Icon.Location = new System.Drawing.Point(3, 453);
+            this.LavaErosion2Icon.Name = "LavaErosion2Icon";
+            this.LavaErosion2Icon.Size = new System.Drawing.Size(121, 84);
+            this.LavaErosion2Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LavaErosion2Icon.TabIndex = 11;
+            this.LavaErosion2Icon.TabStop = false;
+            this.LavaErosion2Icon.Click += new System.EventHandler(this.Erosion2asset);
             // 
             // Buildings
             // 
@@ -553,16 +553,16 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox15, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox16, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox17, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox18, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox22, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ToolStoreIcon, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.TelePadIcon, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.DockIcon, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.PowerPlantIcon, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SuportStationIcon, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.UpgradeStationIcon, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.OreRefineIcon, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.GeoCenterIcon, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.SuperTeleIcon, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.LazerIcon, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -578,105 +578,125 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel1.Size = new System.Drawing.Size(254, 508);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // pictureBox10
+            // ToolStoreIcon
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon;
-            this.pictureBox10.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
+            this.ToolStoreIcon.BackColor = System.Drawing.Color.Transparent;
+            this.ToolStoreIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ToolStoreIcon.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon;
+            this.ToolStoreIcon.Location = new System.Drawing.Point(3, 3);
+            this.ToolStoreIcon.Name = "ToolStoreIcon";
+            this.ToolStoreIcon.Size = new System.Drawing.Size(121, 84);
+            this.ToolStoreIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolStoreIcon.TabIndex = 0;
+            this.ToolStoreIcon.TabStop = false;
+            this.ToolStoreIcon.Click += new System.EventHandler(this.ToolStoreAsset);
             // 
-            // pictureBox11
+            // TelePadIcon
             // 
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Image = global::WindowsFormsApp2.Properties.Resources.TelePad_Icon;
-            this.pictureBox11.Location = new System.Drawing.Point(121, 3);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
+            this.TelePadIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TelePadIcon.Image = global::WindowsFormsApp2.Properties.Resources.TelePad_Icon;
+            this.TelePadIcon.Location = new System.Drawing.Point(130, 3);
+            this.TelePadIcon.Name = "TelePadIcon";
+            this.TelePadIcon.Size = new System.Drawing.Size(121, 84);
+            this.TelePadIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.TelePadIcon.TabIndex = 1;
+            this.TelePadIcon.TabStop = false;
+            this.TelePadIcon.Click += new System.EventHandler(this.TelePadAsset);
             // 
-            // pictureBox12
+            // DockIcon
             // 
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Image = global::WindowsFormsApp2.Properties.Resources.Dock_Icon;
-            this.pictureBox12.Location = new System.Drawing.Point(3, 93);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 2;
-            this.pictureBox12.TabStop = false;
+            this.DockIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DockIcon.Image = global::WindowsFormsApp2.Properties.Resources.Dock_Icon;
+            this.DockIcon.Location = new System.Drawing.Point(3, 93);
+            this.DockIcon.Name = "DockIcon";
+            this.DockIcon.Size = new System.Drawing.Size(121, 84);
+            this.DockIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DockIcon.TabIndex = 2;
+            this.DockIcon.TabStop = false;
+            this.DockIcon.Click += new System.EventHandler(this.DockAsset);
             // 
-            // pictureBox13
+            // PowerPlantIcon
             // 
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Image = global::WindowsFormsApp2.Properties.Resources.PowerPlant_Icon;
-            this.pictureBox13.Location = new System.Drawing.Point(121, 93);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 3;
-            this.pictureBox13.TabStop = false;
+            this.PowerPlantIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PowerPlantIcon.Image = global::WindowsFormsApp2.Properties.Resources.PowerPlant_Icon;
+            this.PowerPlantIcon.Location = new System.Drawing.Point(130, 93);
+            this.PowerPlantIcon.Name = "PowerPlantIcon";
+            this.PowerPlantIcon.Size = new System.Drawing.Size(121, 84);
+            this.PowerPlantIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PowerPlantIcon.TabIndex = 3;
+            this.PowerPlantIcon.TabStop = false;
+            this.PowerPlantIcon.Click += new System.EventHandler(this.PowerPlantAsset);
             // 
-            // pictureBox14
+            // SuportStationIcon
             // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Image = global::WindowsFormsApp2.Properties.Resources.SupportStation_Icon;
-            this.pictureBox14.Location = new System.Drawing.Point(3, 183);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 4;
-            this.pictureBox14.TabStop = false;
+            this.SuportStationIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SuportStationIcon.Image = global::WindowsFormsApp2.Properties.Resources.SupportStation_Icon;
+            this.SuportStationIcon.Location = new System.Drawing.Point(3, 183);
+            this.SuportStationIcon.Name = "SuportStationIcon";
+            this.SuportStationIcon.Size = new System.Drawing.Size(121, 84);
+            this.SuportStationIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SuportStationIcon.TabIndex = 4;
+            this.SuportStationIcon.TabStop = false;
+            this.SuportStationIcon.Click += new System.EventHandler(this.SuportStationAsset);
             // 
-            // pictureBox15
+            // UpgradeStationIcon
             // 
-            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox15.Image = global::WindowsFormsApp2.Properties.Resources.UpgradeStation_Icon;
-            this.pictureBox15.Location = new System.Drawing.Point(121, 183);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 5;
-            this.pictureBox15.TabStop = false;
+            this.UpgradeStationIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpgradeStationIcon.Image = global::WindowsFormsApp2.Properties.Resources.UpgradeStation_Icon;
+            this.UpgradeStationIcon.Location = new System.Drawing.Point(130, 183);
+            this.UpgradeStationIcon.Name = "UpgradeStationIcon";
+            this.UpgradeStationIcon.Size = new System.Drawing.Size(121, 84);
+            this.UpgradeStationIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UpgradeStationIcon.TabIndex = 5;
+            this.UpgradeStationIcon.TabStop = false;
+            this.UpgradeStationIcon.Click += new System.EventHandler(this.UpgradeStationAsset);
             // 
-            // pictureBox16
+            // OreRefineIcon
             // 
-            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox16.Image = global::WindowsFormsApp2.Properties.Resources.OreRefine_Icon;
-            this.pictureBox16.Location = new System.Drawing.Point(3, 273);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 6;
-            this.pictureBox16.TabStop = false;
+            this.OreRefineIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OreRefineIcon.Image = global::WindowsFormsApp2.Properties.Resources.OreRefine_Icon;
+            this.OreRefineIcon.Location = new System.Drawing.Point(3, 273);
+            this.OreRefineIcon.Name = "OreRefineIcon";
+            this.OreRefineIcon.Size = new System.Drawing.Size(121, 84);
+            this.OreRefineIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OreRefineIcon.TabIndex = 6;
+            this.OreRefineIcon.TabStop = false;
+            this.OreRefineIcon.Click += new System.EventHandler(this.OreRefineAsset);
             // 
-            // pictureBox17
+            // GeoCenterIcon
             // 
-            this.pictureBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox17.Image = global::WindowsFormsApp2.Properties.Resources.GeoCent_Icon;
-            this.pictureBox17.Location = new System.Drawing.Point(121, 273);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(113, 84);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 7;
-            this.pictureBox17.TabStop = false;
+            this.GeoCenterIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GeoCenterIcon.Image = global::WindowsFormsApp2.Properties.Resources.GeoCent_Icon;
+            this.GeoCenterIcon.Location = new System.Drawing.Point(130, 273);
+            this.GeoCenterIcon.Name = "GeoCenterIcon";
+            this.GeoCenterIcon.Size = new System.Drawing.Size(121, 84);
+            this.GeoCenterIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GeoCenterIcon.TabIndex = 7;
+            this.GeoCenterIcon.TabStop = false;
+            this.GeoCenterIcon.Click += new System.EventHandler(this.GeoCenterAsset);
             // 
-            // pictureBox18
+            // SuperTeleIcon
             // 
-            this.pictureBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox18.Image = global::WindowsFormsApp2.Properties.Resources.SuperTele_Icon;
-            this.pictureBox18.Location = new System.Drawing.Point(3, 363);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 8;
-            this.pictureBox18.TabStop = false;
+            this.SuperTeleIcon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SuperTeleIcon.Image = global::WindowsFormsApp2.Properties.Resources.SuperTele_Icon;
+            this.SuperTeleIcon.Location = new System.Drawing.Point(3, 363);
+            this.SuperTeleIcon.Name = "SuperTeleIcon";
+            this.SuperTeleIcon.Size = new System.Drawing.Size(121, 84);
+            this.SuperTeleIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SuperTeleIcon.TabIndex = 8;
+            this.SuperTeleIcon.TabStop = false;
+            this.SuperTeleIcon.Click += new System.EventHandler(this.SuperTeleAsset);
+            // 
+            // LazerIcon
+            // 
+            this.LazerIcon.Image = global::WindowsFormsApp2.Properties.Resources.Lazer_Icon;
+            this.LazerIcon.Location = new System.Drawing.Point(130, 363);
+            this.LazerIcon.Name = "LazerIcon";
+            this.LazerIcon.Size = new System.Drawing.Size(112, 84);
+            this.LazerIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LazerIcon.TabIndex = 9;
+            this.LazerIcon.TabStop = false;
+            this.LazerIcon.Click += new System.EventHandler(this.LazerAsset);
             // 
             // groupBox4
             // 
@@ -722,24 +742,14 @@ namespace WindowsFormsApp2
             // 
             this.modelBindingSource.DataSource = typeof(WindowsFormsApp2.model);
             // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::WindowsFormsApp2.Properties.Resources.Lazer_Icon;
-            this.pictureBox22.Location = new System.Drawing.Point(121, 363);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 9;
-            this.pictureBox22.TabStop = false;
-            // 
             // Default_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 583);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.AssetPannel);
+            this.Controls.Add(this.ToolBox);
             this.Controls.Add(this.menuStrip1);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -748,47 +758,47 @@ namespace WindowsFormsApp2
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.ToolBox.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EyeDropperTool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxSelectTool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectTool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaintBrush)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EraserTool)).EndInit();
-            this.groupBox3.ResumeLayout(false);
+            this.AssetPannel.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.Tiles.ResumeLayout(false);
             this.Tiles.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FloorIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DirtIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LooseRockIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HardRockIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SolidRockIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WaterIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rubble1Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rubble2Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Rubble3Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LavaIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LavaErosion1Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LavaErosion2Icon)).EndInit();
             this.Buildings.ResumeLayout(false);
             this.Buildings.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ToolStoreIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TelePadIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DockIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PowerPlantIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuportStationIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpgradeStationIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OreRefineIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GeoCenterIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuperTeleIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LazerIcon)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.Workspace.ResumeLayout(false);
             this.Workspace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.modelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -809,8 +819,8 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.ToolStripMenuItem Quit;
         public System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
-        public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.GroupBox ToolBox;
+        public System.Windows.Forms.GroupBox AssetPannel;
         public System.Windows.Forms.GroupBox groupBox4;
         public System.Windows.Forms.Panel Workspace;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -818,12 +828,12 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.TabPage Buildings;
         public System.Windows.Forms.TabPage Tiles;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        public System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.PictureBox pictureBox5;
-        public System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.PictureBox FloorIcon;
+        public System.Windows.Forms.PictureBox DirtIcon;
+        public System.Windows.Forms.PictureBox LooseRockIcon;
+        public System.Windows.Forms.PictureBox HardRockIcon;
+        public System.Windows.Forms.PictureBox SolidRockIcon;
+        public System.Windows.Forms.PictureBox WaterIcon;
         public System.Windows.Forms.BindingSource modelBindingSource;
         public System.Windows.Forms.Panel Map;
         public System.Windows.Forms.PictureBox SelectTool;
@@ -831,25 +841,25 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox EyeDropperTool;
         public System.Windows.Forms.PictureBox EraserTool;
         public System.Windows.Forms.PictureBox PaintBrush;
-        public System.Windows.Forms.PictureBox pictureBox7;
-        public System.Windows.Forms.PictureBox pictureBox8;
-        public System.Windows.Forms.PictureBox pictureBox9;
+        public System.Windows.Forms.PictureBox Rubble1Icon;
+        public System.Windows.Forms.PictureBox Rubble2Icon;
+        public System.Windows.Forms.PictureBox Rubble3Icon;
         public System.Windows.Forms.SaveFileDialog saveFileDialog1;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        public System.Windows.Forms.PictureBox pictureBox10;
-        public System.Windows.Forms.PictureBox pictureBox11;
-        public System.Windows.Forms.PictureBox pictureBox12;
-        public System.Windows.Forms.PictureBox pictureBox13;
-        public System.Windows.Forms.PictureBox pictureBox14;
-        public System.Windows.Forms.PictureBox pictureBox15;
-        public System.Windows.Forms.PictureBox pictureBox16;
-        public System.Windows.Forms.PictureBox pictureBox17;
-        public System.Windows.Forms.PictureBox pictureBox18;
-        public System.Windows.Forms.PictureBox pictureBox19;
-        public System.Windows.Forms.PictureBox pictureBox20;
-        public System.Windows.Forms.PictureBox pictureBox21;
+        public System.Windows.Forms.PictureBox ToolStoreIcon;
+        public System.Windows.Forms.PictureBox TelePadIcon;
+        public System.Windows.Forms.PictureBox DockIcon;
+        public System.Windows.Forms.PictureBox PowerPlantIcon;
+        public System.Windows.Forms.PictureBox SuportStationIcon;
+        public System.Windows.Forms.PictureBox UpgradeStationIcon;
+        public System.Windows.Forms.PictureBox OreRefineIcon;
+        public System.Windows.Forms.PictureBox GeoCenterIcon;
+        public System.Windows.Forms.PictureBox SuperTeleIcon;
+        public System.Windows.Forms.PictureBox LavaIcon;
+        public System.Windows.Forms.PictureBox LavaErosion1Icon;
+        public System.Windows.Forms.PictureBox LavaErosion2Icon;
         private System.ComponentModel.IContainer components;
-        public System.Windows.Forms.PictureBox pictureBox22;
+        public System.Windows.Forms.PictureBox LazerIcon;
     }
 }
 

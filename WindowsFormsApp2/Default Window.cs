@@ -1,9 +1,4 @@
 ﻿/* Copyright (C) 2023 Austin Tyler - All Rights Reserved
- * You may use, distribute and modify this code under the
- * terms of the Attribution-ShareAlike 4.0 International, 
- * 
- * You should have received a copy of the Attribution-ShareAlike 4.0 International with
- * this file. If not, please write to: AustinTyler88@gmail.com
  */
 
 using System;
@@ -95,157 +90,126 @@ namespace WindowsFormsApp2
         //Updates the icon to show the user this is the one that is selected. 
         public void FloorTileAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Floor Texture Asset Selected");
-            UpdateIcons("Floor");
+            Console.WriteLine($"|DefaultWindow| Floor Icon Selected");
+            SelectTexture(FloorIcon, global::WindowsFormsApp2.Properties.Resources.Floor_Icon, "Floor");
         }
         public void DirtTileAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Dirt Texture Asset Selected");
-            UpdateIcons("Dirt");
+            Console.WriteLine($"|DefaultWindow| Dirt Icon Selected");
+            SelectTexture(DirtIcon, global::WindowsFormsApp2.Properties.Resources.Dirt_Icon, "Dirt");
         }
         public void LooseRockAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Loose Rock Texture Asset Selected");
-            UpdateIcons("LooseRock");
+            Console.WriteLine($"|DefaultWindow| Loose Rock Icon Selected");
+            SelectTexture(LooseRockIcon, global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon, "LooseRock");
         }
         public void HardRockAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Hard Rock Texture Asset Selected");
-            UpdateIcons("HardRock");
+            Console.WriteLine($"|DefaultWindow| Hard Rock Icon Selected");
+            SelectTexture(HardRockIcon, global::WindowsFormsApp2.Properties.Resources.HardRock_Icon, "HardRock");
         }
         public void SolidRockAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Solid Rock Texture Asset Selected");
-            UpdateIcons("SolidRock");
-        }
-        public void ToolStoreAsset(object sender, EventArgs e)
-        {
-            Console.WriteLine($"|DefaultWindow| Tool Store Texture Asset Selected");
-            UpdateIcons("ToolStore");
+            Console.WriteLine($"|DefaultWindow| Solid Rock Icon Selected");
+            SelectTexture(SolidRockIcon, global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon, "SolidRock");
         }
         public void WaterAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Water Texture Asset Selected");
-            UpdateIcons("Water");
+            Console.WriteLine($"|DefaultWindow| Water Icon Selected");
+            SelectTexture(WaterIcon, global::WindowsFormsApp2.Properties.Resources.Water_Icon, "Water");
         }
         public void Rubble1Asset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Rubble1 Texture Asset Selected");
-            UpdateIcons("Rubble1");
+            Console.WriteLine($"|DefaultWindow| Rubble1 Icon Selected");
+            SelectTexture(Rubble1Icon, global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon, "Rubble1");
         }
         public void Rubble2Asset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Rubble2 Texture Asset Selected");
-            UpdateIcons("Rubble2");
+            Console.WriteLine($"|DefaultWindow| Rubble2 Icon Selected");
+            SelectTexture(Rubble2Icon, global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon, "Rubble2");
         }
         public void Rubble3Asset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Rubble3 Texture Asset Selected");
-            UpdateIcons("Rubble3");
+            Console.WriteLine($"|DefaultWindow| Rubble3 Icon Selected");
+            SelectTexture(Rubble3Icon, global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon, "Rubble3");
         }
         public void LavaAsset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Lava Texture Asset Selected");
-            UpdateIcons("Lava");
+            Console.WriteLine($"|DefaultWindow| Lava Icon Selected");
+            SelectTexture(LavaIcon, global::WindowsFormsApp2.Properties.Resources.Lava_Icon, "Lava");
         }
         public void Erosion2asset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Erosion2 Texture Asset Selected");
-            UpdateIcons("Erosion2");
+            Console.WriteLine($"|DefaultWindow| Erosion2 Icon Selected");
+            SelectTexture(LavaErosion2Icon, global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon, "Erosion2");
         }
         public void Erosion1Asset(object sender, EventArgs e)
         {
-            Console.WriteLine($"|DefaultWindow| Erosion1 Texture Asset Selected");
-            UpdateIcons("Erosion1");
+            Console.WriteLine($"|DefaultWindow| Erosion1 Icon Selected");
+            SelectTexture(LavaErosion1Icon, global::WindowsFormsApp2.Properties.Resources.LavaErosion1_Icon, "Erosion1");
         }
-
-        public void UpdateIcons(string selectedIcon)
+        //Buildings-----------------------------------------------------------------
+        //--ToolStore
+        public void ToolStoreAsset(object sender, EventArgs e)
         {
-            switch(selectedIcon)
-            {
-                case "Floor":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Floor Selected");
-                        SelectTexture(pictureBox1, global::WindowsFormsApp2.Properties.Resources.Floor_Icon,"Floor");
-                    }
-                    break;
-                case "Dirt":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Dirt Selected");
-                        SelectTexture(pictureBox2, global::WindowsFormsApp2.Properties.Resources.Dirt_Icon,"Dirt");
-                    }
-                    break;
-                case "LooseRock":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Loose Rock Selected");
-                        SelectTexture(pictureBox3, global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon,"LooseRock");
-                    }
-                    break;
-                case "HardRock":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Hard Rock Selected");
-                        SelectTexture(pictureBox4, global::WindowsFormsApp2.Properties.Resources.HardRock_Icon,"HardRock");
-                    }
-                        break;
-                case "SolidRock":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Solid rock Selected");
-                        SelectTexture(pictureBox5, global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon,"SolidRock");
-                    }
-                    break;
-                case "Rubble1":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Rubble 1 Selected");
-                        SelectTexture(pictureBox7, global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon,"Rubble1");
-                    }
-                    break;
-                case "Rubble2":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Rubble 2 Selected");
-                        SelectTexture(pictureBox8, global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon,"Rubble2");
-                    }
-                    break;
-                case "Rubble3":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Rubble 3 Selected");
-                        SelectTexture(pictureBox9, global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon, "Rubble3");
-                    }
-                    break;
-                case "Water":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Water Selected");
-                        SelectTexture(pictureBox6, global::WindowsFormsApp2.Properties.Resources.Water_Icon, "Water");
-                    }
-                    break;
-                case "Lava":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Lava Selected");
-                        SelectTexture(pictureBox19, global::WindowsFormsApp2.Properties.Resources.Lava_Icon, "Lava");
-                    }
-                    break;
-                case "Erosion1":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Erosion1 Selected");
-                        SelectTexture(pictureBox20, global::WindowsFormsApp2.Properties.Resources.LavaErosion1_Icon, "Erosion1");
-                    }
-                    break;
-                case "Erosion2":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Erosion2 Selected");
-                        SelectTexture(pictureBox21,global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon,"Erosion2");
-                    }
-                    break;
-                //Buildings
-                case "ToolStore":
-                    {
-                        Console.WriteLine($"|DefaultWindow| Tool Store selected");
-                        SelectTexture(pictureBox21, global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon, "Erosion2");
-                    }
-                    break;
-            }
-
+            Console.WriteLine($"|DefaultWindow|ToolStoreAsset()| Tool Store Icon Selected");
+            SelectTexture(ToolStoreIcon, global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon, "ToolStore");
         }
-   
+        //--Telepad
+        public void TelePadAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|TelePadAsset()| TelePad Icon Selected");
+            SelectTexture(TelePadIcon, global::WindowsFormsApp2.Properties.Resources.TelePad_Icon, "TelePad");
+        }
+        //--Dock
+        public void DockAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|DocAsset()| Dock Icon Selected");
+            SelectTexture(DockIcon, global::WindowsFormsApp2.Properties.Resources.Dock_Icon, "Dock");
+        }
+        //--PowerPlant
+        public void PowerPlantAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|PowerPlantPadAsset()| PowerPlant Icon Selected");
+            SelectTexture(PowerPlantIcon, global::WindowsFormsApp2.Properties.Resources.PowerPlant_Icon, "PowerPlant");
+        }
+        //--Support Station
+        public void SuportStationAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|SuportStationPadAsset()| SuportStation Icon Selected");
+            SelectTexture(SuportStationIcon, global::WindowsFormsApp2.Properties.Resources.SupportStation_Icon, "SuportStation");
+        }
+        //--UpgradeStation
+        public void UpgradeStationAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|UpgradeStationAsset()| UpgradeStation Icon Selected");
+            SelectTexture(UpgradeStationIcon, global::WindowsFormsApp2.Properties.Resources.UpgradeStation_Icon, "UpgradeStation");
+        }
+        //--Ore refinery
+        public void OreRefineAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|OreRefineAsset()| OreRefine Icon Selected");
+            SelectTexture(OreRefineIcon, global::WindowsFormsApp2.Properties.Resources.OreRefine_Icon, "OreRefine");
+        }
+        //--geological  center
+        public void GeoCenterAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|GeoCenterAsset()| GeoCenter Icon Selected");
+            SelectTexture(GeoCenterIcon, global::WindowsFormsApp2.Properties.Resources.GeoCent_Icon, "GeoCenter");
+        }
+        //--Super Teleporter 
+        public void SuperTeleAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|SuperTeleAsset()| SuperTele Icon Selected");
+            SelectTexture(SuperTeleIcon, global::WindowsFormsApp2.Properties.Resources.SuperTele_Icon, "SuperTele");
+        }
+        //--Lazer
+        public void LazerAsset(object sender, EventArgs e)
+        {
+            Console.WriteLine($"|DefaultWindow|LazerAsset()| Lazer Icon Selected");
+            SelectTexture(LazerIcon, global::WindowsFormsApp2.Properties.Resources.Lazer, "Lazer");
+        }
+
         public void SelectTexture(PictureBox TextureButton, Image ImageOfTexture, string NameOfTexture)
         {
             Console.WriteLine($"|DefaultWindow| Selecting Texture");
@@ -270,20 +234,40 @@ namespace WindowsFormsApp2
         }
         public void DefaultIconImage()
         {
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon;
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.Dirt_Icon;
-            this.pictureBox3.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon;
-            this.pictureBox4.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon;
-            this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon;
-            this.pictureBox6.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
-            this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon;
-            this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon;
-            this.pictureBox9.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon;
-            this.pictureBox19.Image = global::WindowsFormsApp2.Properties.Resources.Lava_Icon;
-            this.pictureBox20.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion1_Icon;
-            this.pictureBox21.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon;
+            //Rock Biome Icons
+            this.FloorIcon.Image = global::WindowsFormsApp2.Properties.Resources.Floor_Icon;
+            this.DirtIcon.Image = global::WindowsFormsApp2.Properties.Resources.Dirt_Icon;
+            this.LooseRockIcon.Image = global::WindowsFormsApp2.Properties.Resources.LooseRock_Icon;
+            this.HardRockIcon.Image = global::WindowsFormsApp2.Properties.Resources.HardRock_Icon;
+            this.SolidRockIcon.Image = global::WindowsFormsApp2.Properties.Resources.SolidRock_Icon;
+            this.WaterIcon.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
+            this.Rubble1Icon.Image = global::WindowsFormsApp2.Properties.Resources.Rubble1_Icon;
+            this.Rubble2Icon.Image = global::WindowsFormsApp2.Properties.Resources.Rubble2_Icon;
+            this.Rubble3Icon.Image = global::WindowsFormsApp2.Properties.Resources.Rubble3_Icon;
+            this.LavaIcon.Image = global::WindowsFormsApp2.Properties.Resources.Lava_Icon;
+            this.LavaErosion1Icon.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion1_Icon;
+            this.LavaErosion2Icon.Image = global::WindowsFormsApp2.Properties.Resources.LavaErosion2_Icon;
 
-            this.pictureBox11.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon;
+            //Ice Biome Icons
+            this.LavaIcon.Image = global::WindowsFormsApp2.Properties.Resources.Lava_Icon;
+            this.WaterIcon.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
+
+            //Lava Biome Icons
+            this.LavaIcon.Image = global::WindowsFormsApp2.Properties.Resources.Lava_Icon;
+            this.WaterIcon.Image = global::WindowsFormsApp2.Properties.Resources.Water_Icon;
+
+            //Buidling Icons
+            this.ToolStoreIcon.Image = global::WindowsFormsApp2.Properties.Resources.ToolStore_Icon;
+            this.TelePadIcon.Image = global::WindowsFormsApp2.Properties.Resources.TelePad_Icon;
+            this.DockIcon.Image = global::WindowsFormsApp2.Properties.Resources.Dock_Icon;
+            this.PowerPlantIcon.Image = global::WindowsFormsApp2.Properties.Resources.PowerPlant_Icon;
+            this.SuportStationIcon.Image = global::WindowsFormsApp2.Properties.Resources.SupportStation_Icon;
+            this.UpgradeStationIcon.Image = global::WindowsFormsApp2.Properties.Resources.UpgradeStation_Icon;
+            this.GeoCenterIcon.Image = global::WindowsFormsApp2.Properties.Resources.GeoCent_Icon;
+            this.OreRefineIcon.Image = global::WindowsFormsApp2.Properties.Resources.OreRefine_Icon;
+            this.SuperTeleIcon.Image = global::WindowsFormsApp2.Properties.Resources.SuperTele_Icon;
+            this.LazerIcon.Image = global::WindowsFormsApp2.Properties.Resources.Lazer_Icon;
+            
 
         }
         //----------------------------------------------------------End of selected texture--------------------------------------------
@@ -302,6 +286,8 @@ namespace WindowsFormsApp2
         {
       
         }
+
+
     }
 }
 
