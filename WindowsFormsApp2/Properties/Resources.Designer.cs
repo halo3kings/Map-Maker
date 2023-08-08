@@ -93,9 +93,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dirt_Icon_Clicked {
+        internal static System.Drawing.Bitmap Dirt256 {
             get {
-                object obj = ResourceManager.GetObject("Dirt_Icon_Clicked", resourceCulture);
+                object obj = ResourceManager.GetObject("Dirt256", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,29 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dirt256 {
+        internal static System.Drawing.Bitmap Dock_Icon {
             get {
-                object obj = ResourceManager.GetObject("Dirt256", resourceCulture);
+                object obj = ResourceManager.GetObject("Dock_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dock1 {
+            get {
+                object obj = ResourceManager.GetObject("Dock1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dock2 {
+            get {
+                object obj = ResourceManager.GetObject("Dock2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +153,29 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Floor_Icon_Clicked {
+        internal static System.Drawing.Bitmap GeoCent_Icon {
             get {
-                object obj = ResourceManager.GetObject("Floor_Icon_Clicked", resourceCulture);
+                object obj = ResourceManager.GetObject("GeoCent_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GeologyCenter1 {
+            get {
+                object obj = ResourceManager.GetObject("GeologyCenter1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GeologyCenter2 {
+            get {
+                object obj = ResourceManager.GetObject("GeologyCenter2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,16 +196,6 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap HardRock_Icon {
             get {
                 object obj = ResourceManager.GetObject("HardRock_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap HardRock_Icon_Clicked {
-            get {
-                object obj = ResourceManager.GetObject("HardRock_Icon_Clicked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +233,86 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lava {
+            get {
+                object obj = ResourceManager.GetObject("Lava", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lava_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Lava_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LavaErosion1 {
+            get {
+                object obj = ResourceManager.GetObject("LavaErosion1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LavaErosion1_Icon {
+            get {
+                object obj = ResourceManager.GetObject("LavaErosion1_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LavaErosion2 {
+            get {
+                object obj = ResourceManager.GetObject("LavaErosion2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LavaErosion2_Icon {
+            get {
+                object obj = ResourceManager.GetObject("LavaErosion2_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lazer {
+            get {
+                object obj = ResourceManager.GetObject("Lazer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lazer_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Lazer_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap looseRock {
             get {
                 object obj = ResourceManager.GetObject("looseRock", resourceCulture);
@@ -223,9 +333,59 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LooseRock_Icon_Clicked {
+        internal static System.Drawing.Bitmap OreRefine_Icon {
             get {
-                object obj = ResourceManager.GetObject("LooseRock_Icon_Clicked", resourceCulture);
+                object obj = ResourceManager.GetObject("OreRefine_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orerefine1 {
+            get {
+                object obj = ResourceManager.GetObject("Orerefine1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orerefine2 {
+            get {
+                object obj = ResourceManager.GetObject("Orerefine2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PowerPlant_Icon {
+            get {
+                object obj = ResourceManager.GetObject("PowerPlant_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PowerPlant1 {
+            get {
+                object obj = ResourceManager.GetObject("PowerPlant1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PowerPlant2 {
+            get {
+                object obj = ResourceManager.GetObject("PowerPlant2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,29 +433,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rubble1_Icon_Clicked {
-            get {
-                object obj = ResourceManager.GetObject("Rubble1_Icon_Clicked", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Rubble2_Icon {
             get {
                 object obj = ResourceManager.GetObject("Rubble2_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Rubble2_Icon_Clicked {
-            get {
-                object obj = ResourceManager.GetObject("Rubble2_Icon_Clicked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +453,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rubble3_Icon_Clicked {
+        internal static System.Drawing.Bitmap select {
             get {
-                object obj = ResourceManager.GetObject("Rubble3_Icon_Clicked", resourceCulture);
+                object obj = ResourceManager.GetObject("select", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +463,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap select {
+        internal static System.Drawing.Bitmap Selected {
             get {
-                object obj = ResourceManager.GetObject("select", resourceCulture);
+                object obj = ResourceManager.GetObject("Selected", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +493,69 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SolidRock_Icon_Clicked {
+        internal static System.Drawing.Bitmap SuperTele_Icon {
             get {
-                object obj = ResourceManager.GetObject("SolidRock_Icon_Clicked", resourceCulture);
+                object obj = ResourceManager.GetObject("SuperTele_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SuperTeleport1 {
+            get {
+                object obj = ResourceManager.GetObject("SuperTeleport1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SuperTeleport2 {
+            get {
+                object obj = ResourceManager.GetObject("SuperTeleport2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SupportStation {
+            get {
+                object obj = ResourceManager.GetObject("SupportStation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SupportStation_Icon {
+            get {
+                object obj = ResourceManager.GetObject("SupportStation_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelePad_Icon {
+            get {
+                object obj = ResourceManager.GetObject("TelePad_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeleportPad {
+            get {
+                object obj = ResourceManager.GetObject("TeleportPad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +583,19 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ToolStore_Icon_Clicked {
+        internal static System.Drawing.Bitmap UpgradeStation {
             get {
-                object obj = ResourceManager.GetObject("ToolStore_Icon_Clicked", resourceCulture);
+                object obj = ResourceManager.GetObject("UpgradeStation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpgradeStation_Icon {
+            get {
+                object obj = ResourceManager.GetObject("UpgradeStation_Icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,16 +616,6 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap Water_Icon {
             get {
                 object obj = ResourceManager.GetObject("Water_Icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Water_Icon_Clicked {
-            get {
-                object obj = ResourceManager.GetObject("Water_Icon_Clicked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

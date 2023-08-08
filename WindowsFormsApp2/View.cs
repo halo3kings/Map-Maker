@@ -134,6 +134,21 @@ namespace WindowsFormsApp2
                         return WindowsFormsApp2.Properties.Resources.Water;
                     }
                     break;
+                case "Lava":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Lava;
+                    }
+                    break;
+                case "Erosion1":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.LavaErosion1;
+                    }
+                    break;
+                case "Erosion2":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.LavaErosion2;
+                    }
+                    break;
 
                 //Buildings
                 case "ToolStore":

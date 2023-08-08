@@ -223,6 +223,24 @@ namespace WindowsFormsApp2
                         setPictureBoxTexture(); 
                     }
                     break;
+                case "Lava":
+                    {
+                        texture = WindowsFormsApp2.Properties.Resources.Lava;
+                        setPictureBoxTexture();
+                    }
+                    break;
+                case "Erosion1":
+                    {
+                        texture = WindowsFormsApp2.Properties.Resources.LavaErosion1;
+                        setPictureBoxTexture();
+                    }
+                    break;
+                case "Erosion2":
+                    {
+                        texture = WindowsFormsApp2.Properties.Resources.LavaErosion2;
+                        setPictureBoxTexture();
+                    }
+                    break;
 
                 //Buildings
                 case "ToolStore":

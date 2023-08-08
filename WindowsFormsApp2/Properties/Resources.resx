@@ -130,8 +130,14 @@
   <data name="Dirt_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dirt_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dirt_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dirt_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dock1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dock2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dock_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dock_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Floor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Floor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +145,17 @@
   <data name="Floor_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Floor_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Floor_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Floor_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GeoCent_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeoCent_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeologyCenter1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeologyCenter1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GeologyCenter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GeologyCenter2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HardRock_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HardRock_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HardRock_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HardRock_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Hard_Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hard Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,32 +169,62 @@
   <data name="img_468470" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_468470.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Lava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lava.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LavaErosion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LavaErosion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LavaErosion1_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LavaErosion1_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LavaErosion2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LavaErosion2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LavaErosion2_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LavaErosion2_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lava_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lava_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lazer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lazer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lazer_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lazer_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="looseRock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\looseRock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LooseRock_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LooseRock_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LooseRock_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LooseRock_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Orerefine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orerefine1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Orerefine2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orerefine2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OreRefine_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OreRefine_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PowerPlant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerPlant1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PowerPlant2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerPlant2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PowerPlant_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PowerPlant_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rubble1_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rubble1_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rubble1_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rubble1_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Rubble2_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rubble2_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rubble2_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rubble2_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Rubble3_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rubble3_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rubble3_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rubble3_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rubble_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rubble 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,14 +238,35 @@
   <data name="select" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SolidRock_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SolidRock_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SolidRock_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SolidRock_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="solid_rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\solid rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SuperTeleport1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SuperTeleport1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SuperTeleport2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SuperTeleport2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SuperTele_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SuperTele_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SupportStation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SupportStation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SupportStation_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SupportStation_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelePad_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelePad_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TeleportPad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TeleportPad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ToolStore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToolStore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,16 +274,16 @@
   <data name="ToolStore_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToolStore_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ToolStore_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ToolStore_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UpgradeStation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgradeStation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpgradeStation_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpgradeStation_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Water" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Water_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Water_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Water_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Water_Icon_Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

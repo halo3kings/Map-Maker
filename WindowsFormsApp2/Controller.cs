@@ -31,6 +31,7 @@ namespace WindowsFormsApp2
         public Controller()
         {
             InitializeView();
+
         }
         public void InitializeView()
         {
@@ -69,6 +70,11 @@ namespace WindowsFormsApp2
             this.VIEW.MAINAPP.pictureBox7.Click += this.AssetSelected;
             this.VIEW.MAINAPP.pictureBox8.Click += this.AssetSelected;
             this.VIEW.MAINAPP.pictureBox9.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox19.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox20.Click += this.AssetSelected;
+            this.VIEW.MAINAPP.pictureBox21.Click += this.AssetSelected;
+
+
 
         }
 
@@ -296,7 +302,7 @@ namespace WindowsFormsApp2
                 }
                 H++;
             }
-
+            //---------------------------------------------------PaintBrush---------------------------------
             // once determined, check which tool is active. 
             if (MODEL.PaintBrushSleceted == true)
             {
@@ -307,12 +313,18 @@ namespace WindowsFormsApp2
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
                 Debug.WriteLine($"|Controller|  Tile should be set to: {MODEL.TextureSelected}");
             }
+
+            //---------------------------------------------------Select Tool---------------------------------
+
             if (MODEL.SelectToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the select tool selected ");
             }
+
+            //---------------------------------------------------BoxSelect---------------------------------
+
             if (MODEL.BoxSelectToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
@@ -320,6 +332,8 @@ namespace WindowsFormsApp2
 
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the box select  tool selected ");
             }
+
+            //---------------------------------------------------EyeDropper---------------------------------
             if (MODEL.EyeDropperToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
@@ -327,6 +341,9 @@ namespace WindowsFormsApp2
                 MODEL.TextureSelected = this.VIEW.MAP.TILE[w, h].GetTexture();
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the eye dropper  tool selected ");
             }
+
+            //---------------------------------------------------Eraser tool---------------------------------
+
             if (MODEL.EraserToolSelected == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
@@ -334,6 +351,9 @@ namespace WindowsFormsApp2
 
                 Debug.WriteLine($"|Controller|    Tile: ( {w}, {h} ) was clicked with the Eraser tool selected ");
             }
+
+            //---------------------------------------------------No Tool---------------------------------
+
             else if (MODEL.NoToolsSelected() == true)
             {
                 // this must be false so it will allow the tile to be clicked again.

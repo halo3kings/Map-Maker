@@ -257,5 +257,95 @@
   <ItemGroup>
     <None Include="Resources\SolidRock_Icon_Clicked.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LavaErosion1_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LavaErosion2_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LavaErosion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LavaErosion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TeleportPad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeologyCenter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeologyCenter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lazer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orerefine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orerefine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerPlant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerPlant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuperTeleport1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuperTeleport2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SupportStation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpgradeStation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeoCent_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lazer_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OreRefine_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PowerPlant_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuperTele_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SupportStation_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelePad_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpgradeStation_Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
