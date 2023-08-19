@@ -318,6 +318,10 @@ namespace WindowsFormsApp2
                 this.VIEW.MAP.TILE[w, h].clicked = false;
                 this.VIEW.MAP.TILE[w, h].PICTUREBOX.Image = MODEL.TextureSelected;
                 this.VIEW.MAP.TILE[w, h].SetTexture(MODEL.TextureSelected);
+                if(MODEL.TextureSelected == null)
+                {
+                    this.VIEW.MAP.TILE[w, h].SetTexture(WindowsFormsApp2.Properties.Resources.Floor);
+                }
                 Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with paint brush tool selected ");
                 Debug.WriteLine($"|Controller||TileClicked()|    Tile should be set to: {MODEL.TextureSelected}");
             }
@@ -1626,8 +1630,11 @@ namespace WindowsFormsApp2
 
         }
         //-----------------------------------------------------------------------------END OF NEW MAP METHODS--------------------------------------------------------------\\
-        public Bitmap MapImage()
+
+        public void SaveMapImage(object sender, EventArgs e)
         {
+            Debug.WriteLine($"|Controller|  Saving map image");
+
             // Image resolution
             int Multiplier = 128;
             Bitmap map = new Bitmap(this.MODEL.Width * Multiplier, this.MODEL.Height * Multiplier);
@@ -1640,22 +1647,17 @@ namespace WindowsFormsApp2
                     for (int i = 0; i < MODEL.Width; i++)
                     {
                         Debug.WriteLine($"|Controller|  adding image to graphic:");
-                        Debug.WriteLine($"|Controller|  Tile{i},{H} being placed at: {i*128},{H*128}");
+                        Debug.WriteLine($"|Controller|  Tile{i},{H} being placed at: {i * 128},{H * 128}");
                         temp = new Bitmap(VIEW.MAP.TILE[i, H].getTexture());
-                        g.DrawImage(temp, i*Multiplier , H*Multiplier );
+                        g.DrawImage(temp, i * Multiplier, H * Multiplier);
                     }
 
                     H++;
                 }
-
-                return map;
+                map.Save("C:\\Users\\austi\\Desktop\\img.jpg", ImageFormat.Jpeg);
             }
-            
-        }
-        public void SaveMapImage(object sender, EventArgs e)
-        {
-            Debug.WriteLine($"|Controller|  Saving map image");
-            MapImage().Save("C:\\Users\\austi\\Desktop\\img.jpg", ImageFormat.Jpeg);
+            g.Dispose();
+            map.Dispose();
         }
     }
 
