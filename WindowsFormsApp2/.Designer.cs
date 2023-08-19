@@ -4,7 +4,7 @@ namespace WindowsFormsApp2
 {
     partial class Default_Window
     {
-        
+
 
         /// <summary>
         /// Clean up any resources being used.
@@ -28,7 +28,6 @@ namespace WindowsFormsApp2
         public void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Default_Window));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -277,8 +276,9 @@ namespace WindowsFormsApp2
             // BoxSelectTool
             // 
             this.BoxSelectTool.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BoxSelectTool.Image = ((System.Drawing.Image)(resources.GetObject("BoxSelectTool.Image")));
-            this.BoxSelectTool.InitialImage = ((System.Drawing.Image)(resources.GetObject("BoxSelectTool.InitialImage")));
+            this.BoxSelectTool.ErrorImage = global::WindowsFormsApp2.Properties.Resources.select;
+            this.BoxSelectTool.Image = global::WindowsFormsApp2.Properties.Resources.select;
+            this.BoxSelectTool.InitialImage = null;
             this.BoxSelectTool.Location = new System.Drawing.Point(3, 43);
             this.BoxSelectTool.Name = "BoxSelectTool";
             this.BoxSelectTool.Size = new System.Drawing.Size(38, 34);
@@ -862,4 +862,3 @@ namespace WindowsFormsApp2
         public System.Windows.Forms.PictureBox LazerIcon;
     }
 }
-
