@@ -11,12 +11,14 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Runtime.Remoting.Messaging;
 using System.Drawing;
+using System.Runtime.CompilerServices;
+using System.Net.Http.Headers;
+using System.Security.Cryptography.X509Certificates;
 
 namespace WindowsFormsApp2
 {
     public class MapAndMapPopulator
     {
-
         static public int Height, Width;
         public string BIOME;
         public Tile[,] TILE;
@@ -30,11 +32,15 @@ namespace WindowsFormsApp2
             BIOME = Biome;
 
             Debug.WriteLine($"|MapAndMapPop|      Creating Tile  array...");
+
             TILE = new Tile[Width, Height];
+
             Debug.WriteLine($"|MapAndMapPop|      Creating MapData array...");
+
             MAPDATA = new int[Width, Height];
 
             Debug.WriteLine($"|MapAndMapPop|      Generating  map...");
+
             InitializeTiles();
             GenerateMap();
         }
@@ -57,6 +63,7 @@ namespace WindowsFormsApp2
                     Debug.WriteLine($"|MapAndMapPop|      creating tile");
                     Debug.WriteLine($"|MapAndMapPop|      Value of  i: {i}");
                     TILE[i, H] = new Tile(size, BIOME,id,i,H);
+
                     Debug.WriteLine($"|MapAndMapPop|      Adding tile: ({i},{H})  to map");
                     TILE[i, H].TILE.Click += this.TileClicked;
                     TILE[i, H].exists = true;
@@ -86,7 +93,7 @@ namespace WindowsFormsApp2
 
                     Debug.WriteLine($"|MapAndMapPop|      Tile: {TILE[W, H].TILE.Name}");
                     Debug.WriteLine($"|MapAndMapPop|      setting  picture");
-                    TILE[W, H].SetPicture("Floor");
+                    TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.Floor);
                     Debug.WriteLine($"|MapAndMapPop|      setting mapdata aray value for the tile");
                     MAPDATA[W, H] = 1;
 
@@ -96,7 +103,7 @@ namespace WindowsFormsApp2
                     if (H == 0 && W < Width)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Top Of map");
-                        TILE[W, H].SetPicture("SolidRock");
+                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -104,7 +111,7 @@ namespace WindowsFormsApp2
                     if (H == Height - 1 && W < Width)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Bottom Of map");
-                        TILE[W, H].SetPicture("SolidRock");
+                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -113,7 +120,7 @@ namespace WindowsFormsApp2
                     if (W == 0 && H < Height)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Left Of map");
-                        TILE[W, H].SetPicture("SolidRock");
+                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -121,7 +128,7 @@ namespace WindowsFormsApp2
                     if (W == Width - 1 && H < Height)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Right Of map");
-                        TILE[W, H].SetPicture("SolidRock");
+                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -270,5 +277,10 @@ namespace WindowsFormsApp2
         {
             return sender;
         }
+        public void Updater(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

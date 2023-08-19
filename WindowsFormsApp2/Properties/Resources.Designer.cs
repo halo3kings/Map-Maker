@@ -83,9 +83,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dirt_Icon {
+        internal static System.Drawing.Bitmap Dirt {
             get {
-                object obj = ResourceManager.GetObject("Dirt_Icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Dirt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dirt256 {
+        internal static System.Drawing.Bitmap Dirt_Icon {
             get {
-                object obj = ResourceManager.GetObject("Dirt256", resourceCulture);
+                object obj = ResourceManager.GetObject("Dirt_Icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Hard_Rock {
+        internal static System.Drawing.Bitmap HardRock {
             get {
-                object obj = ResourceManager.GetObject("Hard_Rock", resourceCulture);
+                object obj = ResourceManager.GetObject("HardRock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap looseRock {
+        internal static System.Drawing.Bitmap LooseRock {
             get {
-                object obj = ResourceManager.GetObject("looseRock", resourceCulture);
+                object obj = ResourceManager.GetObject("LooseRock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,29 +393,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rubble_1 {
+        internal static System.Drawing.Bitmap Rubble1 {
             get {
-                object obj = ResourceManager.GetObject("rubble_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap rubble_2 {
-            get {
-                object obj = ResourceManager.GetObject("rubble_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap rubble_3 {
-            get {
-                object obj = ResourceManager.GetObject("rubble_3", resourceCulture);
+                object obj = ResourceManager.GetObject("Rubble1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +413,29 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rubble2 {
+            get {
+                object obj = ResourceManager.GetObject("Rubble2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rubble2_Icon {
             get {
                 object obj = ResourceManager.GetObject("Rubble2_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rubble3 {
+            get {
+                object obj = ResourceManager.GetObject("Rubble3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +473,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap solid_rock {
+        internal static System.Drawing.Bitmap SolidRock {
             get {
-                object obj = ResourceManager.GetObject("solid_rock", resourceCulture);
+                object obj = ResourceManager.GetObject("SolidRock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

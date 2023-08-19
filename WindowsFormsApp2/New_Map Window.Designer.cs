@@ -563,7 +563,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
             this.tableLayoutPanel4.Controls.Add(this.DefaultPlayerDamage, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.labelCustomDamage, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.CustomDamage, 2, 0);
@@ -591,16 +591,16 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomDamage.AutoSize = true;
-            this.labelCustomDamage.Location = new System.Drawing.Point(121, 5);
+            this.labelCustomDamage.Location = new System.Drawing.Point(118, 5);
             this.labelCustomDamage.Name = "labelCustomDamage";
-            this.labelCustomDamage.Size = new System.Drawing.Size(124, 13);
+            this.labelCustomDamage.Size = new System.Drawing.Size(120, 13);
             this.labelCustomDamage.TabIndex = 2;
             this.labelCustomDamage.Text = "Custom Damage:";
             // 
             // CustomDamage
             // 
             this.CustomDamage.Enabled = false;
-            this.CustomDamage.Location = new System.Drawing.Point(251, 3);
+            this.CustomDamage.Location = new System.Drawing.Point(244, 3);
             this.CustomDamage.Name = "CustomDamage";
             this.CustomDamage.Size = new System.Drawing.Size(120, 20);
             this.CustomDamage.TabIndex = 11;
@@ -622,7 +622,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel5.Controls.Add(this.DefaultDamageFromPlayer, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.labelPlayerCustomDamage, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.CustomPlayerDamage, 2, 0);
@@ -650,16 +650,16 @@ namespace WindowsFormsApp2
             // 
             this.labelPlayerCustomDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelPlayerCustomDamage.AutoSize = true;
-            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(122, 7);
+            this.labelPlayerCustomDamage.Location = new System.Drawing.Point(119, 7);
             this.labelPlayerCustomDamage.Name = "labelPlayerCustomDamage";
-            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(125, 13);
+            this.labelPlayerCustomDamage.Size = new System.Drawing.Size(121, 13);
             this.labelPlayerCustomDamage.TabIndex = 2;
             this.labelPlayerCustomDamage.Text = "Custom Damage:";
             // 
             // CustomPlayerDamage
             // 
             this.CustomPlayerDamage.Enabled = false;
-            this.CustomPlayerDamage.Location = new System.Drawing.Point(253, 3);
+            this.CustomPlayerDamage.Location = new System.Drawing.Point(246, 3);
             this.CustomPlayerDamage.Name = "CustomPlayerDamage";
             this.CustomPlayerDamage.Size = new System.Drawing.Size(120, 20);
             this.CustomPlayerDamage.TabIndex = 13;
@@ -681,7 +681,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.tableLayoutPanel8.Controls.Add(this.SpawnChance, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.labelCustomSpawnChance, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.CustomSpawnChance, 2, 0);
@@ -709,16 +709,16 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomSpawnChance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpawnChance.AutoSize = true;
-            this.labelCustomSpawnChance.Location = new System.Drawing.Point(123, 8);
+            this.labelCustomSpawnChance.Location = new System.Drawing.Point(120, 8);
             this.labelCustomSpawnChance.Name = "labelCustomSpawnChance";
-            this.labelCustomSpawnChance.Size = new System.Drawing.Size(126, 13);
+            this.labelCustomSpawnChance.Size = new System.Drawing.Size(122, 13);
             this.labelCustomSpawnChance.TabIndex = 2;
             this.labelCustomSpawnChance.Text = "Custom Chance";
             // 
             // CustomSpawnChance
             // 
             this.CustomSpawnChance.Enabled = false;
-            this.CustomSpawnChance.Location = new System.Drawing.Point(255, 3);
+            this.CustomSpawnChance.Location = new System.Drawing.Point(248, 3);
             this.CustomSpawnChance.Name = "CustomSpawnChance";
             this.CustomSpawnChance.Size = new System.Drawing.Size(119, 20);
             this.CustomSpawnChance.TabIndex = 20;
@@ -740,7 +740,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel9.ColumnCount = 3;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel9.Controls.Add(this.DefaultHunger, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.labelCustomHunger, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.CustomHunger, 2, 0);
@@ -768,16 +768,16 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomHunger.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomHunger.AutoSize = true;
-            this.labelCustomHunger.Location = new System.Drawing.Point(122, 7);
+            this.labelCustomHunger.Location = new System.Drawing.Point(119, 7);
             this.labelCustomHunger.Name = "labelCustomHunger";
-            this.labelCustomHunger.Size = new System.Drawing.Size(125, 13);
+            this.labelCustomHunger.Size = new System.Drawing.Size(121, 13);
             this.labelCustomHunger.TabIndex = 2;
             this.labelCustomHunger.Text = "Custom Hunger:";
             // 
             // CustomHunger
             // 
             this.CustomHunger.Enabled = false;
-            this.CustomHunger.Location = new System.Drawing.Point(253, 3);
+            this.CustomHunger.Location = new System.Drawing.Point(246, 3);
             this.CustomHunger.Name = "CustomHunger";
             this.CustomHunger.Size = new System.Drawing.Size(120, 20);
             this.CustomHunger.TabIndex = 18;
@@ -799,7 +799,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel7.Controls.Add(this.DefaultSpeed, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelCustomSpeed, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.labelDebrisMultiplyer, 1, 1);
@@ -830,9 +830,9 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomSpeed.AutoSize = true;
-            this.labelCustomSpeed.Location = new System.Drawing.Point(122, 9);
+            this.labelCustomSpeed.Location = new System.Drawing.Point(119, 9);
             this.labelCustomSpeed.Name = "labelCustomSpeed";
-            this.labelCustomSpeed.Size = new System.Drawing.Size(125, 13);
+            this.labelCustomSpeed.Size = new System.Drawing.Size(121, 13);
             this.labelCustomSpeed.TabIndex = 2;
             this.labelCustomSpeed.Text = "Custom Speed:";
             // 
@@ -840,16 +840,16 @@ namespace WindowsFormsApp2
             // 
             this.labelDebrisMultiplyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDebrisMultiplyer.AutoSize = true;
-            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(122, 41);
+            this.labelDebrisMultiplyer.Location = new System.Drawing.Point(119, 41);
             this.labelDebrisMultiplyer.Name = "labelDebrisMultiplyer";
-            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(125, 13);
+            this.labelDebrisMultiplyer.Size = new System.Drawing.Size(121, 13);
             this.labelDebrisMultiplyer.TabIndex = 3;
             this.labelDebrisMultiplyer.Text = "Debris Multiplier:";
             // 
             // CustomSpeed
             // 
             this.CustomSpeed.Enabled = false;
-            this.CustomSpeed.Location = new System.Drawing.Point(253, 3);
+            this.CustomSpeed.Location = new System.Drawing.Point(246, 3);
             this.CustomSpeed.Name = "CustomSpeed";
             this.CustomSpeed.Size = new System.Drawing.Size(120, 20);
             this.CustomSpeed.TabIndex = 15;
@@ -859,7 +859,7 @@ namespace WindowsFormsApp2
             // DebrisMultiplier
             // 
             this.DebrisMultiplier.Enabled = false;
-            this.DebrisMultiplier.Location = new System.Drawing.Point(253, 35);
+            this.DebrisMultiplier.Location = new System.Drawing.Point(246, 35);
             this.DebrisMultiplier.Name = "DebrisMultiplier";
             this.DebrisMultiplier.Size = new System.Drawing.Size(120, 20);
             this.DebrisMultiplier.TabIndex = 16;
@@ -908,7 +908,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel13.Controls.Add(this.DefaultRepairCost, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.labelRepairCost, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.RepairCost, 2, 0);
@@ -936,16 +936,16 @@ namespace WindowsFormsApp2
             // 
             this.labelRepairCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRepairCost.AutoSize = true;
-            this.labelRepairCost.Location = new System.Drawing.Point(122, 5);
+            this.labelRepairCost.Location = new System.Drawing.Point(119, 5);
             this.labelRepairCost.Name = "labelRepairCost";
-            this.labelRepairCost.Size = new System.Drawing.Size(125, 13);
+            this.labelRepairCost.Size = new System.Drawing.Size(121, 13);
             this.labelRepairCost.TabIndex = 2;
             this.labelRepairCost.Text = "Repair Cost:";
             // 
             // RepairCost
             // 
             this.RepairCost.Enabled = false;
-            this.RepairCost.Location = new System.Drawing.Point(253, 3);
+            this.RepairCost.Location = new System.Drawing.Point(246, 3);
             this.RepairCost.Name = "RepairCost";
             this.RepairCost.Size = new System.Drawing.Size(120, 20);
             this.RepairCost.TabIndex = 24;
@@ -967,7 +967,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel6.Controls.Add(this.DefaultErosionSpeed, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelCustomErosionSpeed, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.CustomErosionSpeed, 2, 0);
@@ -995,16 +995,16 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomErosionSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomErosionSpeed.AutoSize = true;
-            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(122, 5);
+            this.labelCustomErosionSpeed.Location = new System.Drawing.Point(119, 5);
             this.labelCustomErosionSpeed.Name = "labelCustomErosionSpeed";
-            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(125, 13);
+            this.labelCustomErosionSpeed.Size = new System.Drawing.Size(121, 13);
             this.labelCustomErosionSpeed.TabIndex = 2;
             this.labelCustomErosionSpeed.Text = "Custom Speed:";
             // 
             // CustomErosionSpeed
             // 
             this.CustomErosionSpeed.Enabled = false;
-            this.CustomErosionSpeed.Location = new System.Drawing.Point(253, 3);
+            this.CustomErosionSpeed.Location = new System.Drawing.Point(246, 3);
             this.CustomErosionSpeed.Name = "CustomErosionSpeed";
             this.CustomErosionSpeed.Size = new System.Drawing.Size(120, 20);
             this.CustomErosionSpeed.TabIndex = 22;
@@ -1052,7 +1052,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel12.ColumnCount = 3;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.82609F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.17391F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
             this.tableLayoutPanel12.Controls.Add(this.DefaultAvalancheFrequency, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.labelCustomAvalancheFrequency, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.CustomAvalanchFrequncy, 2, 0);
@@ -1080,16 +1080,16 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomAvalancheFrequency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheFrequency.AutoSize = true;
-            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(122, 5);
+            this.labelCustomAvalancheFrequency.Location = new System.Drawing.Point(118, 5);
             this.labelCustomAvalancheFrequency.Name = "labelCustomAvalancheFrequency";
-            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(123, 13);
+            this.labelCustomAvalancheFrequency.Size = new System.Drawing.Size(120, 13);
             this.labelCustomAvalancheFrequency.TabIndex = 2;
             this.labelCustomAvalancheFrequency.Text = "Custom Frequency:";
             // 
             // CustomAvalanchFrequncy
             // 
             this.CustomAvalanchFrequncy.Enabled = false;
-            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(251, 3);
+            this.CustomAvalanchFrequncy.Location = new System.Drawing.Point(244, 3);
             this.CustomAvalanchFrequncy.Name = "CustomAvalanchFrequncy";
             this.CustomAvalanchFrequncy.Size = new System.Drawing.Size(120, 20);
             this.CustomAvalanchFrequncy.TabIndex = 28;
@@ -1111,7 +1111,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.65101F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.34899F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
             this.tableLayoutPanel11.Controls.Add(this.defaultAvalancheDamageToPlayers, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.labelCustomAvalancheDamage, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.CustomAvalanchDamage, 2, 0);
@@ -1139,16 +1139,16 @@ namespace WindowsFormsApp2
             // 
             this.labelCustomAvalancheDamage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCustomAvalancheDamage.AutoSize = true;
-            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(122, 5);
+            this.labelCustomAvalancheDamage.Location = new System.Drawing.Point(119, 5);
             this.labelCustomAvalancheDamage.Name = "labelCustomAvalancheDamage";
-            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(125, 13);
+            this.labelCustomAvalancheDamage.Size = new System.Drawing.Size(121, 13);
             this.labelCustomAvalancheDamage.TabIndex = 2;
             this.labelCustomAvalancheDamage.Text = "Custom Damage:";
             // 
             // CustomAvalanchDamage
             // 
             this.CustomAvalanchDamage.Enabled = false;
-            this.CustomAvalanchDamage.Location = new System.Drawing.Point(253, 3);
+            this.CustomAvalanchDamage.Location = new System.Drawing.Point(246, 3);
             this.CustomAvalanchDamage.Name = "CustomAvalanchDamage";
             this.CustomAvalanchDamage.Size = new System.Drawing.Size(120, 20);
             this.CustomAvalanchDamage.TabIndex = 26;
@@ -1196,7 +1196,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel15.ColumnCount = 3;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.10695F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.89305F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.tableLayoutPanel15.Controls.Add(this.DefaultAirQuantity, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.labelAirQuantity, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.AirQuantity, 2, 0);
@@ -1224,16 +1224,16 @@ namespace WindowsFormsApp2
             // 
             this.labelAirQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAirQuantity.AutoSize = true;
-            this.labelAirQuantity.Location = new System.Drawing.Point(104, 5);
+            this.labelAirQuantity.Location = new System.Drawing.Point(101, 5);
             this.labelAirQuantity.Name = "labelAirQuantity";
-            this.labelAirQuantity.Size = new System.Drawing.Size(144, 13);
+            this.labelAirQuantity.Size = new System.Drawing.Size(140, 13);
             this.labelAirQuantity.TabIndex = 2;
             this.labelAirQuantity.Text = "Custom Level:";
             // 
             // AirQuantity
             // 
             this.AirQuantity.Enabled = false;
-            this.AirQuantity.Location = new System.Drawing.Point(254, 3);
+            this.AirQuantity.Location = new System.Drawing.Point(247, 3);
             this.AirQuantity.Name = "AirQuantity";
             this.AirQuantity.Size = new System.Drawing.Size(120, 20);
             this.AirQuantity.TabIndex = 32;
@@ -1255,7 +1255,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel16.ColumnCount = 3;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.74074F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.25926F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.tableLayoutPanel16.Controls.Add(this.DefaultRateOfConsumption, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.labelRateOfConsumption, 1, 0);
             this.tableLayoutPanel16.Controls.Add(this.RateOfConsumption, 2, 0);
@@ -1283,16 +1283,16 @@ namespace WindowsFormsApp2
             // 
             this.labelRateOfConsumption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRateOfConsumption.AutoSize = true;
-            this.labelRateOfConsumption.Location = new System.Drawing.Point(105, 5);
+            this.labelRateOfConsumption.Location = new System.Drawing.Point(102, 5);
             this.labelRateOfConsumption.Name = "labelRateOfConsumption";
-            this.labelRateOfConsumption.Size = new System.Drawing.Size(143, 13);
+            this.labelRateOfConsumption.Size = new System.Drawing.Size(139, 13);
             this.labelRateOfConsumption.TabIndex = 2;
             this.labelRateOfConsumption.Text = " Custom Consumption:";
             // 
             // RateOfConsumption
             // 
             this.RateOfConsumption.Enabled = false;
-            this.RateOfConsumption.Location = new System.Drawing.Point(254, 3);
+            this.RateOfConsumption.Location = new System.Drawing.Point(247, 3);
             this.RateOfConsumption.Name = "RateOfConsumption";
             this.RateOfConsumption.Size = new System.Drawing.Size(120, 20);
             this.RateOfConsumption.TabIndex = 30;
@@ -1340,7 +1340,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel19.ColumnCount = 3;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.71186F));
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.28814F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
             this.tableLayoutPanel19.Controls.Add(this.DefaultPowerDrain, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.label21PowerDrain, 1, 0);
             this.tableLayoutPanel19.Controls.Add(this.PowerDrainMultiplier, 2, 0);
@@ -1368,16 +1368,16 @@ namespace WindowsFormsApp2
             // 
             this.label21PowerDrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label21PowerDrain.AutoSize = true;
-            this.label21PowerDrain.Location = new System.Drawing.Point(98, 5);
+            this.label21PowerDrain.Location = new System.Drawing.Point(96, 5);
             this.label21PowerDrain.Name = "label21PowerDrain";
-            this.label21PowerDrain.Size = new System.Drawing.Size(152, 13);
+            this.label21PowerDrain.Size = new System.Drawing.Size(147, 13);
             this.label21PowerDrain.TabIndex = 2;
             this.label21PowerDrain.Text = " Custom Multiplier:";
             // 
             // PowerDrainMultiplier
             // 
             this.PowerDrainMultiplier.Enabled = false;
-            this.PowerDrainMultiplier.Location = new System.Drawing.Point(256, 3);
+            this.PowerDrainMultiplier.Location = new System.Drawing.Point(249, 3);
             this.PowerDrainMultiplier.Name = "PowerDrainMultiplier";
             this.PowerDrainMultiplier.Size = new System.Drawing.Size(118, 20);
             this.PowerDrainMultiplier.TabIndex = 34;
@@ -1431,7 +1431,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel24.ColumnCount = 3;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.62948F));
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.37052F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
             this.tableLayoutPanel24.Controls.Add(this.ActiveReachTheTile, 0, 0);
             this.tableLayoutPanel24.Location = new System.Drawing.Point(7, 19);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
@@ -1466,7 +1466,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel23.ColumnCount = 3;
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.53312F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.46688F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214F));
             this.tableLayoutPanel23.Controls.Add(this.ActiveRescue, 0, 0);
             this.tableLayoutPanel23.Controls.Add(this.labelRescueUnit, 1, 0);
             this.tableLayoutPanel23.Controls.Add(this.comboBoxRescueUnit, 2, 0);
@@ -1492,9 +1492,9 @@ namespace WindowsFormsApp2
             // 
             this.labelRescueUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelRescueUnit.AutoSize = true;
-            this.labelRescueUnit.Location = new System.Drawing.Point(109, 5);
+            this.labelRescueUnit.Location = new System.Drawing.Point(106, 5);
             this.labelRescueUnit.Name = "labelRescueUnit";
-            this.labelRescueUnit.Size = new System.Drawing.Size(131, 13);
+            this.labelRescueUnit.Size = new System.Drawing.Size(127, 13);
             this.labelRescueUnit.TabIndex = 2;
             this.labelRescueUnit.Text = "Specify unit:";
             // 
@@ -1522,7 +1522,7 @@ namespace WindowsFormsApp2
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxRescueUnit.Location = new System.Drawing.Point(246, 3);
+            this.comboBoxRescueUnit.Location = new System.Drawing.Point(239, 3);
             this.comboBoxRescueUnit.Name = "comboBoxRescueUnit";
             this.comboBoxRescueUnit.Size = new System.Drawing.Size(128, 21);
             this.comboBoxRescueUnit.TabIndex = 42;
@@ -1544,7 +1544,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel22.ColumnCount = 3;
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.23602F));
             this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.76398F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 209F));
             this.tableLayoutPanel22.Controls.Add(this.ActiveSpecificUnit, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.labelSpecificUnit, 1, 0);
             this.tableLayoutPanel22.Controls.Add(this.comboBoxSpecificUnit, 2, 0);
@@ -1570,9 +1570,9 @@ namespace WindowsFormsApp2
             // 
             this.labelSpecificUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpecificUnit.AutoSize = true;
-            this.labelSpecificUnit.Location = new System.Drawing.Point(108, 5);
+            this.labelSpecificUnit.Location = new System.Drawing.Point(105, 5);
             this.labelSpecificUnit.Name = "labelSpecificUnit";
-            this.labelSpecificUnit.Size = new System.Drawing.Size(137, 13);
+            this.labelSpecificUnit.Size = new System.Drawing.Size(133, 13);
             this.labelSpecificUnit.TabIndex = 2;
             this.labelSpecificUnit.Text = "Specify unit:";
             // 
@@ -1600,7 +1600,7 @@ namespace WindowsFormsApp2
             "Lazer Mining Vehicle",
             "Mammoth",
             " "});
-            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(251, 3);
+            this.comboBoxSpecificUnit.Location = new System.Drawing.Point(244, 3);
             this.comboBoxSpecificUnit.Name = "comboBoxSpecificUnit";
             this.comboBoxSpecificUnit.Size = new System.Drawing.Size(123, 21);
             this.comboBoxSpecificUnit.TabIndex = 40;
@@ -1622,7 +1622,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel20.ColumnCount = 3;
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.10526F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.89474F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
             this.tableLayoutPanel20.Controls.Add(this.ActiveSpecificBuilding, 0, 0);
             this.tableLayoutPanel20.Controls.Add(this.labelSpecificBuilding, 1, 0);
             this.tableLayoutPanel20.Controls.Add(this.comboBoxSpecificBuilding, 2, 0);
@@ -1648,9 +1648,9 @@ namespace WindowsFormsApp2
             // 
             this.labelSpecificBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSpecificBuilding.AutoSize = true;
-            this.labelSpecificBuilding.Location = new System.Drawing.Point(108, 5);
+            this.labelSpecificBuilding.Location = new System.Drawing.Point(105, 5);
             this.labelSpecificBuilding.Name = "labelSpecificBuilding";
-            this.labelSpecificBuilding.Size = new System.Drawing.Size(138, 13);
+            this.labelSpecificBuilding.Size = new System.Drawing.Size(134, 13);
             this.labelSpecificBuilding.TabIndex = 2;
             this.labelSpecificBuilding.Text = "Specify Building:";
             // 
@@ -1673,7 +1673,7 @@ namespace WindowsFormsApp2
             "Infrastructure",
             "Microwave Emitters",
             " "});
-            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(252, 3);
+            this.comboBoxSpecificBuilding.Location = new System.Drawing.Point(245, 3);
             this.comboBoxSpecificBuilding.Name = "comboBoxSpecificBuilding";
             this.comboBoxSpecificBuilding.Size = new System.Drawing.Size(122, 21);
             this.comboBoxSpecificBuilding.TabIndex = 38;
@@ -1695,7 +1695,7 @@ namespace WindowsFormsApp2
             this.tableLayoutPanel21.ColumnCount = 3;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.36364F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.63636F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.tableLayoutPanel21.Controls.Add(this.ActiveCrystalCollection, 0, 0);
             this.tableLayoutPanel21.Controls.Add(this.labelCrystalCollection, 1, 0);
             this.tableLayoutPanel21.Controls.Add(this.NeededCrystals, 2, 0);
@@ -1723,15 +1723,15 @@ namespace WindowsFormsApp2
             // 
             this.labelCrystalCollection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCrystalCollection.AutoSize = true;
-            this.labelCrystalCollection.Location = new System.Drawing.Point(107, 5);
+            this.labelCrystalCollection.Location = new System.Drawing.Point(104, 5);
             this.labelCrystalCollection.Name = "labelCrystalCollection";
-            this.labelCrystalCollection.Size = new System.Drawing.Size(141, 13);
+            this.labelCrystalCollection.Size = new System.Drawing.Size(137, 13);
             this.labelCrystalCollection.TabIndex = 2;
             this.labelCrystalCollection.Text = "Custom Crystal Amount";
             // 
             // NeededCrystals
             // 
-            this.NeededCrystals.Location = new System.Drawing.Point(254, 3);
+            this.NeededCrystals.Location = new System.Drawing.Point(247, 3);
             this.NeededCrystals.Name = "NeededCrystals";
             this.NeededCrystals.Size = new System.Drawing.Size(120, 20);
             this.NeededCrystals.TabIndex = 36;

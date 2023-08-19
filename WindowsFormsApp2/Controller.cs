@@ -1,7 +1,9 @@
 ﻿/* Copyright (C) 2023 Austin Tyler - All Rights Reserved
  */
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
@@ -13,6 +15,7 @@ using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace WindowsFormsApp2
 {
@@ -254,13 +257,14 @@ namespace WindowsFormsApp2
             }
         }
         //---------------------------------------------------------------------Tile and Tool Functionality----------------------------------------------------------------------
+
         public void TileClicked(object sender, EventArgs e)
         {
-            bool Run = true;
             int H = 0;
             int w = 0;
             int h = 0;
-            while (H < MODEL.Height && Run == true)
+            int[] output = new int[2];
+            while (H < MODEL.Height)
             {
                 //determining which tile has been selected 
                 for (int W = 0; W < MODEL.Width; W++)
@@ -269,37 +273,46 @@ namespace WindowsFormsApp2
                     if (this.VIEW.MAP.TILE[W, H].clicked == true)
                     {
                         Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {W}, {H} ) was Clicked... breaking loop for tool actions. ");
-                        if (W == 0)
-                        {
-                            h = H;
-                            Run = false;
-                            break;
-                        }
-                        else if (H == 0)
-                        {
-                            w = W;
-                            Run = false;
-                            break;
-                        }
-                        else
-                        {
-                            h = H;
-                            w = W;
-                            Run = false;
-                            break;
-                        }
+                        output[0] = W;
+                        output[1] = H;
+                        ToolActions(output);
                     }
-
-                }
-                if (Run == false)
-                {
-                    break;
                 }
                 H++;
             }
-            //---------------------------------------------------PaintBrush---------------------------------
-            // once determined, check which tool is active. 
-            if (MODEL.PaintBrushSleceted == true)
+        }
+        public void HoverOverTile(object sender, EventArgs e)
+        {
+            {
+                int H = 0;
+                int w = 0;
+                int h = 0;
+                int[] output = new int[1];
+                while (H < MODEL.Height)
+                {
+                    //determining which tile has been selected 
+                    for (int W = 0; W < MODEL.Width; W++)
+                    {
+                        Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {W}, {H} ) was checked to see if it was clicked. ");
+                        if (this.VIEW.MAP.TILE[W, H].clicked == true)
+                        {
+                            Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {W}, {H} ) was Clicked... breaking loop for tool actions. ");
+                            output[0] = W;
+                            output[1] = H;
+                            ToolActions(output);
+                        }
+                    }
+                    H++;
+                }
+            }
+        }
+        public void ToolActions(int[] Tile) {
+            int w = Tile[0];
+            int h = Tile[1];
+
+                //---------------------------------------------------PaintBrush---------------------------------
+                // once determined, check which tool is active. 
+                if (MODEL.PaintBrushSleceted == true)
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
@@ -1616,7 +1629,7 @@ namespace WindowsFormsApp2
         public Bitmap MapImage()
         {
             // Image resolution
-            int Multiplier = 256;
+            int Multiplier = 128;
             Bitmap map = new Bitmap(this.MODEL.Width * Multiplier, this.MODEL.Height * Multiplier);
             Graphics g = Graphics.FromImage(map);
             Bitmap temp;
@@ -1627,7 +1640,7 @@ namespace WindowsFormsApp2
                     for (int i = 0; i < MODEL.Width; i++)
                     {
                         Debug.WriteLine($"|Controller|  adding image to graphic:");
-                        Debug.WriteLine($"|Controller|  Tile{i},{H} being placed at: {i*256},{H*256}");
+                        Debug.WriteLine($"|Controller|  Tile{i},{H} being placed at: {i*128},{H*128}");
                         temp = new Bitmap(VIEW.MAP.TILE[i, H].getTexture());
                         g.DrawImage(temp, i*Multiplier , H*Multiplier );
                     }

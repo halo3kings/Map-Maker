@@ -356,5 +356,104 @@
   <ItemGroup>
     <None Include="Resources\UpgradeStation_Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubble 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubble 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rubble 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble1_Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble2_Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble3_Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solid rock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidRock_Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water_Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dirt_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erosion1_Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erosion2_Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardRock_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\looseRock_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble1_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble2_Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble3_Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidRock_Icon.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dirt.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardRock.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LavaErosion1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LavaErosion2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LooseRock.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble1.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rubble3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolidRock.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Concrete.BMP" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

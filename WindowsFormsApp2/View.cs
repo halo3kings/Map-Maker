@@ -36,6 +36,7 @@ namespace WindowsFormsApp2
         }
         public void CreateMap(int w, int h, string biome)
         {
+            
             double ProgressBarMax = w * h;
             double Iterations = 0;
             MP.Show();
@@ -45,7 +46,9 @@ namespace WindowsFormsApp2
             MP.text.Text = "|View|  Generating  map in viewer...";
             MP.Refresh();
 
+           
             MAP = new MapAndMapPopulator(w, h, biome);
+
 
             Debug.WriteLine($"|View|  Map Generated...");
             MP.text.Text = "|View|  Map Generated...";
@@ -103,37 +106,37 @@ namespace WindowsFormsApp2
                     break;
                 case "Dirt":
                     {
-                        return WindowsFormsApp2.Properties.Resources.Dirt256;
+                        return WindowsFormsApp2.Properties.Resources.Dirt;
                     }
                     break;
                 case "LooseRock":
                     {
-                        return WindowsFormsApp2.Properties.Resources.looseRock;
+                        return WindowsFormsApp2.Properties.Resources.LooseRock;
                     }
                     break;
                 case "HardRock":
                     {
-                        return WindowsFormsApp2.Properties.Resources.Hard_Rock;
+                        return WindowsFormsApp2.Properties.Resources.HardRock;
                     }
                     break;
                 case "SolidRock":
                     {
-                        return WindowsFormsApp2.Properties.Resources.solid_rock;
+                        return WindowsFormsApp2.Properties.Resources.SolidRock;
                     }
                     break;
                 case "Rubble1":
                     {
-                        return WindowsFormsApp2.Properties.Resources.rubble_1;
+                        return WindowsFormsApp2.Properties.Resources.Rubble1;
                     }
                     break;
                 case "Rubble2":
                     {
-                        return WindowsFormsApp2.Properties.Resources.rubble_2;
+                        return WindowsFormsApp2.Properties.Resources.Rubble2;
                     }
                     break;
                 case "Rubble3":
                     {
-                        return WindowsFormsApp2.Properties.Resources.rubble_3;
+                        return WindowsFormsApp2.Properties.Resources.Rubble3;
                     }
                     break;
                 case "Concrete":
