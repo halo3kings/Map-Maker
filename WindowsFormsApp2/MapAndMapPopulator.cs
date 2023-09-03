@@ -92,8 +92,8 @@ namespace WindowsFormsApp2
                     TILE[W, H].SetName(W, H);
 
                     Debug.WriteLine($"|MapAndMapPop|      Tile: {TILE[W, H].TILE.Name}");
+                    TILE[W, H].SetTexture(BiomesSpecificFloor());
                     Debug.WriteLine($"|MapAndMapPop|      setting  picture");
-                    TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.Floor);
                     Debug.WriteLine($"|MapAndMapPop|      setting mapdata aray value for the tile");
                     MAPDATA[W, H] = 1;
 
@@ -103,7 +103,7 @@ namespace WindowsFormsApp2
                     if (H == 0 && W < Width)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Top Of map");
-                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
+                        TILE[W, H].SetTexture(BiomesSpecificWalls());
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -111,7 +111,7 @@ namespace WindowsFormsApp2
                     if (H == Height - 1 && W < Width)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Bottom Of map");
-                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
+                        TILE[W, H].SetTexture(BiomesSpecificWalls());
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -120,7 +120,7 @@ namespace WindowsFormsApp2
                     if (W == 0 && H < Height)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Left Of map");
-                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
+                        TILE[W, H].SetTexture(BiomesSpecificWalls());
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -128,7 +128,7 @@ namespace WindowsFormsApp2
                     if (W == Width - 1 && H < Height)
                     {
                         Debug.WriteLine($"|MapAndMapPop|      Right Of map");
-                        TILE[W, H].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
+                        TILE[W, H].SetTexture(BiomesSpecificWalls());
                         MAPDATA[W, H] = 9;
                         WidthPlacement(W, H);
                     }
@@ -174,8 +174,51 @@ namespace WindowsFormsApp2
                 Debug.WriteLine($"|MapAndMapPop|      Resizing  new tile");
             }
         }
+        public Bitmap BiomesSpecificFloor()
+        {
+            switch (BIOME)
+            {
+                case "Ice":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.ICE00;
+                    }
+                    break;
+                case "Rock":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Floor;
+                    }
+                    break;
+                case "Lava":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.LAVA00;
+                    }
+                    break;
+            }
+            return null;
+        }
+        public Bitmap BiomesSpecificWalls()
+        {
+            switch (BIOME)
+            {
+                case "Ice":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.ICE05;
+                    }
+                    break;
+                case "Rock":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.SolidRock;
+                    }
+                    break;
+                case "Lava":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.LAVA05;
+                    }
+                    break;
+            }
+            return null;
+        }
 
-        
 
         public void WidthPlacement(int W, int H)
         {

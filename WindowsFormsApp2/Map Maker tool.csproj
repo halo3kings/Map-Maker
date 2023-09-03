@@ -455,5 +455,71 @@
   <ItemGroup>
     <None Include="Resources\Concrete.BMP" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA13.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA00.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA02.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA03.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA04.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA05.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava06.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA10.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAVA11.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava40.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lava20.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE10.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE11.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE12.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice20.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice40.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE02.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE04.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE00.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE03.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICE05.BMP" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,6 +16,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace WindowsFormsApp2
 {
@@ -98,7 +99,6 @@ namespace WindowsFormsApp2
                 H++;
             }
         }
-
         private void SelectToolClicked(object sender, EventArgs e)
         {
             Debug.WriteLine($"|Controller||SelectToolClicked()|  Select Tool Clicked.");
@@ -360,7 +360,16 @@ namespace WindowsFormsApp2
             {
                 // this must be false so it will allow the tile to be clicked again.
                 this.VIEW.MAP.TILE[w, h].clicked = false;
-
+                if (w == 0 || w == MODEL.Width-1 || h == 0 || h == MODEL.Height-1)
+                {
+                    this.VIEW.MAP.TILE[w, h].SetTexture(WindowsFormsApp2.Properties.Resources.SolidRock);
+                    Debug.WriteLine($"|Controller||TileClicked()|   Tile: ( {w}, {h} ) was clicked with the Eraser tool selected. texture set to 'SolidRock' ");
+                }
+                else
+                {
+                    this.VIEW.MAP.TILE[w, h].SetTexture(WindowsFormsApp2.Properties.Resources.Floor);
+                    Debug.WriteLine($"|Controller||TileClicked()|   Tile: ( {w}, {h} ) was clicked with the Eraser tool selected. texture set to 'Floor' ");
+                }
                 Debug.WriteLine($"|Controller||TileClicked()|    Tile: ( {w}, {h} ) was clicked with the Eraser tool selected ");
             }
 
@@ -433,7 +442,28 @@ namespace WindowsFormsApp2
             initializeTileClickAction();
 
         }
-
+        public Bitmap BiomesSpecificFloor()
+        {
+            switch (MODEL.Biome)
+            {
+                case "Ice":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.ICE00;
+                    }
+                    break;
+                case "Rock":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.Floor;
+                    }
+                    break;
+                case "Lava":
+                    {
+                        return WindowsFormsApp2.Properties.Resources.LAVA00;
+                    }
+                    break;
+            }
+            return null;
+        }
 
 
 
